@@ -32633,69 +32633,75 @@ window.allobjects = function() {
   },
   "1851": {
     "can_color": true,
-    "children": [
-      {
-        "frame": "gj_drops01_color_001.png",
-        "localDy": 0,
-        "tint": 52224,
-        "z": 100
-      }
-    ],
     "default_base_color_channel": 1011,
     "default_detail_color_channel": 1,
     "frame": "gj_drops01_001.png",
-    "glow_frame": "gj_drops01_glow_001.png",
     "gridH": 0.6666666865348816,
     "gridW": 0.4000000059604645,
     "spritesheet": "FireSheet_01-hd",
     "type": "deco",
     "z": 2,
     "default_z_layer": 5,
-    "default_z_order": 2
+    "default_z_order": 2,
+    "animFrames": [
+      "gj_drops01_001.png",
+      "gj_drops01_002.png",
+      "gj_drops01_003.png",
+      "gj_drops01_004.png",
+      "gj_drops01_005.png",
+      "gj_drops01_006.png",
+      "gj_drops01_007.png",
+      "gj_drops01_008.png",
+    ],
+    "animInterval": 75
   },
   "1852": {
     "can_color": true,
-    "children": [
-      {
-        "frame": "gj_drops02_color_008.png",
-        "localDy": 0,
-        "tint": 52224,
-        "z": 100
-      }
-    ],
     "default_base_color_channel": 1011,
     "default_detail_color_channel": 1,
     "frame": "gj_drops02_008.png",
-    "glow_frame": "gj_drops02_008.png",
     "gridH": 0.8333333134651184,
     "gridW": 0.6666666865348816,
     "spritesheet": "FireSheet_01-hd",
     "type": "deco",
     "z": 2,
     "default_z_layer": 5,
-    "default_z_order": 2
+    "default_z_order": 2,
+    "animFrames": [
+      "gj_drops02_001.png",
+      "gj_drops02_002.png",
+      "gj_drops02_003.png",
+      "gj_drops02_004.png",
+      "gj_drops02_005.png",
+      "gj_drops02_006.png",
+      "gj_drops02_007.png",
+      "gj_drops02_008.png",
+    ],
+    "animInterval": 75
   },
   "1853": {
     "can_color": true,
-    "children": [
-      {
-        "frame": "gj_drops03_color_006.png",
-        "localDy": 0,
-        "tint": 52224,
-        "z": 100
-      }
-    ],
     "default_base_color_channel": 1011,
     "default_detail_color_channel": 1,
     "frame": "gj_drops03_006.png",
-    "glow_frame": "gj_drops03_006.png",
     "gridH": 1.350000023841858,
     "gridW": 0.13333334028720856,
     "spritesheet": "FireSheet_01-hd",
     "type": "deco",
     "z": 2,
     "default_z_layer": 5,
-    "default_z_order": 2
+    "default_z_order": 2,
+    "animFrames": [
+      "gj_drops03_001.png",
+      "gj_drops03_002.png",
+      "gj_drops03_003.png",
+      "gj_drops03_004.png",
+      "gj_drops03_005.png",
+      "gj_drops03_006.png",
+      "gj_drops03_007.png",
+      "gj_drops03_008.png",
+    ],
+    "animInterval": 75
   },
   "1854": {
     "can_color": true,
@@ -34345,25 +34351,32 @@ window.allobjects = function() {
   },
   "1936": {
     "can_color": true,
-    "children": [
-      {
-        "frame": "fire_b_01_2_001.png",
-        "localDy": 0,
-        "tint": 52224,
-        "z": -100
-      }
-    ],
     "default_base_color_channel": 1011,
     "default_detail_color_channel": 1,
     "frame": "fire_b_01_003.png",
-    "glow_frame": "fire_b_01_003.png",
     "gridH": 0.9916666746139526,
     "gridW": 0.800000011920929,
     "spritesheet": "FireSheet_01-hd",
     "type": "deco",
     "z": 2,
     "default_z_layer": 5,
-    "default_z_order": 2
+    "default_z_order": 2,
+    "animFrames": [
+      "fire_b_01_001.png",
+      "fire_b_01_002.png",
+      "fire_b_01_003.png",
+      "fire_b_01_004.png",
+      "fire_b_01_005.png",
+      "fire_b_01_006.png",
+      "fire_b_01_007.png",
+      "fire_b_01_008.png",
+      "fire_b_01_009.png",
+      "fire_b_01_010.png",
+      "fire_b_01_011.png",
+      "fire_b_01_012.png",
+      "fire_b_01_013.png"
+    ],
+    "animInterval": 75
   },
   "1937": {
     "can_color": true,
@@ -34386,18 +34399,21 @@ window.allobjects = function() {
     "type": "deco",
     "z": 2,
     "default_z_layer": 5,
-    "default_z_order": 2
+    "default_z_order": 2,
+    "animFrames": [
+      "fire_b_02_001.png",
+      "fire_b_02_002.png",
+      "fire_b_02_003.png",
+      "fire_b_02_004.png",
+      "fire_b_02_005.png",
+      "fire_b_02_006.png",
+      "fire_b_02_007.png",
+      "fire_b_02_008.png",
+    ],
+    "animInterval": 75
   },
   "1938": {
     "can_color": true,
-    "children": [
-      {
-        "frame": "fire_b_03_2_001.png",
-        "localDy": 0,
-        "tint": 52224,
-        "z": -100
-      }
-    ],
     "default_base_color_channel": 1011,
     "default_detail_color_channel": 1,
     "frame": "fire_b_03_002.png",
@@ -34408,7 +34424,18 @@ window.allobjects = function() {
     "type": "deco",
     "z": 2,
     "default_z_layer": 5,
-    "default_z_order": 2
+    "default_z_order": 2,
+    "animFrames": [
+      "fire_b_03_001.png",
+      "fire_b_03_002.png",
+      "fire_b_03_003.png",
+      "fire_b_03_004.png",
+      "fire_b_03_005.png",
+      "fire_b_03_006.png",
+      "fire_b_03_007.png",
+      "fire_b_03_008.png",
+    ],
+    "animInterval": 75
   },
   "1939": {
     "can_color": true,
@@ -34430,7 +34457,18 @@ window.allobjects = function() {
     "type": "deco",
     "z": 2,
     "default_z_layer": 5,
-    "default_z_order": 2
+    "default_z_order": 2,
+    "animFrames": [
+      "fire_b_04_001.png",
+      "fire_b_04_002.png",
+      "fire_b_04_003.png",
+      "fire_b_04_004.png",
+      "fire_b_04_005.png",
+      "fire_b_04_006.png",
+      "fire_b_04_007.png",
+      "fire_b_04_008.png",
+    ],
+    "animInterval": 75
   },
   "1964": {
     "can_color": true,
@@ -34524,7 +34562,16 @@ window.allobjects = function() {
     "type": "deco",
     "z": 2,
     "default_z_layer": 5,
-    "default_z_order": 2
+    "default_z_order": 2,
+    "animFrames": [
+      "gj22_anim_01_001.png",
+      "gj22_anim_01_002.png",
+      "gj22_anim_01_003.png",
+      "gj22_anim_01_004.png",
+      "gj22_anim_01_005.png",
+      "gj22_anim_01_006.png",
+    ],
+    "animInterval": 75
   },
   "2021": {
     "can_color": true,
@@ -34594,14 +34641,6 @@ window.allobjects = function() {
   },
   "2024": {
     "can_color": true,
-    "children": [
-      {
-        "frame": "gj22_anim_05_002.png",
-        "localDy": 0,
-        "tint": 52224,
-        "z": -100
-      }
-    ],
     "default_base_color_channel": 1,
     "default_detail_color_channel": 2,
     "frame": "gj22_anim_05_004.png",
@@ -34612,18 +34651,18 @@ window.allobjects = function() {
     "type": "deco",
     "z": 2,
     "default_z_layer": 5,
-    "default_z_order": 2
+    "default_z_order": 2,
+    "animFrames": [
+      "gj22_anim_05_001.png",
+      "gj22_anim_05_002.png",
+      "gj22_anim_05_003.png",
+      "gj22_anim_05_004.png",
+      "gj22_anim_05_005.png",
+    ],
+    "animInterval": 75
   },
   "2025": {
     "can_color": true,
-    "children": [
-      {
-        "frame": "gj22_anim_06_008.png",
-        "localDy": 0,
-        "tint": 52224,
-        "z": -100
-      }
-    ],
     "default_base_color_channel": 1,
     "default_detail_color_channel": 2,
     "frame": "gj22_anim_06_012.png",
@@ -34634,7 +34673,22 @@ window.allobjects = function() {
     "type": "deco",
     "z": 2,
     "default_z_layer": 5,
-    "default_z_order": 2
+    "default_z_order": 2,
+    "animFrames": [
+      "gj22_anim_06_color_001.png",
+      "gj22_anim_06_color_002.png",
+      "gj22_anim_06_color_003.png",
+      "gj22_anim_06_color_004.png",
+      "gj22_anim_06_color_005.png",
+      "gj22_anim_06_color_006.png",
+      "gj22_anim_06_color_007.png",
+      "gj22_anim_06_color_008.png",
+      "gj22_anim_06_color_009.png",
+      "gj22_anim_06_color_010.png",
+      "gj22_anim_06_color_011.png",
+      "gj22_anim_06_color_012.png",
+    ],
+    "animInterval": 75
   },
   "2026": {
     "can_color": true,
@@ -35105,7 +35159,19 @@ window.allobjects = function() {
     "type": "deco",
     "z": 2,
     "default_z_layer": 5,
-    "default_z_order": 2
+    "default_z_order": 2,
+    "animFrames": [
+      "gj22_anim_27_color_001.png",
+      "gj22_anim_27_color_002.png",
+      "gj22_anim_27_color_003.png",
+      "gj22_anim_27_color_004.png",
+      "gj22_anim_27_color_005.png",
+      "gj22_anim_27_color_006.png",
+      "gj22_anim_27_color_007.png",
+      "gj22_anim_27_color_008.png",
+      "gj22_anim_27_color_009.png",
+    ],
+    "animInterval": 75
   },
   "2047": {
     "can_color": true,
