@@ -15430,7 +15430,7 @@ window.allobjects = function() {
         "z": 1
       },
     {
-        "frame": "GJBeast01_03_001.png", // i have no clue where this is supposed to go i cant see it
+        "frame": "GJBeast01_03_001.png",
         "localDy": -19,
         "localDx": -4,
         "z": 2
@@ -15472,7 +15472,7 @@ window.allobjects = function() {
     "can_color": true,
     "default_base_color_channel": 1011,
     "default_detail_color_channel": 1,
-    "frame": "none",
+    "frame": "Fire_03_2_looped_001.png",
     "glow_frame": "none",
     "gridH": 1.7666666507720947,
     "gridW": 2.0166666507720947,
@@ -15496,25 +15496,30 @@ window.allobjects = function() {
   },
   "921": {
     "can_color": true,
-    "children": [
-      {
-        "frame": "Fire_04_2_looped_004.png",
-        "localDy": 0,
-        "tint": 52224,
-        "z": -100
-      }
-    ],
     "default_base_color_channel": 1011,
     "default_detail_color_channel": 1,
-    "frame": "Fire_04_looped_011.png",
-    "glow_frame": "Fire_04_looped_011.png",
+    "frame": "Fire_04_2_looped_001.png",
     "gridH": 1.8166667222976685,
     "gridW": 0.3499999940395355,
     "spritesheet": "FireSheet_01-hd",
     "type": "deco",
     "z": 2,
     "default_z_layer": 5,
-    "default_z_order": 2
+    "default_z_order": 2,
+    "animFrames": [
+      "Fire_04_2_looped_001.png",
+      "Fire_04_2_looped_002.png",
+      "Fire_04_2_looped_003.png",
+      "Fire_04_2_looped_004.png",
+      "Fire_04_2_looped_005.png",
+      "Fire_04_2_looped_006.png",
+      "Fire_04_2_looped_007.png",
+      "Fire_04_2_looped_008.png",
+      "Fire_04_2_looped_009.png",
+      "Fire_04_2_looped_010.png",
+      "Fire_04_2_looped_011.png",
+    ],
+    "animInterval": 75
   },
   "923": {
     "can_color": true,
@@ -15544,25 +15549,29 @@ window.allobjects = function() {
   },
   "924": {
     "can_color": true,
-    "children": [
-      {
-        "frame": "Fire_02_2_looped_001.png",
-        "localDy": 0,
-        "tint": 52224,
-        "z": -100
-      }
-    ],
     "default_base_color_channel": 1011,
     "default_detail_color_channel": 1,
-    "frame": "Fire_02_looped_001.png",
-    "glow_frame": "Fire_02_looped_glow_001.png",
+    "frame": "Fire_02_2_looped_001.png",
+    "glow_frame": "none",
     "gridH": 1.25,
     "gridW": 0.6499999761581421,
     "spritesheet": "FireSheet_01-hd",
     "type": "deco",
     "z": 2,
     "default_z_layer": 5,
-    "default_z_order": 2
+    "default_z_order": 2,
+    "animFrames": [
+      "Fire_02_2_looped_001.png",
+      "Fire_02_2_looped_002.png",
+      "Fire_02_2_looped_003.png",
+      "Fire_02_2_looped_004.png",
+      "Fire_02_2_looped_005.png",
+      "Fire_02_2_looped_006.png",
+      "Fire_02_2_looped_007.png",
+      "Fire_02_2_looped_008.png",
+      "Fire_02_2_looped_009.png"
+    ],
+    "animInterval": 75
   },
   "925": {
     "can_color": true,
@@ -24076,7 +24085,7 @@ window.allobjects = function() {
     ]
   },
   "1329": {
-    "type": "deco",
+    "type": "coin",
     "frame": "secretCoin_2_01_001.png",
     "gridW": 1,
     "gridH": 1,
@@ -26229,7 +26238,21 @@ window.allobjects = function() {
     "z": 2,
     "default_detail_color_channel": -1,
     "default_z_layer": 5,
-    "default_z_order": 2
+    "default_z_order": 2,
+    "animFrames": [
+      "starAnim_001.png",
+      "starAnim_002.png",
+      "starAnim_003.png",
+      "starAnim_004.png",
+      "starAnim_005.png",
+      "starAnim_006.png",
+      "starAnim_007.png",
+      "starAnim_008.png",
+      "starAnim_009.png",
+      "starAnim_010.png",
+      "starAnim_011.png"
+    ],
+    "animInterval": 75
   },
   "1520": {
     "can_color": false,
@@ -27210,18 +27233,48 @@ window.allobjects = function() {
     "default_z_order": 9
   },
   "1584": {
-    "can_color": true,
+    "can_color": false,
+    "black": true,
     "default_base_color_channel": 1010,
     "default_detail_color_channel": 1011,
-    "frame": null,
+    "frame": "none",
     "glow_frame": "none",
     "gridH": 0.2666666805744171,
     "gridW": 0.2666666805744171,
     "spritesheet": "FireSheet_01-hd",
-    "type": "deco",
+    "type": "hazard",
     "z": 2,
     "default_z_layer": 5,
-    "default_z_order": 2
+    "default_z_order": 2,
+    "children": [
+      {
+        "frame": "GJBeast04_01_001.png",
+        "localDy": -10,
+        "tint": 0,
+        "z": 1
+      },
+      {
+        "frame": "GJBeast04_02_001.png",
+        "localDy": 18,
+        "tint": 0,
+        "z": 1,
+        "rot": -15,
+      },
+      {
+        "frame": "GJBeast04_03_001.png",
+        "localDy": -9,
+        "localDx": -13,
+        "z": 1
+      },
+    {
+        "frame": "GJBeast04_04_001.png",
+        "localDy": -25,
+        "localDx": 53,
+        "tint": 0,
+        "z": 2,
+        "rot": 17.5
+      }
+    ]
   },
   "1585": {
     "can_color": false,
@@ -27703,33 +27756,8 @@ window.allobjects = function() {
     "editorFrame": "edit_ePShowBtn_001.png"
   },
   "1614": {
+    "type": "coin",
     "can_color": true,
-    "children": [
-      {
-        "frame": "smallCoin_02_001.png",
-        "localDy": 0,
-        "tint": 65280,
-        "z": -1,
-        "animFrames": [
-      "smallCoin_02_001.png",
-      "smallCoin_03_001.png",
-      "smallCoin_04_001.png",
-    ],
-    "animInterval": 100
-      },
-      {
-        "frame": "smallCoin_02_highlight_001.png",
-        "localDy": 0,
-        "tint": 5898073,
-        "z": 1,
-"animFrames": [
-      "smallCoin_02_highlight_001.png",
-      "smallCoin_02_highlight_001.png",
-      "smallCoin_02_highlight_001.png",
-    ],
-    "animInterval": 100
-      }
-    ],
     "default_base_color_channel": 1,
     "default_detail_color_channel": 1010,
     "frame": "smallCoin_01_001.png",
@@ -27737,10 +27765,16 @@ window.allobjects = function() {
     "gridH": 0.6666666865348816,
     "gridW": 0.8333333134651184,
     "spritesheet": "FireSheet_01-hd",
-    "type": "deco",
     "z": 9,
     "default_z_layer": 5,
-    "default_z_order": 9
+    "default_z_order": 9,
+    "animFrames": [
+      "smallCoin_01_001.png",
+      "smallCoin_02_001.png",
+      "smallCoin_03_001.png",
+      "smallCoin_04_001.png",
+    ],
+    "animInterval": 100
   },
   "1615": {
     "can_color": false,
@@ -27807,7 +27841,17 @@ window.allobjects = function() {
     "z": 9,
     "default_detail_color_channel": -1,
     "default_z_layer": 3,
-    "default_z_order": 9
+    "default_z_order": 9,
+    "animFrames": [
+      "explosion_01_001.png",
+      "explosion_01_002.png",
+      "explosion_01_003.png",
+      "explosion_01_004.png",
+      "explosion_01_005.png",
+      "explosion_01_006.png",
+      "explosion_01_007.png",
+    ],
+    "animInterval": 75
   },
   "1619": {
     "can_color": true,
@@ -32546,7 +32590,7 @@ window.allobjects = function() {
     "can_color": true,
     "default_base_color_channel": 1011,
     "default_detail_color_channel": 1,
-    "frame": "gj22_anim_03_006.png",
+    "frame": "gj_smoke01_001.png",
     "glow_frame": "none",
     "gridH": 0.5333333611488342,
     "gridW": 1.2000000476837158,
@@ -32705,14 +32749,6 @@ window.allobjects = function() {
   },
   "1856": {
     "can_color": true,
-    "children": [
-      {
-        "frame": "gj_bubble01_color_014.png",
-        "localDy": 0,
-        "tint": 52224,
-        "z": 100
-      }
-    ],
     "default_base_color_channel": 1011,
     "default_detail_color_channel": 1,
     "frame": "gj_bubble01_014.png",
@@ -32723,22 +32759,38 @@ window.allobjects = function() {
     "type": "deco",
     "z": 2,
     "default_z_layer": 5,
-    "default_z_order": 2
+    "default_z_order": 2,
+    "animFrames": [
+      "smallCoin_01_color_001.png",
+      "smallCoin_02_color_001.png",
+      "smallCoin_03_color_001.png",
+      "smallCoin_04_color_001.png",
+    ],
+    "animInterval": 75,
+    "animFrames": [
+      "gj_bubble01_001.png",
+      "gj_bubble01_002.png",
+      "gj_bubble01_003.png",
+      "gj_bubble01_004.png",
+      "gj_bubble01_005.png",
+      "gj_bubble01_006.png",
+      "gj_bubble01_007.png",
+      "gj_bubble01_008.png",
+      "gj_bubble01_009.png",
+      "gj_bubble01_010.png",
+      "gj_bubble01_011.png",
+      "gj_bubble01_012.png",
+      "gj_bubble01_013.png",
+      "gj_bubble01_014.png",
+      "gj_bubble01_015.png",
+    ],
+    "animInterval": 75
   },
   "1857": {
     "can_color": true,
-    "children": [
-      {
-        "frame": "gj_lightning01_color_002.png",
-        "localDy": 0,
-        "tint": 52224,
-        "z": -100,
-      }
-    ],
     "default_base_color_channel": 1011,
     "default_detail_color_channel": 1,
-    "frame": "gj_lightning01_002.png",
-    "glow_frame": "gj_lightning01_002.png",
+    "frame": "Fire_04_looped_011.png",
     "gridH": 0.46666666865348816,
     "gridW": 2,
     "spritesheet": "FireSheet_01-hd",
@@ -32761,20 +32813,6 @@ window.allobjects = function() {
   },
   "1858": {
     "can_color": true,
-    "children": [
-      {
-        "frame": "gj_drops06_2_005.png",
-        "localDy": 0,
-        "tint": 5898073,
-        "z": -1
-      },
-      {
-        "frame": "gj_drops06_3_005.png",
-        "localDy": 0,
-        "tint": 65280,
-        "z": -1
-      }
-    ],
     "default_base_color_channel": 1011,
     "frame": "gj_drops06_005.png",
     "glow_frame": "gj_drops06_005.png",
@@ -32785,7 +32823,18 @@ window.allobjects = function() {
     "z": 2,
     "default_detail_color_channel": -1,
     "default_z_layer": 5,
-    "default_z_order": 2
+    "default_z_order": 2,
+    "animFrames": [
+      "gj_drops06_001.png",
+      "gj_drops06_002.png",
+      "gj_drops06_003.png",
+      "gj_drops06_004.png",
+      "gj_drops06_005.png",
+      "gj_drops06_006.png",
+      "gj_drops06_007.png",
+      "gj_drops06_008.png"
+    ],
+    "animInterval": 75
   },
   "1859": {
     "can_color": true,
@@ -34930,7 +34979,22 @@ window.allobjects = function() {
     "z": 2,
     "default_detail_color_channel": -1,
     "default_z_layer": 5,
-    "default_z_order": 2
+    "default_z_order": 2,
+    "animFrames": [
+      "gj22_anim_22_001.png",
+      "gj22_anim_22_002.png",
+      "gj22_anim_22_003.png",
+      "gj22_anim_22_004.png",
+      "gj22_anim_22_005.png",
+      "gj22_anim_22_006.png",
+      "gj22_anim_22_007.png",
+      "gj22_anim_22_008.png",
+      "gj22_anim_22_009.png",
+      "gj22_anim_22_010.png",
+      "gj22_anim_22_011.png",
+      "gj22_anim_22_012.png"
+    ],
+    "animInterval": 75
   },
   "2042": {
     "can_color": true,
@@ -34944,7 +35008,17 @@ window.allobjects = function() {
     "z": 2,
     "default_detail_color_channel": -1,
     "default_z_layer": 5,
-    "default_z_order": 2
+    "default_z_order": 2,
+    "animFrames": [
+      "gj22_anim_23_001.png",
+      "gj22_anim_23_002.png",
+      "gj22_anim_23_003.png",
+      "gj22_anim_23_004.png",
+      "gj22_anim_23_005.png",
+      "gj22_anim_23_006.png",
+      "gj22_anim_23_007.png"
+    ],
+    "animInterval": 75
   },
   "2043": {
     "can_color": true,
@@ -54073,20 +54147,6 @@ window.allobjects = function() {
   },
   "3001": {
     "can_color": true,
-    "children": [
-      {
-        "frame": "d_animWave_02b_color_001.png",
-        "localDy": 0,
-        "tint": 52224,
-        "z": -100
-      },
-      {
-        "frame": "d_animWave_02b_001.png",
-        "localDy": 0,
-        "tint": 65280,
-        "z": -1
-      }
-    ],
     "default_base_color_channel": 1,
     "default_detail_color_channel": 1,
     "frame": "d_animWave_02b_001.png",
