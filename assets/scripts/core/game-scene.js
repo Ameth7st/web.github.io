@@ -4880,6 +4880,8 @@ _buildSettingsPopup() {
         "Show Percentage": "Shows the percentage you are at in a level.",
         "Percentage Decimals": "Shows decimals in level progress.",
         "Hitboxes on Death": "Shows hitboxes upon death in both normal and practice mode.",
+        "LDM": "temp",
+        "UULDM": "Removes a TON of objects while active. WILL make levels look horrible."
     };
 
     const createInfoButton = (container, x, y, infoTextOrKey, scale) => {
@@ -5168,6 +5170,14 @@ _buildSettingsPopup() {
             true,
             "Enable Orb Guide"
         );
+        createToggle(container, column2X, startY + (spacingY * 5), "LDM", 
+            () => window.enableLDM, 
+            (v) => window.enableLDM = v,
+            null,
+            26,
+            true,
+            "LDM"
+        );
     };
 
     const buildAdvancedPage = (container) => {
@@ -5175,6 +5185,14 @@ _buildSettingsPopup() {
             () => !window.useDirectInternet,
             (v) => { window.useDirectInternet = !v; },
             null, 22
+        );
+        createToggle(container, column1X, startY + (spacingY * 1), "Ultra Ultra LDM", 
+            () => window.enableUULDM, 
+            (v) => window.enableUULDM = v,
+            null,
+            24,
+            true,
+            "UULDM"
         );
     };
 
@@ -5528,7 +5546,6 @@ _buildSettingsPopup() {
       const bwx = xPos;
       const bwy = popupHeight;
       maskShape.clear();
-      maskShape.fillStyle(0xffffff, 1);
       maskShape.fillRect(
         bwx + (scrollAreaX - scrollAreaW / 2) * s,
         bwy + (scrollAreaY - scrollAreaH / 2) * s,
