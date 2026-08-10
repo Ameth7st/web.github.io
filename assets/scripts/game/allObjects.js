@@ -15470,25 +15470,29 @@ window.allobjects = function() {
   },
   "920": {
     "can_color": true,
-    "children": [
-      {
-        "frame": "Fire_03_2_looped_001.png",
-        "localDy": 0,
-        "tint": 52224,
-        "z": -100
-      }
-    ],
     "default_base_color_channel": 1011,
     "default_detail_color_channel": 1,
-    "frame": "Fire_03_looped_004.png",
-    "glow_frame": "Fire_03_looped_004.png",
+    "frame": "none",
+    "glow_frame": "none",
     "gridH": 1.7666666507720947,
     "gridW": 2.0166666507720947,
     "spritesheet": "FireSheet_01-hd",
     "type": "deco",
     "z": 2,
     "default_z_layer": 5,
-    "default_z_order": 2
+    "default_z_order": 2,
+    "animFrames": [
+      "Fire_03_2_looped_001.png",
+      "Fire_03_2_looped_002.png",
+      "Fire_03_2_looped_003.png",
+      "Fire_03_2_looped_004.png",
+      "Fire_03_2_looped_005.png",
+      "Fire_03_2_looped_006.png",
+      "Fire_03_2_looped_007.png",
+      "Fire_03_2_looped_008.png",
+      "Fire_03_2_looped_009.png"
+    ],
+    "animInterval": 75
   },
   "921": {
     "can_color": true,
@@ -15514,25 +15518,29 @@ window.allobjects = function() {
   },
   "923": {
     "can_color": true,
-    "children": [
-      {
-        "frame": "Fire_01_2_looped_001.png",
-        "localDy": 0,
-        "tint": 52224,
-        "z": -100
-      }
-    ],
     "default_base_color_channel": 1011,
     "default_detail_color_channel": 1,
     "frame": "Fire_01_looped_009.png",
-    "glow_frame": "Fire_01_looped_009.png",
+    "glow_frame": "none",
     "gridH": 1.75,
     "gridW": 0.6166666746139526,
     "spritesheet": "FireSheet_01-hd",
     "type": "deco",
     "z": 2,
     "default_z_layer": 5,
-    "default_z_order": 2
+    "default_z_order": 2,
+    "animFrames": [
+      "Fire_01_2_looped_001.png",
+      "Fire_01_2_looped_002.png",
+      "Fire_01_2_looped_003.png",
+      "Fire_01_2_looped_004.png",
+      "Fire_01_2_looped_005.png",
+      "Fire_01_2_looped_006.png",
+      "Fire_01_2_looped_007.png",
+      "Fire_01_2_looped_008.png",
+      "Fire_01_2_looped_009.png"
+    ],
+    "animInterval": 75
   },
   "924": {
     "can_color": true,
@@ -32536,25 +32544,26 @@ window.allobjects = function() {
   },
   "1849": {
     "can_color": true,
-    "children": [
-      {
-        "frame": "gj_smoke01_color_006.png",
-        "localDy": 0,
-        "tint": 52224,
-        "z": 100
-      }
-    ],
     "default_base_color_channel": 1011,
     "default_detail_color_channel": 1,
-    "frame": "gj_smoke01_006.png",
-    "glow_frame": "gj_smoke01_006.png",
+    "frame": "gj22_anim_03_006.png",
+    "glow_frame": "none",
     "gridH": 0.5333333611488342,
     "gridW": 1.2000000476837158,
     "spritesheet": "FireSheet_01-hd",
     "type": "deco",
     "z": 2,
     "default_z_layer": 5,
-    "default_z_order": 2
+    "default_z_order": 2,
+    "animFrames": [
+      "gj_smoke01_001.png",
+      "gj_smoke01_002.png",
+      "gj_smoke01_003.png",
+      "gj_smoke01_004.png",
+      "gj_smoke01_005.png",
+      "gj_smoke01_006.png"
+    ],
+    "animInterval": 75
   },
   "1850": {
     "can_color": true,
