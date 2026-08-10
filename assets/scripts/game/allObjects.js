@@ -32611,14 +32611,6 @@ window.allobjects = function() {
   },
   "1850": {
     "can_color": true,
-    "children": [
-      {
-        "frame": "gj_smoke02_color_002.png",
-        "localDy": 0,
-        "tint": 52224,
-        "z": 100
-      }
-    ],
     "default_base_color_channel": 1011,
     "default_detail_color_channel": 1,
     "frame": "gj_smoke02_002.png",
@@ -32629,7 +32621,16 @@ window.allobjects = function() {
     "type": "deco",
     "z": 2,
     "default_z_layer": 5,
-    "default_z_order": 2
+    "default_z_order": 2,
+    "animFrames": [
+      "gj_smoke02_color_001.png",
+      "gj_smoke02_color_002.png",
+      "gj_smoke02_color_003.png",
+      "gj_smoke02_color_004.png",
+      "gj_smoke02_color_005.png",
+
+    ],
+    "animInterval": 100
   },
   "1851": {
     "can_color": true,
@@ -34544,14 +34545,6 @@ window.allobjects = function() {
   },
   "2020": {
     "can_color": true,
-    "children": [
-      {
-        "frame": "gj22_anim_01_color_001.png",
-        "localDy": 0,
-        "tint": 52224,
-        "z": -100
-      }
-    ],
     "default_base_color_channel": 1,
     "default_detail_color_channel": 2,
     "frame": "gj22_anim_01_006.png",
@@ -34564,25 +34557,17 @@ window.allobjects = function() {
     "default_z_layer": 5,
     "default_z_order": 2,
     "animFrames": [
-      "gj22_anim_01_001.png",
-      "gj22_anim_01_002.png",
-      "gj22_anim_01_003.png",
-      "gj22_anim_01_004.png",
-      "gj22_anim_01_005.png",
-      "gj22_anim_01_006.png",
+      "gj22_anim_01_color_001.png",
+      "gj22_anim_0_color1_002.png",
+      "gj22_anim_01_color_003.png",
+      "gj22_anim_01_color_004.png",
+      "gj22_anim_01_color_005.png",
+      "gj22_anim_01_color_006.png",
     ],
     "animInterval": 75
   },
   "2021": {
     "can_color": true,
-    "children": [
-      {
-        "frame": "gj22_anim_02_color_001.png",
-        "localDy": 0,
-        "tint": 52224,
-        "z": -100
-      }
-    ],
     "default_base_color_channel": 1,
     "default_detail_color_channel": 2,
     "frame": "gj22_anim_02_006.png",
@@ -34593,18 +34578,19 @@ window.allobjects = function() {
     "type": "deco",
     "z": 2,
     "default_z_layer": 5,
-    "default_z_order": 2
+    "default_z_order": 2,
+    "animFrames": [
+      "gj22_anim_02_color_001.png",
+      "gj22_anim_02_color_002.png",
+      "gj22_anim_02_color_003.png",
+      "gj22_anim_02_color_004.png",
+      "gj22_anim_02_color_005.png",
+      "gj22_anim_02_color_006.png",
+    ],
+    "animInterval": 100
   },
   "2022": {
     "can_color": true,
-    "children": [
-      {
-        "frame": "gj22_anim_03_003.png",
-        "localDy": 0,
-        "tint": 52224,
-        "z": -100
-      }
-    ],
     "default_base_color_channel": 1,
     "default_detail_color_channel": 2,
     "frame": "gj22_anim_03_006.png",
@@ -34615,18 +34601,19 @@ window.allobjects = function() {
     "type": "deco",
     "z": 2,
     "default_z_layer": 5,
-    "default_z_order": 2
+    "default_z_order": 2,
+    "animFrames": [
+      "gj22_anim_03_color_001.png",
+      "gj22_anim_03_color_002.png",
+      "gj22_anim_03_color_003.png",
+      "gj22_anim_03_color_004.png",
+      "gj22_anim_03_color_005.png",
+      "gj22_anim_03_color_006.png",
+    ],
+    "animInterval": 100
   },
   "2023": {
     "can_color": true,
-    "children": [
-      {
-        "frame": "gj22_anim_04_color_001.png",
-        "localDy": 0,
-        "tint": 52224,
-        "z": -100
-      }
-    ],
     "default_base_color_channel": 1,
     "default_detail_color_channel": 2,
     "frame": "gj22_anim_04_002.png",
@@ -34637,7 +34624,13 @@ window.allobjects = function() {
     "type": "deco",
     "z": 2,
     "default_z_layer": 5,
-    "default_z_order": 2
+    "default_z_order": 2,
+    "animFrames": [
+      "gj22_anim_04_color_001.png",
+      "gj22_anim_04_color_002.png",
+      "gj22_anim_04_color_003.png",
+    ],
+    "animInterval": 100
   },
   "2024": {
     "can_color": true,
@@ -34653,11 +34646,11 @@ window.allobjects = function() {
     "default_z_layer": 5,
     "default_z_order": 2,
     "animFrames": [
-      "gj22_anim_05_001.png",
-      "gj22_anim_05_002.png",
-      "gj22_anim_05_003.png",
-      "gj22_anim_05_004.png",
-      "gj22_anim_05_005.png",
+      "gj22_anim_05_color_001.png",
+      "gj22_anim_05_color_002.png",
+      "gj22_anim_05_color_003.png",
+      "gj22_anim_05_color_004.png",
+      "gj22_anim_05_color_005.png",
     ],
     "animInterval": 75
   },
@@ -34692,14 +34685,6 @@ window.allobjects = function() {
   },
   "2026": {
     "can_color": true,
-    "children": [
-      {
-        "frame": "gj22_anim_07_003.png",
-        "localDy": 0,
-        "tint": 52224,
-        "z": -100
-      }
-    ],
     "default_base_color_channel": 1,
     "default_detail_color_channel": 2,
     "frame": "gj22_anim_07_006.png",
@@ -34710,18 +34695,19 @@ window.allobjects = function() {
     "type": "deco",
     "z": 2,
     "default_z_layer": 5,
-    "default_z_order": 2
+    "default_z_order": 2,
+    "animFrames": [
+      "gj22_anim_07_color_001.png",
+      "gj22_anim_07_color_002.png",
+      "gj22_anim_07_color_003.png",
+      "gj22_anim_07_color_004.png",
+      "gj22_anim_07_color_005.png",
+      "gj22_anim_07_color_006.png",
+    ],
+    "animInterval": 100
   },
   "2027": {
     "can_color": true,
-    "children": [
-      {
-        "frame": "gj22_anim_08_005.png",
-        "localDy": 0,
-        "tint": 52224,
-        "z": -100
-      }
-    ],
     "default_base_color_channel": 1,
     "default_detail_color_channel": 2,
     "frame": "gj22_anim_08_004.png",
@@ -34732,18 +34718,22 @@ window.allobjects = function() {
     "type": "deco",
     "z": 2,
     "default_z_layer": 5,
-    "default_z_order": 2
+    "default_z_order": 2,
+    "animFrames": [
+      "gj22_anim_08_color_001.png",
+      "gj22_anim_08_color_002.png",
+      "gj22_anim_08_color_003.png",
+      "gj22_anim_08_color_004.png",
+      "gj22_anim_08_color_005.png",
+      "gj22_anim_08_color_006.png",
+      "gj22_anim_08_color_007.png",
+      "gj22_anim_08_color_008.png",
+      "gj22_anim_08_color_009.png",
+    ],
+    "animInterval": 100
   },
   "2028": {
     "can_color": true,
-    "children": [
-      {
-        "frame": "gj22_anim_09_003.png",
-        "localDy": 0,
-        "tint": 52224,
-        "z": -100
-      }
-    ],
     "default_base_color_channel": 1,
     "default_detail_color_channel": 2,
     "frame": "gj22_anim_09_003.png",
@@ -34754,7 +34744,15 @@ window.allobjects = function() {
     "type": "deco",
     "z": 2,
     "default_z_layer": 5,
-    "default_z_order": 2
+    "default_z_order": 2,
+    "animFrames": [
+      "gj22_anim_09_color_001.png",
+      "gj22_anim_09_color_002.png",
+      "gj22_anim_09_color_003.png",
+      "gj22_anim_09_color_004.png",
+      "gj22_anim_09_color_005.png",
+    ],
+    "animInterval": 100
   },
   "2029": {
     "can_color": true,
@@ -35368,7 +35366,19 @@ window.allobjects = function() {
     "type": "deco",
     "z": 2,
     "default_z_layer": 5,
-    "default_z_order": 2
+    "default_z_order": 2,
+    "animFrames": [
+      "gj22_anim_36_color_001.png",
+      "gj22_anim_36_color_002.png",
+      "gj22_anim_36_color_003.png",
+      "gj22_anim_36_color_004.png",
+      "gj22_anim_36_color_005.png",
+      "gj22_anim_36_color_006.png",
+      "gj22_anim_36_color_007.png",
+      "gj22_anim_36_color_008.png",
+      "gj22_anim_36_color_009.png",
+    ],
+    "animInterval": 100
   },
   "2062": {
     "can_color": false,
@@ -66901,7 +66911,7 @@ window.allobjects = function() {
     "gridH": 0.5333333611488342,
     "gridW": 0.5333333611488342,
     "spritesheet": "GJ_ParticleSheet-uhd",
-    "type": "deco",
+    "type": "particle",
     "z": 9,
     "default_detail_color_channel": -1,
     "default_z_layer": 3,
@@ -67143,7 +67153,7 @@ window.allobjects = function() {
     "gridH": 0.5333333611488342,
     "gridW": 0.5333333611488342,
     "spritesheet": "PixelSheet_01-hd",
-    "type": "deco",
+    "type": "pixel",
     "z": 9,
     "default_detail_color_channel": -1,
     "default_z_layer": 3,

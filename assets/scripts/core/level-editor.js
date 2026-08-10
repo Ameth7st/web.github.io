@@ -1839,6 +1839,8 @@ class LevelEditor {
         { id: "slopes",  icon: "tab6", types: ["slope"] },
         { id: "hazards", icon: "tab2", types: ["hazard", "spike"] },
         { id: "orbs",    icon: "tab3", types: ["ring", "pad", "portal", "speed", "coin"] },
+        { id: "pixel",   icon: "tab7", types: ["pixel"] },
+        { id: "particle", icon: "tab8", types: ["particle"] },
         { id: "deco",    icon: "tab4", types: ["deco"] },
         { id: "triggers",icon: "tab5", types: ["trigger"] },
     ];
