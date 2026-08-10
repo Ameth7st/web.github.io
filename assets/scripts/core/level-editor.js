@@ -1823,7 +1823,7 @@ class LevelEditor {
     const maxDim = Math.max(visualW, visualH);
     const scaleMultiplier = targetSize / maxDim;
 
-    preview.setScale(Math.min(scaleMultiplier, 0.6));
+    preview.setScale(Math.min(scaleMultiplier, 0.725));
 
     return preview;
   }
