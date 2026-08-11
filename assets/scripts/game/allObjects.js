@@ -7,7 +7,7 @@
 // 1003: 3DL Color
 // 1004: Object Color
 // 1006: Glow
-// 1011: Detail Color FOr animated blocks (ill add some later)
+// 1011: Detail Color For animated blocks (ill add some later)
 
 window.allobjects = function() {
   return {
@@ -60050,14 +60050,6 @@ window.allobjects = function() {
   },
   "3303": {
     "can_color": true,
-    "children": [
-      {
-        "frame": "pixelart_803_color_002.png",
-        "localDy": 0,
-        "tint": 52224,
-        "z": 100
-      }
-    ],
     "default_base_color_channel": 1,
     "default_detail_color_channel": 2,
     "frame": "pixelart_803_002.png",
@@ -60068,18 +60060,17 @@ window.allobjects = function() {
     "type": "pixel",
     "z": 9,
     "default_z_layer": 3,
-    "default_z_order": 9
+    "default_z_order": 9,
+    "animFrames": [
+      "pixelart_803_color_001.png",
+      "pixelart_803_color_002.png",
+      "pixelart_803_color_003.png",
+      "pixelart_803_color_004.png"
+    ],
+    "animInterval": 100
   },
   "3304": {
     "can_color": true,
-    "children": [
-      {
-        "frame": "pixelart_804_color_002.png",
-        "localDy": 0,
-        "tint": 52224,
-        "z": 100
-      }
-    ],
     "default_base_color_channel": 1,
     "default_detail_color_channel": 2,
     "frame": "pixelart_804_002.png",
@@ -60090,7 +60081,14 @@ window.allobjects = function() {
     "type": "pixel",
     "z": 9,
     "default_z_layer": 3,
-    "default_z_order": 9
+    "default_z_order": 9,
+    "animFrames": [
+      "pixelart_804_color_001.png",
+      "pixelart_804_color_002.png",
+      "pixelart_804_color_003.png",
+      "pixelart_804_color_004.png"
+    ],
+    "animInterval": 100
   },
   "3305": {
     "can_color": true,
@@ -63892,14 +63890,6 @@ window.allobjects = function() {
   },
   "3482": {
     "can_color": true,
-    "children": [
-      {
-        "frame": "pixelart_982_color_002.png",
-        "localDy": 0,
-        "tint": 52224,
-        "z": 100
-      }
-    ],
     "default_base_color_channel": 1,
     "default_detail_color_channel": 2,
     "frame": "pixelart_982_002.png",
@@ -63910,18 +63900,19 @@ window.allobjects = function() {
     "type": "pixel",
     "z": 9,
     "default_z_layer": 3,
-    "default_z_order": 9
+    "default_z_order": 9,
+    "animFrames": [
+      "pixelart_982_color_001.png",
+      "pixelart_982_color_002.png",
+      "pixelart_982_color_003.png",
+      "pixelart_982_color_004.png",
+      "pixelart_982_color_005.png",
+      "pixelart_982_color_006.png",
+    ],
+    "animInterval": 100
   },
   "3483": {
     "can_color": true,
-    "children": [
-      {
-        "frame": "pixelart_983_color_005.png",
-        "localDy": 0,
-        "tint": 52224,
-        "z": 100
-      }
-    ],
     "default_base_color_channel": 1,
     "default_detail_color_channel": 2,
     "frame": "pixelart_983_005.png",
@@ -63932,7 +63923,16 @@ window.allobjects = function() {
     "type": "pixel",
     "z": 9,
     "default_z_layer": 3,
-    "default_z_order": 9
+    "default_z_order": 9,
+    "animFrames": [
+      "pixelart_983_color_001.png",
+      "pixelart_983_color_002.png",
+      "pixelart_983_color_003.png",
+      "pixelart_983_color_004.png",
+      "pixelart_983_color_005.png",
+      "pixelart_983_color_006.png",
+    ],
+    "animInterval": 100
   },
   "3484": {
     "can_color": true,
