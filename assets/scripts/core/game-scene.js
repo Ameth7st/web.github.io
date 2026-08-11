@@ -610,14 +610,18 @@ this._menuUpdateLogBtn = this.add.image(screenWidth - 30 - 50, 33, "GJ_WebSheet"
       const cornerTL = this.add.image(0,  0,  "GJ_GameSheet03", "GJ_sideArt_001.png")
         .setScrollFactor(0).setDepth(100).setOrigin(0, 0).setFlipY(true)
       const cornerBL = this.add.image(0,  sh, "GJ_GameSheet03", "GJ_sideArt_001.png")
-        .setScrollFactor(0).setDepth(152).setOrigin(0, 1).setFlipX(false)
+        .setScrollFactor(0).setDepth(152).setOrigin(0, 1)
+      const treasureroom = this.add.image(1090, 45, "GJ_GameSheet03", "GJ_lock_001.png")
+        .setScrollFactor(0).setDepth(104).setTint(0x666666);
+      const vaultsecret = this.add.image(1090, 601, "GJ_GameSheet03", "secretDoorBtn_closed_001.png")
+        .setScrollFactor(0).setDepth(104).setScale(1).setTint(0x666666);
 
       const backBtn = this.add.image(50, 48, "GJ_GameSheet03", "GJ_arrow_03_001.png")
-        .setScrollFactor(0).setDepth(104).setFlipX(true).setFlipY(true)
+        .setScrollFactor(0).setDepth(104).setFlipY(true).setFlipX(true)
         .setRotation(Math.PI).setInteractive();
       this._makeBouncyButton(backBtn, 1, () => this._closeCreatorMenu());
 
-      this._creatorOverlayObjects = [overlay, blocker, cornerTL, cornerBL, backBtn];
+      this._creatorOverlayObjects = [overlay, blocker, cornerTL, cornerBL, backBtn, treasureroom, vaultsecret];
 
       const menuButtons = [
         "GJ_createBtn_001.png",
@@ -2819,7 +2823,7 @@ this._menuUpdateLogBtn = this.add.image(screenWidth - 30 - 50, 33, "GJ_WebSheet"
       const blocker = this.add.zone(sw / 2, sh / 2, sw, sh)
         .setScrollFactor(0).setDepth(101).setInteractive();
 
-      const titleTxt = this.add.bitmapText(sw / 2, 60, "goldFont", "Icon Selector", 32)
+      const titleTxt = this.add.bitmapText(sw / 2, 80, "goldFont", "Icon Selector", 42)
         .setOrigin(0.5, 0.5).setScrollFactor(0).setDepth(105);
 
       this._iconOverlayObjects = [overlay, blocker, titleTxt];
@@ -2830,6 +2834,12 @@ this._menuUpdateLogBtn = this.add.image(screenWidth - 30 - 50, 33, "GJ_WebSheet"
         .setRotation(Math.PI).setInteractive();
       this._iconOverlayObjects.push(backBtn);
       this._makeBouncyButton(backBtn, 1, () => this._closeIconSelector());
+
+      const Pathicon = this.add.image(60, 165, "GJ_GameSheet03", "GJ_shardsBtn_001.png")
+        .setScrollFactor(0).setDepth(104).setTint(0x666666)
+        .setInteractive();
+      this._iconOverlayObjects.push(Pathicon);
+      this._makeBouncyButton(Pathicon, 1, () => this.openshardmenu());
 
       const topBarHeight = 100;
       const lineY = topBarHeight + 100;
@@ -3939,6 +3949,10 @@ this._menuUpdateLogBtn = this.add.image(screenWidth - 30 - 50, 33, "GJ_WebSheet"
         staticGround2Tiles.push(gt2);
       }
     }
+    const infoBtn = this.add.image(sw - 40, 40, "GJ_GameSheet03", "GJ_infoIcon_001.png")
+        .setScrollFactor(0).setTint(0x666666).setDepth(152)
+        .setInteractive();
+      this._makeBouncyButton(infoBtn, 1, () => this.levelstats());
     const floorLineFrame = this.textures.getFrame("GJ_WebSheet", "floorLine_01_001.png");
     const floorLineW = floorLineFrame ? floorLineFrame.width : 888;
     const floorLineScale = sw / floorLineW;
@@ -3967,7 +3981,6 @@ this._menuUpdateLogBtn = this.add.image(screenWidth - 30 - 50, 33, "GJ_WebSheet"
         this._closeLevelSelect();
       }
     });
-    const infoBtn = this.add.image(sw - 40, 40, "GJ_GameSheet03", "GJ_infoIcon_001.png").setScrollFactor(0).setDepth(154).setInteractive();
     const arrowL = this.add.image(55, cy - 25, "GJ_GameSheet03", "navArrowBtn_001.png").setScrollFactor(0).setDepth(154).setScale(1.1).setFlipX(true).setInteractive();
     const arrowR = this.add.image(sw - 55, cy - 25, "GJ_GameSheet03", "navArrowBtn_001.png").setScrollFactor(0).setDepth(154).setScale(1.1).setFlipX(false).setInteractive();
     const allLevels = window.allLevels || [];
