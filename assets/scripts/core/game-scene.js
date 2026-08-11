@@ -4892,7 +4892,18 @@ _buildSettingsPopup() {
         "Practice Music Bypass": "Plays normal mode music in practice mode.",
         "Show Percentage": "Shows the percentage you are at in a level.",
         "Percentage Decimals": "Shows decimals in level progress.",
+        "Startpos Switcher": "Switches between start positions in a level.",
+        "Noclip": "Allows you to phase throught mostly anything that would kill you normally.",
+        "Noclip Accuracy": "Flashes your screen red when you would've died with noclip.",
+        "Macro Bot": "Lets you record and replay your inputs for a level.",
+        "Show Hitboxes": "Shows you the hitboxes for objects and your player.",
+        "Hitbox Trail": "Shows the hitbox of exactly where your hitbox has been.",
         "Hitboxes on Death": "Shows hitboxes upon death in both normal and practice mode.",
+        "Show FPS": "Shows the frames per second your game is running at.",
+        "Solid Wave Trail": "Removes the extra details of the wave trail.",
+        "Show CPS": "Shows when you click in a level in the top left of your screen.",
+        "Show Glow": "Shows glow for basic object sets.",
+        "Use Proxy (for schools)": "Enables a proxy for a better chance to see online levels when blocked.",
         "LDM": "Removes many effects, objects, and other things to improve performance.",
     };
 
@@ -5066,23 +5077,37 @@ _buildSettingsPopup() {
                 if (this._startPosGui) this._startPosGui.setVisible(v);
                 const total = this._level.getStartPositions().length;
                 if (this._startPosText) this._startPosText.setText(`0/${total}`);
-            }
+            },
+            undefined,
+            25,
+            "Startpos Switcher"
         );
 
         createToggle(container, column1X, startY + (spacingY * 3), "Noclip", 
             () => window.noClip, 
             (v) => window.noClip = v,
-            (v) => { if (this._noclipIndicator) this._noclipIndicator.setVisible(v); }
+            (v) => { if (this._noclipIndicator) this._noclipIndicator.setVisible(v); },
+            undefined,
+            25,
+            "Noclip"
         );
         
         createToggle(container, column1X, startY + (spacingY * 4), "Noclip Accuracy",
             () => window.noClipAccuracy,
-            (v) => window.noClipAccuracy = v
+            (v) => window.noClipAccuracy = v,
+            null,
+            25,
+            true,
+            "Noclip Accuracy"
         );
         
         createToggle(container, column1X, startY + (spacingY * 5), "Macro Bot",
             () => window.macroBot,
-            (v) => window.macroBot = v
+            (v) => window.macroBot = v,
+            null,
+            25,
+            true,
+            "Macro Bot"
         );
 
         createNumberInput(container, column2X, startY, "Speedhack", 
@@ -5090,11 +5115,11 @@ _buildSettingsPopup() {
             (v) => window.speedHack = v
         );
 
-        createToggle(container, column2X, startY + spacingY, "Practice Music Bypass",
-            () => window.practiceMusicBypass,
+        createToggle(container, column2X, startY + spacingY, "Practice Music Sync",
+            () => window.practiceMusicSync,
             (v) => {
-                const changed = !!window.practiceMusicBypass !== !!v;
-                window.practiceMusicBypass = v;
+                const changed = !!window.practiceMusicSync !== !!v;
+                window.practiceMusicSync = v;
                 if (changed && !this._menuActive && this._practicedMode?.practiceMode) {
                     this._practiceBypassPending = true;
                 }
@@ -5116,13 +5141,19 @@ _buildSettingsPopup() {
                 } else {
                     this._player.drawHitboxes(this._player._hitboxGraphics, this._cameraX, this._cameraY);
                 }
-            }
+            },
+            undefined,
+            25,
+            "Show Hitboxes"
         );
 
         createToggle(container, column1X, startY + (spacingY), "Hitbox Trail", 
             () => window.showHitboxTrail, 
             (v) => window.showHitboxTrail = v,
-            (v) => { if (window.showHitboxes) this._player.drawHitboxes(this._player._hitboxGraphics, this._cameraX, this._cameraY); }
+            (v) => { if (window.showHitboxes) this._player.drawHitboxes(this._player._hitboxGraphics, this._cameraX, this._cameraY); },
+            undefined,
+            25,
+            "Hitbox Trail"
         );
         
         createToggle(container, column1X, startY + (spacingY * 2), "Hitboxes on Death", 
@@ -5137,23 +5168,37 @@ _buildSettingsPopup() {
         createToggle(container, column1X, startY + (spacingY * 3), "Show FPS", 
             () => this._fpsText.visible, 
             (v) => this._fpsText.visible = v,
-            (v) => { if (this._fpsText) this._fpsText.setVisible(v); }
+            (v) => { if (this._fpsText) this._fpsText.setVisible(v); },
+            undefined,
+            25,
+            "Show FPS"
         );
 
         createToggle(container, column1X, startY + (spacingY * 4), "Solid Wave Trail", 
             () => window.solidWave, 
-            (v) => window.solidWave = v
+            (v) => window.solidWave = v,
+            null,
+            25,
+            true,
+            "Solid Wave Trail"
         );
         
         createToggle(container, column1X, startY + (spacingY * 5), "Show CPS",
             () => window.showCPS,
-            (v) => window.showCPS = v
+            (v) => window.showCPS = v,
+            null,
+            25,
+            true,
+            "Show CPS"
         );
 
         createToggle(container, column2X, startY, "Show Glow", 
             () => window.showGlow, 
             (v) => window.showGlow = v,
-            () => { if (this._level && this._level._updateGlowVisibility) this._level._updateGlowVisibility(); }
+            () => { if (this._level && this._level._updateGlowVisibility) this._level._updateGlowVisibility(); },
+            undefined,
+            25,
+            "Show Glow"
         );
 
         createToggle(container, column2X, startY + spacingY, "Create Object ID labels", 
@@ -5188,7 +5233,10 @@ _buildSettingsPopup() {
         createToggle(container, column1X, startY, "Use Proxy (for schools)",
             () => !window.useDirectInternet,
             (v) => { window.useDirectInternet = !v; },
-            null, 22
+            null,
+            22,
+            true,
+            "Use Proxy (for schools)"
         );
     };
 
@@ -5251,7 +5299,7 @@ _buildSettingsPopup() {
         showCPS: window.showCPS,
         speedHack: window.speedHack,
         macroBot: window.macroBot,
-        practiceMusicBypass: window.practiceMusicBypass,
+        practiceMusicSync: window.practiceMusicSync,
         showGlow: window.showGlow,
         showEditorGlow: window.showEditorGlow,
         useDirectInternet: !!window.useDirectInternet,
@@ -5280,7 +5328,7 @@ _buildSettingsPopup() {
         showCPS: false,
         speedHack: 1.0,
         macroBot: false,
-        practiceMusicBypass: false,
+        practiceMusicSync: false,
         showGlow: true,
         showEditorGlow: false,
         useDirectInternet: true,
@@ -5303,7 +5351,7 @@ _buildSettingsPopup() {
     window.showCPS = data.showCPS;
     window.speedHack = data.speedHack;
     window.macroBot = data.macroBot;
-    window.practiceMusicBypass = !!data.practiceMusicBypass;
+    window.practiceMusicSync = !!data.practiceMusicSync;
     window.showGlow = data.showGlow;
     window.showEditorGlow = data.showEditorGlow;
     window.createObjectIds = data.createObjectIds;
@@ -5666,7 +5714,7 @@ _buildSettingsPopup() {
     const boxWidth = 720;
     const boxHeight = 280;
     box.add(this._drawScale9(0, 0, boxWidth, boxHeight, "square01_001", cornerRadius, 0xffffff, 1));
-    box.add(this.add.bitmapText(0, -90, "goldFont", "Info", 45).setOrigin(0.5));
+    box.add(this.add.bitmapText(-4, -90, "goldFont", "Info", 45).setOrigin(0.5));
 
     const textAreaW = boxWidth - 60;
     const textAreaH = boxHeight - 140;
@@ -7245,7 +7293,7 @@ _buildSettingsPopup() {
     this._updateBackground();
     this._applyMirrorEffect();
     this._practiceBypassPending = false;
-    if (window.practiceMusicBypass) {
+    if (window.practiceMusicSync) {
       this._audio.startMusic(this._getSongOffsetForWorldX(checkpoint.x));
     } else if (!this._audio.musicPlaying) {
       this._audio.startMusic();
