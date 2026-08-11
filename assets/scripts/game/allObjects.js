@@ -18278,69 +18278,81 @@ window.allobjects = function() {
   },
   "1050": {
     "can_color": true,
-    "children": [
-      {
-        "frame": "d_animWave_01_001.png",
-        "localDy": 0,
-        "tint": 65280,
-        "z": -1
-      }
-    ],
     "default_base_color_channel": 1007,
-    "frame": "d_animWave_01_base_001.png",
-    "glow_frame": "d_animWave_01_base_glow_001.png",
+    "frame": "animWave_01_001.png",
+    "glow_frame": "animWave_01_base_glow_001.png",
     "gridH": 0.5166666507720947,
     "gridW": 1,
-    "spritesheet": "GJ_GameSheet-uhd",
-    "type": "deco",
-    "z": 9,
-    "default_detail_color_channel": -1,
-    "default_z_layer": 3,
-    "default_z_order": 9
-  },
-  "1051": {
-    "can_color": true,
-    "children": [
-      {
-        "frame": "d_animWave_02_001.png",
-        "localDy": 0,
-        "tint": 65280,
-        "z": -1
-      }
-    ],
-    "default_base_color_channel": 1007,
-    "frame": "d_animWave_02_base_001.png",
-    "glow_frame": "d_animWave_02_base_glow_001.png",
-    "gridH": 0.5166666507720947,
-    "gridW": 1,
-    "spritesheet": "GJ_GameSheet-uhd",
-    "type": "deco",
-    "z": 9,
-    "default_detail_color_channel": -1,
-    "default_z_layer": 3,
-    "default_z_order": 9
-  },
-  "1052": {
-    "can_color": true,
-    "children": [
-      {
-        "frame": "d_animWave_03_001.png",
-        "localDy": 0,
-        "tint": 65280,
-        "z": -1
-      }
-    ],
-    "default_base_color_channel": 1007,
-    "frame": "d_animWave_03_base_001.png",
-    "glow_frame": "d_animWave_03_base_glow_001.png",
-    "gridH": 0.5166666507720947,
-    "gridW": 1,
-    "spritesheet": "GJ_GameSheet-uhd",
+    "spritesheet": "Wavesheet",
     "type": "deco",
     "z": 9,
     "default_detail_color_channel": -1,
     "default_z_layer": 3,
     "default_z_order": 9,
+    "animFrames": [
+      "animWave_01_001.png",
+      "animWave_01_002.png",
+      "animWave_01_003.png",
+      "animWave_01_004.png",
+      "animWave_01_005.png",
+      "animWave_01_006.png",
+      "animWave_01_007.png",
+      "animWave_01_008.png",
+    ],
+    "animInterval": 60
+  },
+  "1051": {
+    
+    "can_color": true,
+    "default_base_color_channel": 1007,
+    "frame": "animWave_02_001.png",
+    "gridH": 0.5166666507720947,
+    "gridW": 1,
+    "spritesheet": "Wavesheet",
+    "type": "deco",
+    "z": 9,
+    "default_detail_color_channel": -1,
+    "default_z_layer": 3,
+    "default_z_order": 9,
+    "animFrames": [
+      "animWave_02_001.png",
+      "animWave_02_002.png",
+      "animWave_02_003.png",
+      "animWave_02_004.png",
+      "animWave_02_005.png",
+      "animWave_02_006.png",
+      "animWave_02_007.png",
+      "animWave_02_008.png",
+      "animWave_02_009.png",
+      "animWave_02_010.png",
+    ],
+    "animInterval": 62
+  },
+  "1052": {
+    "can_color": true,
+    "default_base_color_channel": 1007,
+    "frame": "animWave_03_001.png",
+    "gridH": 0.5166666507720947,
+    "gridW": 1,
+    "spritesheet": "wavesheet",
+    "type": "deco",
+    "z": 9,
+    "default_detail_color_channel": -1,
+    "default_z_layer": 3,
+    "default_z_order": 9,
+    "animFrames": [
+      "animWave_03_001.png",
+      "animWave_03_002.png",
+      "animWave_03_003.png",
+      "animWave_03_004.png",
+      "animWave_03_005.png",
+      "animWave_03_006.png",
+      "animWave_03_007.png",
+      "animWave_03_008.png",
+      "animWave_03_009.png",
+      "animWave_03_010.png",
+    ],
+    "animInterval": 62
   },
   "1053": {
     "can_color": true,
@@ -26157,19 +26169,6 @@ window.allobjects = function() {
   },
   "1516": {
     "can_color": true,
-    "children": [
-      {
-        "frame": "waterfallAnim_001.png",
-        "localDy": 0,
-        "tint": 65280,
-        "z": -1
-      },
-      {
-        "frame": "waterfallAnim_color_001.png",
-        "localDy": 0,
-        "tint": 52224
-      }
-    ],
     "default_base_color_channel": 1,
     "default_detail_color_channel": 1012,
     "frame": "waterfallAnim_001.png",
@@ -26180,7 +26179,20 @@ window.allobjects = function() {
     "type": "deco",
     "z": 9,
     "default_z_layer": 3,
-    "default_z_order": 9
+    "default_z_order": 9,
+    "animFrames": [
+      "waterfallAnim_001.png",
+      "waterfallAnim_002.png",
+      "waterfallAnim_003.png",
+      "waterfallAnim_004.png",
+      "waterfallAnim_005.png",
+      "waterfallAnim_006.png",
+      "waterfallAnim_007.png",
+      "waterfallAnim_008.png",
+      "waterfallAnim_009.png",
+      "waterfallAnim_010.png",
+    ],
+    "animInterval": 60
   },
   "1517": {
     "can_color": true,
@@ -27388,14 +27400,6 @@ window.allobjects = function() {
   },
   "1591": {
     "can_color": true,
-    "children": [
-      {
-        "frame": "lava_top_bubble_color_008.png",
-        "localDy": 0,
-        "tint": 52224,
-        "z": 100
-      }
-    ],
     "default_base_color_channel": 1,
     "default_detail_color_channel": 1,
     "frame": "lava_top_bubble_008.png",
@@ -27406,7 +27410,18 @@ window.allobjects = function() {
     "type": "deco",
     "z": 9,
     "default_z_layer": 3,
-    "default_z_order": 9
+    "default_z_order": 9,
+    "animFrames": [
+      "lava_top_bubble_color_001.png",
+      "lava_top_bubble_color_002.png",
+      "lava_top_bubble_color_003.png",
+      "lava_top_bubble_color_004.png",
+      "lava_top_bubble_color_005.png",
+      "lava_top_bubble_color_006.png",
+      "lava_top_bubble_color_007.png",
+      "lava_top_bubble_color_008.png",
+    ],
+    "animInterval": 100,
   },
   "1592": {
     "can_color": true,
@@ -27432,14 +27447,6 @@ window.allobjects = function() {
   },
   "1593": {
     "can_color": true,
-    "children": [
-      {
-        "frame": "lava_top_color_002.png",
-        "localDy": 0,
-        "tint": 52224,
-        "z": 100
-      }
-    ],
     "default_base_color_channel": 1,
     "default_detail_color_channel": 1,
     "frame": "lava_top_002.png",
@@ -27450,7 +27457,18 @@ window.allobjects = function() {
     "type": "deco",
     "z": 9,
     "default_z_layer": 3,
-    "default_z_order": 9
+    "default_z_order": 9,
+    "animFrames": [
+      "lava_top_color_001.png",
+      "lava_top_color_002.png",
+      "lava_top_color_003.png",
+      "lava_top_color_004.png",
+      "lava_top_color_005.png",
+      "lava_top_color_006.png",
+      "lava_top_color_007.png",
+      "lava_top_color_008.png",
+    ],
+    "animInterval": 100
   },
   "1594": {
     "type": "ring",

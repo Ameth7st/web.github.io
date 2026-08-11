@@ -196,7 +196,6 @@ class BootScene extends Phaser.Scene {
     this.load.image("game_bg_01", "assets/game-bg/game_bg_01_001-hd.png");
     this.load.image("sliderBar", "assets/sprites/sliderBar.png");
     this.load.image("GJ_MenuBeta", "assets/sprites/GJ_MenuBeta.png");
-    this.load.image("MadewithJS", "assets/sprites/MadewithJS.png");
     this.load.atlas("GJ_WebSheet", "assets/sheets/GJ_WebSheet.png", "assets/sheets/GJ_WebSheet.json");
     this.load.atlas("GJ_LaunchSheet", "assets/sheets/GJ_LaunchSheet.png", "assets/sheets/GJ_LaunchSheet.json");
     this.load.image("goldFont", "assets/fonts/goldFont.png");
@@ -217,7 +216,6 @@ class BootScene extends Phaser.Scene {
       const msg = LOADING_MESSAGES[Math.floor(Math.random() * LOADING_MESSAGES.length)];
       this.add.bitmapText(cx, cy + 187, "goldFont", msg, 30).setOrigin(0.5);
       const robtopLogo = this.add.image(cx, cy - 120, "GJ_LaunchSheet", "RobTopLogoBig_001.png").setOrigin(0.5).setScale(0.8);
-      const Madewithjs = this.add.image(cx, cy - 120, "MadewithJS").setOrigin(-1.85, -3.4).setScale(0.2);
       const gjLogo = this.add.image(cx, cy, "GJ_WebSheet", "gj_logo.png").setOrigin(0.5);
       this.children.bringToTop(robtopLogo);
       this.children.bringToTop(gjLogo);
@@ -247,6 +245,7 @@ class BootScene extends Phaser.Scene {
       this.load.atlas("GJ_GameSheetEditor", "assets/sheets/GJ_GameSheetEditor.png", "assets/sheets/GJ_GameSheetEditor.json");
       this.load.atlas("GJ_GameSheetGlow", "assets/sheets/GJ_GameSheetGlow.png", "assets/sheets/GJ_GameSheetGlow.json");
       this.load.atlas("GJ_GameSheetIcons", "assets/sheets/GJ_GameSheetIcons.png", "assets/sheets/GJ_GameSheetIcons.json");
+      this.load.atlas("Wavesheet", "assets/sheets/Wavesheet.png", "assets/sheets/Wavesheet.json");
       this.load.json("Spider_AnimDesc", "assets/sheets/Spider_AnimDesc.json");
       this.load.json("Robot_AnimDesc", "assets/sheets/Robot_AnimDesc.json");
       this.load.atlas("GJ_LaunchSheet", "assets/sheets/GJ_LaunchSheet.png", "assets/sheets/GJ_LaunchSheet.json");

@@ -1546,7 +1546,8 @@ class LevelEditor {
         "FireSheet_01-hd",
         "PixelSheet_01-hd",
         "GJ_GameSheetEditor",
-        "GJ_ParticleSheet-uhd"
+        "GJ_ParticleSheet-uhd",
+        "Wavesheet"
     ];
     for (const key of sheets) {
         if (this.textures.exists(key) && this.textures.get(key).has(frameName)) {
