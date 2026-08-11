@@ -4905,6 +4905,7 @@ _buildSettingsPopup() {
         "Show Glow": "Shows glow for basic object sets.",
         "Use Proxy (for schools)": "Enables a proxy for a better chance to see online levels when blocked.",
         "LDM": "Removes many effects, objects, and other things to improve performance.",
+        "Cull Distance": "Changes how far/close objects are culled. (Where objects spawn) DOES NOT SAVE."
     };
 
     const createInfoButton = (container, x, y, infoTextOrKey, scale) => {
@@ -5212,7 +5213,7 @@ _buildSettingsPopup() {
             (v) => window.showObjectIds = v,
             null, 17
         );
-                createToggle(container, column2X, startY + (spacingY * 3), "Enable Portal Guide", 
+        createToggle(container, column2X, startY + (spacingY * 3), "Enable Portal Guide", 
             () => window.enablePortalGuide, 
             (v) => window.enablePortalGuide = v,
             null, 22,
@@ -5241,13 +5242,21 @@ _buildSettingsPopup() {
     };
 
         const buildPerformancePage = (container) => {
-        createToggle(container, column1X, startY, "LDM", 
+        createToggle(container, column1X, startY, "Low Detail Mode", 
             () => window.enableLDM, 
             (v) => window.enableLDM = v,
             null,
             26,
             true,
             "LDM"
+        );
+        createToggle(container, column1X, startY + (spacingY * 1), "Cull Distance", 
+            () => window.enableLDM, 
+            (v) => window.enableLDM = v,
+            null,
+            26,
+            true,
+            "Cull Distance"
         );
     };
 
@@ -5305,7 +5314,8 @@ _buildSettingsPopup() {
         useDirectInternet: !!window.useDirectInternet,
         enablePortalGuide: window.enablePortalGuide,
         enableOrbGuide: window.enableOrbGuide,
-        settingInfoText: window.settingInfoText || {}
+        settingInfoText: window.settingInfoText || {},
+        enableLDM: window.enableLDM,
     };
     localStorage.setItem("gd_settings", JSON.stringify(settings));
     localStorage.setItem("gd_useDirectInternet", String(!!window.useDirectInternet));
@@ -5333,7 +5343,8 @@ _buildSettingsPopup() {
         showEditorGlow: false,
         useDirectInternet: true,
         enablePortalGuide: true,
-        enableOrbGuide: false
+        enableOrbGuide: false,
+        enableLDM: false
     };
 
     const data = { ...defaults, ...(saved ? JSON.parse(saved) : {}) };
@@ -5361,6 +5372,7 @@ _buildSettingsPopup() {
     window.settingInfoText = data.settingInfoText || {};
     window.useDirectInternet = !!data.useDirectInternet;
     localStorage.setItem("gd_useDirectInternet", String(!!window.useDirectInternet));
+    window.enableLDM = !!data.enableLDM;
   }
   _buildMacroPopup() {
       if (this._macroPopup) return;
