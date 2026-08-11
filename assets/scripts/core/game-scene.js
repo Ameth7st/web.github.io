@@ -4831,7 +4831,7 @@ _buildSettingsPopup() {
         this._settingsPopup = null;
     });
 
-    const pages = ["Gameplay", "Visual", "Advanced"];
+    const pages = ["Gameplay", "Visual", "Advanced", "Performance"];
     let currentPage = 0;
     const pageTitle = this.add.bitmapText(0, -(panelHeight / 2) + 45, "bigFont", pages[currentPage], 40).setOrigin(0.5);
     innerContainer.add(pageTitle);
@@ -4886,15 +4886,14 @@ _buildSettingsPopup() {
         return String(key);
     }
 
-    var infotextstuffsiwannabedonewiththis = {
+    var infotextstrings = {
         "Enable Portal Guide": "Enables extra indicators on portals.",
         "Enable Orb Guide": "Enables extra indicators on orbs.",
         "Practice Music Bypass": "Plays normal mode music in practice mode.",
         "Show Percentage": "Shows the percentage you are at in a level.",
         "Percentage Decimals": "Shows decimals in level progress.",
         "Hitboxes on Death": "Shows hitboxes upon death in both normal and practice mode.",
-        "LDM": "temp",
-        "UULDM": "Removes a TON of objects while active. WILL make levels look horrible."
+        "LDM": "Removes many effects, objects, and other things to improve performance.",
     };
 
     const createInfoButton = (container, x, y, infoTextOrKey, scale) => {
@@ -4903,8 +4902,8 @@ _buildSettingsPopup() {
         var Infotext = null;
         if (window.settingInfoText && window.settingInfoText[words]) {
             Infotext = window.settingInfoText[words];
-        } else if (infotextstuffsiwannabedonewiththis[words]) {
-            Infotext = infotextstuffsiwannabedonewiththis[words];
+        } else if (infotextstrings[words]) {
+            Infotext = infotextstrings[words];
         }
         var infoText = Infotext ? Infotext : key;
         if (!infoText) {
@@ -5183,14 +5182,6 @@ _buildSettingsPopup() {
             true,
             "Enable Orb Guide"
         );
-        createToggle(container, column2X, startY + (spacingY * 5), "LDM", 
-            () => window.enableLDM, 
-            (v) => window.enableLDM = v,
-            null,
-            26,
-            true,
-            "LDM"
-        );
     };
 
     const buildAdvancedPage = (container) => {
@@ -5199,13 +5190,16 @@ _buildSettingsPopup() {
             (v) => { window.useDirectInternet = !v; },
             null, 22
         );
-        createToggle(container, column1X, startY + (spacingY * 1), "Ultra Ultra LDM", 
-            () => window.enableUULDM, 
-            (v) => window.enableUULDM = v,
+    };
+
+        const buildPerformancePage = (container) => {
+        createToggle(container, column1X, startY, "LDM", 
+            () => window.enableLDM, 
+            (v) => window.enableLDM = v,
             null,
-            24,
+            26,
             true,
-            "UULDM"
+            "LDM"
         );
     };
 
@@ -5218,6 +5212,7 @@ _buildSettingsPopup() {
         if (idx === 0) buildGameplayPage(pageContainer);
         else if (idx === 1) buildVisualPage(pageContainer);
         else if (idx === 2) buildAdvancedPage(pageContainer);
+        else if (idx === 3) buildPerformancePage(pageContainer);
     };
 
     buildPage(0);
