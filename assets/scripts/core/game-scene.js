@@ -2821,8 +2821,8 @@ this._menuUpdateLogBtn = this.add.image(screenWidth - 30 - 50, 33, "GJ_WebSheet"
       }
       this._iconOverlay = overlay;
 
-      const blocker = this.add.zone(7 / 3, sh / 3, 7, sh)
-        .setScrollFactor(0).setDepth(101).setInteractive();
+      const blocker = this.add.zone(sw / 2, sh / 2, sw, sh)
+        .setScrollFactor(0).setDepth(100).setInteractive();
 
       const titleMaxLength = 20;
       const titleAllowedChars = " abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789_";
