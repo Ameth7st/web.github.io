@@ -18293,13 +18293,14 @@ window.allobjects = function() {
       "animWave_01_001.png",
       "animWave_01_002.png",
       "animWave_01_003.png",
+	  "animWave_01_009.png",
       "animWave_01_004.png",
       "animWave_01_005.png",
       "animWave_01_006.png",
       "animWave_01_007.png",
       "animWave_01_008.png",
     ],
-    "animInterval": 60
+    "animInterval": 55
   },
   "1051": {
     
@@ -18326,7 +18327,7 @@ window.allobjects = function() {
       "animWave_02_009.png",
       "animWave_02_010.png",
     ],
-    "animInterval": 62
+    "animInterval": 55
   },
   "1052": {
     "can_color": true,
@@ -18352,7 +18353,7 @@ window.allobjects = function() {
       "animWave_03_009.png",
       "animWave_03_010.png",
     ],
-    "animInterval": 62
+    "animInterval": 55
   },
   "1053": {
     "can_color": true,
