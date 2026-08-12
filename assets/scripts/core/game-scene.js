@@ -6075,12 +6075,13 @@ _buildSettingsPopup() {
     */
     const updateEntries = [
       { text: "Update Log", scale: 1, font: "goldFont" },
+      { text: "Credits menu fixed :3", scale: 0.75, },
       { text: "Small Icon Kit changes", scale: 0.75, },
       { text: "Low Detail Mode", scale: 0.75, },
       { text: "Object culling changes", scale: 0.75, },
       { text: "MOST Animated objects", scale: 0.75, },
-      { text: "Added a bunch of missing buttons", scale: 0.75, },
-      { text: "Level select info icon turned bouncy now :D", scale: 0.75, },
+      { text: "Added a bunch of missing buttons", scale: 0.7, },
+      { text: "Level select info icon is bouncy now", scale: 0.65, },
       { text: "Rotation for deco and saws", scale: 0.75, },
       { text: "Particlesheet added <3", scale: 0.75, },
       { text: "Better ball rotation ", scale: 0.75, },
