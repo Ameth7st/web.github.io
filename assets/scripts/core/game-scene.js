@@ -611,9 +611,9 @@ this._menuUpdateLogBtn = this.add.image(screenWidth - 30 - 50, 33, "GJ_WebSheet"
         .setScrollFactor(0).setDepth(100).setOrigin(0, 0).setFlipY(true)
       const cornerBL = this.add.image(0,  sh, "GJ_GameSheet03", "GJ_sideArt_001.png")
         .setScrollFactor(0).setDepth(152).setOrigin(0, 1)
-      const treasureroom = this.add.image(1090, 45, "GJ_GameSheet03", "GJ_lock_001.png")
+      const treasureroom = this.add.image(1095, 40, "GJ_GameSheet03", "GJ_lock_001.png")
         .setScrollFactor(0).setDepth(104).setTint(0x666666);
-      const vaultsecret = this.add.image(1090, 601, "GJ_GameSheet03", "secretDoorBtn_closed_001.png")
+      const vaultsecret = this.add.image(1095, 601, "GJ_GameSheet03", "secretDoorBtn_closed_001.png")
         .setScrollFactor(0).setDepth(104).setScale(1).setTint(0x666666);
 
       const backBtn = this.add.image(50, 48, "GJ_GameSheet03", "GJ_arrow_03_001.png")
@@ -688,6 +688,8 @@ this._menuUpdateLogBtn = this.add.image(screenWidth - 30 - 50, 33, "GJ_WebSheet"
           }, () => true);
         } else {
           btn.setTint(0x666666);
+          btn.postFX.addColorMatrix().grayscale(1);
+          btn.setTint(0xafafaf);
         }
         this._creatorOverlayObjects.push(btn);
       });
@@ -2820,12 +2822,61 @@ this._menuUpdateLogBtn = this.add.image(screenWidth - 30 - 50, 33, "GJ_WebSheet"
       }
       this._iconOverlay = overlay;
 
-      const blocker = this.add.zone(sw / 2, sh / 2, sw, sh)
+      const blocker = this.add.zone(7 / 3, sh / 3, 7, sh)
         .setScrollFactor(0).setDepth(101).setInteractive();
 
-      const titleTxt = this.add.bitmapText(sw / 2, 80, "goldFont", "Icon Selector", 42)
-        .setOrigin(0.5, 0.5).setScrollFactor(0).setDepth(105);
+      const titleMaxLength = 20;
+      const titleAllowedChars = " abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789_";
+      let titleText = String(localStorage.getItem("playerName") || "Player").replace(/\r|\n/g, "").slice(0, titleMaxLength);
+      if (!titleText || titleText.trim() === "") titleText = "Player";
 
+      const titleTxt = this.add.bitmapText(sw / 2, 80, "bigFont", titleText, 50)
+        .setOrigin(0.5, 0.5).setScrollFactor(0).setDepth(105).setInteractive();
+      let titleFocused = false;
+
+      const _updateTitleText = () => {
+        const safeTitle = titleText.slice(0, titleMaxLength);
+        titleText = safeTitle;
+        titleTxt.setText(safeTitle || "");
+        localStorage.setItem("playerName", safeTitle || "Player");
+      };
+
+      const _focusTitle = () => {
+        titleFocused = true;
+      };
+
+      const _blurTitle = () => {
+        titleFocused = false;
+        if (!titleText.trim()) {
+          titleText = "Player";
+          titleTxt.setText("Player");
+          localStorage.setItem("playerName", "Player");
+        }
+      };
+
+      titleTxt.on("pointerdown", () => _focusTitle());
+      blocker.on("pointerdown", () => _blurTitle());
+
+      const _onTitleKeyDown = (event) => {
+        if (!titleFocused || !this._iconOverlay) return;
+        event.stopPropagation();
+        if (event.key === "Backspace") {
+          if (titleText.length > 0) {
+            titleText = titleText.slice(0, -1);
+            _updateTitleText();
+          }
+        } else if (event.key === "Enter") {
+          _blurTitle();
+        } else if (event.key.length === 1 && titleAllowedChars.includes(event.key) && !event.ctrlKey && !event.metaKey) {
+          if (titleText.length < titleMaxLength) {
+            titleText += event.key;
+            _updateTitleText();
+          }
+        }
+      };
+
+      window.addEventListener("keydown", _onTitleKeyDown);
+      this._iconTitleKeyHandler = _onTitleKeyDown;
       this._iconOverlayObjects = [overlay, blocker, titleTxt];
 
       const backBtn = this.add.image(50, 48, "GJ_GameSheet03", "GJ_arrow_03_001.png")
@@ -2840,6 +2891,10 @@ this._menuUpdateLogBtn = this.add.image(screenWidth - 30 - 50, 33, "GJ_WebSheet"
         .setInteractive();
       this._iconOverlayObjects.push(Pathicon);
       this._makeBouncyButton(Pathicon, 1, () => this.openshardmenu());
+
+      const yourname = this.add.image(670, 15,  "GJ_GameSheet03", "GJ_nameTxt_001.png")
+        .setScrollFactor(0).setDepth(100).setOrigin(0, 0);
+      this._iconOverlayObjects.push(yourname);
 
       const topBarHeight = 100;
       const lineY = topBarHeight + 100;
@@ -3444,6 +3499,10 @@ this._menuUpdateLogBtn = this.add.image(screenWidth - 30 - 50, 33, "GJ_WebSheet"
             if (obj && obj.destroy) obj.destroy();
           }
           this._iconOverlayObjects = null;
+        }
+        if (this._iconTitleKeyHandler) {
+          window.removeEventListener("keydown", this._iconTitleKeyHandler);
+          this._iconTitleKeyHandler = null;
         }
         this._iconOverlay = null;
       };
@@ -4905,7 +4964,7 @@ _buildSettingsPopup() {
         "Show Glow": "Shows glow for basic object sets.",
         "Use Proxy (for schools)": "Enables a proxy for a better chance to see online levels when blocked.",
         "LDM": "Removes many effects, objects, and other things to improve performance.",
-        "Cull Distance": "Changes how far/close objects are culled. (Where objects spawn) DOES NOT SAVE."
+        "Cull Distance": "Changes how many objects are shown. [DOES NOT SAVE!!]"
     };
 
     const createInfoButton = (container, x, y, infoTextOrKey, scale) => {
@@ -4931,9 +4990,15 @@ _buildSettingsPopup() {
             this.InfoBoxDoAThing(infoText);
         });
     };
-    const createNumberInput = (container, x, y, label, getVal, setVal) => {
+    const createNumberInput = (container, x, y, label, getVal, setVal, minVal = 0, maxVal = 20, integer = true, hasInfoBox = false, infoText = null) => {
         const txt = this.add.bitmapText(x + textOffset, y, "bigFont", label, 25).setOrigin(0, 0.5);
         container.add(txt);
+
+        if (hasInfoBox) {
+            if (infoText) {
+                createInfoButton(container, x + checkOffset - 38, y - 32, infoText, 0.45);
+            }
+        }
 
         const boxX = x + checkOffset;
         const boxY = y;
@@ -4950,7 +5015,8 @@ _buildSettingsPopup() {
             .setInteractive({ useHandCursor: true });
         container.add(hitArea);
 
-        let initialVal = getVal() || 1;
+        let initialVal = getVal();
+        if (initialVal === undefined || initialVal === null) initialVal = minVal;
         const valueTxt = this.add.bitmapText(boxX, boxY, "bigFont", initialVal.toString(), 28)
             .setOrigin(0.5);
         container.add(valueTxt);
@@ -4969,13 +5035,18 @@ _buildSettingsPopup() {
         const commitValue = () => {
             isFocused = false;
 
-            let val = parseFloat(internalString);
-            if (isNaN(val)) val = 1;
+            let val;
+            if (integer) {
+                val = parseInt(internalString, 10);
+            } else {
+                val = parseFloat(internalString);
+            }
+            if (isNaN(val)) val = minVal;
 
-            if (val < 0.1) val = 0.1;
-            if (val > 10) val = 10;
+            if (val < minVal) val = minVal;
+            if (val > maxVal) val = maxVal;
 
-            internalString = val.toString();
+            internalString = integer ? String(Math.round(val)) : String(val);
             valueTxt.setText(internalString);
             
             setVal(val);
@@ -5021,19 +5092,20 @@ _buildSettingsPopup() {
 
             if (/^[0-9.]$/.test(key)) {
                 event.preventDefault();
-                
-                if (key === "." && internalString.includes(".")) return;
 
-                const parts = internalString.split('.');
-                
-                if (key === ".") {
-                    if (parts[0].length === 0) return;
+                if (integer) {
+                    if (key === ".") return;
+                    internalString += key;
                 } else {
-                    if (parts.length === 1 && parts[0].length >= 2) return;
-                    if (parts.length === 2 && parts[1].length >= 2) return;
+                    if (key === ".") {
+                        if (internalString.includes(".")) return;
+                        if (internalString.length === 0) return;
+                        internalString += key;
+                    } else {
+                        internalString += key;
+                    }
                 }
 
-                internalString += key;
                 updateDisplay();
             }
         };
@@ -5112,8 +5184,11 @@ _buildSettingsPopup() {
         );
 
         createNumberInput(container, column2X, startY, "Speedhack", 
-            () => window.speedHack, 
-            (v) => window.speedHack = v
+          () => window.speedHack, 
+          (v) => window.speedHack = v,
+          0.1,
+          10,
+          false
         );
 
         createToggle(container, column2X, startY + spacingY, "Practice Music Sync",
@@ -5250,13 +5325,14 @@ _buildSettingsPopup() {
             true,
             "LDM"
         );
-        createToggle(container, column1X, startY + (spacingY * 1), "Cull Distance", 
-            () => window.enableLDM, 
-            (v) => window.enableLDM = v,
-            null,
-            26,
-            true,
-            "Cull Distance"
+        createNumberInput(container, column1X, startY + (spacingY * 1), "Cull Distance",
+          () => (typeof window.cullDistance !== 'undefined' ? window.cullDistance : 3),
+          (v) => window.cullDistance = v,
+          0,
+          3,
+          true,
+          true,
+          "Cull Distance"
         );
     };
 
@@ -5314,6 +5390,7 @@ _buildSettingsPopup() {
         useDirectInternet: !!window.useDirectInternet,
         enablePortalGuide: window.enablePortalGuide,
         enableOrbGuide: window.enableOrbGuide,
+        cullDistance: window.cullDistance,
         settingInfoText: window.settingInfoText || {},
         enableLDM: window.enableLDM,
     };
@@ -5344,7 +5421,8 @@ _buildSettingsPopup() {
         useDirectInternet: true,
         enablePortalGuide: true,
         enableOrbGuide: false,
-        enableLDM: false
+        enableLDM: false,
+        cullDistance: 3
     };
 
     const data = { ...defaults, ...(saved ? JSON.parse(saved) : {}) };
@@ -5369,6 +5447,7 @@ _buildSettingsPopup() {
     window.showObjectIds = data.showObjectIds;
     window.enablePortalGuide = data.enablePortalGuide;
     window.enableOrbGuide = data.enableOrbGuide;
+    window.cullDistance = typeof data.cullDistance !== 'undefined' ? data.cullDistance : 3;
     window.settingInfoText = data.settingInfoText || {};
     window.useDirectInternet = !!data.useDirectInternet;
     localStorage.setItem("gd_useDirectInternet", String(!!window.useDirectInternet));
@@ -7831,20 +7910,24 @@ _buildSettingsPopup() {
     this._playTime += deltaTime / 1000;
     this._audio.update(deltaTime / 1000);
     
-    window._animTimer += deltaTime;
-    for (let _as of window._animatedSprites) {
-      if (window._animTimer - (_as._lastAnimSwap || 0) >= _as._animInterval) {
-        _as._lastAnimSwap = window._animTimer;
-        _as._animIdx = (_as._animIdx + 1) % _as._animFrames.length;
-        let _fr = getAtlasFrame(_as._animScene, _as._animFrames[_as._animIdx]);
-        if (_fr) {
-          try {
-            _as.setTexture(_fr.atlas, _fr.frame);
-          } catch(e){}
+    if (!window.enableLDM) {
+      window._animTimer += deltaTime;
+      for (let _as of window._animatedSprites) {
+        if (window._animTimer - (_as._lastAnimSwap || 0) >= _as._animInterval) {
+          _as._lastAnimSwap = window._animTimer;
+          _as._animIdx = (_as._animIdx + 1) % _as._animFrames.length;
+          let _fr = getAtlasFrame(_as._animScene, _as._animFrames[_as._animIdx]);
+          if (_fr) {
+            try {
+              _as.setTexture(_fr.atlas, _fr.frame);
+            } catch(e){}
+          }
         }
       }
+    } else {
+      window._animTimer += deltaTime;
     }
-    if (this._level && this._level._sawSprites) {
+    if (this._level && this._level._sawSprites && !window.enableLDM) {
       const sawTimer = (window._animTimer || 0) / 1000;
       for (let _saw of this._level._sawSprites) {
         if (!_saw || !_saw.active || !_saw.visible) continue;
