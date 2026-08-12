@@ -1546,7 +1546,8 @@ class LevelEditor {
         "FireSheet_01-hd",
         "PixelSheet_01-hd",
         "GJ_GameSheetEditor",
-        "GJ_ParticleSheet-uhd"
+        "GJ_ParticleSheet-uhd",
+        "Wavesheet"
     ];
     for (const key of sheets) {
         if (this.textures.exists(key) && this.textures.get(key).has(frameName)) {
@@ -1823,7 +1824,7 @@ class LevelEditor {
     const maxDim = Math.max(visualW, visualH);
     const scaleMultiplier = targetSize / maxDim;
 
-    preview.setScale(Math.min(scaleMultiplier, 0.6));
+    preview.setScale(Math.min(scaleMultiplier, 0.725));
 
     return preview;
   }
@@ -1835,10 +1836,12 @@ class LevelEditor {
     if (this._categoryContainer) this._categoryContainer.destroy();
 
     const OBJECT_CATEGORIES = [
-        { id: "blocks",  icon: "tab1", types: ["solid"] },
+        { id: "blocks",  icon: "tab1", types: ["solid", "soliddeco"] },
         { id: "slopes",  icon: "tab6", types: ["slope"] },
         { id: "hazards", icon: "tab2", types: ["hazard", "spike"] },
-        { id: "orbs",    icon: "tab3", types: ["ring", "pad", "portal", "speed"] },
+        { id: "orbs",    icon: "tab3", types: ["ring", "pad", "portal", "speed", "coin"] },
+        { id: "pixel",   icon: "tab7", types: ["pixel"] },
+        { id: "particle", icon: "tab8", types: ["particle"] },
         { id: "deco",    icon: "tab4", types: ["deco"] },
         { id: "triggers",icon: "tab5", types: ["trigger"] },
     ];

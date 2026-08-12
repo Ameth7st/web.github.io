@@ -7,7 +7,7 @@
 // 1003: 3DL Color
 // 1004: Object Color
 // 1006: Glow
-// 1011: Detail Color FOr animated blocks (ill add some later)
+// 1011: Detail Color For animated blocks (ill add some later)
 
 window.allobjects = function() {
   return {
@@ -62,7 +62,7 @@ window.allobjects = function() {
     "default_z_order": 2
   },
   "5": {
-    "type": "deco",
+    "type": "soliddeco",
     "frame": "square_05_001.png",
     "gridW": 1,
     "gridH": 1,
@@ -1074,7 +1074,7 @@ window.allobjects = function() {
     "default_z_order": 2
   },
   "73": {
-    "type": "deco",
+    "type": "soliddeco",
     "frame": "square_c_05_001.png",
     "gridW": 1,
     "gridH": 1,
@@ -1221,7 +1221,7 @@ window.allobjects = function() {
     "gridH": 1,
     "gridW": 1,
     "spritesheet": "GJ_GameSheet-uhd",
-    "type": "deco",
+    "type": "soliddeco",
     "z": -7,
     "default_detail_color_channel": -1,
     "default_z_layer": 1,
@@ -1839,7 +1839,7 @@ window.allobjects = function() {
     ],
   },
   "120": {
-    "type": "deco",
+    "type": "soliddeco",
     "frame": "square_f_05_001.png",
     "gridW": 0,
     "gridH": 0,
@@ -2983,7 +2983,7 @@ window.allobjects = function() {
     "editorOffsetY": 4.35,
   },
   "193": {
-    "type": "deco",
+    "type": "soliddeco",
     "frame": "square_g_11_001.png",
     "gridH": 1,
     "gridW": 1,
@@ -3259,7 +3259,7 @@ window.allobjects = function() {
     "gridH": 1,
     "gridW": 1,
     "spritesheet": "GJ_GameSheet-uhd",
-    "type": "deco",
+    "type": "soliddeco",
     "z": -7,
     "default_detail_color_channel": -1,
     "default_z_layer": 1,
@@ -3659,7 +3659,7 @@ window.allobjects = function() {
     "gridH": 1,
     "gridW": 1,
     "spritesheet": "GJ_GameSheet-uhd",
-    "type": "deco",
+    "type": "soliddeco",
     "z": 9,
     "default_detail_color_channel": -1,
     "default_z_layer": 3,
@@ -3948,7 +3948,7 @@ window.allobjects = function() {
     "gridH": 1,
     "gridW": 1,
     "spritesheet": "GJ_GameSheet-uhd",
-    "type": "deco",
+    "type": "soliddeco",
     "z": -7,
     "default_detail_color_channel": -1,
     "default_z_layer": 1,
@@ -4116,7 +4116,7 @@ window.allobjects = function() {
     "gridH": 1,
     "gridW": 1,
     "spritesheet": "GJ_GameSheet-uhd",
-    "type": "deco",
+    "type": "soliddeco",
     "z": -7,
     "default_detail_color_channel": -1,
     "default_z_layer": 1,
@@ -4264,7 +4264,7 @@ window.allobjects = function() {
     "gridH": 1,
     "gridW": 1,
     "spritesheet": "GJ_GameSheet-uhd",
-    "type": "deco",
+    "type": "soliddeco",
     "z": -7,
     "default_detail_color_channel": -1,
     "default_z_layer": 1,
@@ -4428,7 +4428,7 @@ window.allobjects = function() {
     "gridH": 1,
     "gridW": 1,
     "spritesheet": "GJ_GameSheet-uhd",
-    "type": "deco",
+    "type": "soliddeco",
     "z": -7,
     "default_detail_color_channel": -1,
     "default_z_layer": 1,
@@ -4514,7 +4514,7 @@ window.allobjects = function() {
     "gridH": 1,
     "gridW": 1,
     "spritesheet": "GJ_GameSheet-uhd",
-    "type": "deco",
+    "type": "soliddeco",
     "z": 9,
     "default_detail_color_channel": -1,
     "default_z_layer": 3,
@@ -4528,7 +4528,7 @@ window.allobjects = function() {
     "gridH": 1,
     "gridW": 1,
     "spritesheet": "GJ_GameSheet-uhd",
-    "type": "deco",
+    "type": "soliddeco",
     "z": 9,
     "default_detail_color_channel": -1,
     "default_z_layer": 3,
@@ -4542,7 +4542,7 @@ window.allobjects = function() {
     "gridH": 1,
     "gridW": 1,
     "spritesheet": "GJ_GameSheet-uhd",
-    "type": "deco",
+    "type": "soliddeco",
     "z": 9,
     "default_detail_color_channel": -1,
     "default_z_layer": 3,
@@ -4556,7 +4556,7 @@ window.allobjects = function() {
     "gridH": 1,
     "gridW": 1,
     "spritesheet": "GJ_GameSheet-uhd",
-    "type": "deco",
+    "type": "soliddeco",
     "z": 9,
     "default_detail_color_channel": -1,
     "default_z_layer": 3,
@@ -15430,7 +15430,7 @@ window.allobjects = function() {
         "z": 1
       },
     {
-        "frame": "GJBeast01_03_001.png", // i have no clue where this is supposed to go i cant see it
+        "frame": "GJBeast01_03_001.png",
         "localDy": -19,
         "localDx": -4,
         "z": 2
@@ -15470,91 +15470,108 @@ window.allobjects = function() {
   },
   "920": {
     "can_color": true,
-    "children": [
-      {
-        "frame": "Fire_03_2_looped_001.png",
-        "localDy": 0,
-        "tint": 52224,
-        "z": -100
-      }
-    ],
     "default_base_color_channel": 1011,
     "default_detail_color_channel": 1,
-    "frame": "Fire_03_looped_004.png",
-    "glow_frame": "Fire_03_looped_004.png",
+    "frame": "Fire_03_2_looped_001.png",
+    "glow_frame": "none",
     "gridH": 1.7666666507720947,
     "gridW": 2.0166666507720947,
     "spritesheet": "FireSheet_01-hd",
     "type": "deco",
     "z": 2,
     "default_z_layer": 5,
-    "default_z_order": 2
+    "default_z_order": 2,
+    "animFrames": [
+      "Fire_03_2_looped_001.png",
+      "Fire_03_2_looped_002.png",
+      "Fire_03_2_looped_003.png",
+      "Fire_03_2_looped_004.png",
+      "Fire_03_2_looped_005.png",
+      "Fire_03_2_looped_006.png",
+      "Fire_03_2_looped_007.png",
+      "Fire_03_2_looped_008.png",
+      "Fire_03_2_looped_009.png"
+    ],
+    "animInterval": 75
   },
   "921": {
     "can_color": true,
-    "children": [
-      {
-        "frame": "Fire_04_2_looped_004.png",
-        "localDy": 0,
-        "tint": 52224,
-        "z": -100
-      }
-    ],
     "default_base_color_channel": 1011,
     "default_detail_color_channel": 1,
-    "frame": "Fire_04_looped_011.png",
-    "glow_frame": "Fire_04_looped_011.png",
+    "frame": "Fire_04_2_looped_001.png",
     "gridH": 1.8166667222976685,
     "gridW": 0.3499999940395355,
     "spritesheet": "FireSheet_01-hd",
     "type": "deco",
     "z": 2,
     "default_z_layer": 5,
-    "default_z_order": 2
+    "default_z_order": 2,
+    "animFrames": [
+      "Fire_04_2_looped_001.png",
+      "Fire_04_2_looped_002.png",
+      "Fire_04_2_looped_003.png",
+      "Fire_04_2_looped_004.png",
+      "Fire_04_2_looped_005.png",
+      "Fire_04_2_looped_006.png",
+      "Fire_04_2_looped_007.png",
+      "Fire_04_2_looped_008.png",
+      "Fire_04_2_looped_009.png",
+      "Fire_04_2_looped_010.png",
+      "Fire_04_2_looped_011.png",
+    ],
+    "animInterval": 75
   },
   "923": {
     "can_color": true,
-    "children": [
-      {
-        "frame": "Fire_01_2_looped_001.png",
-        "localDy": 0,
-        "tint": 52224,
-        "z": -100
-      }
-    ],
     "default_base_color_channel": 1011,
     "default_detail_color_channel": 1,
     "frame": "Fire_01_looped_009.png",
-    "glow_frame": "Fire_01_looped_009.png",
+    "glow_frame": "none",
     "gridH": 1.75,
     "gridW": 0.6166666746139526,
     "spritesheet": "FireSheet_01-hd",
     "type": "deco",
     "z": 2,
     "default_z_layer": 5,
-    "default_z_order": 2
+    "default_z_order": 2,
+    "animFrames": [
+      "Fire_01_2_looped_001.png",
+      "Fire_01_2_looped_002.png",
+      "Fire_01_2_looped_003.png",
+      "Fire_01_2_looped_004.png",
+      "Fire_01_2_looped_005.png",
+      "Fire_01_2_looped_006.png",
+      "Fire_01_2_looped_007.png",
+      "Fire_01_2_looped_008.png",
+      "Fire_01_2_looped_009.png"
+    ],
+    "animInterval": 75
   },
   "924": {
     "can_color": true,
-    "children": [
-      {
-        "frame": "Fire_02_2_looped_001.png",
-        "localDy": 0,
-        "tint": 52224,
-        "z": -100
-      }
-    ],
     "default_base_color_channel": 1011,
     "default_detail_color_channel": 1,
-    "frame": "Fire_02_looped_001.png",
-    "glow_frame": "Fire_02_looped_glow_001.png",
+    "frame": "Fire_02_2_looped_001.png",
+    "glow_frame": "none",
     "gridH": 1.25,
     "gridW": 0.6499999761581421,
     "spritesheet": "FireSheet_01-hd",
     "type": "deco",
     "z": 2,
     "default_z_layer": 5,
-    "default_z_order": 2
+    "default_z_order": 2,
+    "animFrames": [
+      "Fire_02_2_looped_001.png",
+      "Fire_02_2_looped_002.png",
+      "Fire_02_2_looped_003.png",
+      "Fire_02_2_looped_004.png",
+      "Fire_02_2_looped_005.png",
+      "Fire_02_2_looped_006.png",
+      "Fire_02_2_looped_007.png",
+      "Fire_02_2_looped_008.png",
+      "Fire_02_2_looped_009.png"
+    ],
+    "animInterval": 75
   },
   "925": {
     "can_color": true,
@@ -18261,69 +18278,82 @@ window.allobjects = function() {
   },
   "1050": {
     "can_color": true,
-    "children": [
-      {
-        "frame": "d_animWave_01_001.png",
-        "localDy": 0,
-        "tint": 65280,
-        "z": -1
-      }
-    ],
     "default_base_color_channel": 1007,
-    "frame": "d_animWave_01_base_001.png",
-    "glow_frame": "d_animWave_01_base_glow_001.png",
+    "frame": "animWave_01_001.png",
+    "glow_frame": "animWave_01_base_glow_001.png",
     "gridH": 0.5166666507720947,
     "gridW": 1,
-    "spritesheet": "GJ_GameSheet-uhd",
-    "type": "deco",
-    "z": 9,
-    "default_detail_color_channel": -1,
-    "default_z_layer": 3,
-    "default_z_order": 9
-  },
-  "1051": {
-    "can_color": true,
-    "children": [
-      {
-        "frame": "d_animWave_02_001.png",
-        "localDy": 0,
-        "tint": 65280,
-        "z": -1
-      }
-    ],
-    "default_base_color_channel": 1007,
-    "frame": "d_animWave_02_base_001.png",
-    "glow_frame": "d_animWave_02_base_glow_001.png",
-    "gridH": 0.5166666507720947,
-    "gridW": 1,
-    "spritesheet": "GJ_GameSheet-uhd",
-    "type": "deco",
-    "z": 9,
-    "default_detail_color_channel": -1,
-    "default_z_layer": 3,
-    "default_z_order": 9
-  },
-  "1052": {
-    "can_color": true,
-    "children": [
-      {
-        "frame": "d_animWave_03_001.png",
-        "localDy": 0,
-        "tint": 65280,
-        "z": -1
-      }
-    ],
-    "default_base_color_channel": 1007,
-    "frame": "d_animWave_03_base_001.png",
-    "glow_frame": "d_animWave_03_base_glow_001.png",
-    "gridH": 0.5166666507720947,
-    "gridW": 1,
-    "spritesheet": "GJ_GameSheet-uhd",
+    "spritesheet": "Wavesheet",
     "type": "deco",
     "z": 9,
     "default_detail_color_channel": -1,
     "default_z_layer": 3,
     "default_z_order": 9,
+    "animFrames": [
+      "animWave_01_001.png",
+      "animWave_01_002.png",
+      "animWave_01_003.png",
+	    "animWave_01_009.png",
+      "animWave_01_004.png",
+      "animWave_01_005.png",
+      "animWave_01_006.png",
+      "animWave_01_007.png",
+      "animWave_01_008.png",
+    ],
+    "animInterval": 45
+  },
+  "1051": {
+    
+    "can_color": true,
+    "default_base_color_channel": 1007,
+    "frame": "animWave_02_001.png",
+    "gridH": 0.5166666507720947,
+    "gridW": 1,
+    "spritesheet": "Wavesheet",
+    "type": "deco",
+    "z": 9,
+    "default_detail_color_channel": -1,
+    "default_z_layer": 3,
+    "default_z_order": 9,
+    "animFrames": [
+      "animWave_02_001.png",
+      "animWave_02_002.png",
+      "animWave_02_003.png",
+      "animWave_02_004.png",
+      "animWave_02_005.png",
+      "animWave_02_006.png",
+      "animWave_02_007.png",
+      "animWave_02_008.png",
+      "animWave_02_009.png",
+      "animWave_02_010.png",
+    ],
+    "animInterval": 45
+  },
+  "1052": {
+    "can_color": true,
+    "default_base_color_channel": 1007,
+    "frame": "animWave_03_001.png",
+    "gridH": 0.5166666507720947,
+    "gridW": 1,
+    "spritesheet": "wavesheet",
+    "type": "deco",
+    "z": 9,
+    "default_detail_color_channel": -1,
+    "default_z_layer": 3,
+    "default_z_order": 9,
+    "animFrames": [
+      "animWave_03_001.png",
+      "animWave_03_002.png",
+      "animWave_03_003.png",
+      "animWave_03_004.png",
+      "animWave_03_005.png",
+      "animWave_03_006.png",
+      "animWave_03_007.png",
+      "animWave_03_008.png",
+      "animWave_03_009.png",
+      "animWave_03_010.png",
+    ],
+    "animInterval": 45
   },
   "1053": {
     "can_color": true,
@@ -24068,7 +24098,7 @@ window.allobjects = function() {
     ]
   },
   "1329": {
-    "type": "deco",
+    "type": "coin",
     "frame": "secretCoin_2_01_001.png",
     "gridW": 1,
     "gridH": 1,
@@ -26140,19 +26170,6 @@ window.allobjects = function() {
   },
   "1516": {
     "can_color": true,
-    "children": [
-      {
-        "frame": "waterfallAnim_001.png",
-        "localDy": 0,
-        "tint": 65280,
-        "z": -1
-      },
-      {
-        "frame": "waterfallAnim_color_001.png",
-        "localDy": 0,
-        "tint": 52224
-      }
-    ],
     "default_base_color_channel": 1,
     "default_detail_color_channel": 1012,
     "frame": "waterfallAnim_001.png",
@@ -26163,7 +26180,20 @@ window.allobjects = function() {
     "type": "deco",
     "z": 9,
     "default_z_layer": 3,
-    "default_z_order": 9
+    "default_z_order": 9,
+    "animFrames": [
+      "waterfallAnim_001.png",
+      "waterfallAnim_002.png",
+      "waterfallAnim_003.png",
+      "waterfallAnim_004.png",
+      "waterfallAnim_005.png",
+      "waterfallAnim_006.png",
+      "waterfallAnim_007.png",
+      "waterfallAnim_008.png",
+      "waterfallAnim_009.png",
+      "waterfallAnim_010.png",
+    ],
+    "animInterval": 60
   },
   "1517": {
     "can_color": true,
@@ -26221,7 +26251,21 @@ window.allobjects = function() {
     "z": 2,
     "default_detail_color_channel": -1,
     "default_z_layer": 5,
-    "default_z_order": 2
+    "default_z_order": 2,
+    "animFrames": [
+      "starAnim_001.png",
+      "starAnim_002.png",
+      "starAnim_003.png",
+      "starAnim_004.png",
+      "starAnim_005.png",
+      "starAnim_006.png",
+      "starAnim_007.png",
+      "starAnim_008.png",
+      "starAnim_009.png",
+      "starAnim_010.png",
+      "starAnim_011.png"
+    ],
+    "animInterval": 75
   },
   "1520": {
     "can_color": false,
@@ -27202,18 +27246,48 @@ window.allobjects = function() {
     "default_z_order": 9
   },
   "1584": {
-    "can_color": true,
+    "can_color": false,
+    "black": true,
     "default_base_color_channel": 1010,
     "default_detail_color_channel": 1011,
-    "frame": null,
+    "frame": "none",
     "glow_frame": "none",
     "gridH": 0.2666666805744171,
     "gridW": 0.2666666805744171,
     "spritesheet": "FireSheet_01-hd",
-    "type": "deco",
+    "type": "hazard",
     "z": 2,
     "default_z_layer": 5,
-    "default_z_order": 2
+    "default_z_order": 2,
+    "children": [
+      {
+        "frame": "GJBeast04_01_001.png",
+        "localDy": -10,
+        "tint": 0,
+        "z": 1
+      },
+      {
+        "frame": "GJBeast04_02_001.png",
+        "localDy": 18,
+        "tint": 0,
+        "z": 1,
+        "rot": -15,
+      },
+      {
+        "frame": "GJBeast04_03_001.png",
+        "localDy": -9,
+        "localDx": -13,
+        "z": 1
+      },
+    {
+        "frame": "GJBeast04_04_001.png",
+        "localDy": -25,
+        "localDx": 53,
+        "tint": 0,
+        "z": 2,
+        "rot": 17.5
+      }
+    ]
   },
   "1585": {
     "can_color": false,
@@ -27327,14 +27401,6 @@ window.allobjects = function() {
   },
   "1591": {
     "can_color": true,
-    "children": [
-      {
-        "frame": "lava_top_bubble_color_008.png",
-        "localDy": 0,
-        "tint": 52224,
-        "z": 100
-      }
-    ],
     "default_base_color_channel": 1,
     "default_detail_color_channel": 1,
     "frame": "lava_top_bubble_008.png",
@@ -27345,7 +27411,18 @@ window.allobjects = function() {
     "type": "deco",
     "z": 9,
     "default_z_layer": 3,
-    "default_z_order": 9
+    "default_z_order": 9,
+    "animFrames": [
+      "lava_top_bubble_color_001.png",
+      "lava_top_bubble_color_002.png",
+      "lava_top_bubble_color_003.png",
+      "lava_top_bubble_color_004.png",
+      "lava_top_bubble_color_005.png",
+      "lava_top_bubble_color_006.png",
+      "lava_top_bubble_color_007.png",
+      "lava_top_bubble_color_008.png",
+    ],
+    "animInterval": 100,
   },
   "1592": {
     "can_color": true,
@@ -27371,14 +27448,6 @@ window.allobjects = function() {
   },
   "1593": {
     "can_color": true,
-    "children": [
-      {
-        "frame": "lava_top_color_002.png",
-        "localDy": 0,
-        "tint": 52224,
-        "z": 100
-      }
-    ],
     "default_base_color_channel": 1,
     "default_detail_color_channel": 1,
     "frame": "lava_top_002.png",
@@ -27389,7 +27458,18 @@ window.allobjects = function() {
     "type": "deco",
     "z": 9,
     "default_z_layer": 3,
-    "default_z_order": 9
+    "default_z_order": 9,
+    "animFrames": [
+      "lava_top_color_001.png",
+      "lava_top_color_002.png",
+      "lava_top_color_003.png",
+      "lava_top_color_004.png",
+      "lava_top_color_005.png",
+      "lava_top_color_006.png",
+      "lava_top_color_007.png",
+      "lava_top_color_008.png",
+    ],
+    "animInterval": 100
   },
   "1594": {
     "type": "ring",
@@ -27695,33 +27775,8 @@ window.allobjects = function() {
     "editorFrame": "edit_ePShowBtn_001.png"
   },
   "1614": {
+    "type": "coin",
     "can_color": true,
-    "children": [
-      {
-        "frame": "smallCoin_02_001.png",
-        "localDy": 0,
-        "tint": 65280,
-        "z": -1,
-        "animFrames": [
-      "smallCoin_02_001.png",
-      "smallCoin_03_001.png",
-      "smallCoin_04_001.png",
-    ],
-    "animInterval": 100
-      },
-      {
-        "frame": "smallCoin_02_highlight_001.png",
-        "localDy": 0,
-        "tint": 5898073,
-        "z": 1,
-"animFrames": [
-      "smallCoin_02_highlight_001.png",
-      "smallCoin_02_highlight_001.png",
-      "smallCoin_02_highlight_001.png",
-    ],
-    "animInterval": 100
-      }
-    ],
     "default_base_color_channel": 1,
     "default_detail_color_channel": 1010,
     "frame": "smallCoin_01_001.png",
@@ -27729,10 +27784,16 @@ window.allobjects = function() {
     "gridH": 0.6666666865348816,
     "gridW": 0.8333333134651184,
     "spritesheet": "FireSheet_01-hd",
-    "type": "deco",
     "z": 9,
     "default_z_layer": 5,
-    "default_z_order": 9
+    "default_z_order": 9,
+    "animFrames": [
+      "smallCoin_01_001.png",
+      "smallCoin_02_001.png",
+      "smallCoin_03_001.png",
+      "smallCoin_04_001.png",
+    ],
+    "animInterval": 100
   },
   "1615": {
     "can_color": false,
@@ -27799,7 +27860,17 @@ window.allobjects = function() {
     "z": 9,
     "default_detail_color_channel": -1,
     "default_z_layer": 3,
-    "default_z_order": 9
+    "default_z_order": 9,
+    "animFrames": [
+      "explosion_01_001.png",
+      "explosion_01_002.png",
+      "explosion_01_003.png",
+      "explosion_01_004.png",
+      "explosion_01_005.png",
+      "explosion_01_006.png",
+      "explosion_01_007.png",
+    ],
+    "animInterval": 75
   },
   "1619": {
     "can_color": true,
@@ -32536,36 +32607,29 @@ window.allobjects = function() {
   },
   "1849": {
     "can_color": true,
-    "children": [
-      {
-        "frame": "gj_smoke01_color_006.png",
-        "localDy": 0,
-        "tint": 52224,
-        "z": 100
-      }
-    ],
     "default_base_color_channel": 1011,
     "default_detail_color_channel": 1,
-    "frame": "gj_smoke01_006.png",
-    "glow_frame": "gj_smoke01_006.png",
+    "frame": "gj_smoke01_001.png",
+    "glow_frame": "none",
     "gridH": 0.5333333611488342,
     "gridW": 1.2000000476837158,
     "spritesheet": "FireSheet_01-hd",
     "type": "deco",
     "z": 2,
     "default_z_layer": 5,
-    "default_z_order": 2
+    "default_z_order": 2,
+    "animFrames": [
+      "gj_smoke01_001.png",
+      "gj_smoke01_002.png",
+      "gj_smoke01_003.png",
+      "gj_smoke01_004.png",
+      "gj_smoke01_005.png",
+      "gj_smoke01_006.png"
+    ],
+    "animInterval": 75
   },
   "1850": {
     "can_color": true,
-    "children": [
-      {
-        "frame": "gj_smoke02_color_002.png",
-        "localDy": 0,
-        "tint": 52224,
-        "z": 100
-      }
-    ],
     "default_base_color_channel": 1011,
     "default_detail_color_channel": 1,
     "frame": "gj_smoke02_002.png",
@@ -32576,73 +32640,88 @@ window.allobjects = function() {
     "type": "deco",
     "z": 2,
     "default_z_layer": 5,
-    "default_z_order": 2
+    "default_z_order": 2,
+    "animFrames": [
+      "gj_smoke02_color_001.png",
+      "gj_smoke02_color_002.png",
+      "gj_smoke02_color_003.png",
+      "gj_smoke02_color_004.png",
+      "gj_smoke02_color_005.png",
+
+    ],
+    "animInterval": 100
   },
   "1851": {
     "can_color": true,
-    "children": [
-      {
-        "frame": "gj_drops01_color_001.png",
-        "localDy": 0,
-        "tint": 52224,
-        "z": 100
-      }
-    ],
     "default_base_color_channel": 1011,
     "default_detail_color_channel": 1,
     "frame": "gj_drops01_001.png",
-    "glow_frame": "gj_drops01_glow_001.png",
     "gridH": 0.6666666865348816,
     "gridW": 0.4000000059604645,
     "spritesheet": "FireSheet_01-hd",
     "type": "deco",
     "z": 2,
     "default_z_layer": 5,
-    "default_z_order": 2
+    "default_z_order": 2,
+    "animFrames": [
+      "gj_drops01_001.png",
+      "gj_drops01_002.png",
+      "gj_drops01_003.png",
+      "gj_drops01_004.png",
+      "gj_drops01_005.png",
+      "gj_drops01_006.png",
+      "gj_drops01_007.png",
+      "gj_drops01_008.png",
+    ],
+    "animInterval": 75
   },
   "1852": {
     "can_color": true,
-    "children": [
-      {
-        "frame": "gj_drops02_color_008.png",
-        "localDy": 0,
-        "tint": 52224,
-        "z": 100
-      }
-    ],
     "default_base_color_channel": 1011,
     "default_detail_color_channel": 1,
     "frame": "gj_drops02_008.png",
-    "glow_frame": "gj_drops02_008.png",
     "gridH": 0.8333333134651184,
     "gridW": 0.6666666865348816,
     "spritesheet": "FireSheet_01-hd",
     "type": "deco",
     "z": 2,
     "default_z_layer": 5,
-    "default_z_order": 2
+    "default_z_order": 2,
+    "animFrames": [
+      "gj_drops02_001.png",
+      "gj_drops02_002.png",
+      "gj_drops02_003.png",
+      "gj_drops02_004.png",
+      "gj_drops02_005.png",
+      "gj_drops02_006.png",
+      "gj_drops02_007.png",
+      "gj_drops02_008.png",
+    ],
+    "animInterval": 75
   },
   "1853": {
     "can_color": true,
-    "children": [
-      {
-        "frame": "gj_drops03_color_006.png",
-        "localDy": 0,
-        "tint": 52224,
-        "z": 100
-      }
-    ],
     "default_base_color_channel": 1011,
     "default_detail_color_channel": 1,
     "frame": "gj_drops03_006.png",
-    "glow_frame": "gj_drops03_006.png",
     "gridH": 1.350000023841858,
     "gridW": 0.13333334028720856,
     "spritesheet": "FireSheet_01-hd",
     "type": "deco",
     "z": 2,
     "default_z_layer": 5,
-    "default_z_order": 2
+    "default_z_order": 2,
+    "animFrames": [
+      "gj_drops03_001.png",
+      "gj_drops03_002.png",
+      "gj_drops03_003.png",
+      "gj_drops03_004.png",
+      "gj_drops03_005.png",
+      "gj_drops03_006.png",
+      "gj_drops03_007.png",
+      "gj_drops03_008.png",
+    ],
+    "animInterval": 75
   },
   "1854": {
     "can_color": true,
@@ -32696,14 +32775,6 @@ window.allobjects = function() {
   },
   "1856": {
     "can_color": true,
-    "children": [
-      {
-        "frame": "gj_bubble01_color_014.png",
-        "localDy": 0,
-        "tint": 52224,
-        "z": 100
-      }
-    ],
     "default_base_color_channel": 1011,
     "default_detail_color_channel": 1,
     "frame": "gj_bubble01_014.png",
@@ -32714,22 +32785,38 @@ window.allobjects = function() {
     "type": "deco",
     "z": 2,
     "default_z_layer": 5,
-    "default_z_order": 2
+    "default_z_order": 2,
+    "animFrames": [
+      "smallCoin_01_color_001.png",
+      "smallCoin_02_color_001.png",
+      "smallCoin_03_color_001.png",
+      "smallCoin_04_color_001.png",
+    ],
+    "animInterval": 75,
+    "animFrames": [
+      "gj_bubble01_001.png",
+      "gj_bubble01_002.png",
+      "gj_bubble01_003.png",
+      "gj_bubble01_004.png",
+      "gj_bubble01_005.png",
+      "gj_bubble01_006.png",
+      "gj_bubble01_007.png",
+      "gj_bubble01_008.png",
+      "gj_bubble01_009.png",
+      "gj_bubble01_010.png",
+      "gj_bubble01_011.png",
+      "gj_bubble01_012.png",
+      "gj_bubble01_013.png",
+      "gj_bubble01_014.png",
+      "gj_bubble01_015.png",
+    ],
+    "animInterval": 75
   },
   "1857": {
     "can_color": true,
-    "children": [
-      {
-        "frame": "gj_lightning01_color_002.png",
-        "localDy": 0,
-        "tint": 52224,
-        "z": -100,
-      }
-    ],
     "default_base_color_channel": 1011,
     "default_detail_color_channel": 1,
-    "frame": "gj_lightning01_002.png",
-    "glow_frame": "gj_lightning01_002.png",
+    "frame": "Fire_04_looped_011.png",
     "gridH": 0.46666666865348816,
     "gridW": 2,
     "spritesheet": "FireSheet_01-hd",
@@ -32752,20 +32839,6 @@ window.allobjects = function() {
   },
   "1858": {
     "can_color": true,
-    "children": [
-      {
-        "frame": "gj_drops06_2_005.png",
-        "localDy": 0,
-        "tint": 5898073,
-        "z": -1
-      },
-      {
-        "frame": "gj_drops06_3_005.png",
-        "localDy": 0,
-        "tint": 65280,
-        "z": -1
-      }
-    ],
     "default_base_color_channel": 1011,
     "frame": "gj_drops06_005.png",
     "glow_frame": "gj_drops06_005.png",
@@ -32776,7 +32849,18 @@ window.allobjects = function() {
     "z": 2,
     "default_detail_color_channel": -1,
     "default_z_layer": 5,
-    "default_z_order": 2
+    "default_z_order": 2,
+    "animFrames": [
+      "gj_drops06_001.png",
+      "gj_drops06_002.png",
+      "gj_drops06_003.png",
+      "gj_drops06_004.png",
+      "gj_drops06_005.png",
+      "gj_drops06_006.png",
+      "gj_drops06_007.png",
+      "gj_drops06_008.png"
+    ],
+    "animInterval": 75
   },
   "1859": {
     "can_color": true,
@@ -34287,25 +34371,32 @@ window.allobjects = function() {
   },
   "1936": {
     "can_color": true,
-    "children": [
-      {
-        "frame": "fire_b_01_2_001.png",
-        "localDy": 0,
-        "tint": 52224,
-        "z": -100
-      }
-    ],
     "default_base_color_channel": 1011,
     "default_detail_color_channel": 1,
     "frame": "fire_b_01_003.png",
-    "glow_frame": "fire_b_01_003.png",
     "gridH": 0.9916666746139526,
     "gridW": 0.800000011920929,
     "spritesheet": "FireSheet_01-hd",
     "type": "deco",
     "z": 2,
     "default_z_layer": 5,
-    "default_z_order": 2
+    "default_z_order": 2,
+    "animFrames": [
+      "fire_b_01_001.png",
+      "fire_b_01_002.png",
+      "fire_b_01_003.png",
+      "fire_b_01_004.png",
+      "fire_b_01_005.png",
+      "fire_b_01_006.png",
+      "fire_b_01_007.png",
+      "fire_b_01_008.png",
+      "fire_b_01_009.png",
+      "fire_b_01_010.png",
+      "fire_b_01_011.png",
+      "fire_b_01_012.png",
+      "fire_b_01_013.png"
+    ],
+    "animInterval": 75
   },
   "1937": {
     "can_color": true,
@@ -34328,18 +34419,21 @@ window.allobjects = function() {
     "type": "deco",
     "z": 2,
     "default_z_layer": 5,
-    "default_z_order": 2
+    "default_z_order": 2,
+    "animFrames": [
+      "fire_b_02_001.png",
+      "fire_b_02_002.png",
+      "fire_b_02_003.png",
+      "fire_b_02_004.png",
+      "fire_b_02_005.png",
+      "fire_b_02_006.png",
+      "fire_b_02_007.png",
+      "fire_b_02_008.png",
+    ],
+    "animInterval": 75
   },
   "1938": {
     "can_color": true,
-    "children": [
-      {
-        "frame": "fire_b_03_2_001.png",
-        "localDy": 0,
-        "tint": 52224,
-        "z": -100
-      }
-    ],
     "default_base_color_channel": 1011,
     "default_detail_color_channel": 1,
     "frame": "fire_b_03_002.png",
@@ -34350,7 +34444,18 @@ window.allobjects = function() {
     "type": "deco",
     "z": 2,
     "default_z_layer": 5,
-    "default_z_order": 2
+    "default_z_order": 2,
+    "animFrames": [
+      "fire_b_03_001.png",
+      "fire_b_03_002.png",
+      "fire_b_03_003.png",
+      "fire_b_03_004.png",
+      "fire_b_03_005.png",
+      "fire_b_03_006.png",
+      "fire_b_03_007.png",
+      "fire_b_03_008.png",
+    ],
+    "animInterval": 75
   },
   "1939": {
     "can_color": true,
@@ -34372,7 +34477,18 @@ window.allobjects = function() {
     "type": "deco",
     "z": 2,
     "default_z_layer": 5,
-    "default_z_order": 2
+    "default_z_order": 2,
+    "animFrames": [
+      "fire_b_04_001.png",
+      "fire_b_04_002.png",
+      "fire_b_04_003.png",
+      "fire_b_04_004.png",
+      "fire_b_04_005.png",
+      "fire_b_04_006.png",
+      "fire_b_04_007.png",
+      "fire_b_04_008.png",
+    ],
+    "animInterval": 75
   },
   "1964": {
     "can_color": true,
@@ -34448,14 +34564,6 @@ window.allobjects = function() {
   },
   "2020": {
     "can_color": true,
-    "children": [
-      {
-        "frame": "gj22_anim_01_color_001.png",
-        "localDy": 0,
-        "tint": 52224,
-        "z": -100
-      }
-    ],
     "default_base_color_channel": 1,
     "default_detail_color_channel": 2,
     "frame": "gj22_anim_01_006.png",
@@ -34466,18 +34574,19 @@ window.allobjects = function() {
     "type": "deco",
     "z": 2,
     "default_z_layer": 5,
-    "default_z_order": 2
+    "default_z_order": 2,
+    "animFrames": [
+      "gj22_anim_01_color_001.png",
+      "gj22_anim_0_color1_002.png",
+      "gj22_anim_01_color_003.png",
+      "gj22_anim_01_color_004.png",
+      "gj22_anim_01_color_005.png",
+      "gj22_anim_01_color_006.png",
+    ],
+    "animInterval": 75
   },
   "2021": {
     "can_color": true,
-    "children": [
-      {
-        "frame": "gj22_anim_02_color_001.png",
-        "localDy": 0,
-        "tint": 52224,
-        "z": -100
-      }
-    ],
     "default_base_color_channel": 1,
     "default_detail_color_channel": 2,
     "frame": "gj22_anim_02_006.png",
@@ -34488,18 +34597,19 @@ window.allobjects = function() {
     "type": "deco",
     "z": 2,
     "default_z_layer": 5,
-    "default_z_order": 2
+    "default_z_order": 2,
+    "animFrames": [
+      "gj22_anim_02_color_001.png",
+      "gj22_anim_02_color_002.png",
+      "gj22_anim_02_color_003.png",
+      "gj22_anim_02_color_004.png",
+      "gj22_anim_02_color_005.png",
+      "gj22_anim_02_color_006.png",
+    ],
+    "animInterval": 100
   },
   "2022": {
     "can_color": true,
-    "children": [
-      {
-        "frame": "gj22_anim_03_003.png",
-        "localDy": 0,
-        "tint": 52224,
-        "z": -100
-      }
-    ],
     "default_base_color_channel": 1,
     "default_detail_color_channel": 2,
     "frame": "gj22_anim_03_006.png",
@@ -34510,18 +34620,19 @@ window.allobjects = function() {
     "type": "deco",
     "z": 2,
     "default_z_layer": 5,
-    "default_z_order": 2
+    "default_z_order": 2,
+    "animFrames": [
+      "gj22_anim_03_color_001.png",
+      "gj22_anim_03_color_002.png",
+      "gj22_anim_03_color_003.png",
+      "gj22_anim_03_color_004.png",
+      "gj22_anim_03_color_005.png",
+      "gj22_anim_03_color_006.png",
+    ],
+    "animInterval": 100
   },
   "2023": {
     "can_color": true,
-    "children": [
-      {
-        "frame": "gj22_anim_04_color_001.png",
-        "localDy": 0,
-        "tint": 52224,
-        "z": -100
-      }
-    ],
     "default_base_color_channel": 1,
     "default_detail_color_channel": 2,
     "frame": "gj22_anim_04_002.png",
@@ -34532,18 +34643,16 @@ window.allobjects = function() {
     "type": "deco",
     "z": 2,
     "default_z_layer": 5,
-    "default_z_order": 2
+    "default_z_order": 2,
+    "animFrames": [
+      "gj22_anim_04_color_001.png",
+      "gj22_anim_04_color_002.png",
+      "gj22_anim_04_color_003.png",
+    ],
+    "animInterval": 100
   },
   "2024": {
     "can_color": true,
-    "children": [
-      {
-        "frame": "gj22_anim_05_002.png",
-        "localDy": 0,
-        "tint": 52224,
-        "z": -100
-      }
-    ],
     "default_base_color_channel": 1,
     "default_detail_color_channel": 2,
     "frame": "gj22_anim_05_004.png",
@@ -34554,18 +34663,18 @@ window.allobjects = function() {
     "type": "deco",
     "z": 2,
     "default_z_layer": 5,
-    "default_z_order": 2
+    "default_z_order": 2,
+    "animFrames": [
+      "gj22_anim_05_color_001.png",
+      "gj22_anim_05_color_002.png",
+      "gj22_anim_05_color_003.png",
+      "gj22_anim_05_color_004.png",
+      "gj22_anim_05_color_005.png",
+    ],
+    "animInterval": 75
   },
   "2025": {
     "can_color": true,
-    "children": [
-      {
-        "frame": "gj22_anim_06_008.png",
-        "localDy": 0,
-        "tint": 52224,
-        "z": -100
-      }
-    ],
     "default_base_color_channel": 1,
     "default_detail_color_channel": 2,
     "frame": "gj22_anim_06_012.png",
@@ -34576,18 +34685,25 @@ window.allobjects = function() {
     "type": "deco",
     "z": 2,
     "default_z_layer": 5,
-    "default_z_order": 2
+    "default_z_order": 2,
+    "animFrames": [
+      "gj22_anim_06_color_001.png",
+      "gj22_anim_06_color_002.png",
+      "gj22_anim_06_color_003.png",
+      "gj22_anim_06_color_004.png",
+      "gj22_anim_06_color_005.png",
+      "gj22_anim_06_color_006.png",
+      "gj22_anim_06_color_007.png",
+      "gj22_anim_06_color_008.png",
+      "gj22_anim_06_color_009.png",
+      "gj22_anim_06_color_010.png",
+      "gj22_anim_06_color_011.png",
+      "gj22_anim_06_color_012.png",
+    ],
+    "animInterval": 75
   },
   "2026": {
     "can_color": true,
-    "children": [
-      {
-        "frame": "gj22_anim_07_003.png",
-        "localDy": 0,
-        "tint": 52224,
-        "z": -100
-      }
-    ],
     "default_base_color_channel": 1,
     "default_detail_color_channel": 2,
     "frame": "gj22_anim_07_006.png",
@@ -34598,18 +34714,19 @@ window.allobjects = function() {
     "type": "deco",
     "z": 2,
     "default_z_layer": 5,
-    "default_z_order": 2
+    "default_z_order": 2,
+    "animFrames": [
+      "gj22_anim_07_color_001.png",
+      "gj22_anim_07_color_002.png",
+      "gj22_anim_07_color_003.png",
+      "gj22_anim_07_color_004.png",
+      "gj22_anim_07_color_005.png",
+      "gj22_anim_07_color_006.png",
+    ],
+    "animInterval": 100
   },
   "2027": {
     "can_color": true,
-    "children": [
-      {
-        "frame": "gj22_anim_08_005.png",
-        "localDy": 0,
-        "tint": 52224,
-        "z": -100
-      }
-    ],
     "default_base_color_channel": 1,
     "default_detail_color_channel": 2,
     "frame": "gj22_anim_08_004.png",
@@ -34620,18 +34737,22 @@ window.allobjects = function() {
     "type": "deco",
     "z": 2,
     "default_z_layer": 5,
-    "default_z_order": 2
+    "default_z_order": 2,
+    "animFrames": [
+      "gj22_anim_08_color_001.png",
+      "gj22_anim_08_color_002.png",
+      "gj22_anim_08_color_003.png",
+      "gj22_anim_08_color_004.png",
+      "gj22_anim_08_color_005.png",
+      "gj22_anim_08_color_006.png",
+      "gj22_anim_08_color_007.png",
+      "gj22_anim_08_color_008.png",
+      "gj22_anim_08_color_009.png",
+    ],
+    "animInterval": 100
   },
   "2028": {
     "can_color": true,
-    "children": [
-      {
-        "frame": "gj22_anim_09_003.png",
-        "localDy": 0,
-        "tint": 52224,
-        "z": -100
-      }
-    ],
     "default_base_color_channel": 1,
     "default_detail_color_channel": 2,
     "frame": "gj22_anim_09_003.png",
@@ -34642,7 +34763,15 @@ window.allobjects = function() {
     "type": "deco",
     "z": 2,
     "default_z_layer": 5,
-    "default_z_order": 2
+    "default_z_order": 2,
+    "animFrames": [
+      "gj22_anim_09_color_001.png",
+      "gj22_anim_09_color_002.png",
+      "gj22_anim_09_color_003.png",
+      "gj22_anim_09_color_004.png",
+      "gj22_anim_09_color_005.png",
+    ],
+    "animInterval": 100
   },
   "2029": {
     "can_color": true,
@@ -34921,7 +35050,22 @@ window.allobjects = function() {
     "z": 2,
     "default_detail_color_channel": -1,
     "default_z_layer": 5,
-    "default_z_order": 2
+    "default_z_order": 2,
+    "animFrames": [
+      "gj22_anim_22_001.png",
+      "gj22_anim_22_002.png",
+      "gj22_anim_22_003.png",
+      "gj22_anim_22_004.png",
+      "gj22_anim_22_005.png",
+      "gj22_anim_22_006.png",
+      "gj22_anim_22_007.png",
+      "gj22_anim_22_008.png",
+      "gj22_anim_22_009.png",
+      "gj22_anim_22_010.png",
+      "gj22_anim_22_011.png",
+      "gj22_anim_22_012.png"
+    ],
+    "animInterval": 75
   },
   "2042": {
     "can_color": true,
@@ -34935,7 +35079,17 @@ window.allobjects = function() {
     "z": 2,
     "default_detail_color_channel": -1,
     "default_z_layer": 5,
-    "default_z_order": 2
+    "default_z_order": 2,
+    "animFrames": [
+      "gj22_anim_23_001.png",
+      "gj22_anim_23_002.png",
+      "gj22_anim_23_003.png",
+      "gj22_anim_23_004.png",
+      "gj22_anim_23_005.png",
+      "gj22_anim_23_006.png",
+      "gj22_anim_23_007.png"
+    ],
+    "animInterval": 75
   },
   "2043": {
     "can_color": true,
@@ -35022,7 +35176,19 @@ window.allobjects = function() {
     "type": "deco",
     "z": 2,
     "default_z_layer": 5,
-    "default_z_order": 2
+    "default_z_order": 2,
+    "animFrames": [
+      "gj22_anim_27_color_001.png",
+      "gj22_anim_27_color_002.png",
+      "gj22_anim_27_color_003.png",
+      "gj22_anim_27_color_004.png",
+      "gj22_anim_27_color_005.png",
+      "gj22_anim_27_color_006.png",
+      "gj22_anim_27_color_007.png",
+      "gj22_anim_27_color_008.png",
+      "gj22_anim_27_color_009.png",
+    ],
+    "animInterval": 75
   },
   "2047": {
     "can_color": true,
@@ -35219,7 +35385,19 @@ window.allobjects = function() {
     "type": "deco",
     "z": 2,
     "default_z_layer": 5,
-    "default_z_order": 2
+    "default_z_order": 2,
+    "animFrames": [
+      "gj22_anim_36_color_001.png",
+      "gj22_anim_36_color_002.png",
+      "gj22_anim_36_color_003.png",
+      "gj22_anim_36_color_004.png",
+      "gj22_anim_36_color_005.png",
+      "gj22_anim_36_color_006.png",
+      "gj22_anim_36_color_007.png",
+      "gj22_anim_36_color_008.png",
+      "gj22_anim_36_color_009.png",
+    ],
+    "animInterval": 100
   },
   "2062": {
     "can_color": false,
@@ -35402,7 +35580,7 @@ window.allobjects = function() {
     "gridH": 0.36666667461395264,
     "gridW": 0.36666667461395264,
     "spritesheet": "PixelSheet_01-hd",
-    "type": "deco",
+    "type": "pixel",
     "z": 9,
     "default_z_layer": 3,
     "default_z_order": 9
@@ -35424,7 +35602,7 @@ window.allobjects = function() {
     "gridH": 0.36666667461395264,
     "gridW": 0.36666667461395264,
     "spritesheet": "PixelSheet_01-hd",
-    "type": "deco",
+    "type": "pixel",
     "z": 9,
     "default_z_layer": 3,
     "default_z_order": 9
@@ -35446,7 +35624,7 @@ window.allobjects = function() {
     "gridH": 0.36666667461395264,
     "gridW": 0.36666667461395264,
     "spritesheet": "PixelSheet_01-hd",
-    "type": "deco",
+    "type": "pixel",
     "z": 9,
     "default_z_layer": 3,
     "default_z_order": 9
@@ -35468,7 +35646,7 @@ window.allobjects = function() {
     "gridH": 0.36666667461395264,
     "gridW": 0.36666667461395264,
     "spritesheet": "PixelSheet_01-hd",
-    "type": "deco",
+    "type": "pixel",
     "z": 9,
     "default_z_layer": 3,
     "default_z_order": 9
@@ -35490,7 +35668,7 @@ window.allobjects = function() {
     "gridH": 0.36666667461395264,
     "gridW": 0.36666667461395264,
     "spritesheet": "PixelSheet_01-hd",
-    "type": "deco",
+    "type": "pixel",
     "z": 9,
     "default_z_layer": 3,
     "default_z_order": 9
@@ -35512,7 +35690,7 @@ window.allobjects = function() {
     "gridH": 0.36666667461395264,
     "gridW": 0.36666667461395264,
     "spritesheet": "PixelSheet_01-hd",
-    "type": "deco",
+    "type": "pixel",
     "z": 9,
     "default_z_layer": 3,
     "default_z_order": 9
@@ -35534,7 +35712,7 @@ window.allobjects = function() {
     "gridH": 0.20000000298023224,
     "gridW": 0.23333333432674408,
     "spritesheet": "PixelSheet_01-hd",
-    "type": "deco",
+    "type": "pixel",
     "z": 9,
     "default_z_layer": 3,
     "default_z_order": 9
@@ -35547,7 +35725,7 @@ window.allobjects = function() {
     "gridH": 0.2666666805744171,
     "gridW": 0.36666667461395264,
     "spritesheet": "PixelSheet_01-hd",
-    "type": "deco",
+    "type": "pixel",
     "z": 9,
     "default_detail_color_channel": -1,
     "default_z_layer": 3,
@@ -35570,7 +35748,7 @@ window.allobjects = function() {
     "gridH": 0.5,
     "gridW": 0.5,
     "spritesheet": "PixelSheet_01-hd",
-    "type": "deco",
+    "type": "pixel",
     "z": 9,
     "default_z_layer": 3,
     "default_z_order": 9
@@ -35592,7 +35770,7 @@ window.allobjects = function() {
     "gridH": 0.5,
     "gridW": 0.5,
     "spritesheet": "PixelSheet_01-hd",
-    "type": "deco",
+    "type": "pixel",
     "z": 9,
     "default_z_layer": 3,
     "default_z_order": 9
@@ -35614,7 +35792,7 @@ window.allobjects = function() {
     "gridH": 0.5,
     "gridW": 0.5,
     "spritesheet": "PixelSheet_01-hd",
-    "type": "deco",
+    "type": "pixel",
     "z": 9,
     "default_z_layer": 3,
     "default_z_order": 9
@@ -35636,7 +35814,7 @@ window.allobjects = function() {
     "gridH": 0.5,
     "gridW": 0.5,
     "spritesheet": "PixelSheet_01-hd",
-    "type": "deco",
+    "type": "pixel",
     "z": 9,
     "default_z_layer": 3,
     "default_z_order": 9
@@ -35658,7 +35836,7 @@ window.allobjects = function() {
     "gridH": 0.13333334028720856,
     "gridW": 0.1666666716337204,
     "spritesheet": "PixelSheet_01-hd",
-    "type": "deco",
+    "type": "pixel",
     "z": 10,
     "default_z_layer": 3,
     "default_z_order": 10
@@ -35680,7 +35858,7 @@ window.allobjects = function() {
     "gridH": 0.36666667461395264,
     "gridW": 0.36666667461395264,
     "spritesheet": "PixelSheet_01-hd",
-    "type": "deco",
+    "type": "pixel",
     "z": 9,
     "default_z_layer": 3,
     "default_z_order": 9
@@ -35702,7 +35880,7 @@ window.allobjects = function() {
     "gridH": 0.36666667461395264,
     "gridW": 0.36666667461395264,
     "spritesheet": "PixelSheet_01-hd",
-    "type": "deco",
+    "type": "pixel",
     "z": 9,
     "default_z_layer": 3,
     "default_z_order": 9
@@ -35724,7 +35902,7 @@ window.allobjects = function() {
     "gridH": 0.36666667461395264,
     "gridW": 0.36666667461395264,
     "spritesheet": "PixelSheet_01-hd",
-    "type": "deco",
+    "type": "pixel",
     "z": 9,
     "default_z_layer": 3,
     "default_z_order": 9
@@ -35746,7 +35924,7 @@ window.allobjects = function() {
     "gridH": 0.36666667461395264,
     "gridW": 0.36666667461395264,
     "spritesheet": "PixelSheet_01-hd",
-    "type": "deco",
+    "type": "pixel",
     "z": 9,
     "default_z_layer": 3,
     "default_z_order": 9
@@ -35768,7 +35946,7 @@ window.allobjects = function() {
     "gridH": 0.30000001192092896,
     "gridW": 0.30000001192092896,
     "spritesheet": "PixelSheet_01-hd",
-    "type": "deco",
+    "type": "pixel",
     "z": 9,
     "default_z_layer": 3,
     "default_z_order": 9
@@ -35790,7 +35968,7 @@ window.allobjects = function() {
     "gridH": 0.23333333432674408,
     "gridW": 0.23333333432674408,
     "spritesheet": "PixelSheet_01-hd",
-    "type": "deco",
+    "type": "pixel",
     "z": 10,
     "default_z_layer": 3,
     "default_z_order": 10
@@ -35803,7 +35981,7 @@ window.allobjects = function() {
     "gridH": 0.03333333507180214,
     "gridW": 0.03333333507180214,
     "spritesheet": "PixelSheet_01-hd",
-    "type": "deco",
+    "type": "pixel",
     "z": 8,
     "default_detail_color_channel": -1,
     "default_z_layer": 3,
@@ -35817,7 +35995,7 @@ window.allobjects = function() {
     "gridH": 0.23333333432674408,
     "gridW": 0.36666667461395264,
     "spritesheet": "PixelSheet_01-hd",
-    "type": "deco",
+    "type": "pixel",
     "z": 9,
     "default_detail_color_channel": -1,
     "default_z_layer": 3,
@@ -35831,7 +36009,7 @@ window.allobjects = function() {
     "gridH": 0.36666667461395264,
     "gridW": 0.36666667461395264,
     "spritesheet": "PixelSheet_01-hd",
-    "type": "deco",
+    "type": "pixel",
     "z": 9,
     "default_detail_color_channel": -1,
     "default_z_layer": 3,
@@ -35845,7 +36023,7 @@ window.allobjects = function() {
     "gridH": 0.03333333507180214,
     "gridW": 0.03333333507180214,
     "spritesheet": "PixelSheet_01-hd",
-    "type": "deco",
+    "type": "pixel",
     "z": 8,
     "default_detail_color_channel": -1,
     "default_z_layer": 3,
@@ -35868,7 +36046,7 @@ window.allobjects = function() {
     "gridH": 0.5,
     "gridW": 0.5,
     "spritesheet": "PixelSheet_01-hd",
-    "type": "deco",
+    "type": "pixel",
     "z": 9,
     "default_z_layer": 3,
     "default_z_order": 9
@@ -35881,7 +36059,7 @@ window.allobjects = function() {
     "gridH": 0.23333333432674408,
     "gridW": 0.36666667461395264,
     "spritesheet": "PixelSheet_01-hd",
-    "type": "deco",
+    "type": "pixel",
     "z": 9,
     "default_detail_color_channel": -1,
     "default_z_layer": 3,
@@ -35895,7 +36073,7 @@ window.allobjects = function() {
     "gridH": 0.20000000298023224,
     "gridW": 0.36666667461395264,
     "spritesheet": "PixelSheet_01-hd",
-    "type": "deco",
+    "type": "pixel",
     "z": 9,
     "default_detail_color_channel": -1,
     "default_z_layer": 3,
@@ -35909,7 +36087,7 @@ window.allobjects = function() {
     "gridH": 0.36666667461395264,
     "gridW": 0.36666667461395264,
     "spritesheet": "PixelSheet_01-hd",
-    "type": "deco",
+    "type": "pixel",
     "z": 9,
     "default_detail_color_channel": -1,
     "default_z_layer": 3,
@@ -35923,7 +36101,7 @@ window.allobjects = function() {
     "gridH": 0.03333333507180214,
     "gridW": 0.03333333507180214,
     "spritesheet": "PixelSheet_01-hd",
-    "type": "deco",
+    "type": "pixel",
     "z": 8,
     "default_detail_color_channel": -1,
     "default_z_layer": 3,
@@ -35946,7 +36124,7 @@ window.allobjects = function() {
     "gridH": 0.13333334028720856,
     "gridW": 0.5,
     "spritesheet": "PixelSheet_01-hd",
-    "type": "deco",
+    "type": "pixel",
     "z": 9,
     "default_z_layer": 3,
     "default_z_order": 9
@@ -35968,7 +36146,7 @@ window.allobjects = function() {
     "gridH": 0.13333334028720856,
     "gridW": 0.5333333611488342,
     "spritesheet": "PixelSheet_01-hd",
-    "type": "deco",
+    "type": "pixel",
     "z": 9,
     "default_z_layer": 3,
     "default_z_order": 9
@@ -35990,7 +36168,7 @@ window.allobjects = function() {
     "gridH": 0.3333333432674408,
     "gridW": 0.5,
     "spritesheet": "PixelSheet_01-hd",
-    "type": "deco",
+    "type": "pixel",
     "z": 9,
     "default_z_layer": 3,
     "default_z_order": 9
@@ -36012,7 +36190,7 @@ window.allobjects = function() {
     "gridH": 0.4000000059604645,
     "gridW": 0.5333333611488342,
     "spritesheet": "PixelSheet_01-hd",
-    "type": "deco",
+    "type": "pixel",
     "z": 9,
     "default_z_layer": 3,
     "default_z_order": 9
@@ -36034,7 +36212,7 @@ window.allobjects = function() {
     "gridH": 0.20000000298023224,
     "gridW": 0.5,
     "spritesheet": "PixelSheet_01-hd",
-    "type": "deco",
+    "type": "pixel",
     "z": 9,
     "default_z_layer": 3,
     "default_z_order": 9
@@ -36056,7 +36234,7 @@ window.allobjects = function() {
     "gridH": 0.3333333432674408,
     "gridW": 0.5,
     "spritesheet": "PixelSheet_01-hd",
-    "type": "deco",
+    "type": "pixel",
     "z": 9,
     "default_z_layer": 3,
     "default_z_order": 9
@@ -36078,7 +36256,7 @@ window.allobjects = function() {
     "gridH": 0.46666666865348816,
     "gridW": 0.5333333611488342,
     "spritesheet": "PixelSheet_01-hd",
-    "type": "deco",
+    "type": "pixel",
     "z": 9,
     "default_z_layer": 3,
     "default_z_order": 9
@@ -36100,7 +36278,7 @@ window.allobjects = function() {
     "gridH": 0.4000000059604645,
     "gridW": 0.13333334028720856,
     "spritesheet": "PixelSheet_01-hd",
-    "type": "deco",
+    "type": "pixel",
     "z": 9,
     "default_z_layer": 3,
     "default_z_order": 9
@@ -36122,7 +36300,7 @@ window.allobjects = function() {
     "gridH": 0.4000000059604645,
     "gridW": 0.13333334028720856,
     "spritesheet": "PixelSheet_01-hd",
-    "type": "deco",
+    "type": "pixel",
     "z": 9,
     "default_z_layer": 3,
     "default_z_order": 9
@@ -36144,7 +36322,7 @@ window.allobjects = function() {
     "gridH": 0.10000000149011612,
     "gridW": 0.20000000298023224,
     "spritesheet": "PixelSheet_01-hd",
-    "type": "deco",
+    "type": "pixel",
     "z": 9,
     "default_z_layer": 3,
     "default_z_order": 9
@@ -36166,7 +36344,7 @@ window.allobjects = function() {
     "gridH": 0.5333333611488342,
     "gridW": 0.4000000059604645,
     "spritesheet": "PixelSheet_01-hd",
-    "type": "deco",
+    "type": "pixel",
     "z": 9,
     "default_z_layer": 3,
     "default_z_order": 9
@@ -36188,7 +36366,7 @@ window.allobjects = function() {
     "gridH": 0.46666666865348816,
     "gridW": 0.6000000238418579,
     "spritesheet": "PixelSheet_01-hd",
-    "type": "deco",
+    "type": "pixel",
     "z": 9,
     "default_z_layer": 3,
     "default_z_order": 9
@@ -36210,7 +36388,7 @@ window.allobjects = function() {
     "gridH": 0.46666666865348816,
     "gridW": 0.5333333611488342,
     "spritesheet": "PixelSheet_01-hd",
-    "type": "deco",
+    "type": "pixel",
     "z": 9,
     "default_z_layer": 3,
     "default_z_order": 9
@@ -36232,7 +36410,7 @@ window.allobjects = function() {
     "gridH": 0.5333333611488342,
     "gridW": 0.03333333507180214,
     "spritesheet": "PixelSheet_01-hd",
-    "type": "deco",
+    "type": "pixel",
     "z": 9,
     "default_z_layer": 3,
     "default_z_order": 9
@@ -36254,7 +36432,7 @@ window.allobjects = function() {
     "gridH": 0.5333333611488342,
     "gridW": 0.5333333611488342,
     "spritesheet": "PixelSheet_01-hd",
-    "type": "deco",
+    "type": "pixel",
     "z": 9,
     "default_z_layer": 3,
     "default_z_order": 9
@@ -36276,7 +36454,7 @@ window.allobjects = function() {
     "gridH": 0.3333333432674408,
     "gridW": 0.5333333611488342,
     "spritesheet": "PixelSheet_01-hd",
-    "type": "deco",
+    "type": "pixel",
     "z": 9,
     "default_z_layer": 3,
     "default_z_order": 9
@@ -36298,7 +36476,7 @@ window.allobjects = function() {
     "gridH": 0.36666667461395264,
     "gridW": 0.46666666865348816,
     "spritesheet": "PixelSheet_01-hd",
-    "type": "deco",
+    "type": "pixel",
     "z": 9,
     "default_z_layer": 3,
     "default_z_order": 9
@@ -36320,7 +36498,7 @@ window.allobjects = function() {
     "gridH": 0.2666666805744171,
     "gridW": 0.5333333611488342,
     "spritesheet": "PixelSheet_01-hd",
-    "type": "deco",
+    "type": "pixel",
     "z": 9,
     "default_z_layer": 3,
     "default_z_order": 9
@@ -36342,7 +36520,7 @@ window.allobjects = function() {
     "gridH": 0.36666667461395264,
     "gridW": 0.20000000298023224,
     "spritesheet": "PixelSheet_01-hd",
-    "type": "deco",
+    "type": "pixel",
     "z": 9,
     "default_z_layer": 3,
     "default_z_order": 9
@@ -36364,7 +36542,7 @@ window.allobjects = function() {
     "gridH": 0.36666667461395264,
     "gridW": 0.5333333611488342,
     "spritesheet": "PixelSheet_01-hd",
-    "type": "deco",
+    "type": "pixel",
     "z": 9,
     "default_z_layer": 3,
     "default_z_order": 9
@@ -36386,7 +36564,7 @@ window.allobjects = function() {
     "gridH": 0.4000000059604645,
     "gridW": 0.3333333432674408,
     "spritesheet": "PixelSheet_01-hd",
-    "type": "deco",
+    "type": "pixel",
     "z": 9,
     "default_z_layer": 3,
     "default_z_order": 9
@@ -36408,7 +36586,7 @@ window.allobjects = function() {
     "gridH": 0.2666666805744171,
     "gridW": 0.4000000059604645,
     "spritesheet": "PixelSheet_01-hd",
-    "type": "deco",
+    "type": "pixel",
     "z": 9,
     "default_z_layer": 3,
     "default_z_order": 9
@@ -36421,7 +36599,7 @@ window.allobjects = function() {
     "gridH": 0.10000000149011612,
     "gridW": 0.36666667461395264,
     "spritesheet": "PixelSheet_01-hd",
-    "type": "deco",
+    "type": "pixel",
     "z": 10,
     "default_detail_color_channel": -1,
     "default_z_layer": 3,
@@ -36435,7 +36613,7 @@ window.allobjects = function() {
     "gridH": 0.13333334028720856,
     "gridW": 0.36666667461395264,
     "spritesheet": "PixelSheet_01-hd",
-    "type": "deco",
+    "type": "pixel",
     "z": 10,
     "default_detail_color_channel": -1,
     "default_z_layer": 3,
@@ -36458,7 +36636,7 @@ window.allobjects = function() {
     "gridH": 0.4333333373069763,
     "gridW": 0.5,
     "spritesheet": "PixelSheet_01-hd",
-    "type": "deco",
+    "type": "pixel",
     "z": 9,
     "default_z_layer": 3,
     "default_z_order": 9
@@ -36480,7 +36658,7 @@ window.allobjects = function() {
     "gridH": 0.36666667461395264,
     "gridW": 0.5,
     "spritesheet": "PixelSheet_01-hd",
-    "type": "deco",
+    "type": "pixel",
     "z": 9,
     "default_z_layer": 3,
     "default_z_order": 9
@@ -36493,7 +36671,7 @@ window.allobjects = function() {
     "gridH": 0.06666667014360428,
     "gridW": 0.23333333432674408,
     "spritesheet": "PixelSheet_01-hd",
-    "type": "deco",
+    "type": "pixel",
     "z": 9,
     "default_detail_color_channel": -1,
     "default_z_layer": 3,
@@ -36516,7 +36694,7 @@ window.allobjects = function() {
     "gridH": 0.10000000149011612,
     "gridW": 0.23333333432674408,
     "spritesheet": "PixelSheet_01-hd",
-    "type": "deco",
+    "type": "pixel",
     "z": 9,
     "default_z_layer": 3,
     "default_z_order": 9
@@ -36538,7 +36716,7 @@ window.allobjects = function() {
     "gridH": 0.1666666716337204,
     "gridW": 0.1666666716337204,
     "spritesheet": "PixelSheet_01-hd",
-    "type": "deco",
+    "type": "pixel",
     "z": 9,
     "default_z_layer": 3,
     "default_z_order": 9
@@ -36560,7 +36738,7 @@ window.allobjects = function() {
     "gridH": 0.5333333611488342,
     "gridW": 0.5333333611488342,
     "spritesheet": "PixelSheet_01-hd",
-    "type": "deco",
+    "type": "pixel",
     "z": 9,
     "default_z_layer": 3,
     "default_z_order": 9
@@ -36582,7 +36760,7 @@ window.allobjects = function() {
     "gridH": 0.10000000149011612,
     "gridW": 0.36666667461395264,
     "spritesheet": "PixelSheet_01-hd",
-    "type": "deco",
+    "type": "pixel",
     "z": 9,
     "default_z_layer": 3,
     "default_z_order": 9
@@ -36604,7 +36782,7 @@ window.allobjects = function() {
     "gridH": 0.10000000149011612,
     "gridW": 0.10000000149011612,
     "spritesheet": "PixelSheet_01-hd",
-    "type": "deco",
+    "type": "pixel",
     "z": 9,
     "default_z_layer": 3,
     "default_z_order": 9
@@ -36626,7 +36804,7 @@ window.allobjects = function() {
     "gridH": 0.1666666716337204,
     "gridW": 0.36666667461395264,
     "spritesheet": "PixelSheet_01-hd",
-    "type": "deco",
+    "type": "pixel",
     "z": 10,
     "default_z_layer": 3,
     "default_z_order": 10
@@ -36648,7 +36826,7 @@ window.allobjects = function() {
     "gridH": 0.03333333507180214,
     "gridW": 0.36666667461395264,
     "spritesheet": "PixelSheet_01-hd",
-    "type": "deco",
+    "type": "pixel",
     "z": 10,
     "default_z_layer": 3,
     "default_z_order": 10
@@ -36661,7 +36839,7 @@ window.allobjects = function() {
     "gridH": 0.10000000149011612,
     "gridW": 0.23333333432674408,
     "spritesheet": "PixelSheet_01-hd",
-    "type": "deco",
+    "type": "pixel",
     "z": 10,
     "default_detail_color_channel": -1,
     "default_z_layer": 3,
@@ -36684,7 +36862,7 @@ window.allobjects = function() {
     "gridH": 0.3333333432674408,
     "gridW": 0.46666666865348816,
     "spritesheet": "PixelSheet_01-hd",
-    "type": "deco",
+    "type": "pixel",
     "z": 10,
     "default_z_layer": 3,
     "default_z_order": 10
@@ -36706,7 +36884,7 @@ window.allobjects = function() {
     "gridH": 0.4000000059604645,
     "gridW": 0.5,
     "spritesheet": "PixelSheet_01-hd",
-    "type": "deco",
+    "type": "pixel",
     "z": 10,
     "default_z_layer": 3,
     "default_z_order": 10
@@ -36728,7 +36906,7 @@ window.allobjects = function() {
     "gridH": 0.2666666805744171,
     "gridW": 0.4333333373069763,
     "spritesheet": "PixelSheet_01-hd",
-    "type": "deco",
+    "type": "pixel",
     "z": 10,
     "default_z_layer": 3,
     "default_z_order": 10
@@ -36750,7 +36928,7 @@ window.allobjects = function() {
     "gridH": 0.23333333432674408,
     "gridW": 0.23333333432674408,
     "spritesheet": "PixelSheet_01-hd",
-    "type": "deco",
+    "type": "pixel",
     "z": 10,
     "default_z_layer": 3,
     "default_z_order": 10
@@ -36763,7 +36941,7 @@ window.allobjects = function() {
     "gridH": 0.20000000298023224,
     "gridW": 0.3333333432674408,
     "spritesheet": "PixelSheet_01-hd",
-    "type": "deco",
+    "type": "pixel",
     "z": 9,
     "default_detail_color_channel": -1,
     "default_z_layer": 3,
@@ -36786,7 +36964,7 @@ window.allobjects = function() {
     "gridH": 0.10000000149011612,
     "gridW": 0.2666666805744171,
     "spritesheet": "PixelSheet_01-hd",
-    "type": "deco",
+    "type": "pixel",
     "z": 10,
     "default_z_layer": 3,
     "default_z_order": 10
@@ -36808,7 +36986,7 @@ window.allobjects = function() {
     "gridH": 0.3333333432674408,
     "gridW": 0.20000000298023224,
     "spritesheet": "PixelSheet_01-hd",
-    "type": "deco",
+    "type": "pixel",
     "z": 10,
     "default_z_layer": 3,
     "default_z_order": 10
@@ -36830,7 +37008,7 @@ window.allobjects = function() {
     "gridH": 0.46666666865348816,
     "gridW": 0.5333333611488342,
     "spritesheet": "PixelSheet_01-hd",
-    "type": "deco",
+    "type": "pixel",
     "z": 10,
     "default_z_layer": 3,
     "default_z_order": 10
@@ -36852,7 +37030,7 @@ window.allobjects = function() {
     "gridH": 0.5333333611488342,
     "gridW": 0.3333333432674408,
     "spritesheet": "PixelSheet_01-hd",
-    "type": "deco",
+    "type": "pixel",
     "z": 10,
     "default_z_layer": 3,
     "default_z_order": 10
@@ -36865,7 +37043,7 @@ window.allobjects = function() {
     "gridH": 0.5333333611488342,
     "gridW": 0.5,
     "spritesheet": "PixelSheet_01-hd",
-    "type": "deco",
+    "type": "pixel",
     "z": 9,
     "default_detail_color_channel": -1,
     "default_z_layer": 3,
@@ -36888,7 +37066,7 @@ window.allobjects = function() {
     "gridH": 0.8333333134651184,
     "gridW": 0.46666666865348816,
     "spritesheet": "PixelSheet_01-hd",
-    "type": "deco",
+    "type": "pixel",
     "z": 9,
     "default_z_layer": 3,
     "default_z_order": 9
@@ -36910,7 +37088,7 @@ window.allobjects = function() {
     "gridH": 0.5,
     "gridW": 0.5,
     "spritesheet": "PixelSheet_01-hd",
-    "type": "deco",
+    "type": "pixel",
     "z": 9,
     "default_z_layer": 3,
     "default_z_order": 9
@@ -36932,7 +37110,7 @@ window.allobjects = function() {
     "gridH": 0.5,
     "gridW": 0.5,
     "spritesheet": "PixelSheet_01-hd",
-    "type": "deco",
+    "type": "pixel",
     "z": 9,
     "default_z_layer": 3,
     "default_z_order": 9
@@ -36954,7 +37132,7 @@ window.allobjects = function() {
     "gridH": 0.5,
     "gridW": 0.5,
     "spritesheet": "PixelSheet_01-hd",
-    "type": "deco",
+    "type": "pixel",
     "z": 9,
     "default_z_layer": 3,
     "default_z_order": 9
@@ -36976,7 +37154,7 @@ window.allobjects = function() {
     "gridH": 0.46666666865348816,
     "gridW": 0.4000000059604645,
     "spritesheet": "PixelSheet_01-hd",
-    "type": "deco",
+    "type": "pixel",
     "z": 9,
     "default_z_layer": 3,
     "default_z_order": 9
@@ -36998,7 +37176,7 @@ window.allobjects = function() {
     "gridH": 0.5333333611488342,
     "gridW": 0.5,
     "spritesheet": "PixelSheet_01-hd",
-    "type": "deco",
+    "type": "pixel",
     "z": 9,
     "default_z_layer": 3,
     "default_z_order": 9
@@ -37020,7 +37198,7 @@ window.allobjects = function() {
     "gridH": 0.1666666716337204,
     "gridW": 0.5333333611488342,
     "spritesheet": "PixelSheet_01-hd",
-    "type": "deco",
+    "type": "pixel",
     "z": 9,
     "default_z_layer": 3,
     "default_z_order": 9
@@ -37042,7 +37220,7 @@ window.allobjects = function() {
     "gridH": 0.4333333373069763,
     "gridW": 0.5333333611488342,
     "spritesheet": "PixelSheet_01-hd",
-    "type": "deco",
+    "type": "pixel",
     "z": 9,
     "default_z_layer": 3,
     "default_z_order": 9
@@ -37064,7 +37242,7 @@ window.allobjects = function() {
     "gridH": 0.1666666716337204,
     "gridW": 0.5333333611488342,
     "spritesheet": "PixelSheet_01-hd",
-    "type": "deco",
+    "type": "pixel",
     "z": 9,
     "default_z_layer": 3,
     "default_z_order": 9
@@ -37086,7 +37264,7 @@ window.allobjects = function() {
     "gridH": 0.5,
     "gridW": 0.5333333611488342,
     "spritesheet": "PixelSheet_01-hd",
-    "type": "deco",
+    "type": "pixel",
     "z": 9,
     "default_z_layer": 3,
     "default_z_order": 9
@@ -37108,7 +37286,7 @@ window.allobjects = function() {
     "gridH": 0.5333333611488342,
     "gridW": 0.5,
     "spritesheet": "PixelSheet_01-hd",
-    "type": "deco",
+    "type": "pixel",
     "z": 9,
     "default_z_layer": 3,
     "default_z_order": 9
@@ -37130,7 +37308,7 @@ window.allobjects = function() {
     "gridH": 0.5666666626930237,
     "gridW": 0.5666666626930237,
     "spritesheet": "PixelSheet_01-hd",
-    "type": "deco",
+    "type": "pixel",
     "z": 9,
     "default_z_layer": 3,
     "default_z_order": 9
@@ -37143,7 +37321,7 @@ window.allobjects = function() {
     "gridH": 0.3333333432674408,
     "gridW": 0.3333333432674408,
     "spritesheet": "PixelSheet_01-hd",
-    "type": "deco",
+    "type": "pixel",
     "z": 10,
     "default_detail_color_channel": -1,
     "default_z_layer": 3,
@@ -37166,7 +37344,7 @@ window.allobjects = function() {
     "gridH": 0.2666666805744171,
     "gridW": 0.30000001192092896,
     "spritesheet": "PixelSheet_01-hd",
-    "type": "deco",
+    "type": "pixel",
     "z": 9,
     "default_z_layer": 3,
     "default_z_order": 9
@@ -37188,7 +37366,7 @@ window.allobjects = function() {
     "gridH": 0.2666666805744171,
     "gridW": 0.30000001192092896,
     "spritesheet": "PixelSheet_01-hd",
-    "type": "deco",
+    "type": "pixel",
     "z": 9,
     "default_z_layer": 3,
     "default_z_order": 9
@@ -37210,7 +37388,7 @@ window.allobjects = function() {
     "gridH": 0.2666666805744171,
     "gridW": 0.30000001192092896,
     "spritesheet": "PixelSheet_01-hd",
-    "type": "deco",
+    "type": "pixel",
     "z": 9,
     "default_z_layer": 3,
     "default_z_order": 9
@@ -37232,7 +37410,7 @@ window.allobjects = function() {
     "gridH": 0.30000001192092896,
     "gridW": 0.30000001192092896,
     "spritesheet": "PixelSheet_01-hd",
-    "type": "deco",
+    "type": "pixel",
     "z": 9,
     "default_z_layer": 3,
     "default_z_order": 9
@@ -37254,7 +37432,7 @@ window.allobjects = function() {
     "gridH": 0.2666666805744171,
     "gridW": 0.2666666805744171,
     "spritesheet": "PixelSheet_01-hd",
-    "type": "deco",
+    "type": "pixel",
     "z": 9,
     "default_z_layer": 3,
     "default_z_order": 9
@@ -37276,7 +37454,7 @@ window.allobjects = function() {
     "gridH": 0.30000001192092896,
     "gridW": 0.30000001192092896,
     "spritesheet": "PixelSheet_01-hd",
-    "type": "deco",
+    "type": "pixel",
     "z": 9,
     "default_z_layer": 3,
     "default_z_order": 9
@@ -37298,7 +37476,7 @@ window.allobjects = function() {
     "gridH": 0.30000001192092896,
     "gridW": 0.30000001192092896,
     "spritesheet": "PixelSheet_01-hd",
-    "type": "deco",
+    "type": "pixel",
     "z": 9,
     "default_z_layer": 3,
     "default_z_order": 9
@@ -37320,7 +37498,7 @@ window.allobjects = function() {
     "gridH": 0.30000001192092896,
     "gridW": 0.30000001192092896,
     "spritesheet": "PixelSheet_01-hd",
-    "type": "deco",
+    "type": "pixel",
     "z": 9,
     "default_z_layer": 3,
     "default_z_order": 9
@@ -37342,7 +37520,7 @@ window.allobjects = function() {
     "gridH": 0.30000001192092896,
     "gridW": 0.30000001192092896,
     "spritesheet": "PixelSheet_01-hd",
-    "type": "deco",
+    "type": "pixel",
     "z": 9,
     "default_z_layer": 3,
     "default_z_order": 9
@@ -37364,7 +37542,7 @@ window.allobjects = function() {
     "gridH": 0.46666666865348816,
     "gridW": 0.5333333611488342,
     "spritesheet": "PixelSheet_01-hd",
-    "type": "deco",
+    "type": "pixel",
     "z": 9,
     "default_z_layer": 3,
     "default_z_order": 9
@@ -37386,7 +37564,7 @@ window.allobjects = function() {
     "gridH": 0.7333333492279053,
     "gridW": 0.5333333611488342,
     "spritesheet": "PixelSheet_01-hd",
-    "type": "deco",
+    "type": "pixel",
     "z": 9,
     "default_z_layer": 3,
     "default_z_order": 9
@@ -37408,7 +37586,7 @@ window.allobjects = function() {
     "gridH": 0.36666667461395264,
     "gridW": 0.5333333611488342,
     "spritesheet": "PixelSheet_01-hd",
-    "type": "deco",
+    "type": "pixel",
     "z": 9,
     "default_z_layer": 3,
     "default_z_order": 9
@@ -37430,7 +37608,7 @@ window.allobjects = function() {
     "gridH": 0.36666667461395264,
     "gridW": 0.5333333611488342,
     "spritesheet": "PixelSheet_01-hd",
-    "type": "deco",
+    "type": "pixel",
     "z": 9,
     "default_z_layer": 3,
     "default_z_order": 9
@@ -37452,7 +37630,7 @@ window.allobjects = function() {
     "gridH": 0.23333333432674408,
     "gridW": 0.23333333432674408,
     "spritesheet": "PixelSheet_01-hd",
-    "type": "deco",
+    "type": "pixel",
     "z": 9,
     "default_z_layer": 3,
     "default_z_order": 9
@@ -37474,7 +37652,7 @@ window.allobjects = function() {
     "gridH": 0.5333333611488342,
     "gridW": 0.30000001192092896,
     "spritesheet": "PixelSheet_01-hd",
-    "type": "deco",
+    "type": "pixel",
     "z": 9,
     "default_z_layer": 3,
     "default_z_order": 9
@@ -37496,7 +37674,7 @@ window.allobjects = function() {
     "gridH": 0.5333333611488342,
     "gridW": 0.3333333432674408,
     "spritesheet": "PixelSheet_01-hd",
-    "type": "deco",
+    "type": "pixel",
     "z": 9,
     "default_z_layer": 3,
     "default_z_order": 9
@@ -37518,7 +37696,7 @@ window.allobjects = function() {
     "gridH": 0.5,
     "gridW": 0.23333333432674408,
     "spritesheet": "PixelSheet_01-hd",
-    "type": "deco",
+    "type": "pixel",
     "z": 9,
     "default_z_layer": 3,
     "default_z_order": 9
@@ -37540,7 +37718,7 @@ window.allobjects = function() {
     "gridH": 0.23333333432674408,
     "gridW": 0.30000001192092896,
     "spritesheet": "PixelSheet_01-hd",
-    "type": "deco",
+    "type": "pixel",
     "z": 9,
     "default_z_layer": 3,
     "default_z_order": 9
@@ -37562,7 +37740,7 @@ window.allobjects = function() {
     "gridH": 0.30000001192092896,
     "gridW": 0.5333333611488342,
     "spritesheet": "PixelSheet_01-hd",
-    "type": "deco",
+    "type": "pixel",
     "z": 9,
     "default_z_layer": 3,
     "default_z_order": 9
@@ -37584,7 +37762,7 @@ window.allobjects = function() {
     "gridH": 0.5333333611488342,
     "gridW": 0.5333333611488342,
     "spritesheet": "PixelSheet_01-hd",
-    "type": "deco",
+    "type": "pixel",
     "z": 9,
     "default_z_layer": 3,
     "default_z_order": 9
@@ -37606,7 +37784,7 @@ window.allobjects = function() {
     "gridH": 0.5333333611488342,
     "gridW": 0.5333333611488342,
     "spritesheet": "PixelSheet_01-hd",
-    "type": "deco",
+    "type": "pixel",
     "z": 9,
     "default_z_layer": 3,
     "default_z_order": 9
@@ -37619,7 +37797,7 @@ window.allobjects = function() {
     "gridH": 0.5333333611488342,
     "gridW": 0.5333333611488342,
     "spritesheet": "PixelSheet_01-hd",
-    "type": "deco",
+    "type": "pixel",
     "z": 9,
     "default_detail_color_channel": -1,
     "default_z_layer": 3,
@@ -37633,7 +37811,7 @@ window.allobjects = function() {
     "gridH": 0.5333333611488342,
     "gridW": 0.5333333611488342,
     "spritesheet": "PixelSheet_01-hd",
-    "type": "deco",
+    "type": "pixel",
     "z": 9,
     "default_detail_color_channel": -1,
     "default_z_layer": 3,
@@ -37656,7 +37834,7 @@ window.allobjects = function() {
     "gridH": 0.4333333373069763,
     "gridW": 0.36666667461395264,
     "spritesheet": "PixelSheet_01-hd",
-    "type": "deco",
+    "type": "pixel",
     "z": 9,
     "default_z_layer": 3,
     "default_z_order": 9
@@ -37678,7 +37856,7 @@ window.allobjects = function() {
     "gridH": 0.5333333611488342,
     "gridW": 0.5333333611488342,
     "spritesheet": "PixelSheet_01-hd",
-    "type": "deco",
+    "type": "pixel",
     "z": 9,
     "default_z_layer": 3,
     "default_z_order": 9
@@ -37700,7 +37878,7 @@ window.allobjects = function() {
     "gridH": 0.5333333611488342,
     "gridW": 0.20000000298023224,
     "spritesheet": "PixelSheet_01-hd",
-    "type": "deco",
+    "type": "pixel",
     "z": 9,
     "default_z_layer": 3,
     "default_z_order": 9
@@ -37722,7 +37900,7 @@ window.allobjects = function() {
     "gridH": 0.2666666805744171,
     "gridW": 0.13333334028720856,
     "spritesheet": "PixelSheet_01-hd",
-    "type": "deco",
+    "type": "pixel",
     "z": 9,
     "default_z_layer": 3,
     "default_z_order": 9
@@ -37744,7 +37922,7 @@ window.allobjects = function() {
     "gridH": 0.3333333432674408,
     "gridW": 0.3333333432674408,
     "spritesheet": "PixelSheet_01-hd",
-    "type": "deco",
+    "type": "pixel",
     "z": 9,
     "default_z_layer": 3,
     "default_z_order": 9
@@ -37766,7 +37944,7 @@ window.allobjects = function() {
     "gridH": 0.3333333432674408,
     "gridW": 0.3333333432674408,
     "spritesheet": "PixelSheet_01-hd",
-    "type": "deco",
+    "type": "pixel",
     "z": 9,
     "default_z_layer": 3,
     "default_z_order": 9
@@ -37788,7 +37966,7 @@ window.allobjects = function() {
     "gridH": 0.23333333432674408,
     "gridW": 0.23333333432674408,
     "spritesheet": "PixelSheet_01-hd",
-    "type": "deco",
+    "type": "pixel",
     "z": 9,
     "default_z_layer": 3,
     "default_z_order": 9
@@ -37810,7 +37988,7 @@ window.allobjects = function() {
     "gridH": 0.1666666716337204,
     "gridW": 0.23333333432674408,
     "spritesheet": "PixelSheet_01-hd",
-    "type": "deco",
+    "type": "pixel",
     "z": 9,
     "default_z_layer": 3,
     "default_z_order": 9
@@ -37832,7 +38010,7 @@ window.allobjects = function() {
     "gridH": 0.1666666716337204,
     "gridW": 0.23333333432674408,
     "spritesheet": "PixelSheet_01-hd",
-    "type": "deco",
+    "type": "pixel",
     "z": 9,
     "default_z_layer": 3,
     "default_z_order": 9
@@ -37854,7 +38032,7 @@ window.allobjects = function() {
     "gridH": 0.10000000149011612,
     "gridW": 0.10000000149011612,
     "spritesheet": "PixelSheet_01-hd",
-    "type": "deco",
+    "type": "pixel",
     "z": 9,
     "default_z_layer": 3,
     "default_z_order": 9
@@ -37876,7 +38054,7 @@ window.allobjects = function() {
     "gridH": 0.23333333432674408,
     "gridW": 0.23333333432674408,
     "spritesheet": "PixelSheet_01-hd",
-    "type": "deco",
+    "type": "pixel",
     "z": 9,
     "default_z_layer": 3,
     "default_z_order": 9
@@ -37898,7 +38076,7 @@ window.allobjects = function() {
     "gridH": 0.23333333432674408,
     "gridW": 0.23333333432674408,
     "spritesheet": "PixelSheet_01-hd",
-    "type": "deco",
+    "type": "pixel",
     "z": 9,
     "default_z_layer": 3,
     "default_z_order": 9
@@ -37920,7 +38098,7 @@ window.allobjects = function() {
     "gridH": 0.1666666716337204,
     "gridW": 0.5333333611488342,
     "spritesheet": "PixelSheet_01-hd",
-    "type": "deco",
+    "type": "pixel",
     "z": 9,
     "default_z_layer": 3,
     "default_z_order": 9
@@ -37942,7 +38120,7 @@ window.allobjects = function() {
     "gridH": 0.36666667461395264,
     "gridW": 0.20000000298023224,
     "spritesheet": "PixelSheet_01-hd",
-    "type": "deco",
+    "type": "pixel",
     "z": 9,
     "default_z_layer": 3,
     "default_z_order": 9
@@ -37964,7 +38142,7 @@ window.allobjects = function() {
     "gridH": 0.4000000059604645,
     "gridW": 0.5,
     "spritesheet": "PixelSheet_01-hd",
-    "type": "deco",
+    "type": "pixel",
     "z": 9,
     "default_z_layer": 3,
     "default_z_order": 9
@@ -37986,7 +38164,7 @@ window.allobjects = function() {
     "gridH": 0.5,
     "gridW": 0.5,
     "spritesheet": "PixelSheet_01-hd",
-    "type": "deco",
+    "type": "pixel",
     "z": 9,
     "default_z_layer": 3,
     "default_z_order": 9
@@ -38008,7 +38186,7 @@ window.allobjects = function() {
     "gridH": 0.3333333432674408,
     "gridW": 0.36666667461395264,
     "spritesheet": "PixelSheet_01-hd",
-    "type": "deco",
+    "type": "pixel",
     "z": 9,
     "default_z_layer": 3,
     "default_z_order": 9
@@ -38030,7 +38208,7 @@ window.allobjects = function() {
     "gridH": 0.30000001192092896,
     "gridW": 0.5,
     "spritesheet": "PixelSheet_01-hd",
-    "type": "deco",
+    "type": "pixel",
     "z": 9,
     "default_z_layer": 3,
     "default_z_order": 9
@@ -38052,7 +38230,7 @@ window.allobjects = function() {
     "gridH": 0.5,
     "gridW": 0.5,
     "spritesheet": "PixelSheet_01-hd",
-    "type": "deco",
+    "type": "pixel",
     "z": 9,
     "default_z_layer": 3,
     "default_z_order": 9
@@ -38074,7 +38252,7 @@ window.allobjects = function() {
     "gridH": 0.30000001192092896,
     "gridW": 0.2666666805744171,
     "spritesheet": "PixelSheet_01-hd",
-    "type": "deco",
+    "type": "pixel",
     "z": 9,
     "default_z_layer": 3,
     "default_z_order": 9
@@ -38096,7 +38274,7 @@ window.allobjects = function() {
     "gridH": 0.30000001192092896,
     "gridW": 0.5,
     "spritesheet": "PixelSheet_01-hd",
-    "type": "deco",
+    "type": "pixel",
     "z": 9,
     "default_z_layer": 3,
     "default_z_order": 9
@@ -38118,7 +38296,7 @@ window.allobjects = function() {
     "gridH": 0.5,
     "gridW": 0.5,
     "spritesheet": "PixelSheet_01-hd",
-    "type": "deco",
+    "type": "pixel",
     "z": 9,
     "default_z_layer": 3,
     "default_z_order": 9
@@ -38140,7 +38318,7 @@ window.allobjects = function() {
     "gridH": 0.5,
     "gridW": 0.5,
     "spritesheet": "PixelSheet_01-hd",
-    "type": "deco",
+    "type": "pixel",
     "z": 9,
     "default_z_layer": 3,
     "default_z_order": 9
@@ -38162,7 +38340,7 @@ window.allobjects = function() {
     "gridH": 0.30000001192092896,
     "gridW": 0.36666667461395264,
     "spritesheet": "PixelSheet_01-hd",
-    "type": "deco",
+    "type": "pixel",
     "z": 9,
     "default_z_layer": 3,
     "default_z_order": 9
@@ -38184,7 +38362,7 @@ window.allobjects = function() {
     "gridH": 0.23333333432674408,
     "gridW": 0.800000011920929,
     "spritesheet": "PixelSheet_01-hd",
-    "type": "deco",
+    "type": "pixel",
     "z": 9,
     "default_z_layer": 3,
     "default_z_order": 9
@@ -38206,7 +38384,7 @@ window.allobjects = function() {
     "gridH": 0.5333333611488342,
     "gridW": 0.20000000298023224,
     "spritesheet": "PixelSheet_01-hd",
-    "type": "deco",
+    "type": "pixel",
     "z": 9,
     "default_z_layer": 3,
     "default_z_order": 9
@@ -38228,7 +38406,7 @@ window.allobjects = function() {
     "gridH": 0.5333333611488342,
     "gridW": 0.20000000298023224,
     "spritesheet": "PixelSheet_01-hd",
-    "type": "deco",
+    "type": "pixel",
     "z": 9,
     "default_z_layer": 3,
     "default_z_order": 9
@@ -38241,7 +38419,7 @@ window.allobjects = function() {
     "gridH": 0.2666666805744171,
     "gridW": 0.5333333611488342,
     "spritesheet": "PixelSheet_01-hd",
-    "type": "deco",
+    "type": "pixel",
     "z": 9,
     "default_detail_color_channel": -1,
     "default_z_layer": 3,
@@ -38264,7 +38442,7 @@ window.allobjects = function() {
     "gridH": 0.5333333611488342,
     "gridW": 0.4333333373069763,
     "spritesheet": "PixelSheet_01-hd",
-    "type": "deco",
+    "type": "pixel",
     "z": 9,
     "default_z_layer": 3,
     "default_z_order": 9
@@ -38286,7 +38464,7 @@ window.allobjects = function() {
     "gridH": 0.6333333253860474,
     "gridW": 0.3333333432674408,
     "spritesheet": "PixelSheet_01-hd",
-    "type": "deco",
+    "type": "pixel",
     "z": 9,
     "default_z_layer": 3,
     "default_z_order": 9
@@ -38308,7 +38486,7 @@ window.allobjects = function() {
     "gridH": 0.5,
     "gridW": 0.30000001192092896,
     "spritesheet": "PixelSheet_01-hd",
-    "type": "deco",
+    "type": "pixel",
     "z": 9,
     "default_z_layer": 3,
     "default_z_order": 9
@@ -38330,7 +38508,7 @@ window.allobjects = function() {
     "gridH": 0.20000000298023224,
     "gridW": 0.20000000298023224,
     "spritesheet": "PixelSheet_01-hd",
-    "type": "deco",
+    "type": "pixel",
     "z": 9,
     "default_z_layer": 3,
     "default_z_order": 9
@@ -38352,7 +38530,7 @@ window.allobjects = function() {
     "gridH": 0.5333333611488342,
     "gridW": 0.20000000298023224,
     "spritesheet": "PixelSheet_01-hd",
-    "type": "deco",
+    "type": "pixel",
     "z": 9,
     "default_z_layer": 3,
     "default_z_order": 9
@@ -38374,7 +38552,7 @@ window.allobjects = function() {
     "gridH": 0.5333333611488342,
     "gridW": 0.5,
     "spritesheet": "PixelSheet_01-hd",
-    "type": "deco",
+    "type": "pixel",
     "z": 9,
     "default_z_layer": 3,
     "default_z_order": 9
@@ -38396,7 +38574,7 @@ window.allobjects = function() {
     "gridH": 0.6000000238418579,
     "gridW": 0.5,
     "spritesheet": "PixelSheet_01-hd",
-    "type": "deco",
+    "type": "pixel",
     "z": 9,
     "default_z_layer": 3,
     "default_z_order": 9
@@ -38418,7 +38596,7 @@ window.allobjects = function() {
     "gridH": 0.36666667461395264,
     "gridW": 0.36666667461395264,
     "spritesheet": "PixelSheet_01-hd",
-    "type": "deco",
+    "type": "pixel",
     "z": 9,
     "default_z_layer": 3,
     "default_z_order": 9
@@ -38440,7 +38618,7 @@ window.allobjects = function() {
     "gridH": 0.36666667461395264,
     "gridW": 0.36666667461395264,
     "spritesheet": "PixelSheet_01-hd",
-    "type": "deco",
+    "type": "pixel",
     "z": 9,
     "default_z_layer": 3,
     "default_z_order": 9
@@ -38462,7 +38640,7 @@ window.allobjects = function() {
     "gridH": 0.36666667461395264,
     "gridW": 0.36666667461395264,
     "spritesheet": "PixelSheet_01-hd",
-    "type": "deco",
+    "type": "pixel",
     "z": 9,
     "default_z_layer": 3,
     "default_z_order": 9
@@ -38484,7 +38662,7 @@ window.allobjects = function() {
     "gridH": 0.36666667461395264,
     "gridW": 0.3333333432674408,
     "spritesheet": "PixelSheet_01-hd",
-    "type": "deco",
+    "type": "pixel",
     "z": 9,
     "default_z_layer": 3,
     "default_z_order": 9
@@ -38506,7 +38684,7 @@ window.allobjects = function() {
     "gridH": 0.36666667461395264,
     "gridW": 0.36666667461395264,
     "spritesheet": "PixelSheet_01-hd",
-    "type": "deco",
+    "type": "pixel",
     "z": 9,
     "default_z_layer": 3,
     "default_z_order": 9
@@ -38528,7 +38706,7 @@ window.allobjects = function() {
     "gridH": 0.36666667461395264,
     "gridW": 0.36666667461395264,
     "spritesheet": "PixelSheet_01-hd",
-    "type": "deco",
+    "type": "pixel",
     "z": 9,
     "default_z_layer": 3,
     "default_z_order": 9
@@ -38550,7 +38728,7 @@ window.allobjects = function() {
     "gridH": 0.36666667461395264,
     "gridW": 0.5,
     "spritesheet": "PixelSheet_01-hd",
-    "type": "deco",
+    "type": "pixel",
     "z": 9,
     "default_z_layer": 3,
     "default_z_order": 9
@@ -38572,7 +38750,7 @@ window.allobjects = function() {
     "gridH": 0.30000001192092896,
     "gridW": 0.5333333611488342,
     "spritesheet": "PixelSheet_01-hd",
-    "type": "deco",
+    "type": "pixel",
     "z": 9,
     "default_z_layer": 3,
     "default_z_order": 9
@@ -38594,7 +38772,7 @@ window.allobjects = function() {
     "gridH": 0.1666666716337204,
     "gridW": 0.10000000149011612,
     "spritesheet": "PixelSheet_01-hd",
-    "type": "deco",
+    "type": "pixel",
     "z": 9,
     "default_z_layer": 3,
     "default_z_order": 9
@@ -38616,7 +38794,7 @@ window.allobjects = function() {
     "gridH": 0.20000000298023224,
     "gridW": 0.1666666716337204,
     "spritesheet": "PixelSheet_01-hd",
-    "type": "deco",
+    "type": "pixel",
     "z": 9,
     "default_z_layer": 3,
     "default_z_order": 9
@@ -38638,7 +38816,7 @@ window.allobjects = function() {
     "gridH": 0.5333333611488342,
     "gridW": 0.5333333611488342,
     "spritesheet": "PixelSheet_01-hd",
-    "type": "deco",
+    "type": "pixel",
     "z": 9,
     "default_z_layer": 3,
     "default_z_order": 9
@@ -38660,7 +38838,7 @@ window.allobjects = function() {
     "gridH": 0.5333333611488342,
     "gridW": 0.5333333611488342,
     "spritesheet": "PixelSheet_01-hd",
-    "type": "deco",
+    "type": "pixel",
     "z": 9,
     "default_z_layer": 3,
     "default_z_order": 9
@@ -38682,7 +38860,7 @@ window.allobjects = function() {
     "gridH": 0.5333333611488342,
     "gridW": 0.5333333611488342,
     "spritesheet": "PixelSheet_01-hd",
-    "type": "deco",
+    "type": "pixel",
     "z": 9,
     "default_z_layer": 3,
     "default_z_order": 9
@@ -38704,7 +38882,7 @@ window.allobjects = function() {
     "gridH": 0.5333333611488342,
     "gridW": 0.5333333611488342,
     "spritesheet": "PixelSheet_01-hd",
-    "type": "deco",
+    "type": "pixel",
     "z": 9,
     "default_z_layer": 3,
     "default_z_order": 9
@@ -38726,7 +38904,7 @@ window.allobjects = function() {
     "gridH": 0.5333333611488342,
     "gridW": 0.5333333611488342,
     "spritesheet": "PixelSheet_01-hd",
-    "type": "deco",
+    "type": "pixel",
     "z": 9,
     "default_z_layer": 3,
     "default_z_order": 9
@@ -38748,7 +38926,7 @@ window.allobjects = function() {
     "gridH": 0.5333333611488342,
     "gridW": 0.5333333611488342,
     "spritesheet": "PixelSheet_01-hd",
-    "type": "deco",
+    "type": "pixel",
     "z": 9,
     "default_z_layer": 3,
     "default_z_order": 9
@@ -38770,7 +38948,7 @@ window.allobjects = function() {
     "gridH": 0.23333333432674408,
     "gridW": 0.5333333611488342,
     "spritesheet": "PixelSheet_01-hd",
-    "type": "deco",
+    "type": "pixel",
     "z": 11,
     "default_z_layer": 3,
     "default_z_order": 11
@@ -38792,7 +38970,7 @@ window.allobjects = function() {
     "gridH": 0.23333333432674408,
     "gridW": 0.5333333611488342,
     "spritesheet": "PixelSheet_01-hd",
-    "type": "deco",
+    "type": "pixel",
     "z": 11,
     "default_z_layer": 3,
     "default_z_order": 11
@@ -38814,7 +38992,7 @@ window.allobjects = function() {
     "gridH": 0.5333333611488342,
     "gridW": 0.5333333611488342,
     "spritesheet": "PixelSheet_01-hd",
-    "type": "deco",
+    "type": "pixel",
     "z": 11,
     "default_z_layer": 3,
     "default_z_order": 11
@@ -38836,7 +39014,7 @@ window.allobjects = function() {
     "gridH": 0.5333333611488342,
     "gridW": 0.5333333611488342,
     "spritesheet": "PixelSheet_01-hd",
-    "type": "deco",
+    "type": "pixel",
     "z": 11,
     "default_z_layer": 3,
     "default_z_order": 11
@@ -38858,7 +39036,7 @@ window.allobjects = function() {
     "gridH": 0.1666666716337204,
     "gridW": 0.1666666716337204,
     "spritesheet": "PixelSheet_01-hd",
-    "type": "deco",
+    "type": "pixel",
     "z": 11,
     "default_z_layer": 3,
     "default_z_order": 11
@@ -38880,7 +39058,7 @@ window.allobjects = function() {
     "gridH": 0.5333333611488342,
     "gridW": 0.5333333611488342,
     "spritesheet": "PixelSheet_01-hd",
-    "type": "deco",
+    "type": "pixel",
     "z": 11,
     "default_z_layer": 3,
     "default_z_order": 11
@@ -38902,7 +39080,7 @@ window.allobjects = function() {
     "gridH": 0.1666666716337204,
     "gridW": 0.1666666716337204,
     "spritesheet": "PixelSheet_01-hd",
-    "type": "deco",
+    "type": "pixel",
     "z": 11,
     "default_z_layer": 3,
     "default_z_order": 11
@@ -38924,7 +39102,7 @@ window.allobjects = function() {
     "gridH": 0.5333333611488342,
     "gridW": 0.5333333611488342,
     "spritesheet": "PixelSheet_01-hd",
-    "type": "deco",
+    "type": "pixel",
     "z": 10,
     "default_z_layer": 3,
     "default_z_order": 10
@@ -38946,7 +39124,7 @@ window.allobjects = function() {
     "gridH": 0.5333333611488342,
     "gridW": 1.0666667222976685,
     "spritesheet": "PixelSheet_01-hd",
-    "type": "deco",
+    "type": "pixel",
     "z": 10,
     "default_z_layer": 3,
     "default_z_order": 10
@@ -38968,7 +39146,7 @@ window.allobjects = function() {
     "gridH": 0.23333333432674408,
     "gridW": 0.23333333432674408,
     "spritesheet": "PixelSheet_01-hd",
-    "type": "deco",
+    "type": "pixel",
     "z": 9,
     "default_z_layer": 3,
     "default_z_order": 9
@@ -38990,7 +39168,7 @@ window.allobjects = function() {
     "gridH": 0.36666667461395264,
     "gridW": 0.4000000059604645,
     "spritesheet": "PixelSheet_01-hd",
-    "type": "deco",
+    "type": "pixel",
     "z": 9,
     "default_z_layer": 3,
     "default_z_order": 9
@@ -39012,7 +39190,7 @@ window.allobjects = function() {
     "gridH": 0.5,
     "gridW": 0.46666666865348816,
     "spritesheet": "PixelSheet_01-hd",
-    "type": "deco",
+    "type": "pixel",
     "z": 9,
     "default_z_layer": 3,
     "default_z_order": 9
@@ -39034,7 +39212,7 @@ window.allobjects = function() {
     "gridH": 0.23333333432674408,
     "gridW": 0.3333333432674408,
     "spritesheet": "PixelSheet_01-hd",
-    "type": "deco",
+    "type": "pixel",
     "z": 9,
     "default_z_layer": 3,
     "default_z_order": 9
@@ -39056,7 +39234,7 @@ window.allobjects = function() {
     "gridH": 0.2666666805744171,
     "gridW": 0.5333333611488342,
     "spritesheet": "PixelSheet_01-hd",
-    "type": "deco",
+    "type": "pixel",
     "z": 9,
     "default_z_layer": 3,
     "default_z_order": 9
@@ -39078,7 +39256,7 @@ window.allobjects = function() {
     "gridH": 0.4000000059604645,
     "gridW": 0.9666666388511658,
     "spritesheet": "PixelSheet_01-hd",
-    "type": "deco",
+    "type": "pixel",
     "z": 9,
     "default_z_layer": 3,
     "default_z_order": 9
@@ -39100,7 +39278,7 @@ window.allobjects = function() {
     "gridH": 0.1666666716337204,
     "gridW": 0.20000000298023224,
     "spritesheet": "PixelSheet_01-hd",
-    "type": "deco",
+    "type": "pixel",
     "z": 9,
     "default_z_layer": 3,
     "default_z_order": 9
@@ -39122,7 +39300,7 @@ window.allobjects = function() {
     "gridH": 0.36666667461395264,
     "gridW": 0.23333333432674408,
     "spritesheet": "PixelSheet_01-hd",
-    "type": "deco",
+    "type": "pixel",
     "z": 9,
     "default_z_layer": 3,
     "default_z_order": 9
@@ -39144,7 +39322,7 @@ window.allobjects = function() {
     "gridH": 0.2666666805744171,
     "gridW": 0.5333333611488342,
     "spritesheet": "PixelSheet_01-hd",
-    "type": "deco",
+    "type": "pixel",
     "z": 9,
     "default_z_layer": 3,
     "default_z_order": 9
@@ -39166,7 +39344,7 @@ window.allobjects = function() {
     "gridH": 0.2666666805744171,
     "gridW": 0.5333333611488342,
     "spritesheet": "PixelSheet_01-hd",
-    "type": "deco",
+    "type": "pixel",
     "z": 9,
     "default_z_layer": 3,
     "default_z_order": 9
@@ -39188,7 +39366,7 @@ window.allobjects = function() {
     "gridH": 0.4000000059604645,
     "gridW": 0.5,
     "spritesheet": "PixelSheet_01-hd",
-    "type": "deco",
+    "type": "pixel",
     "z": 9,
     "default_z_layer": 3,
     "default_z_order": 9
@@ -39210,7 +39388,7 @@ window.allobjects = function() {
     "gridH": 0.4000000059604645,
     "gridW": 0.9333333373069763,
     "spritesheet": "PixelSheet_01-hd",
-    "type": "deco",
+    "type": "pixel",
     "z": 9,
     "default_z_layer": 3,
     "default_z_order": 9
@@ -39232,7 +39410,7 @@ window.allobjects = function() {
     "gridH": 0.5333333611488342,
     "gridW": 0.5333333611488342,
     "spritesheet": "PixelSheet_01-hd",
-    "type": "deco",
+    "type": "pixel",
     "z": 9,
     "default_z_layer": 3,
     "default_z_order": 9
@@ -39254,7 +39432,7 @@ window.allobjects = function() {
     "gridH": 0.2666666805744171,
     "gridW": 0.46666666865348816,
     "spritesheet": "PixelSheet_01-hd",
-    "type": "deco",
+    "type": "pixel",
     "z": 9,
     "default_z_layer": 3,
     "default_z_order": 9
@@ -39276,7 +39454,7 @@ window.allobjects = function() {
     "gridH": 0.2666666805744171,
     "gridW": 0.2666666805744171,
     "spritesheet": "PixelSheet_01-hd",
-    "type": "deco",
+    "type": "pixel",
     "z": 9,
     "default_z_layer": 3,
     "default_z_order": 9
@@ -39298,7 +39476,7 @@ window.allobjects = function() {
     "gridH": 0.2666666805744171,
     "gridW": 0.2666666805744171,
     "spritesheet": "PixelSheet_01-hd",
-    "type": "deco",
+    "type": "pixel",
     "z": 9,
     "default_z_layer": 3,
     "default_z_order": 9
@@ -39320,7 +39498,7 @@ window.allobjects = function() {
     "gridH": 0.36666667461395264,
     "gridW": 0.23333333432674408,
     "spritesheet": "PixelSheet_01-hd",
-    "type": "deco",
+    "type": "pixel",
     "z": 9,
     "default_z_layer": 3,
     "default_z_order": 9
@@ -39342,7 +39520,7 @@ window.allobjects = function() {
     "gridH": 0.5,
     "gridW": 0.5,
     "spritesheet": "PixelSheet_01-hd",
-    "type": "deco",
+    "type": "pixel",
     "z": 9,
     "default_z_layer": 3,
     "default_z_order": 9
@@ -39364,7 +39542,7 @@ window.allobjects = function() {
     "gridH": 0.5333333611488342,
     "gridW": 0.5333333611488342,
     "spritesheet": "PixelSheet_01-hd",
-    "type": "deco",
+    "type": "pixel",
     "z": 9,
     "default_z_layer": 3,
     "default_z_order": 9
@@ -39386,7 +39564,7 @@ window.allobjects = function() {
     "gridH": 0.5,
     "gridW": 0.5,
     "spritesheet": "PixelSheet_01-hd",
-    "type": "deco",
+    "type": "pixel",
     "z": 9,
     "default_z_layer": 3,
     "default_z_order": 9
@@ -39408,7 +39586,7 @@ window.allobjects = function() {
     "gridH": 0.5333333611488342,
     "gridW": 0.5333333611488342,
     "spritesheet": "PixelSheet_01-hd",
-    "type": "deco",
+    "type": "pixel",
     "z": 9,
     "default_z_layer": 3,
     "default_z_order": 9
@@ -39430,7 +39608,7 @@ window.allobjects = function() {
     "gridH": 0.5333333611488342,
     "gridW": 0.5333333611488342,
     "spritesheet": "PixelSheet_01-hd",
-    "type": "deco",
+    "type": "pixel",
     "z": 9,
     "default_z_layer": 3,
     "default_z_order": 9
@@ -39452,7 +39630,7 @@ window.allobjects = function() {
     "gridH": 0.5333333611488342,
     "gridW": 0.5333333611488342,
     "spritesheet": "PixelSheet_01-hd",
-    "type": "deco",
+    "type": "pixel",
     "z": 9,
     "default_z_layer": 3,
     "default_z_order": 9
@@ -39474,7 +39652,7 @@ window.allobjects = function() {
     "gridH": 0.5,
     "gridW": 0.5,
     "spritesheet": "PixelSheet_01-hd",
-    "type": "deco",
+    "type": "pixel",
     "z": 9,
     "default_z_layer": 3,
     "default_z_order": 9
@@ -39496,7 +39674,7 @@ window.allobjects = function() {
     "gridH": 0.5333333611488342,
     "gridW": 0.5333333611488342,
     "spritesheet": "PixelSheet_01-hd",
-    "type": "deco",
+    "type": "pixel",
     "z": 9,
     "default_z_layer": 3,
     "default_z_order": 9
@@ -39518,7 +39696,7 @@ window.allobjects = function() {
     "gridH": 0.5,
     "gridW": 0.5,
     "spritesheet": "PixelSheet_01-hd",
-    "type": "deco",
+    "type": "pixel",
     "z": 9,
     "default_z_layer": 3,
     "default_z_order": 9
@@ -39540,7 +39718,7 @@ window.allobjects = function() {
     "gridH": 0.13333334028720856,
     "gridW": 0.1666666716337204,
     "spritesheet": "PixelSheet_01-hd",
-    "type": "deco",
+    "type": "pixel",
     "z": 9,
     "default_z_layer": 3,
     "default_z_order": 9
@@ -39562,7 +39740,7 @@ window.allobjects = function() {
     "gridH": 0.13333334028720856,
     "gridW": 0.5333333611488342,
     "spritesheet": "PixelSheet_01-hd",
-    "type": "deco",
+    "type": "pixel",
     "z": 9,
     "default_z_layer": 3,
     "default_z_order": 9
@@ -39584,7 +39762,7 @@ window.allobjects = function() {
     "gridH": 0.13333334028720856,
     "gridW": 0.20000000298023224,
     "spritesheet": "PixelSheet_01-hd",
-    "type": "deco",
+    "type": "pixel",
     "z": 9,
     "default_z_layer": 3,
     "default_z_order": 9
@@ -39606,7 +39784,7 @@ window.allobjects = function() {
     "gridH": 0.5333333611488342,
     "gridW": 0.1666666716337204,
     "spritesheet": "PixelSheet_01-hd",
-    "type": "deco",
+    "type": "pixel",
     "z": 9,
     "default_z_layer": 3,
     "default_z_order": 9
@@ -39628,7 +39806,7 @@ window.allobjects = function() {
     "gridH": 0.5333333611488342,
     "gridW": 0.20000000298023224,
     "spritesheet": "PixelSheet_01-hd",
-    "type": "deco",
+    "type": "pixel",
     "z": 9,
     "default_z_layer": 3,
     "default_z_order": 9
@@ -39650,7 +39828,7 @@ window.allobjects = function() {
     "gridH": 0.1666666716337204,
     "gridW": 0.1666666716337204,
     "spritesheet": "PixelSheet_01-hd",
-    "type": "deco",
+    "type": "pixel",
     "z": 9,
     "default_z_layer": 3,
     "default_z_order": 9
@@ -39672,7 +39850,7 @@ window.allobjects = function() {
     "gridH": 0.1666666716337204,
     "gridW": 0.5333333611488342,
     "spritesheet": "PixelSheet_01-hd",
-    "type": "deco",
+    "type": "pixel",
     "z": 9,
     "default_z_layer": 3,
     "default_z_order": 9
@@ -39694,7 +39872,7 @@ window.allobjects = function() {
     "gridH": 0.1666666716337204,
     "gridW": 0.20000000298023224,
     "spritesheet": "PixelSheet_01-hd",
-    "type": "deco",
+    "type": "pixel",
     "z": 9,
     "default_z_layer": 3,
     "default_z_order": 9
@@ -39716,7 +39894,7 @@ window.allobjects = function() {
     "gridH": 0.30000001192092896,
     "gridW": 0.36666667461395264,
     "spritesheet": "PixelSheet_01-hd",
-    "type": "deco",
+    "type": "pixel",
     "z": 9,
     "default_z_layer": 3,
     "default_z_order": 9
@@ -39738,7 +39916,7 @@ window.allobjects = function() {
     "gridH": 0.3333333432674408,
     "gridW": 0.4333333373069763,
     "spritesheet": "PixelSheet_01-hd",
-    "type": "deco",
+    "type": "pixel",
     "z": 9,
     "default_z_layer": 3,
     "default_z_order": 9
@@ -39760,7 +39938,7 @@ window.allobjects = function() {
     "gridH": 0.2666666805744171,
     "gridW": 0.4000000059604645,
     "spritesheet": "PixelSheet_01-hd",
-    "type": "deco",
+    "type": "pixel",
     "z": 9,
     "default_z_layer": 3,
     "default_z_order": 9
@@ -39782,7 +39960,7 @@ window.allobjects = function() {
     "gridH": 0.4333333373069763,
     "gridW": 0.23333333432674408,
     "spritesheet": "PixelSheet_01-hd",
-    "type": "deco",
+    "type": "pixel",
     "z": 9,
     "default_z_layer": 3,
     "default_z_order": 9
@@ -39804,7 +39982,7 @@ window.allobjects = function() {
     "gridH": 0.5333333611488342,
     "gridW": 0.5333333611488342,
     "spritesheet": "PixelSheet_01-hd",
-    "type": "deco",
+    "type": "pixel",
     "z": 9,
     "default_z_layer": 3,
     "default_z_order": 9
@@ -39826,7 +40004,7 @@ window.allobjects = function() {
     "gridH": 1.0666667222976685,
     "gridW": 0.46666666865348816,
     "spritesheet": "PixelSheet_01-hd",
-    "type": "deco",
+    "type": "pixel",
     "z": 9,
     "default_z_layer": 3,
     "default_z_order": 9
@@ -39848,7 +40026,7 @@ window.allobjects = function() {
     "gridH": 0.9666666388511658,
     "gridW": 0.30000001192092896,
     "spritesheet": "PixelSheet_01-hd",
-    "type": "deco",
+    "type": "pixel",
     "z": 10,
     "default_z_layer": 3,
     "default_z_order": 10
@@ -39870,7 +40048,7 @@ window.allobjects = function() {
     "gridH": 0.10000000149011612,
     "gridW": 0.13333334028720856,
     "spritesheet": "PixelSheet_01-hd",
-    "type": "deco",
+    "type": "pixel",
     "z": 11,
     "default_z_layer": 3,
     "default_z_order": 11
@@ -39892,7 +40070,7 @@ window.allobjects = function() {
     "gridH": 0.2666666805744171,
     "gridW": 0.2666666805744171,
     "spritesheet": "PixelSheet_01-hd",
-    "type": "deco",
+    "type": "pixel",
     "z": 9,
     "default_z_layer": 3,
     "default_z_order": 9
@@ -39914,7 +40092,7 @@ window.allobjects = function() {
     "gridH": 0.2666666805744171,
     "gridW": 0.2666666805744171,
     "spritesheet": "PixelSheet_01-hd",
-    "type": "deco",
+    "type": "pixel",
     "z": 9,
     "default_z_layer": 3,
     "default_z_order": 9
@@ -39936,7 +40114,7 @@ window.allobjects = function() {
     "gridH": 0.2666666805744171,
     "gridW": 0.2666666805744171,
     "spritesheet": "PixelSheet_01-hd",
-    "type": "deco",
+    "type": "pixel",
     "z": 9,
     "default_z_layer": 3,
     "default_z_order": 9
@@ -39958,7 +40136,7 @@ window.allobjects = function() {
     "gridH": 0.2666666805744171,
     "gridW": 0.2666666805744171,
     "spritesheet": "PixelSheet_01-hd",
-    "type": "deco",
+    "type": "pixel",
     "z": 9,
     "default_z_layer": 3,
     "default_z_order": 9
@@ -39980,7 +40158,7 @@ window.allobjects = function() {
     "gridH": 0.2666666805744171,
     "gridW": 0.2666666805744171,
     "spritesheet": "PixelSheet_01-hd",
-    "type": "deco",
+    "type": "pixel",
     "z": 9,
     "default_z_layer": 3,
     "default_z_order": 9
@@ -40002,7 +40180,7 @@ window.allobjects = function() {
     "gridH": 0.2666666805744171,
     "gridW": 0.2666666805744171,
     "spritesheet": "PixelSheet_01-hd",
-    "type": "deco",
+    "type": "pixel",
     "z": 9,
     "default_z_layer": 3,
     "default_z_order": 9
@@ -40024,7 +40202,7 @@ window.allobjects = function() {
     "gridH": 0.2666666805744171,
     "gridW": 0.2666666805744171,
     "spritesheet": "PixelSheet_01-hd",
-    "type": "deco",
+    "type": "pixel",
     "z": 9,
     "default_z_layer": 3,
     "default_z_order": 9
@@ -40046,7 +40224,7 @@ window.allobjects = function() {
     "gridH": 0.2666666805744171,
     "gridW": 0.2666666805744171,
     "spritesheet": "PixelSheet_01-hd",
-    "type": "deco",
+    "type": "pixel",
     "z": 9,
     "default_z_layer": 3,
     "default_z_order": 9
@@ -40068,7 +40246,7 @@ window.allobjects = function() {
     "gridH": 0.2666666805744171,
     "gridW": 0.2666666805744171,
     "spritesheet": "PixelSheet_01-hd",
-    "type": "deco",
+    "type": "pixel",
     "z": 9,
     "default_z_layer": 3,
     "default_z_order": 9
@@ -40090,7 +40268,7 @@ window.allobjects = function() {
     "gridH": 0.2666666805744171,
     "gridW": 0.2666666805744171,
     "spritesheet": "PixelSheet_01-hd",
-    "type": "deco",
+    "type": "pixel",
     "z": 9,
     "default_z_layer": 3,
     "default_z_order": 9
@@ -40112,7 +40290,7 @@ window.allobjects = function() {
     "gridH": 0.2666666805744171,
     "gridW": 0.2666666805744171,
     "spritesheet": "PixelSheet_01-hd",
-    "type": "deco",
+    "type": "pixel",
     "z": 9,
     "default_z_layer": 3,
     "default_z_order": 9
@@ -40134,7 +40312,7 @@ window.allobjects = function() {
     "gridH": 0.2666666805744171,
     "gridW": 0.2666666805744171,
     "spritesheet": "PixelSheet_01-hd",
-    "type": "deco",
+    "type": "pixel",
     "z": 9,
     "default_z_layer": 3,
     "default_z_order": 9
@@ -40156,7 +40334,7 @@ window.allobjects = function() {
     "gridH": 0.2666666805744171,
     "gridW": 0.2666666805744171,
     "spritesheet": "PixelSheet_01-hd",
-    "type": "deco",
+    "type": "pixel",
     "z": 9,
     "default_z_layer": 3,
     "default_z_order": 9
@@ -40178,7 +40356,7 @@ window.allobjects = function() {
     "gridH": 0.2666666805744171,
     "gridW": 0.2666666805744171,
     "spritesheet": "PixelSheet_01-hd",
-    "type": "deco",
+    "type": "pixel",
     "z": 9,
     "default_z_layer": 3,
     "default_z_order": 9
@@ -40200,7 +40378,7 @@ window.allobjects = function() {
     "gridH": 0.2666666805744171,
     "gridW": 0.2666666805744171,
     "spritesheet": "PixelSheet_01-hd",
-    "type": "deco",
+    "type": "pixel",
     "z": 9,
     "default_z_layer": 3,
     "default_z_order": 9
@@ -40222,7 +40400,7 @@ window.allobjects = function() {
     "gridH": 0.2666666805744171,
     "gridW": 0.2666666805744171,
     "spritesheet": "PixelSheet_01-hd",
-    "type": "deco",
+    "type": "pixel",
     "z": 9,
     "default_z_layer": 3,
     "default_z_order": 9
@@ -40244,7 +40422,7 @@ window.allobjects = function() {
     "gridH": 0.5,
     "gridW": 0.5,
     "spritesheet": "PixelSheet_01-hd",
-    "type": "deco",
+    "type": "pixel",
     "z": 9,
     "default_z_layer": 3,
     "default_z_order": 9
@@ -40266,7 +40444,7 @@ window.allobjects = function() {
     "gridH": 0.5,
     "gridW": 0.5,
     "spritesheet": "PixelSheet_01-hd",
-    "type": "deco",
+    "type": "pixel",
     "z": 9,
     "default_z_layer": 3,
     "default_z_order": 9
@@ -40288,7 +40466,7 @@ window.allobjects = function() {
     "gridH": 0.5,
     "gridW": 0.5,
     "spritesheet": "PixelSheet_01-hd",
-    "type": "deco",
+    "type": "pixel",
     "z": 9,
     "default_z_layer": 3,
     "default_z_order": 9
@@ -40310,7 +40488,7 @@ window.allobjects = function() {
     "gridH": 0.5,
     "gridW": 0.5,
     "spritesheet": "PixelSheet_01-hd",
-    "type": "deco",
+    "type": "pixel",
     "z": 9,
     "default_z_layer": 3,
     "default_z_order": 9
@@ -40332,7 +40510,7 @@ window.allobjects = function() {
     "gridH": 0.5,
     "gridW": 0.5,
     "spritesheet": "PixelSheet_01-hd",
-    "type": "deco",
+    "type": "pixel",
     "z": 9,
     "default_z_layer": 3,
     "default_z_order": 9
@@ -40354,7 +40532,7 @@ window.allobjects = function() {
     "gridH": 0.2666666805744171,
     "gridW": 0.2666666805744171,
     "spritesheet": "PixelSheet_01-hd",
-    "type": "deco",
+    "type": "pixel",
     "z": 9,
     "default_z_layer": 3,
     "default_z_order": 9
@@ -40376,7 +40554,7 @@ window.allobjects = function() {
     "gridH": 0.2666666805744171,
     "gridW": 0.2666666805744171,
     "spritesheet": "PixelSheet_01-hd",
-    "type": "deco",
+    "type": "pixel",
     "z": 9,
     "default_z_layer": 3,
     "default_z_order": 9
@@ -40398,7 +40576,7 @@ window.allobjects = function() {
     "gridH": 0.23333333432674408,
     "gridW": 0.5,
     "spritesheet": "PixelSheet_01-hd",
-    "type": "deco",
+    "type": "pixel",
     "z": 9,
     "default_z_layer": 3,
     "default_z_order": 9
@@ -40420,7 +40598,7 @@ window.allobjects = function() {
     "gridH": 0.23333333432674408,
     "gridW": 0.5,
     "spritesheet": "PixelSheet_01-hd",
-    "type": "deco",
+    "type": "pixel",
     "z": 9,
     "default_z_layer": 3,
     "default_z_order": 9
@@ -40442,7 +40620,7 @@ window.allobjects = function() {
     "gridH": 0.23333333432674408,
     "gridW": 0.5,
     "spritesheet": "PixelSheet_01-hd",
-    "type": "deco",
+    "type": "pixel",
     "z": 9,
     "default_z_layer": 3,
     "default_z_order": 9
@@ -40464,7 +40642,7 @@ window.allobjects = function() {
     "gridH": 0.20000000298023224,
     "gridW": 0.4000000059604645,
     "spritesheet": "PixelSheet_01-hd",
-    "type": "deco",
+    "type": "pixel",
     "z": 9,
     "default_z_layer": 3,
     "default_z_order": 9
@@ -40486,7 +40664,7 @@ window.allobjects = function() {
     "gridH": 0.20000000298023224,
     "gridW": 0.5333333611488342,
     "spritesheet": "PixelSheet_01-hd",
-    "type": "deco",
+    "type": "pixel",
     "z": 9,
     "default_z_layer": 3,
     "default_z_order": 9
@@ -40508,7 +40686,7 @@ window.allobjects = function() {
     "gridH": 0.03333333507180214,
     "gridW": 0.4000000059604645,
     "spritesheet": "PixelSheet_01-hd",
-    "type": "deco",
+    "type": "pixel",
     "z": 9,
     "default_z_layer": 3,
     "default_z_order": 9
@@ -40530,7 +40708,7 @@ window.allobjects = function() {
     "gridH": 0.2666666805744171,
     "gridW": 0.30000001192092896,
     "spritesheet": "PixelSheet_01-hd",
-    "type": "deco",
+    "type": "pixel",
     "z": 9,
     "default_z_layer": 3,
     "default_z_order": 9
@@ -40552,7 +40730,7 @@ window.allobjects = function() {
     "gridH": 0.3333333432674408,
     "gridW": 0.10000000149011612,
     "spritesheet": "PixelSheet_01-hd",
-    "type": "deco",
+    "type": "pixel",
     "z": 9,
     "default_z_layer": 3,
     "default_z_order": 9
@@ -40574,7 +40752,7 @@ window.allobjects = function() {
     "gridH": 0.46666666865348816,
     "gridW": 0.06666667014360428,
     "spritesheet": "PixelSheet_01-hd",
-    "type": "deco",
+    "type": "pixel",
     "z": 9,
     "default_z_layer": 3,
     "default_z_order": 9
@@ -40596,7 +40774,7 @@ window.allobjects = function() {
     "gridH": 0.13333334028720856,
     "gridW": 0.06666667014360428,
     "spritesheet": "PixelSheet_01-hd",
-    "type": "deco",
+    "type": "pixel",
     "z": 9,
     "default_z_layer": 3,
     "default_z_order": 9
@@ -40609,7 +40787,7 @@ window.allobjects = function() {
     "gridH": 0.4333333373069763,
     "gridW": 0.4333333373069763,
     "spritesheet": "PixelSheet_01-hd",
-    "type": "deco",
+    "type": "pixel",
     "z": 9,
     "default_detail_color_channel": -1,
     "default_z_layer": 3,
@@ -40632,7 +40810,7 @@ window.allobjects = function() {
     "gridH": 0.30000001192092896,
     "gridW": 0.30000001192092896,
     "spritesheet": "PixelSheet_01-hd",
-    "type": "deco",
+    "type": "pixel",
     "z": 9,
     "default_z_layer": 3,
     "default_z_order": 9
@@ -40654,7 +40832,7 @@ window.allobjects = function() {
     "gridH": 0.1666666716337204,
     "gridW": 0.1666666716337204,
     "spritesheet": "PixelSheet_01-hd",
-    "type": "deco",
+    "type": "pixel",
     "z": 9,
     "default_z_layer": 3,
     "default_z_order": 9
@@ -40676,7 +40854,7 @@ window.allobjects = function() {
     "gridH": 0.3333333432674408,
     "gridW": 0.2666666805744171,
     "spritesheet": "PixelSheet_01-hd",
-    "type": "deco",
+    "type": "pixel",
     "z": 9,
     "default_z_layer": 3,
     "default_z_order": 9
@@ -40698,7 +40876,7 @@ window.allobjects = function() {
     "gridH": 0.36666667461395264,
     "gridW": 0.4000000059604645,
     "spritesheet": "PixelSheet_01-hd",
-    "type": "deco",
+    "type": "pixel",
     "z": 9,
     "default_z_layer": 3,
     "default_z_order": 9
@@ -40720,7 +40898,7 @@ window.allobjects = function() {
     "gridH": 0.36666667461395264,
     "gridW": 0.46666666865348816,
     "spritesheet": "PixelSheet_01-hd",
-    "type": "deco",
+    "type": "pixel",
     "z": 9,
     "default_z_layer": 3,
     "default_z_order": 9
@@ -40742,7 +40920,7 @@ window.allobjects = function() {
     "gridH": 0.4333333373069763,
     "gridW": 0.4000000059604645,
     "spritesheet": "PixelSheet_01-hd",
-    "type": "deco",
+    "type": "pixel",
     "z": 9,
     "default_z_layer": 3,
     "default_z_order": 9
@@ -40764,7 +40942,7 @@ window.allobjects = function() {
     "gridH": 0.3333333432674408,
     "gridW": 0.10000000149011612,
     "spritesheet": "PixelSheet_01-hd",
-    "type": "deco",
+    "type": "pixel",
     "z": 9,
     "default_z_layer": 3,
     "default_z_order": 9
@@ -40786,7 +40964,7 @@ window.allobjects = function() {
     "gridH": 0.1666666716337204,
     "gridW": 0.10000000149011612,
     "spritesheet": "PixelSheet_01-hd",
-    "type": "deco",
+    "type": "pixel",
     "z": 9,
     "default_z_layer": 3,
     "default_z_order": 9
@@ -40808,7 +40986,7 @@ window.allobjects = function() {
     "gridH": 0.20000000298023224,
     "gridW": 0.10000000149011612,
     "spritesheet": "PixelSheet_01-hd",
-    "type": "deco",
+    "type": "pixel",
     "z": 9,
     "default_z_layer": 3,
     "default_z_order": 9
@@ -40830,7 +41008,7 @@ window.allobjects = function() {
     "gridH": 0.23333333432674408,
     "gridW": 0.5333333611488342,
     "spritesheet": "PixelSheet_01-hd",
-    "type": "deco",
+    "type": "pixel",
     "z": 9,
     "default_z_layer": 3,
     "default_z_order": 9
@@ -40852,7 +41030,7 @@ window.allobjects = function() {
     "gridH": 0.23333333432674408,
     "gridW": 0.30000001192092896,
     "spritesheet": "PixelSheet_01-hd",
-    "type": "deco",
+    "type": "pixel",
     "z": 9,
     "default_z_layer": 3,
     "default_z_order": 9
@@ -40874,7 +41052,7 @@ window.allobjects = function() {
     "gridH": 0.36666667461395264,
     "gridW": 0.4000000059604645,
     "spritesheet": "PixelSheet_01-hd",
-    "type": "deco",
+    "type": "pixel",
     "z": 9,
     "default_z_layer": 3,
     "default_z_order": 9
@@ -40896,7 +41074,7 @@ window.allobjects = function() {
     "gridH": 0.30000001192092896,
     "gridW": 0.3333333432674408,
     "spritesheet": "PixelSheet_01-hd",
-    "type": "deco",
+    "type": "pixel",
     "z": 9,
     "default_z_layer": 3,
     "default_z_order": 9
@@ -40918,7 +41096,7 @@ window.allobjects = function() {
     "gridH": 0.23333333432674408,
     "gridW": 0.2666666805744171,
     "spritesheet": "PixelSheet_01-hd",
-    "type": "deco",
+    "type": "pixel",
     "z": 9,
     "default_z_layer": 3,
     "default_z_order": 9
@@ -40940,7 +41118,7 @@ window.allobjects = function() {
     "gridH": 0.20000000298023224,
     "gridW": 0.23333333432674408,
     "spritesheet": "PixelSheet_01-hd",
-    "type": "deco",
+    "type": "pixel",
     "z": 9,
     "default_z_layer": 3,
     "default_z_order": 9
@@ -40962,7 +41140,7 @@ window.allobjects = function() {
     "gridH": 0.1666666716337204,
     "gridW": 0.20000000298023224,
     "spritesheet": "PixelSheet_01-hd",
-    "type": "deco",
+    "type": "pixel",
     "z": 9,
     "default_z_layer": 3,
     "default_z_order": 9
@@ -40984,7 +41162,7 @@ window.allobjects = function() {
     "gridH": 0.46666666865348816,
     "gridW": 0.4333333373069763,
     "spritesheet": "PixelSheet_01-hd",
-    "type": "deco",
+    "type": "pixel",
     "z": 9,
     "default_z_layer": 3,
     "default_z_order": 9
@@ -41006,7 +41184,7 @@ window.allobjects = function() {
     "gridH": 0.4000000059604645,
     "gridW": 0.20000000298023224,
     "spritesheet": "PixelSheet_01-hd",
-    "type": "deco",
+    "type": "pixel",
     "z": 9,
     "default_z_layer": 3,
     "default_z_order": 9
@@ -41028,7 +41206,7 @@ window.allobjects = function() {
     "gridH": 0.3333333432674408,
     "gridW": 0.2666666805744171,
     "spritesheet": "PixelSheet_01-hd",
-    "type": "deco",
+    "type": "pixel",
     "z": 9,
     "default_z_layer": 3,
     "default_z_order": 9
@@ -41050,7 +41228,7 @@ window.allobjects = function() {
     "gridH": 0.2666666805744171,
     "gridW": 0.2666666805744171,
     "spritesheet": "PixelSheet_01-hd",
-    "type": "deco",
+    "type": "pixel",
     "z": 9,
     "default_z_layer": 3,
     "default_z_order": 9
@@ -41072,7 +41250,7 @@ window.allobjects = function() {
     "gridH": 0.1666666716337204,
     "gridW": 0.1666666716337204,
     "spritesheet": "PixelSheet_01-hd",
-    "type": "deco",
+    "type": "pixel",
     "z": 9,
     "default_z_layer": 3,
     "default_z_order": 9
@@ -41085,7 +41263,7 @@ window.allobjects = function() {
     "gridH": 0.30000001192092896,
     "gridW": 0.30000001192092896,
     "spritesheet": "PixelSheet_01-hd",
-    "type": "deco",
+    "type": "pixel",
     "z": 9,
     "default_detail_color_channel": -1,
     "default_z_layer": 3,
@@ -41099,7 +41277,7 @@ window.allobjects = function() {
     "gridH": 0.2666666805744171,
     "gridW": 0.4000000059604645,
     "spritesheet": "PixelSheet_01-hd",
-    "type": "deco",
+    "type": "pixel",
     "z": 9,
     "default_detail_color_channel": -1,
     "default_z_layer": 3,
@@ -41113,7 +41291,7 @@ window.allobjects = function() {
     "gridH": 0.23333333432674408,
     "gridW": 0.23333333432674408,
     "spritesheet": "PixelSheet_01-hd",
-    "type": "deco",
+    "type": "pixel",
     "z": 9,
     "default_detail_color_channel": -1,
     "default_z_layer": 3,
@@ -41127,7 +41305,7 @@ window.allobjects = function() {
     "gridH": 0.2666666805744171,
     "gridW": 0.23333333432674408,
     "spritesheet": "PixelSheet_01-hd",
-    "type": "deco",
+    "type": "pixel",
     "z": 9,
     "default_detail_color_channel": -1,
     "default_z_layer": 3,
@@ -41150,7 +41328,7 @@ window.allobjects = function() {
     "gridH": 0.20000000298023224,
     "gridW": 0.20000000298023224,
     "spritesheet": "PixelSheet_01-hd",
-    "type": "deco",
+    "type": "pixel",
     "z": 9,
     "default_z_layer": 3,
     "default_z_order": 9
@@ -41172,7 +41350,7 @@ window.allobjects = function() {
     "gridH": 0.13333334028720856,
     "gridW": 0.23333333432674408,
     "spritesheet": "PixelSheet_01-hd",
-    "type": "deco",
+    "type": "pixel",
     "z": 9,
     "default_z_layer": 3,
     "default_z_order": 9
@@ -41194,7 +41372,7 @@ window.allobjects = function() {
     "gridH": 0.2666666805744171,
     "gridW": 0.3333333432674408,
     "spritesheet": "PixelSheet_01-hd",
-    "type": "deco",
+    "type": "pixel",
     "z": 9,
     "default_z_layer": 3,
     "default_z_order": 9
@@ -41216,7 +41394,7 @@ window.allobjects = function() {
     "gridH": 0.1666666716337204,
     "gridW": 0.23333333432674408,
     "spritesheet": "PixelSheet_01-hd",
-    "type": "deco",
+    "type": "pixel",
     "z": 9,
     "default_z_layer": 3,
     "default_z_order": 9
@@ -41238,7 +41416,7 @@ window.allobjects = function() {
     "gridH": 0.10000000149011612,
     "gridW": 0.30000001192092896,
     "spritesheet": "PixelSheet_01-hd",
-    "type": "deco",
+    "type": "pixel",
     "z": 9,
     "default_z_layer": 3,
     "default_z_order": 9
@@ -41260,7 +41438,7 @@ window.allobjects = function() {
     "gridH": 0.10000000149011612,
     "gridW": 0.36666667461395264,
     "spritesheet": "PixelSheet_01-hd",
-    "type": "deco",
+    "type": "pixel",
     "z": 9,
     "default_z_layer": 3,
     "default_z_order": 9
@@ -41282,7 +41460,7 @@ window.allobjects = function() {
     "gridH": 0.23333333432674408,
     "gridW": 0.23333333432674408,
     "spritesheet": "PixelSheet_01-hd",
-    "type": "deco",
+    "type": "pixel",
     "z": 9,
     "default_z_layer": 3,
     "default_z_order": 9
@@ -41304,7 +41482,7 @@ window.allobjects = function() {
     "gridH": 0.23333333432674408,
     "gridW": 0.23333333432674408,
     "spritesheet": "PixelSheet_01-hd",
-    "type": "deco",
+    "type": "pixel",
     "z": 9,
     "default_z_layer": 3,
     "default_z_order": 9
@@ -41317,7 +41495,7 @@ window.allobjects = function() {
     "gridH": 0.1666666716337204,
     "gridW": 0.30000001192092896,
     "spritesheet": "PixelSheet_01-hd",
-    "type": "deco",
+    "type": "pixel",
     "z": 9,
     "default_detail_color_channel": -1,
     "default_z_layer": 3,
@@ -41331,7 +41509,7 @@ window.allobjects = function() {
     "gridH": 0.1666666716337204,
     "gridW": 0.20000000298023224,
     "spritesheet": "PixelSheet_01-hd",
-    "type": "deco",
+    "type": "pixel",
     "z": 9,
     "default_detail_color_channel": -1,
     "default_z_layer": 3,
@@ -41345,7 +41523,7 @@ window.allobjects = function() {
     "gridH": 0.5333333611488342,
     "gridW": 0.46666666865348816,
     "spritesheet": "PixelSheet_01-hd",
-    "type": "deco",
+    "type": "pixel",
     "z": 9,
     "default_detail_color_channel": -1,
     "default_z_layer": 3,
@@ -41359,7 +41537,7 @@ window.allobjects = function() {
     "gridH": 0.5333333611488342,
     "gridW": 0.46666666865348816,
     "spritesheet": "PixelSheet_01-hd",
-    "type": "deco",
+    "type": "pixel",
     "z": 9,
     "default_detail_color_channel": -1,
     "default_z_layer": 3,
@@ -41373,7 +41551,7 @@ window.allobjects = function() {
     "gridH": 0.5,
     "gridW": 0.13333334028720856,
     "spritesheet": "PixelSheet_01-hd",
-    "type": "deco",
+    "type": "pixel",
     "z": 9,
     "default_detail_color_channel": -1,
     "default_z_layer": 3,
@@ -41396,7 +41574,7 @@ window.allobjects = function() {
     "gridH": 0.36666667461395264,
     "gridW": 0.5,
     "spritesheet": "PixelSheet_01-hd",
-    "type": "deco",
+    "type": "pixel",
     "z": 9,
     "default_z_layer": 3,
     "default_z_order": 9
@@ -41418,7 +41596,7 @@ window.allobjects = function() {
     "gridH": 0.46666666865348816,
     "gridW": 0.4333333373069763,
     "spritesheet": "PixelSheet_01-hd",
-    "type": "deco",
+    "type": "pixel",
     "z": 9,
     "default_z_layer": 3,
     "default_z_order": 9
@@ -41440,7 +41618,7 @@ window.allobjects = function() {
     "gridH": 0.2666666805744171,
     "gridW": 0.4000000059604645,
     "spritesheet": "PixelSheet_01-hd",
-    "type": "deco",
+    "type": "pixel",
     "z": 9,
     "default_z_layer": 3,
     "default_z_order": 9
@@ -41453,7 +41631,7 @@ window.allobjects = function() {
     "gridH": 0.3333333432674408,
     "gridW": 0.1666666716337204,
     "spritesheet": "PixelSheet_01-hd",
-    "type": "deco",
+    "type": "pixel",
     "z": 9,
     "default_detail_color_channel": -1,
     "default_z_layer": 3,
@@ -41467,7 +41645,7 @@ window.allobjects = function() {
     "gridH": 0.30000001192092896,
     "gridW": 0.1666666716337204,
     "spritesheet": "PixelSheet_01-hd",
-    "type": "deco",
+    "type": "pixel",
     "z": 9,
     "default_detail_color_channel": -1,
     "default_z_layer": 3,
@@ -41481,7 +41659,7 @@ window.allobjects = function() {
     "gridH": 0.2666666805744171,
     "gridW": 0.23333333432674408,
     "spritesheet": "PixelSheet_01-hd",
-    "type": "deco",
+    "type": "pixel",
     "z": 9,
     "default_detail_color_channel": -1,
     "default_z_layer": 3,
@@ -41504,7 +41682,7 @@ window.allobjects = function() {
     "gridH": 0.5333333611488342,
     "gridW": 0.10000000149011612,
     "spritesheet": "PixelSheet_01-hd",
-    "type": "deco",
+    "type": "pixel",
     "z": 9,
     "default_z_layer": 3,
     "default_z_order": 9
@@ -41526,7 +41704,7 @@ window.allobjects = function() {
     "gridH": 0.5333333611488342,
     "gridW": 0.5333333611488342,
     "spritesheet": "PixelSheet_01-hd",
-    "type": "deco",
+    "type": "pixel",
     "z": 9,
     "default_z_layer": 3,
     "default_z_order": 9
@@ -41548,7 +41726,7 @@ window.allobjects = function() {
     "gridH": 0.5333333611488342,
     "gridW": 0.46666666865348816,
     "spritesheet": "PixelSheet_01-hd",
-    "type": "deco",
+    "type": "pixel",
     "z": 9,
     "default_z_layer": 3,
     "default_z_order": 9
@@ -41570,7 +41748,7 @@ window.allobjects = function() {
     "gridH": 0.5333333611488342,
     "gridW": 0.4000000059604645,
     "spritesheet": "PixelSheet_01-hd",
-    "type": "deco",
+    "type": "pixel",
     "z": 9,
     "default_z_layer": 3,
     "default_z_order": 9
@@ -41592,7 +41770,7 @@ window.allobjects = function() {
     "gridH": 0.5,
     "gridW": 0.4000000059604645,
     "spritesheet": "PixelSheet_01-hd",
-    "type": "deco",
+    "type": "pixel",
     "z": 9,
     "default_z_layer": 3,
     "default_z_order": 9
@@ -41614,7 +41792,7 @@ window.allobjects = function() {
     "gridH": 0.5333333611488342,
     "gridW": 0.46666666865348816,
     "spritesheet": "PixelSheet_01-hd",
-    "type": "deco",
+    "type": "pixel",
     "z": 9,
     "default_z_layer": 3,
     "default_z_order": 9
@@ -41636,7 +41814,7 @@ window.allobjects = function() {
     "gridH": 0.23333333432674408,
     "gridW": 0.46666666865348816,
     "spritesheet": "PixelSheet_01-hd",
-    "type": "deco",
+    "type": "pixel",
     "z": 9,
     "default_z_layer": 3,
     "default_z_order": 9
@@ -41658,7 +41836,7 @@ window.allobjects = function() {
     "gridH": 0.4000000059604645,
     "gridW": 0.46666666865348816,
     "spritesheet": "PixelSheet_01-hd",
-    "type": "deco",
+    "type": "pixel",
     "z": 9,
     "default_z_layer": 3,
     "default_z_order": 9
@@ -41680,7 +41858,7 @@ window.allobjects = function() {
     "gridH": 0.4333333373069763,
     "gridW": 0.5333333611488342,
     "spritesheet": "PixelSheet_01-hd",
-    "type": "deco",
+    "type": "pixel",
     "z": 9,
     "default_z_layer": 3,
     "default_z_order": 9
@@ -41702,7 +41880,7 @@ window.allobjects = function() {
     "gridH": 0.5333333611488342,
     "gridW": 0.5333333611488342,
     "spritesheet": "PixelSheet_01-hd",
-    "type": "deco",
+    "type": "pixel",
     "z": 9,
     "default_z_layer": 3,
     "default_z_order": 9
@@ -41724,7 +41902,7 @@ window.allobjects = function() {
     "gridH": 0.4333333373069763,
     "gridW": 0.5333333611488342,
     "spritesheet": "PixelSheet_01-hd",
-    "type": "deco",
+    "type": "pixel",
     "z": 9,
     "default_z_layer": 3,
     "default_z_order": 9
@@ -41746,7 +41924,7 @@ window.allobjects = function() {
     "gridH": 0.46666666865348816,
     "gridW": 0.5333333611488342,
     "spritesheet": "PixelSheet_01-hd",
-    "type": "deco",
+    "type": "pixel",
     "z": 9,
     "default_z_layer": 3,
     "default_z_order": 9
@@ -41768,7 +41946,7 @@ window.allobjects = function() {
     "gridH": 0.5,
     "gridW": 0.5333333611488342,
     "spritesheet": "PixelSheet_01-hd",
-    "type": "deco",
+    "type": "pixel",
     "z": 9,
     "default_z_layer": 3,
     "default_z_order": 9
@@ -41790,7 +41968,7 @@ window.allobjects = function() {
     "gridH": 0.5,
     "gridW": 0.5333333611488342,
     "spritesheet": "PixelSheet_01-hd",
-    "type": "deco",
+    "type": "pixel",
     "z": 9,
     "default_z_layer": 3,
     "default_z_order": 9
@@ -41812,7 +41990,7 @@ window.allobjects = function() {
     "gridH": 0.5,
     "gridW": 0.5,
     "spritesheet": "PixelSheet_01-hd",
-    "type": "deco",
+    "type": "pixel",
     "z": 9,
     "default_z_layer": 3,
     "default_z_order": 9
@@ -41834,7 +42012,7 @@ window.allobjects = function() {
     "gridH": 0.5,
     "gridW": 0.4333333373069763,
     "spritesheet": "PixelSheet_01-hd",
-    "type": "deco",
+    "type": "pixel",
     "z": 9,
     "default_z_layer": 3,
     "default_z_order": 9
@@ -41856,7 +42034,7 @@ window.allobjects = function() {
     "gridH": 0.06666667014360428,
     "gridW": 0.5,
     "spritesheet": "PixelSheet_01-hd",
-    "type": "deco",
+    "type": "pixel",
     "z": 9,
     "default_z_layer": 3,
     "default_z_order": 9
@@ -41878,7 +42056,7 @@ window.allobjects = function() {
     "gridH": 0.23333333432674408,
     "gridW": 0.5,
     "spritesheet": "PixelSheet_01-hd",
-    "type": "deco",
+    "type": "pixel",
     "z": 9,
     "default_z_layer": 3,
     "default_z_order": 9
@@ -41900,7 +42078,7 @@ window.allobjects = function() {
     "gridH": 0.1666666716337204,
     "gridW": 0.4333333373069763,
     "spritesheet": "PixelSheet_01-hd",
-    "type": "deco",
+    "type": "pixel",
     "z": 9,
     "default_z_layer": 3,
     "default_z_order": 9
@@ -41922,7 +42100,7 @@ window.allobjects = function() {
     "gridH": 0.03333333507180214,
     "gridW": 0.4333333373069763,
     "spritesheet": "PixelSheet_01-hd",
-    "type": "deco",
+    "type": "pixel",
     "z": 9,
     "default_z_layer": 3,
     "default_z_order": 9
@@ -41944,7 +42122,7 @@ window.allobjects = function() {
     "gridH": 0.2666666805744171,
     "gridW": 0.5333333611488342,
     "spritesheet": "PixelSheet_01-hd",
-    "type": "deco",
+    "type": "pixel",
     "z": 9,
     "default_z_layer": 3,
     "default_z_order": 9
@@ -41966,7 +42144,7 @@ window.allobjects = function() {
     "gridH": 0.23333333432674408,
     "gridW": 0.23333333432674408,
     "spritesheet": "PixelSheet_01-hd",
-    "type": "deco",
+    "type": "pixel",
     "z": 9,
     "default_z_layer": 3,
     "default_z_order": 9
@@ -41988,7 +42166,7 @@ window.allobjects = function() {
     "gridH": 0.1666666716337204,
     "gridW": 0.2666666805744171,
     "spritesheet": "PixelSheet_01-hd",
-    "type": "deco",
+    "type": "pixel",
     "z": 9,
     "default_z_layer": 3,
     "default_z_order": 9
@@ -42010,7 +42188,7 @@ window.allobjects = function() {
     "gridH": 0.2666666805744171,
     "gridW": 0.13333334028720856,
     "spritesheet": "PixelSheet_01-hd",
-    "type": "deco",
+    "type": "pixel",
     "z": 9,
     "default_z_layer": 3,
     "default_z_order": 9
@@ -42032,7 +42210,7 @@ window.allobjects = function() {
     "gridH": 0.13333334028720856,
     "gridW": 0.2666666805744171,
     "spritesheet": "PixelSheet_01-hd",
-    "type": "deco",
+    "type": "pixel",
     "z": 9,
     "default_z_layer": 3,
     "default_z_order": 9
@@ -42054,7 +42232,7 @@ window.allobjects = function() {
     "gridH": 0.2666666805744171,
     "gridW": 0.1666666716337204,
     "spritesheet": "PixelSheet_01-hd",
-    "type": "deco",
+    "type": "pixel",
     "z": 9,
     "default_z_layer": 3,
     "default_z_order": 9
@@ -42076,7 +42254,7 @@ window.allobjects = function() {
     "gridH": 0.46666666865348816,
     "gridW": 0.5333333611488342,
     "spritesheet": "PixelSheet_01-hd",
-    "type": "deco",
+    "type": "pixel",
     "z": 9,
     "default_z_layer": 3,
     "default_z_order": 9
@@ -42098,7 +42276,7 @@ window.allobjects = function() {
     "gridH": 0.20000000298023224,
     "gridW": 0.5333333611488342,
     "spritesheet": "PixelSheet_01-hd",
-    "type": "deco",
+    "type": "pixel",
     "z": 9,
     "default_z_layer": 3,
     "default_z_order": 9
@@ -42120,7 +42298,7 @@ window.allobjects = function() {
     "gridH": 0.13333334028720856,
     "gridW": 0.30000001192092896,
     "spritesheet": "PixelSheet_01-hd",
-    "type": "deco",
+    "type": "pixel",
     "z": 9,
     "default_z_layer": 3,
     "default_z_order": 9
@@ -42142,7 +42320,7 @@ window.allobjects = function() {
     "gridH": 0.2666666805744171,
     "gridW": 0.4333333373069763,
     "spritesheet": "PixelSheet_01-hd",
-    "type": "deco",
+    "type": "pixel",
     "z": 9,
     "default_z_layer": 3,
     "default_z_order": 9
@@ -42164,7 +42342,7 @@ window.allobjects = function() {
     "gridH": 0.6000000238418579,
     "gridW": 0.2666666805744171,
     "spritesheet": "PixelSheet_01-hd",
-    "type": "deco",
+    "type": "pixel",
     "z": 9,
     "default_z_layer": 3,
     "default_z_order": 9
@@ -42186,7 +42364,7 @@ window.allobjects = function() {
     "gridH": 0.36666667461395264,
     "gridW": 0.1666666716337204,
     "spritesheet": "PixelSheet_01-hd",
-    "type": "deco",
+    "type": "pixel",
     "z": 9,
     "default_z_layer": 3,
     "default_z_order": 9
@@ -42208,7 +42386,7 @@ window.allobjects = function() {
     "gridH": 0.5333333611488342,
     "gridW": 0.20000000298023224,
     "spritesheet": "PixelSheet_01-hd",
-    "type": "deco",
+    "type": "pixel",
     "z": 9,
     "default_z_layer": 3,
     "default_z_order": 9
@@ -42230,7 +42408,7 @@ window.allobjects = function() {
     "gridH": 0.5333333611488342,
     "gridW": 0.2666666805744171,
     "spritesheet": "PixelSheet_01-hd",
-    "type": "deco",
+    "type": "pixel",
     "z": 9,
     "default_z_layer": 3,
     "default_z_order": 9
@@ -42243,7 +42421,7 @@ window.allobjects = function() {
     "gridH": 0.6000000238418579,
     "gridW": 0.5333333611488342,
     "spritesheet": "PixelSheet_01-hd",
-    "type": "deco",
+    "type": "pixel",
     "z": 9,
     "default_detail_color_channel": -1,
     "default_z_layer": 3,
@@ -42257,7 +42435,7 @@ window.allobjects = function() {
     "gridH": 0.23333333432674408,
     "gridW": 0.4000000059604645,
     "spritesheet": "PixelSheet_01-hd",
-    "type": "deco",
+    "type": "pixel",
     "z": 9,
     "default_detail_color_channel": -1,
     "default_z_layer": 3,
@@ -42271,7 +42449,7 @@ window.allobjects = function() {
     "gridH": 0.30000001192092896,
     "gridW": 0.30000001192092896,
     "spritesheet": "PixelSheet_01-hd",
-    "type": "deco",
+    "type": "pixel",
     "z": 9,
     "default_detail_color_channel": -1,
     "default_z_layer": 3,
@@ -42294,7 +42472,7 @@ window.allobjects = function() {
     "gridH": 0.30000001192092896,
     "gridW": 0.5333333611488342,
     "spritesheet": "PixelSheet_01-hd",
-    "type": "deco",
+    "type": "pixel",
     "z": 9,
     "default_z_layer": 3,
     "default_z_order": 9
@@ -42316,7 +42494,7 @@ window.allobjects = function() {
     "gridH": 0.5333333611488342,
     "gridW": 0.5333333611488342,
     "spritesheet": "PixelSheet_01-hd",
-    "type": "deco",
+    "type": "pixel",
     "z": 9,
     "default_z_layer": 3,
     "default_z_order": 9
@@ -42338,7 +42516,7 @@ window.allobjects = function() {
     "gridH": 0.1666666716337204,
     "gridW": 0.23333333432674408,
     "spritesheet": "PixelSheet_01-hd",
-    "type": "deco",
+    "type": "pixel",
     "z": 9,
     "default_z_layer": 3,
     "default_z_order": 9
@@ -42360,7 +42538,7 @@ window.allobjects = function() {
     "gridH": 0.5333333611488342,
     "gridW": 0.5333333611488342,
     "spritesheet": "PixelSheet_01-hd",
-    "type": "deco",
+    "type": "pixel",
     "z": 9,
     "default_z_layer": 3,
     "default_z_order": 9
@@ -42382,7 +42560,7 @@ window.allobjects = function() {
     "gridH": 0.5333333611488342,
     "gridW": 0.5333333611488342,
     "spritesheet": "PixelSheet_01-hd",
-    "type": "deco",
+    "type": "pixel",
     "z": 9,
     "default_z_layer": 3,
     "default_z_order": 9
@@ -42404,7 +42582,7 @@ window.allobjects = function() {
     "gridH": 0.30000001192092896,
     "gridW": 0.5333333611488342,
     "spritesheet": "PixelSheet_01-hd",
-    "type": "deco",
+    "type": "pixel",
     "z": 9,
     "default_z_layer": 3,
     "default_z_order": 9
@@ -42426,7 +42604,7 @@ window.allobjects = function() {
     "gridH": 0.30000001192092896,
     "gridW": 0.4000000059604645,
     "spritesheet": "PixelSheet_01-hd",
-    "type": "deco",
+    "type": "pixel",
     "z": 9,
     "default_z_layer": 3,
     "default_z_order": 9
@@ -42448,7 +42626,7 @@ window.allobjects = function() {
     "gridH": 0.1666666716337204,
     "gridW": 0.46666666865348816,
     "spritesheet": "PixelSheet_01-hd",
-    "type": "deco",
+    "type": "pixel",
     "z": 9,
     "default_z_layer": 3,
     "default_z_order": 9
@@ -42470,7 +42648,7 @@ window.allobjects = function() {
     "gridH": 0.20000000298023224,
     "gridW": 0.5333333611488342,
     "spritesheet": "PixelSheet_01-hd",
-    "type": "deco",
+    "type": "pixel",
     "z": 9,
     "default_z_layer": 3,
     "default_z_order": 9
@@ -42492,7 +42670,7 @@ window.allobjects = function() {
     "gridH": 0.23333333432674408,
     "gridW": 0.23333333432674408,
     "spritesheet": "PixelSheet_01-hd",
-    "type": "deco",
+    "type": "pixel",
     "z": 9,
     "default_z_layer": 3,
     "default_z_order": 9
@@ -42505,7 +42683,7 @@ window.allobjects = function() {
     "gridH": 0.3333333432674408,
     "gridW": 0.1666666716337204,
     "spritesheet": "PixelSheet_01-hd",
-    "type": "deco",
+    "type": "pixel",
     "z": 9,
     "default_detail_color_channel": -1,
     "default_z_layer": 3,
@@ -42528,7 +42706,7 @@ window.allobjects = function() {
     "gridH": 0.13333334028720856,
     "gridW": 0.1666666716337204,
     "spritesheet": "PixelSheet_01-hd",
-    "type": "deco",
+    "type": "pixel",
     "z": 9,
     "default_z_layer": 3,
     "default_z_order": 9
@@ -42550,7 +42728,7 @@ window.allobjects = function() {
     "gridH": 0.20000000298023224,
     "gridW": 0.20000000298023224,
     "spritesheet": "PixelSheet_01-hd",
-    "type": "deco",
+    "type": "pixel",
     "z": 9,
     "default_z_layer": 3,
     "default_z_order": 9
@@ -42572,7 +42750,7 @@ window.allobjects = function() {
     "gridH": 0.03333333507180214,
     "gridW": 0.10000000149011612,
     "spritesheet": "PixelSheet_01-hd",
-    "type": "deco",
+    "type": "pixel",
     "z": 9,
     "default_z_layer": 3,
     "default_z_order": 9
@@ -42594,7 +42772,7 @@ window.allobjects = function() {
     "gridH": 0.1666666716337204,
     "gridW": 0.1666666716337204,
     "spritesheet": "PixelSheet_01-hd",
-    "type": "deco",
+    "type": "pixel",
     "z": 9,
     "default_z_layer": 3,
     "default_z_order": 9
@@ -42616,7 +42794,7 @@ window.allobjects = function() {
     "gridH": 0.5,
     "gridW": 0.5,
     "spritesheet": "PixelSheet_01-hd",
-    "type": "deco",
+    "type": "pixel",
     "z": 9,
     "default_z_layer": 3,
     "default_z_order": 9
@@ -42638,7 +42816,7 @@ window.allobjects = function() {
     "gridH": 0.5,
     "gridW": 0.5,
     "spritesheet": "PixelSheet_01-hd",
-    "type": "deco",
+    "type": "pixel",
     "z": 9,
     "default_z_layer": 3,
     "default_z_order": 9
@@ -42660,7 +42838,7 @@ window.allobjects = function() {
     "gridH": 0.5,
     "gridW": 0.5,
     "spritesheet": "PixelSheet_01-hd",
-    "type": "deco",
+    "type": "pixel",
     "z": 9,
     "default_z_layer": 3,
     "default_z_order": 9
@@ -42682,7 +42860,7 @@ window.allobjects = function() {
     "gridH": 0.5,
     "gridW": 0.5,
     "spritesheet": "PixelSheet_01-hd",
-    "type": "deco",
+    "type": "pixel",
     "z": 9,
     "default_z_layer": 3,
     "default_z_order": 9
@@ -42704,7 +42882,7 @@ window.allobjects = function() {
     "gridH": 0.1666666716337204,
     "gridW": 0.46666666865348816,
     "spritesheet": "PixelSheet_01-hd",
-    "type": "deco",
+    "type": "pixel",
     "z": 9,
     "default_z_layer": 3,
     "default_z_order": 9
@@ -42726,7 +42904,7 @@ window.allobjects = function() {
     "gridH": 0.5,
     "gridW": 0.5,
     "spritesheet": "PixelSheet_01-hd",
-    "type": "deco",
+    "type": "pixel",
     "z": 9,
     "default_z_layer": 3,
     "default_z_order": 9
@@ -42748,7 +42926,7 @@ window.allobjects = function() {
     "gridH": 0.5,
     "gridW": 0.5,
     "spritesheet": "PixelSheet_01-hd",
-    "type": "deco",
+    "type": "pixel",
     "z": 9,
     "default_z_layer": 3,
     "default_z_order": 9
@@ -42770,7 +42948,7 @@ window.allobjects = function() {
     "gridH": 0.5,
     "gridW": 0.5,
     "spritesheet": "PixelSheet_01-hd",
-    "type": "deco",
+    "type": "pixel",
     "z": 9,
     "default_z_layer": 3,
     "default_z_order": 9
@@ -42792,7 +42970,7 @@ window.allobjects = function() {
     "gridH": 0.30000001192092896,
     "gridW": 0.30000001192092896,
     "spritesheet": "PixelSheet_01-hd",
-    "type": "deco",
+    "type": "pixel",
     "z": 9,
     "default_z_layer": 3,
     "default_z_order": 9
@@ -42814,7 +42992,7 @@ window.allobjects = function() {
     "gridH": 0.30000001192092896,
     "gridW": 0.30000001192092896,
     "spritesheet": "PixelSheet_01-hd",
-    "type": "deco",
+    "type": "pixel",
     "z": 9,
     "default_z_layer": 3,
     "default_z_order": 9
@@ -42836,7 +43014,7 @@ window.allobjects = function() {
     "gridH": 0.30000001192092896,
     "gridW": 0.30000001192092896,
     "spritesheet": "PixelSheet_01-hd",
-    "type": "deco",
+    "type": "pixel",
     "z": 9,
     "default_z_layer": 3,
     "default_z_order": 9
@@ -42858,7 +43036,7 @@ window.allobjects = function() {
     "gridH": 0.30000001192092896,
     "gridW": 0.30000001192092896,
     "spritesheet": "PixelSheet_01-hd",
-    "type": "deco",
+    "type": "pixel",
     "z": 9,
     "default_z_layer": 3,
     "default_z_order": 9
@@ -42880,7 +43058,7 @@ window.allobjects = function() {
     "gridH": 0.1666666716337204,
     "gridW": 0.4333333373069763,
     "spritesheet": "PixelSheet_01-hd",
-    "type": "deco",
+    "type": "pixel",
     "z": 9,
     "default_z_layer": 3,
     "default_z_order": 9
@@ -42902,7 +43080,7 @@ window.allobjects = function() {
     "gridH": 0.30000001192092896,
     "gridW": 0.6000000238418579,
     "spritesheet": "PixelSheet_01-hd",
-    "type": "deco",
+    "type": "pixel",
     "z": 9,
     "default_z_layer": 3,
     "default_z_order": 9
@@ -42924,7 +43102,7 @@ window.allobjects = function() {
     "gridH": 0.4000000059604645,
     "gridW": 0.5333333611488342,
     "spritesheet": "PixelSheet_01-hd",
-    "type": "deco",
+    "type": "pixel",
     "z": 9,
     "default_z_layer": 3,
     "default_z_order": 9
@@ -42946,7 +43124,7 @@ window.allobjects = function() {
     "gridH": 0.5333333611488342,
     "gridW": 0.5333333611488342,
     "spritesheet": "PixelSheet_01-hd",
-    "type": "deco",
+    "type": "pixel",
     "z": 9,
     "default_z_layer": 3,
     "default_z_order": 9
@@ -42968,7 +43146,7 @@ window.allobjects = function() {
     "gridH": 0.4000000059604645,
     "gridW": 0.2666666805744171,
     "spritesheet": "PixelSheet_01-hd",
-    "type": "deco",
+    "type": "pixel",
     "z": 9,
     "default_z_layer": 3,
     "default_z_order": 9
@@ -42990,7 +43168,7 @@ window.allobjects = function() {
     "gridH": 0.5333333611488342,
     "gridW": 0.5333333611488342,
     "spritesheet": "PixelSheet_01-hd",
-    "type": "deco",
+    "type": "pixel",
     "z": 9,
     "default_z_layer": 3,
     "default_z_order": 9
@@ -43012,7 +43190,7 @@ window.allobjects = function() {
     "gridH": 0.5333333611488342,
     "gridW": 0.46666666865348816,
     "spritesheet": "PixelSheet_01-hd",
-    "type": "deco",
+    "type": "pixel",
     "z": 9,
     "default_z_layer": 3,
     "default_z_order": 9
@@ -43034,7 +43212,7 @@ window.allobjects = function() {
     "gridH": 0.4000000059604645,
     "gridW": 0.46666666865348816,
     "spritesheet": "PixelSheet_01-hd",
-    "type": "deco",
+    "type": "pixel",
     "z": 9,
     "default_z_layer": 3,
     "default_z_order": 9
@@ -43056,7 +43234,7 @@ window.allobjects = function() {
     "gridH": 0.5333333611488342,
     "gridW": 0.5333333611488342,
     "spritesheet": "PixelSheet_01-hd",
-    "type": "deco",
+    "type": "pixel",
     "z": 9,
     "default_z_layer": 3,
     "default_z_order": 9
@@ -43078,7 +43256,7 @@ window.allobjects = function() {
     "gridH": 0.10000000149011612,
     "gridW": 0.10000000149011612,
     "spritesheet": "PixelSheet_01-hd",
-    "type": "deco",
+    "type": "pixel",
     "z": 9,
     "default_z_layer": 3,
     "default_z_order": 9
@@ -43100,7 +43278,7 @@ window.allobjects = function() {
     "gridH": 0.4333333373069763,
     "gridW": 0.5333333611488342,
     "spritesheet": "PixelSheet_01-hd",
-    "type": "deco",
+    "type": "pixel",
     "z": 9,
     "default_z_layer": 3,
     "default_z_order": 9
@@ -43113,7 +43291,7 @@ window.allobjects = function() {
     "gridH": 0.5333333611488342,
     "gridW": 0.1666666716337204,
     "spritesheet": "PixelSheet_01-hd",
-    "type": "deco",
+    "type": "pixel",
     "z": 9,
     "default_detail_color_channel": -1,
     "default_z_layer": 3,
@@ -43127,7 +43305,7 @@ window.allobjects = function() {
     "gridH": 0.5333333611488342,
     "gridW": 0.1666666716337204,
     "spritesheet": "PixelSheet_01-hd",
-    "type": "deco",
+    "type": "pixel",
     "z": 9,
     "default_detail_color_channel": -1,
     "default_z_layer": 3,
@@ -43141,7 +43319,7 @@ window.allobjects = function() {
     "gridH": 0.5333333611488342,
     "gridW": 0.13333334028720856,
     "spritesheet": "PixelSheet_01-hd",
-    "type": "deco",
+    "type": "pixel",
     "z": 9,
     "default_detail_color_channel": -1,
     "default_z_layer": 3,
@@ -43155,7 +43333,7 @@ window.allobjects = function() {
     "gridH": 0.5333333611488342,
     "gridW": 0.23333333432674408,
     "spritesheet": "PixelSheet_01-hd",
-    "type": "deco",
+    "type": "pixel",
     "z": 9,
     "default_detail_color_channel": -1,
     "default_z_layer": 3,
@@ -43169,7 +43347,7 @@ window.allobjects = function() {
     "gridH": 0.5,
     "gridW": 0.13333334028720856,
     "spritesheet": "PixelSheet_01-hd",
-    "type": "deco",
+    "type": "pixel",
     "z": 9,
     "default_detail_color_channel": -1,
     "default_z_layer": 3,
@@ -43183,7 +43361,7 @@ window.allobjects = function() {
     "gridH": 0.5,
     "gridW": 0.13333334028720856,
     "spritesheet": "PixelSheet_01-hd",
-    "type": "deco",
+    "type": "pixel",
     "z": 9,
     "default_detail_color_channel": -1,
     "default_z_layer": 3,
@@ -43197,7 +43375,7 @@ window.allobjects = function() {
     "gridH": 0.10000000149011612,
     "gridW": 0.5333333611488342,
     "spritesheet": "PixelSheet_01-hd",
-    "type": "deco",
+    "type": "pixel",
     "z": 9,
     "default_detail_color_channel": -1,
     "default_z_layer": 3,
@@ -43211,7 +43389,7 @@ window.allobjects = function() {
     "gridH": 0.5,
     "gridW": 0.5,
     "spritesheet": "PixelSheet_01-hd",
-    "type": "deco",
+    "type": "pixel",
     "z": 9,
     "default_detail_color_channel": -1,
     "default_z_layer": 3,
@@ -43225,7 +43403,7 @@ window.allobjects = function() {
     "gridH": 0.5333333611488342,
     "gridW": 0.5333333611488342,
     "spritesheet": "PixelSheet_01-hd",
-    "type": "deco",
+    "type": "pixel",
     "z": 9,
     "default_detail_color_channel": -1,
     "default_z_layer": 3,
@@ -43239,7 +43417,7 @@ window.allobjects = function() {
     "gridH": 0.06666667014360428,
     "gridW": 0.06666667014360428,
     "spritesheet": "PixelSheet_01-hd",
-    "type": "deco",
+    "type": "pixel",
     "z": 9,
     "default_detail_color_channel": -1,
     "default_z_layer": 3,
@@ -43253,7 +43431,7 @@ window.allobjects = function() {
     "gridH": 0.23333333432674408,
     "gridW": 0.2666666805744171,
     "spritesheet": "PixelSheet_01-hd",
-    "type": "deco",
+    "type": "pixel",
     "z": 9,
     "default_detail_color_channel": -1,
     "default_z_layer": 3,
@@ -43267,7 +43445,7 @@ window.allobjects = function() {
     "gridH": 0.5333333611488342,
     "gridW": 0.10000000149011612,
     "spritesheet": "PixelSheet_01-hd",
-    "type": "deco",
+    "type": "pixel",
     "z": 9,
     "default_detail_color_channel": -1,
     "default_z_layer": 3,
@@ -43281,7 +43459,7 @@ window.allobjects = function() {
     "gridH": 0.5333333611488342,
     "gridW": 0.5333333611488342,
     "spritesheet": "PixelSheet_01-hd",
-    "type": "deco",
+    "type": "pixel",
     "z": 9,
     "default_detail_color_channel": -1,
     "default_z_layer": 3,
@@ -43295,7 +43473,7 @@ window.allobjects = function() {
     "gridH": 0.36666667461395264,
     "gridW": 0.36666667461395264,
     "spritesheet": "PixelSheet_01-hd",
-    "type": "deco",
+    "type": "pixel",
     "z": 9,
     "default_detail_color_channel": -1,
     "default_z_layer": 3,
@@ -43309,7 +43487,7 @@ window.allobjects = function() {
     "gridH": 0.5,
     "gridW": 0.5,
     "spritesheet": "PixelSheet_01-hd",
-    "type": "deco",
+    "type": "pixel",
     "z": 9,
     "default_detail_color_channel": -1,
     "default_z_layer": 3,
@@ -43323,7 +43501,7 @@ window.allobjects = function() {
     "gridH": 0.10000000149011612,
     "gridW": 0.5333333611488342,
     "spritesheet": "PixelSheet_01-hd",
-    "type": "deco",
+    "type": "pixel",
     "z": 9,
     "default_detail_color_channel": -1,
     "default_z_layer": 3,
@@ -43337,7 +43515,7 @@ window.allobjects = function() {
     "gridH": 0.10000000149011612,
     "gridW": 0.03333333507180214,
     "spritesheet": "PixelSheet_01-hd",
-    "type": "deco",
+    "type": "pixel",
     "z": 9,
     "default_detail_color_channel": -1,
     "default_z_layer": 3,
@@ -43351,7 +43529,7 @@ window.allobjects = function() {
     "gridH": 0.20000000298023224,
     "gridW": 0.10000000149011612,
     "spritesheet": "PixelSheet_01-hd",
-    "type": "deco",
+    "type": "pixel",
     "z": 9,
     "default_detail_color_channel": -1,
     "default_z_layer": 3,
@@ -43374,7 +43552,7 @@ window.allobjects = function() {
     "gridH": 0.5333333611488342,
     "gridW": 0.5333333611488342,
     "spritesheet": "PixelSheet_01-hd",
-    "type": "deco",
+    "type": "pixel",
     "z": 9,
     "default_z_layer": 3,
     "default_z_order": 9
@@ -43396,7 +43574,7 @@ window.allobjects = function() {
     "gridH": 0.1666666716337204,
     "gridW": 0.46666666865348816,
     "spritesheet": "PixelSheet_01-hd",
-    "type": "deco",
+    "type": "pixel",
     "z": 9,
     "default_z_layer": 3,
     "default_z_order": 9
@@ -43418,7 +43596,7 @@ window.allobjects = function() {
     "gridH": 0.5333333611488342,
     "gridW": 0.5333333611488342,
     "spritesheet": "PixelSheet_01-hd",
-    "type": "deco",
+    "type": "pixel",
     "z": 9,
     "default_z_layer": 3,
     "default_z_order": 9
@@ -43431,7 +43609,7 @@ window.allobjects = function() {
     "gridH": 0.03333333507180214,
     "gridW": 0.46666666865348816,
     "spritesheet": "PixelSheet_01-hd",
-    "type": "deco",
+    "type": "pixel",
     "z": 9,
     "default_detail_color_channel": -1,
     "default_z_layer": 3,
@@ -43454,7 +43632,7 @@ window.allobjects = function() {
     "gridH": 0.10000000149011612,
     "gridW": 0.46666666865348816,
     "spritesheet": "PixelSheet_01-hd",
-    "type": "deco",
+    "type": "pixel",
     "z": 9,
     "default_z_layer": 3,
     "default_z_order": 9
@@ -43476,7 +43654,7 @@ window.allobjects = function() {
     "gridH": 0.2666666805744171,
     "gridW": 0.2666666805744171,
     "spritesheet": "PixelSheet_01-hd",
-    "type": "deco",
+    "type": "pixel",
     "z": 9,
     "default_z_layer": 3,
     "default_z_order": 9
@@ -43498,7 +43676,7 @@ window.allobjects = function() {
     "gridH": 0.2666666805744171,
     "gridW": 0.2666666805744171,
     "spritesheet": "PixelSheet_01-hd",
-    "type": "deco",
+    "type": "pixel",
     "z": 9,
     "default_z_layer": 3,
     "default_z_order": 9
@@ -43520,7 +43698,7 @@ window.allobjects = function() {
     "gridH": 0.2666666805744171,
     "gridW": 0.13333334028720856,
     "spritesheet": "PixelSheet_01-hd",
-    "type": "deco",
+    "type": "pixel",
     "z": 9,
     "default_z_layer": 3,
     "default_z_order": 9
@@ -43542,7 +43720,7 @@ window.allobjects = function() {
     "gridH": 0.3333333432674408,
     "gridW": 0.3333333432674408,
     "spritesheet": "PixelSheet_01-hd",
-    "type": "deco",
+    "type": "pixel",
     "z": 9,
     "default_z_layer": 3,
     "default_z_order": 9
@@ -43564,7 +43742,7 @@ window.allobjects = function() {
     "gridH": 0.3333333432674408,
     "gridW": 0.3333333432674408,
     "spritesheet": "PixelSheet_01-hd",
-    "type": "deco",
+    "type": "pixel",
     "z": 9,
     "default_z_layer": 3,
     "default_z_order": 9
@@ -43586,7 +43764,7 @@ window.allobjects = function() {
     "gridH": 0.5333333611488342,
     "gridW": 0.5333333611488342,
     "spritesheet": "PixelSheet_01-hd",
-    "type": "deco",
+    "type": "pixel",
     "z": 9,
     "default_z_layer": 3,
     "default_z_order": 9
@@ -43608,7 +43786,7 @@ window.allobjects = function() {
     "gridH": 0.5333333611488342,
     "gridW": 0.5333333611488342,
     "spritesheet": "PixelSheet_01-hd",
-    "type": "deco",
+    "type": "pixel",
     "z": 9,
     "default_z_layer": 3,
     "default_z_order": 9
@@ -43630,7 +43808,7 @@ window.allobjects = function() {
     "gridH": 0.5333333611488342,
     "gridW": 0.5333333611488342,
     "spritesheet": "PixelSheet_01-hd",
-    "type": "deco",
+    "type": "pixel",
     "z": 9,
     "default_z_layer": 3,
     "default_z_order": 9
@@ -43652,7 +43830,7 @@ window.allobjects = function() {
     "gridH": 0.5333333611488342,
     "gridW": 0.5333333611488342,
     "spritesheet": "PixelSheet_01-hd",
-    "type": "deco",
+    "type": "pixel",
     "z": 9,
     "default_z_layer": 3,
     "default_z_order": 9
@@ -43665,7 +43843,7 @@ window.allobjects = function() {
     "gridH": 0.5333333611488342,
     "gridW": 0.5333333611488342,
     "spritesheet": "PixelSheet_01-hd",
-    "type": "deco",
+    "type": "pixel",
     "z": 8,
     "default_detail_color_channel": -1,
     "default_z_layer": 3,
@@ -43688,7 +43866,7 @@ window.allobjects = function() {
     "gridH": 0.5333333611488342,
     "gridW": 0.5,
     "spritesheet": "PixelSheet_01-hd",
-    "type": "deco",
+    "type": "pixel",
     "z": 9,
     "default_z_layer": 3,
     "default_z_order": 9
@@ -43710,7 +43888,7 @@ window.allobjects = function() {
     "gridH": 0.5333333611488342,
     "gridW": 0.5333333611488342,
     "spritesheet": "PixelSheet_01-hd",
-    "type": "deco",
+    "type": "pixel",
     "z": 9,
     "default_z_layer": 3,
     "default_z_order": 9
@@ -43732,7 +43910,7 @@ window.allobjects = function() {
     "gridH": 0.5333333611488342,
     "gridW": 0.5333333611488342,
     "spritesheet": "PixelSheet_01-hd",
-    "type": "deco",
+    "type": "pixel",
     "z": 9,
     "default_z_layer": 3,
     "default_z_order": 9
@@ -43754,7 +43932,7 @@ window.allobjects = function() {
     "gridH": 0.5333333611488342,
     "gridW": 0.5,
     "spritesheet": "PixelSheet_01-hd",
-    "type": "deco",
+    "type": "pixel",
     "z": 9,
     "default_z_layer": 3,
     "default_z_order": 9
@@ -43776,7 +43954,7 @@ window.allobjects = function() {
     "gridH": 0.5333333611488342,
     "gridW": 0.5333333611488342,
     "spritesheet": "PixelSheet_01-hd",
-    "type": "deco",
+    "type": "pixel",
     "z": 9,
     "default_z_layer": 3,
     "default_z_order": 9
@@ -43798,7 +43976,7 @@ window.allobjects = function() {
     "gridH": 0.20000000298023224,
     "gridW": 0.20000000298023224,
     "spritesheet": "PixelSheet_01-hd",
-    "type": "deco",
+    "type": "pixel",
     "z": 10,
     "default_z_layer": 3,
     "default_z_order": 10
@@ -43820,7 +43998,7 @@ window.allobjects = function() {
     "gridH": 0.5333333611488342,
     "gridW": 1.0666667222976685,
     "spritesheet": "PixelSheet_01-hd",
-    "type": "deco",
+    "type": "pixel",
     "z": 9,
     "default_z_layer": 3,
     "default_z_order": 9
@@ -43842,7 +44020,7 @@ window.allobjects = function() {
     "gridH": 0.1666666716337204,
     "gridW": 0.3333333432674408,
     "spritesheet": "PixelSheet_01-hd",
-    "type": "deco",
+    "type": "pixel",
     "z": 10,
     "default_z_layer": 3,
     "default_z_order": 10
@@ -43864,7 +44042,7 @@ window.allobjects = function() {
     "gridH": 0.2666666805744171,
     "gridW": 0.5,
     "spritesheet": "PixelSheet_01-hd",
-    "type": "deco",
+    "type": "pixel",
     "z": 9,
     "default_z_layer": 3,
     "default_z_order": 9
@@ -43886,7 +44064,7 @@ window.allobjects = function() {
     "gridH": 0.5,
     "gridW": 0.5333333611488342,
     "spritesheet": "PixelSheet_01-hd",
-    "type": "deco",
+    "type": "pixel",
     "z": 9,
     "default_z_layer": 3,
     "default_z_order": 9
@@ -43908,7 +44086,7 @@ window.allobjects = function() {
     "gridH": 0.5333333611488342,
     "gridW": 0.5333333611488342,
     "spritesheet": "PixelSheet_01-hd",
-    "type": "deco",
+    "type": "pixel",
     "z": 9,
     "default_z_layer": 3,
     "default_z_order": 9
@@ -43930,7 +44108,7 @@ window.allobjects = function() {
     "gridH": 0.5,
     "gridW": 0.5333333611488342,
     "spritesheet": "PixelSheet_01-hd",
-    "type": "deco",
+    "type": "pixel",
     "z": 9,
     "default_z_layer": 3,
     "default_z_order": 9
@@ -43952,7 +44130,7 @@ window.allobjects = function() {
     "gridH": 0.5,
     "gridW": 0.5333333611488342,
     "spritesheet": "PixelSheet_01-hd",
-    "type": "deco",
+    "type": "pixel",
     "z": 9,
     "default_z_layer": 3,
     "default_z_order": 9
@@ -43974,7 +44152,7 @@ window.allobjects = function() {
     "gridH": 0.5,
     "gridW": 0.5,
     "spritesheet": "PixelSheet_01-hd",
-    "type": "deco",
+    "type": "pixel",
     "z": 9,
     "default_z_layer": 3,
     "default_z_order": 9
@@ -43996,7 +44174,7 @@ window.allobjects = function() {
     "gridH": 0.36666667461395264,
     "gridW": 0.5,
     "spritesheet": "PixelSheet_01-hd",
-    "type": "deco",
+    "type": "pixel",
     "z": 9,
     "default_z_layer": 3,
     "default_z_order": 9
@@ -44018,7 +44196,7 @@ window.allobjects = function() {
     "gridH": 0.5333333611488342,
     "gridW": 0.5333333611488342,
     "spritesheet": "PixelSheet_01-hd",
-    "type": "deco",
+    "type": "pixel",
     "z": 9,
     "default_z_layer": 3,
     "default_z_order": 9
@@ -44040,7 +44218,7 @@ window.allobjects = function() {
     "gridH": 0.5,
     "gridW": 0.5333333611488342,
     "spritesheet": "PixelSheet_01-hd",
-    "type": "deco",
+    "type": "pixel",
     "z": 9,
     "default_z_layer": 3,
     "default_z_order": 9
@@ -44053,7 +44231,7 @@ window.allobjects = function() {
     "gridH": 0.5333333611488342,
     "gridW": 0.5333333611488342,
     "spritesheet": "PixelSheet_01-hd",
-    "type": "deco",
+    "type": "pixel",
     "z": 9,
     "default_detail_color_channel": -1,
     "default_z_layer": 3,
@@ -44067,7 +44245,7 @@ window.allobjects = function() {
     "gridH": 0.5333333611488342,
     "gridW": 0.5333333611488342,
     "spritesheet": "PixelSheet_01-hd",
-    "type": "deco",
+    "type": "pixel",
     "z": 9,
     "default_detail_color_channel": -1,
     "default_z_layer": 3,
@@ -44081,7 +44259,7 @@ window.allobjects = function() {
     "gridH": 0.5333333611488342,
     "gridW": 0.5333333611488342,
     "spritesheet": "PixelSheet_01-hd",
-    "type": "deco",
+    "type": "pixel",
     "z": 9,
     "default_detail_color_channel": -1,
     "default_z_layer": 3,
@@ -44095,7 +44273,7 @@ window.allobjects = function() {
     "gridH": 0.5333333611488342,
     "gridW": 0.5333333611488342,
     "spritesheet": "PixelSheet_01-hd",
-    "type": "deco",
+    "type": "pixel",
     "z": 9,
     "default_detail_color_channel": -1,
     "default_z_layer": 3,
@@ -44118,7 +44296,7 @@ window.allobjects = function() {
     "gridH": 0.3333333432674408,
     "gridW": 0.5333333611488342,
     "spritesheet": "PixelSheet_01-hd",
-    "type": "deco",
+    "type": "pixel",
     "z": 9,
     "default_z_layer": 3,
     "default_z_order": 9
@@ -44140,7 +44318,7 @@ window.allobjects = function() {
     "gridH": 0.3333333432674408,
     "gridW": 0.5333333611488342,
     "spritesheet": "PixelSheet_01-hd",
-    "type": "deco",
+    "type": "pixel",
     "z": 9,
     "default_z_layer": 3,
     "default_z_order": 9
@@ -44162,7 +44340,7 @@ window.allobjects = function() {
     "gridH": 0.3333333432674408,
     "gridW": 0.5333333611488342,
     "spritesheet": "PixelSheet_01-hd",
-    "type": "deco",
+    "type": "pixel",
     "z": 9,
     "default_z_layer": 3,
     "default_z_order": 9
@@ -44184,7 +44362,7 @@ window.allobjects = function() {
     "gridH": 0.3333333432674408,
     "gridW": 0.5333333611488342,
     "spritesheet": "PixelSheet_01-hd",
-    "type": "deco",
+    "type": "pixel",
     "z": 9,
     "default_z_layer": 3,
     "default_z_order": 9
@@ -44206,7 +44384,7 @@ window.allobjects = function() {
     "gridH": 0.5333333611488342,
     "gridW": 0.5333333611488342,
     "spritesheet": "PixelSheet_01-hd",
-    "type": "deco",
+    "type": "pixel",
     "z": 9,
     "default_z_layer": 3,
     "default_z_order": 9
@@ -44228,7 +44406,7 @@ window.allobjects = function() {
     "gridH": 0.5333333611488342,
     "gridW": 0.5333333611488342,
     "spritesheet": "PixelSheet_01-hd",
-    "type": "deco",
+    "type": "pixel",
     "z": 9,
     "default_z_layer": 3,
     "default_z_order": 9
@@ -44250,7 +44428,7 @@ window.allobjects = function() {
     "gridH": 0.5333333611488342,
     "gridW": 0.5333333611488342,
     "spritesheet": "PixelSheet_01-hd",
-    "type": "deco",
+    "type": "pixel",
     "z": 9,
     "default_z_layer": 3,
     "default_z_order": 9
@@ -44272,7 +44450,7 @@ window.allobjects = function() {
     "gridH": 0.5333333611488342,
     "gridW": 0.5333333611488342,
     "spritesheet": "PixelSheet_01-hd",
-    "type": "deco",
+    "type": "pixel",
     "z": 9,
     "default_z_layer": 3,
     "default_z_order": 9
@@ -44285,7 +44463,7 @@ window.allobjects = function() {
     "gridH": 0.5333333611488342,
     "gridW": 0.5333333611488342,
     "spritesheet": "PixelSheet_01-hd",
-    "type": "deco",
+    "type": "pixel",
     "z": 9,
     "default_detail_color_channel": -1,
     "default_z_layer": 3,
@@ -44299,7 +44477,7 @@ window.allobjects = function() {
     "gridH": 0.5333333611488342,
     "gridW": 0.5333333611488342,
     "spritesheet": "PixelSheet_01-hd",
-    "type": "deco",
+    "type": "pixel",
     "z": 9,
     "default_detail_color_channel": -1,
     "default_z_layer": 3,
@@ -44322,7 +44500,7 @@ window.allobjects = function() {
     "gridH": 0.4000000059604645,
     "gridW": 0.46666666865348816,
     "spritesheet": "PixelSheet_01-hd",
-    "type": "deco",
+    "type": "pixel",
     "z": 9,
     "default_z_layer": 3,
     "default_z_order": 9
@@ -44344,7 +44522,7 @@ window.allobjects = function() {
     "gridH": 0.5333333611488342,
     "gridW": 0.46666666865348816,
     "spritesheet": "PixelSheet_01-hd",
-    "type": "deco",
+    "type": "pixel",
     "z": 9,
     "default_z_layer": 3,
     "default_z_order": 9
@@ -44366,7 +44544,7 @@ window.allobjects = function() {
     "gridH": 0.5333333611488342,
     "gridW": 0.46666666865348816,
     "spritesheet": "PixelSheet_01-hd",
-    "type": "deco",
+    "type": "pixel",
     "z": 9,
     "default_z_layer": 3,
     "default_z_order": 9
@@ -44388,7 +44566,7 @@ window.allobjects = function() {
     "gridH": 0.5333333611488342,
     "gridW": 0.5333333611488342,
     "spritesheet": "PixelSheet_01-hd",
-    "type": "deco",
+    "type": "pixel",
     "z": 9,
     "default_z_layer": 3,
     "default_z_order": 9
@@ -44410,7 +44588,7 @@ window.allobjects = function() {
     "gridH": 0.20000000298023224,
     "gridW": 0.5333333611488342,
     "spritesheet": "PixelSheet_01-hd",
-    "type": "deco",
+    "type": "pixel",
     "z": 9,
     "default_z_layer": 3,
     "default_z_order": 9
@@ -44432,7 +44610,7 @@ window.allobjects = function() {
     "gridH": 0.36666667461395264,
     "gridW": 0.23333333432674408,
     "spritesheet": "PixelSheet_01-hd",
-    "type": "deco",
+    "type": "pixel",
     "z": 9,
     "default_z_layer": 3,
     "default_z_order": 9
@@ -44454,7 +44632,7 @@ window.allobjects = function() {
     "gridH": 0.36666667461395264,
     "gridW": 0.5333333611488342,
     "spritesheet": "PixelSheet_01-hd",
-    "type": "deco",
+    "type": "pixel",
     "z": 9,
     "default_z_layer": 3,
     "default_z_order": 9
@@ -44476,7 +44654,7 @@ window.allobjects = function() {
     "gridH": 0.4000000059604645,
     "gridW": 0.2666666805744171,
     "spritesheet": "PixelSheet_01-hd",
-    "type": "deco",
+    "type": "pixel",
     "z": 9,
     "default_z_layer": 3,
     "default_z_order": 9
@@ -44498,7 +44676,7 @@ window.allobjects = function() {
     "gridH": 0.5333333611488342,
     "gridW": 0.5333333611488342,
     "spritesheet": "PixelSheet_01-hd",
-    "type": "deco",
+    "type": "pixel",
     "z": 9,
     "default_z_layer": 3,
     "default_z_order": 9
@@ -44520,7 +44698,7 @@ window.allobjects = function() {
     "gridH": 0.5333333611488342,
     "gridW": 0.5333333611488342,
     "spritesheet": "PixelSheet_01-hd",
-    "type": "deco",
+    "type": "pixel",
     "z": 9,
     "default_z_layer": 3,
     "default_z_order": 9
@@ -44542,7 +44720,7 @@ window.allobjects = function() {
     "gridH": 0.30000001192092896,
     "gridW": 0.5333333611488342,
     "spritesheet": "PixelSheet_01-hd",
-    "type": "deco",
+    "type": "pixel",
     "z": 9,
     "default_z_layer": 3,
     "default_z_order": 9
@@ -44564,7 +44742,7 @@ window.allobjects = function() {
     "gridH": 0.30000001192092896,
     "gridW": 0.5333333611488342,
     "spritesheet": "PixelSheet_01-hd",
-    "type": "deco",
+    "type": "pixel",
     "z": 9,
     "default_z_layer": 3,
     "default_z_order": 9
@@ -44586,7 +44764,7 @@ window.allobjects = function() {
     "gridH": 0.30000001192092896,
     "gridW": 0.5333333611488342,
     "spritesheet": "PixelSheet_01-hd",
-    "type": "deco",
+    "type": "pixel",
     "z": 9,
     "default_z_layer": 3,
     "default_z_order": 9
@@ -44608,7 +44786,7 @@ window.allobjects = function() {
     "gridH": 0.6666666865348816,
     "gridW": 0.8333333134651184,
     "spritesheet": "PixelSheet_01-hd",
-    "type": "deco",
+    "type": "pixel",
     "z": 9,
     "default_z_layer": 3,
     "default_z_order": 9
@@ -44630,7 +44808,7 @@ window.allobjects = function() {
     "gridH": 0.6666666865348816,
     "gridW": 0.6666666865348816,
     "spritesheet": "PixelSheet_01-hd",
-    "type": "deco",
+    "type": "pixel",
     "z": 9,
     "default_z_layer": 3,
     "default_z_order": 9
@@ -44652,7 +44830,7 @@ window.allobjects = function() {
     "gridH": 0.6666666865348816,
     "gridW": 0.6666666865348816,
     "spritesheet": "PixelSheet_01-hd",
-    "type": "deco",
+    "type": "pixel",
     "z": 9,
     "default_z_layer": 3,
     "default_z_order": 9
@@ -44674,7 +44852,7 @@ window.allobjects = function() {
     "gridH": 0.800000011920929,
     "gridW": 0.46666666865348816,
     "spritesheet": "PixelSheet_01-hd",
-    "type": "deco",
+    "type": "pixel",
     "z": 9,
     "default_z_layer": 3,
     "default_z_order": 9
@@ -44696,7 +44874,7 @@ window.allobjects = function() {
     "gridH": 0.800000011920929,
     "gridW": 0.800000011920929,
     "spritesheet": "PixelSheet_01-hd",
-    "type": "deco",
+    "type": "pixel",
     "z": 9,
     "default_z_layer": 3,
     "default_z_order": 9
@@ -44718,7 +44896,7 @@ window.allobjects = function() {
     "gridH": 0.36666667461395264,
     "gridW": 0.800000011920929,
     "spritesheet": "PixelSheet_01-hd",
-    "type": "deco",
+    "type": "pixel",
     "z": 9,
     "default_z_layer": 3,
     "default_z_order": 9
@@ -44740,7 +44918,7 @@ window.allobjects = function() {
     "gridH": 0.800000011920929,
     "gridW": 0.800000011920929,
     "spritesheet": "PixelSheet_01-hd",
-    "type": "deco",
+    "type": "pixel",
     "z": 9,
     "default_z_layer": 3,
     "default_z_order": 9
@@ -44762,7 +44940,7 @@ window.allobjects = function() {
     "gridH": 0.800000011920929,
     "gridW": 0.46666666865348816,
     "spritesheet": "PixelSheet_01-hd",
-    "type": "deco",
+    "type": "pixel",
     "z": 9,
     "default_z_layer": 3,
     "default_z_order": 9
@@ -44775,7 +44953,7 @@ window.allobjects = function() {
     "gridH": 0.7666666507720947,
     "gridW": 0.06666667014360428,
     "spritesheet": "PixelSheet_01-hd",
-    "type": "deco",
+    "type": "pixel",
     "z": 10,
     "default_detail_color_channel": -1,
     "default_z_layer": 3,
@@ -44789,7 +44967,7 @@ window.allobjects = function() {
     "gridH": 0.5,
     "gridW": 0.4333333373069763,
     "spritesheet": "PixelSheet_01-hd",
-    "type": "deco",
+    "type": "pixel",
     "z": 10,
     "default_detail_color_channel": -1,
     "default_z_layer": 3,
@@ -44803,7 +44981,7 @@ window.allobjects = function() {
     "gridH": 0.03333333507180214,
     "gridW": 0.800000011920929,
     "spritesheet": "PixelSheet_01-hd",
-    "type": "deco",
+    "type": "pixel",
     "z": 10,
     "default_detail_color_channel": -1,
     "default_z_layer": 3,
@@ -44817,7 +44995,7 @@ window.allobjects = function() {
     "gridH": 0.699999988079071,
     "gridW": 0.3333333432674408,
     "spritesheet": "PixelSheet_01-hd",
-    "type": "deco",
+    "type": "pixel",
     "z": 10,
     "default_detail_color_channel": -1,
     "default_z_layer": 3,
@@ -44831,7 +45009,7 @@ window.allobjects = function() {
     "gridH": 0.7666666507720947,
     "gridW": 0.06666667014360428,
     "spritesheet": "PixelSheet_01-hd",
-    "type": "deco",
+    "type": "pixel",
     "z": 10,
     "default_detail_color_channel": -1,
     "default_z_layer": 3,
@@ -44854,7 +45032,7 @@ window.allobjects = function() {
     "gridH": 0.5333333611488342,
     "gridW": 0.9333333373069763,
     "spritesheet": "PixelSheet_01-hd",
-    "type": "deco",
+    "type": "pixel",
     "z": 9,
     "default_z_layer": 3,
     "default_z_order": 9
@@ -44867,7 +45045,7 @@ window.allobjects = function() {
     "gridH": 0.5,
     "gridW": 0.20000000298023224,
     "spritesheet": "PixelSheet_01-hd",
-    "type": "deco",
+    "type": "pixel",
     "z": 10,
     "default_detail_color_channel": -1,
     "default_z_layer": 3,
@@ -44890,7 +45068,7 @@ window.allobjects = function() {
     "gridH": 0.36666667461395264,
     "gridW": 0.5,
     "spritesheet": "PixelSheet_01-hd",
-    "type": "deco",
+    "type": "pixel",
     "z": 9,
     "default_z_layer": 3,
     "default_z_order": 9
@@ -44912,7 +45090,7 @@ window.allobjects = function() {
     "gridH": 0.23333333432674408,
     "gridW": 0.5333333611488342,
     "spritesheet": "PixelSheet_01-hd",
-    "type": "deco",
+    "type": "pixel",
     "z": 9,
     "default_z_layer": 3,
     "default_z_order": 9
@@ -44934,7 +45112,7 @@ window.allobjects = function() {
     "gridH": 0.5333333611488342,
     "gridW": 0.5,
     "spritesheet": "PixelSheet_01-hd",
-    "type": "deco",
+    "type": "pixel",
     "z": 9,
     "default_z_layer": 3,
     "default_z_order": 9
@@ -44956,7 +45134,7 @@ window.allobjects = function() {
     "gridH": 0.5333333611488342,
     "gridW": 0.4000000059604645,
     "spritesheet": "PixelSheet_01-hd",
-    "type": "deco",
+    "type": "pixel",
     "z": 9,
     "default_z_layer": 3,
     "default_z_order": 9
@@ -44978,7 +45156,7 @@ window.allobjects = function() {
     "gridH": 0.1666666716337204,
     "gridW": 0.2666666805744171,
     "spritesheet": "PixelSheet_01-hd",
-    "type": "deco",
+    "type": "pixel",
     "z": 9,
     "default_z_layer": 3,
     "default_z_order": 9
@@ -45000,7 +45178,7 @@ window.allobjects = function() {
     "gridH": 0.03333333507180214,
     "gridW": 0.6666666865348816,
     "spritesheet": "PixelSheet_01-hd",
-    "type": "deco",
+    "type": "pixel",
     "z": 9,
     "default_z_layer": 3,
     "default_z_order": 9
@@ -45022,7 +45200,7 @@ window.allobjects = function() {
     "gridH": 0.46666666865348816,
     "gridW": 0.2666666805744171,
     "spritesheet": "PixelSheet_01-hd",
-    "type": "deco",
+    "type": "pixel",
     "z": 9,
     "default_z_layer": 3,
     "default_z_order": 9
@@ -45044,7 +45222,7 @@ window.allobjects = function() {
     "gridH": 0.30000001192092896,
     "gridW": 0.4000000059604645,
     "spritesheet": "PixelSheet_01-hd",
-    "type": "deco",
+    "type": "pixel",
     "z": 9,
     "default_z_layer": 3,
     "default_z_order": 9
@@ -45066,7 +45244,7 @@ window.allobjects = function() {
     "gridH": 0.3333333432674408,
     "gridW": 0.4333333373069763,
     "spritesheet": "PixelSheet_01-hd",
-    "type": "deco",
+    "type": "pixel",
     "z": 9,
     "default_z_layer": 3,
     "default_z_order": 9
@@ -45088,7 +45266,7 @@ window.allobjects = function() {
     "gridH": 0.36666667461395264,
     "gridW": 0.4333333373069763,
     "spritesheet": "PixelSheet_01-hd",
-    "type": "deco",
+    "type": "pixel",
     "z": 9,
     "default_z_layer": 3,
     "default_z_order": 9
@@ -45110,7 +45288,7 @@ window.allobjects = function() {
     "gridH": 0.23333333432674408,
     "gridW": 0.30000001192092896,
     "spritesheet": "PixelSheet_01-hd",
-    "type": "deco",
+    "type": "pixel",
     "z": 9,
     "default_z_layer": 3,
     "default_z_order": 9
@@ -45132,7 +45310,7 @@ window.allobjects = function() {
     "gridH": 0.36666667461395264,
     "gridW": 0.5333333611488342,
     "spritesheet": "PixelSheet_01-hd",
-    "type": "deco",
+    "type": "pixel",
     "z": 9,
     "default_z_layer": 3,
     "default_z_order": 9
@@ -45154,7 +45332,7 @@ window.allobjects = function() {
     "gridH": 0.4333333373069763,
     "gridW": 0.5,
     "spritesheet": "PixelSheet_01-hd",
-    "type": "deco",
+    "type": "pixel",
     "z": 9,
     "default_z_layer": 3,
     "default_z_order": 9
@@ -45167,7 +45345,7 @@ window.allobjects = function() {
     "gridH": 0.20000000298023224,
     "gridW": 0.5333333611488342,
     "spritesheet": "PixelSheet_01-hd",
-    "type": "deco",
+    "type": "pixel",
     "z": 9,
     "default_detail_color_channel": -1,
     "default_z_layer": 3,
@@ -45190,7 +45368,7 @@ window.allobjects = function() {
     "gridH": 0.5333333611488342,
     "gridW": 0.5333333611488342,
     "spritesheet": "PixelSheet_01-hd",
-    "type": "deco",
+    "type": "pixel",
     "z": 9,
     "default_z_layer": 3,
     "default_z_order": 9
@@ -45203,7 +45381,7 @@ window.allobjects = function() {
     "gridH": 0.06666667014360428,
     "gridW": 0.5333333611488342,
     "spritesheet": "PixelSheet_01-hd",
-    "type": "deco",
+    "type": "pixel",
     "z": 10,
     "default_detail_color_channel": -1,
     "default_z_layer": 3,
@@ -45226,7 +45404,7 @@ window.allobjects = function() {
     "gridH": 0.5333333611488342,
     "gridW": 0.5333333611488342,
     "spritesheet": "PixelSheet_01-hd",
-    "type": "deco",
+    "type": "pixel",
     "z": 9,
     "default_z_layer": 3,
     "default_z_order": 9
@@ -45239,7 +45417,7 @@ window.allobjects = function() {
     "gridH": 0.10000000149011612,
     "gridW": 0.5,
     "spritesheet": "PixelSheet_01-hd",
-    "type": "deco",
+    "type": "pixel",
     "z": 10,
     "default_detail_color_channel": -1,
     "default_z_layer": 3,
@@ -45262,7 +45440,7 @@ window.allobjects = function() {
     "gridH": 0.5333333611488342,
     "gridW": 0.5333333611488342,
     "spritesheet": "PixelSheet_01-hd",
-    "type": "deco",
+    "type": "pixel",
     "z": 9,
     "default_z_layer": 3,
     "default_z_order": 9
@@ -45275,7 +45453,7 @@ window.allobjects = function() {
     "gridH": 0.06666667014360428,
     "gridW": 0.5333333611488342,
     "spritesheet": "PixelSheet_01-hd",
-    "type": "deco",
+    "type": "pixel",
     "z": 10,
     "default_detail_color_channel": -1,
     "default_z_layer": 3,
@@ -45298,7 +45476,7 @@ window.allobjects = function() {
     "gridH": 0.5333333611488342,
     "gridW": 0.5333333611488342,
     "spritesheet": "PixelSheet_01-hd",
-    "type": "deco",
+    "type": "pixel",
     "z": 9,
     "default_z_layer": 3,
     "default_z_order": 9
@@ -45311,7 +45489,7 @@ window.allobjects = function() {
     "gridH": 0.06666667014360428,
     "gridW": 0.4333333373069763,
     "spritesheet": "PixelSheet_01-hd",
-    "type": "deco",
+    "type": "pixel",
     "z": 10,
     "default_detail_color_channel": -1,
     "default_z_layer": 3,
@@ -45334,7 +45512,7 @@ window.allobjects = function() {
     "gridH": 0.5333333611488342,
     "gridW": 0.5333333611488342,
     "spritesheet": "PixelSheet_01-hd",
-    "type": "deco",
+    "type": "pixel",
     "z": 9,
     "default_z_layer": 3,
     "default_z_order": 9
@@ -45347,7 +45525,7 @@ window.allobjects = function() {
     "gridH": 0.03333333507180214,
     "gridW": 0.03333333507180214,
     "spritesheet": "PixelSheet_01-hd",
-    "type": "deco",
+    "type": "pixel",
     "z": 8,
     "default_detail_color_channel": -1,
     "default_z_layer": 3,
@@ -45370,7 +45548,7 @@ window.allobjects = function() {
     "gridH": 0.5333333611488342,
     "gridW": 0.5333333611488342,
     "spritesheet": "PixelSheet_01-hd",
-    "type": "deco",
+    "type": "pixel",
     "z": 9,
     "default_z_layer": 3,
     "default_z_order": 9
@@ -45392,7 +45570,7 @@ window.allobjects = function() {
     "gridH": 0.5333333611488342,
     "gridW": 0.5333333611488342,
     "spritesheet": "PixelSheet_01-hd",
-    "type": "deco",
+    "type": "pixel",
     "z": 9,
     "default_z_layer": 3,
     "default_z_order": 9
@@ -45414,7 +45592,7 @@ window.allobjects = function() {
     "gridH": 0.5333333611488342,
     "gridW": 0.5333333611488342,
     "spritesheet": "PixelSheet_01-hd",
-    "type": "deco",
+    "type": "pixel",
     "z": 9,
     "default_z_layer": 3,
     "default_z_order": 9
@@ -45436,7 +45614,7 @@ window.allobjects = function() {
     "gridH": 0.5333333611488342,
     "gridW": 0.5333333611488342,
     "spritesheet": "PixelSheet_01-hd",
-    "type": "deco",
+    "type": "pixel",
     "z": 9,
     "default_z_layer": 3,
     "default_z_order": 9
@@ -45458,7 +45636,7 @@ window.allobjects = function() {
     "gridH": 0.5333333611488342,
     "gridW": 0.5333333611488342,
     "spritesheet": "PixelSheet_01-hd",
-    "type": "deco",
+    "type": "pixel",
     "z": 9,
     "default_z_layer": 3,
     "default_z_order": 9
@@ -45471,7 +45649,7 @@ window.allobjects = function() {
     "gridH": 0.06666667014360428,
     "gridW": 0.23333333432674408,
     "spritesheet": "PixelSheet_01-hd",
-    "type": "deco",
+    "type": "pixel",
     "z": 10,
     "default_detail_color_channel": -1,
     "default_z_layer": 3,
@@ -45494,7 +45672,7 @@ window.allobjects = function() {
     "gridH": 0.5333333611488342,
     "gridW": 0.5333333611488342,
     "spritesheet": "PixelSheet_01-hd",
-    "type": "deco",
+    "type": "pixel",
     "z": 9,
     "default_z_layer": 3,
     "default_z_order": 9
@@ -45507,7 +45685,7 @@ window.allobjects = function() {
     "gridH": 0.06666667014360428,
     "gridW": 0.23333333432674408,
     "spritesheet": "PixelSheet_01-hd",
-    "type": "deco",
+    "type": "pixel",
     "z": 10,
     "default_detail_color_channel": -1,
     "default_z_layer": 3,
@@ -45530,7 +45708,7 @@ window.allobjects = function() {
     "gridH": 0.5333333611488342,
     "gridW": 0.5333333611488342,
     "spritesheet": "PixelSheet_01-hd",
-    "type": "deco",
+    "type": "pixel",
     "z": 9,
     "default_z_layer": 3,
     "default_z_order": 9
@@ -45552,7 +45730,7 @@ window.allobjects = function() {
     "gridH": 0.5333333611488342,
     "gridW": 0.5333333611488342,
     "spritesheet": "PixelSheet_01-hd",
-    "type": "deco",
+    "type": "pixel",
     "z": 9,
     "default_z_layer": 3,
     "default_z_order": 9
@@ -45565,7 +45743,7 @@ window.allobjects = function() {
     "gridH": 0.5333333611488342,
     "gridW": 0.5333333611488342,
     "spritesheet": "PixelSheet_01-hd",
-    "type": "deco",
+    "type": "pixel",
     "z": 9,
     "default_detail_color_channel": -1,
     "default_z_layer": 3,
@@ -45579,7 +45757,7 @@ window.allobjects = function() {
     "gridH": 0.5333333611488342,
     "gridW": 0.5333333611488342,
     "spritesheet": "PixelSheet_01-hd",
-    "type": "deco",
+    "type": "pixel",
     "z": 9,
     "default_detail_color_channel": -1,
     "default_z_layer": 3,
@@ -45602,7 +45780,7 @@ window.allobjects = function() {
     "gridH": 0.5333333611488342,
     "gridW": 0.5333333611488342,
     "spritesheet": "PixelSheet_01-hd",
-    "type": "deco",
+    "type": "pixel",
     "z": 9,
     "default_z_layer": 3,
     "default_z_order": 9
@@ -45615,7 +45793,7 @@ window.allobjects = function() {
     "gridH": 0.5,
     "gridW": 0.5,
     "spritesheet": "PixelSheet_01-hd",
-    "type": "deco",
+    "type": "pixel",
     "z": 10,
     "default_detail_color_channel": -1,
     "default_z_layer": 3,
@@ -45638,7 +45816,7 @@ window.allobjects = function() {
     "gridH": 0.5333333611488342,
     "gridW": 0.5333333611488342,
     "spritesheet": "PixelSheet_01-hd",
-    "type": "deco",
+    "type": "pixel",
     "z": 9,
     "default_z_layer": 3,
     "default_z_order": 9
@@ -45651,7 +45829,7 @@ window.allobjects = function() {
     "gridH": 0.06666667014360428,
     "gridW": 0.10000000149011612,
     "spritesheet": "PixelSheet_01-hd",
-    "type": "deco",
+    "type": "pixel",
     "z": 10,
     "default_detail_color_channel": -1,
     "default_z_layer": 3,
@@ -45674,7 +45852,7 @@ window.allobjects = function() {
     "gridH": 0.5333333611488342,
     "gridW": 1.0666667222976685,
     "spritesheet": "PixelSheet_01-hd",
-    "type": "deco",
+    "type": "pixel",
     "z": 9,
     "default_z_layer": 3,
     "default_z_order": 9
@@ -45687,7 +45865,7 @@ window.allobjects = function() {
     "gridH": 0.46666666865348816,
     "gridW": 0.8999999761581421,
     "spritesheet": "PixelSheet_01-hd",
-    "type": "deco",
+    "type": "pixel",
     "z": 10,
     "default_detail_color_channel": -1,
     "default_z_layer": 3,
@@ -45710,7 +45888,7 @@ window.allobjects = function() {
     "gridH": 0.5333333611488342,
     "gridW": 0.5333333611488342,
     "spritesheet": "PixelSheet_01-hd",
-    "type": "deco",
+    "type": "pixel",
     "z": 9,
     "default_z_layer": 3,
     "default_z_order": 9
@@ -45723,7 +45901,7 @@ window.allobjects = function() {
     "gridH": 0.03333333507180214,
     "gridW": 0.03333333507180214,
     "spritesheet": "PixelSheet_01-hd",
-    "type": "deco",
+    "type": "pixel",
     "z": 10,
     "default_detail_color_channel": -1,
     "default_z_layer": 3,
@@ -45746,7 +45924,7 @@ window.allobjects = function() {
     "gridH": 0.3333333432674408,
     "gridW": 0.5333333611488342,
     "spritesheet": "PixelSheet_01-hd",
-    "type": "deco",
+    "type": "pixel",
     "z": 9,
     "default_z_layer": 3,
     "default_z_order": 9
@@ -45759,7 +45937,7 @@ window.allobjects = function() {
     "gridH": 0.06666667014360428,
     "gridW": 0.46666666865348816,
     "spritesheet": "PixelSheet_01-hd",
-    "type": "deco",
+    "type": "pixel",
     "z": 10,
     "default_detail_color_channel": -1,
     "default_z_layer": 3,
@@ -45782,7 +45960,7 @@ window.allobjects = function() {
     "gridH": 0.3333333432674408,
     "gridW": 0.5333333611488342,
     "spritesheet": "PixelSheet_01-hd",
-    "type": "deco",
+    "type": "pixel",
     "z": 9,
     "default_z_layer": 3,
     "default_z_order": 9
@@ -45795,7 +45973,7 @@ window.allobjects = function() {
     "gridH": 0.06666667014360428,
     "gridW": 0.5333333611488342,
     "spritesheet": "PixelSheet_01-hd",
-    "type": "deco",
+    "type": "pixel",
     "z": 10,
     "default_detail_color_channel": -1,
     "default_z_layer": 3,
@@ -45818,7 +45996,7 @@ window.allobjects = function() {
     "gridH": 0.3333333432674408,
     "gridW": 0.5333333611488342,
     "spritesheet": "PixelSheet_01-hd",
-    "type": "deco",
+    "type": "pixel",
     "z": 9,
     "default_z_layer": 3,
     "default_z_order": 9
@@ -45831,7 +46009,7 @@ window.allobjects = function() {
     "gridH": 0.06666667014360428,
     "gridW": 0.4333333373069763,
     "spritesheet": "PixelSheet_01-hd",
-    "type": "deco",
+    "type": "pixel",
     "z": 10,
     "default_detail_color_channel": -1,
     "default_z_layer": 3,
@@ -45854,7 +46032,7 @@ window.allobjects = function() {
     "gridH": 0.3333333432674408,
     "gridW": 0.5333333611488342,
     "spritesheet": "PixelSheet_01-hd",
-    "type": "deco",
+    "type": "pixel",
     "z": 9,
     "default_z_layer": 3,
     "default_z_order": 9
@@ -45867,7 +46045,7 @@ window.allobjects = function() {
     "gridH": 0.06666667014360428,
     "gridW": 0.36666667461395264,
     "spritesheet": "PixelSheet_01-hd",
-    "type": "deco",
+    "type": "pixel",
     "z": 10,
     "default_detail_color_channel": -1,
     "default_z_layer": 3,
@@ -45890,7 +46068,7 @@ window.allobjects = function() {
     "gridH": 0.5333333611488342,
     "gridW": 0.5333333611488342,
     "spritesheet": "PixelSheet_01-hd",
-    "type": "deco",
+    "type": "pixel",
     "z": 9,
     "default_z_layer": 3,
     "default_z_order": 9
@@ -45903,7 +46081,7 @@ window.allobjects = function() {
     "gridH": 0.10000000149011612,
     "gridW": 0.4000000059604645,
     "spritesheet": "PixelSheet_01-hd",
-    "type": "deco",
+    "type": "pixel",
     "z": 10,
     "default_detail_color_channel": -1,
     "default_z_layer": 3,
@@ -45926,7 +46104,7 @@ window.allobjects = function() {
     "gridH": 0.46666666865348816,
     "gridW": 0.46666666865348816,
     "spritesheet": "PixelSheet_01-hd",
-    "type": "deco",
+    "type": "pixel",
     "z": 9,
     "default_z_layer": 3,
     "default_z_order": 9
@@ -45948,7 +46126,7 @@ window.allobjects = function() {
     "gridH": 0.4333333373069763,
     "gridW": 0.5333333611488342,
     "spritesheet": "PixelSheet_01-hd",
-    "type": "deco",
+    "type": "pixel",
     "z": 9,
     "default_z_layer": 3,
     "default_z_order": 9
@@ -45970,7 +46148,7 @@ window.allobjects = function() {
     "gridH": 0.4000000059604645,
     "gridW": 0.4333333373069763,
     "spritesheet": "PixelSheet_01-hd",
-    "type": "deco",
+    "type": "pixel",
     "z": 9,
     "default_z_layer": 3,
     "default_z_order": 9
@@ -45992,7 +46170,7 @@ window.allobjects = function() {
     "gridH": 0.5333333611488342,
     "gridW": 0.46666666865348816,
     "spritesheet": "PixelSheet_01-hd",
-    "type": "deco",
+    "type": "pixel",
     "z": 9,
     "default_z_layer": 3,
     "default_z_order": 9
@@ -46014,7 +46192,7 @@ window.allobjects = function() {
     "gridH": 0.5333333611488342,
     "gridW": 0.5333333611488342,
     "spritesheet": "PixelSheet_01-hd",
-    "type": "deco",
+    "type": "pixel",
     "z": 9,
     "default_z_layer": 3,
     "default_z_order": 9
@@ -46036,7 +46214,7 @@ window.allobjects = function() {
     "gridH": 0.5333333611488342,
     "gridW": 0.46666666865348816,
     "spritesheet": "PixelSheet_01-hd",
-    "type": "deco",
+    "type": "pixel",
     "z": 9,
     "default_z_layer": 3,
     "default_z_order": 9
@@ -46058,7 +46236,7 @@ window.allobjects = function() {
     "gridH": 0.46666666865348816,
     "gridW": 0.4333333373069763,
     "spritesheet": "PixelSheet_01-hd",
-    "type": "deco",
+    "type": "pixel",
     "z": 9,
     "default_z_layer": 3,
     "default_z_order": 9
@@ -46080,7 +46258,7 @@ window.allobjects = function() {
     "gridH": 0.46666666865348816,
     "gridW": 0.5333333611488342,
     "spritesheet": "PixelSheet_01-hd",
-    "type": "deco",
+    "type": "pixel",
     "z": 9,
     "default_z_layer": 3,
     "default_z_order": 9
@@ -46102,7 +46280,7 @@ window.allobjects = function() {
     "gridH": 0.4333333373069763,
     "gridW": 0.46666666865348816,
     "spritesheet": "PixelSheet_01-hd",
-    "type": "deco",
+    "type": "pixel",
     "z": 9,
     "default_z_layer": 3,
     "default_z_order": 9
@@ -46124,7 +46302,7 @@ window.allobjects = function() {
     "gridH": 0.5333333611488342,
     "gridW": 0.5333333611488342,
     "spritesheet": "PixelSheet_01-hd",
-    "type": "deco",
+    "type": "pixel",
     "z": 9,
     "default_z_layer": 3,
     "default_z_order": 9
@@ -46146,7 +46324,7 @@ window.allobjects = function() {
     "gridH": 0.5333333611488342,
     "gridW": 0.5333333611488342,
     "spritesheet": "PixelSheet_01-hd",
-    "type": "deco",
+    "type": "pixel",
     "z": 9,
     "default_z_layer": 3,
     "default_z_order": 9
@@ -46168,7 +46346,7 @@ window.allobjects = function() {
     "gridH": 0.5333333611488342,
     "gridW": 0.5333333611488342,
     "spritesheet": "PixelSheet_01-hd",
-    "type": "deco",
+    "type": "pixel",
     "z": 9,
     "default_z_layer": 3,
     "default_z_order": 9
@@ -46190,7 +46368,7 @@ window.allobjects = function() {
     "gridH": 0.5333333611488342,
     "gridW": 0.5333333611488342,
     "spritesheet": "PixelSheet_01-hd",
-    "type": "deco",
+    "type": "pixel",
     "z": 9,
     "default_z_layer": 3,
     "default_z_order": 9
@@ -46203,7 +46381,7 @@ window.allobjects = function() {
     "gridH": 0.5333333611488342,
     "gridW": 0.5333333611488342,
     "spritesheet": "PixelSheet_01-hd",
-    "type": "deco",
+    "type": "pixel",
     "z": 9,
     "default_detail_color_channel": -1,
     "default_z_layer": 3,
@@ -46217,7 +46395,7 @@ window.allobjects = function() {
     "gridH": 0.5333333611488342,
     "gridW": 0.5333333611488342,
     "spritesheet": "PixelSheet_01-hd",
-    "type": "deco",
+    "type": "pixel",
     "z": 9,
     "default_detail_color_channel": -1,
     "default_z_layer": 3,
@@ -46231,7 +46409,7 @@ window.allobjects = function() {
     "gridH": 0.5333333611488342,
     "gridW": 0.5333333611488342,
     "spritesheet": "PixelSheet_01-hd",
-    "type": "deco",
+    "type": "pixel",
     "z": 9,
     "default_detail_color_channel": -1,
     "default_z_layer": 3,
@@ -46245,7 +46423,7 @@ window.allobjects = function() {
     "gridH": 0.5333333611488342,
     "gridW": 0.5333333611488342,
     "spritesheet": "PixelSheet_01-hd",
-    "type": "deco",
+    "type": "pixel",
     "z": 9,
     "default_detail_color_channel": -1,
     "default_z_layer": 3,
@@ -46259,7 +46437,7 @@ window.allobjects = function() {
     "gridH": 0.13333334028720856,
     "gridW": 0.23333333432674408,
     "spritesheet": "PixelSheet_01-hd",
-    "type": "deco",
+    "type": "pixel",
     "z": 10,
     "default_detail_color_channel": -1,
     "default_z_layer": 3,
@@ -46282,7 +46460,7 @@ window.allobjects = function() {
     "gridH": 0.5,
     "gridW": 0.46666666865348816,
     "spritesheet": "PixelSheet_01-hd",
-    "type": "deco",
+    "type": "pixel",
     "z": 9,
     "default_z_layer": 3,
     "default_z_order": 9
@@ -46304,7 +46482,7 @@ window.allobjects = function() {
     "gridH": 0.30000001192092896,
     "gridW": 0.5333333611488342,
     "spritesheet": "PixelSheet_01-hd",
-    "type": "deco",
+    "type": "pixel",
     "z": 9,
     "default_z_layer": 3,
     "default_z_order": 9
@@ -46326,7 +46504,7 @@ window.allobjects = function() {
     "gridH": 0.23333333432674408,
     "gridW": 0.46666666865348816,
     "spritesheet": "PixelSheet_01-hd",
-    "type": "deco",
+    "type": "pixel",
     "z": 9,
     "default_z_layer": 3,
     "default_z_order": 9
@@ -46348,7 +46526,7 @@ window.allobjects = function() {
     "gridH": 0.3333333432674408,
     "gridW": 0.5333333611488342,
     "spritesheet": "PixelSheet_01-hd",
-    "type": "deco",
+    "type": "pixel",
     "z": 9,
     "default_z_layer": 3,
     "default_z_order": 9
@@ -46370,7 +46548,7 @@ window.allobjects = function() {
     "gridH": 0.20000000298023224,
     "gridW": 0.30000001192092896,
     "spritesheet": "PixelSheet_01-hd",
-    "type": "deco",
+    "type": "pixel",
     "z": 9,
     "default_z_layer": 3,
     "default_z_order": 9
@@ -46392,7 +46570,7 @@ window.allobjects = function() {
     "gridH": 0.23333333432674408,
     "gridW": 0.36666667461395264,
     "spritesheet": "PixelSheet_01-hd",
-    "type": "deco",
+    "type": "pixel",
     "z": 9,
     "default_z_layer": 3,
     "default_z_order": 9
@@ -46414,7 +46592,7 @@ window.allobjects = function() {
     "gridH": 0.36666667461395264,
     "gridW": 0.5333333611488342,
     "spritesheet": "PixelSheet_01-hd",
-    "type": "deco",
+    "type": "pixel",
     "z": 9,
     "default_z_layer": 3,
     "default_z_order": 9
@@ -46436,7 +46614,7 @@ window.allobjects = function() {
     "gridH": 0.5333333611488342,
     "gridW": 0.46666666865348816,
     "spritesheet": "PixelSheet_01-hd",
-    "type": "deco",
+    "type": "pixel",
     "z": 9,
     "default_z_layer": 3,
     "default_z_order": 9
@@ -46458,7 +46636,7 @@ window.allobjects = function() {
     "gridH": 0.6666666865348816,
     "gridW": 0.5333333611488342,
     "spritesheet": "PixelSheet_01-hd",
-    "type": "deco",
+    "type": "pixel",
     "z": 9,
     "default_z_layer": 3,
     "default_z_order": 9
@@ -46471,7 +46649,7 @@ window.allobjects = function() {
     "gridH": 0.30000001192092896,
     "gridW": 0.5333333611488342,
     "spritesheet": "PixelSheet_01-hd",
-    "type": "deco",
+    "type": "pixel",
     "z": 9,
     "default_detail_color_channel": -1,
     "default_z_layer": 3,
@@ -46485,7 +46663,7 @@ window.allobjects = function() {
     "gridH": 0.30000001192092896,
     "gridW": 0.5333333611488342,
     "spritesheet": "PixelSheet_01-hd",
-    "type": "deco",
+    "type": "pixel",
     "z": 9,
     "default_detail_color_channel": -1,
     "default_z_layer": 3,
@@ -46499,7 +46677,7 @@ window.allobjects = function() {
     "gridH": 0.5333333611488342,
     "gridW": 0.23333333432674408,
     "spritesheet": "PixelSheet_01-hd",
-    "type": "deco",
+    "type": "pixel",
     "z": 9,
     "default_detail_color_channel": -1,
     "default_z_layer": 3,
@@ -46513,7 +46691,7 @@ window.allobjects = function() {
     "gridH": 0.5333333611488342,
     "gridW": 0.2666666805744171,
     "spritesheet": "PixelSheet_01-hd",
-    "type": "deco",
+    "type": "pixel",
     "z": 9,
     "default_detail_color_channel": -1,
     "default_z_layer": 3,
@@ -46527,7 +46705,7 @@ window.allobjects = function() {
     "gridH": 0.46666666865348816,
     "gridW": 0.46666666865348816,
     "spritesheet": "PixelSheet_01-hd",
-    "type": "deco",
+    "type": "pixel",
     "z": 9,
     "default_detail_color_channel": -1,
     "default_z_layer": 3,
@@ -46541,7 +46719,7 @@ window.allobjects = function() {
     "gridH": 0.3333333432674408,
     "gridW": 0.5333333611488342,
     "spritesheet": "PixelSheet_01-hd",
-    "type": "deco",
+    "type": "pixel",
     "z": 9,
     "default_detail_color_channel": -1,
     "default_z_layer": 3,
@@ -46555,7 +46733,7 @@ window.allobjects = function() {
     "gridH": 0.5333333611488342,
     "gridW": 0.13333334028720856,
     "spritesheet": "PixelSheet_01-hd",
-    "type": "deco",
+    "type": "pixel",
     "z": 9,
     "default_detail_color_channel": -1,
     "default_z_layer": 3,
@@ -46569,7 +46747,7 @@ window.allobjects = function() {
     "gridH": 0.46666666865348816,
     "gridW": 0.13333334028720856,
     "spritesheet": "PixelSheet_01-hd",
-    "type": "deco",
+    "type": "pixel",
     "z": 9,
     "default_detail_color_channel": -1,
     "default_z_layer": 3,
@@ -46583,7 +46761,7 @@ window.allobjects = function() {
     "gridH": 0.30000001192092896,
     "gridW": 0.13333334028720856,
     "spritesheet": "PixelSheet_01-hd",
-    "type": "deco",
+    "type": "pixel",
     "z": 9,
     "default_detail_color_channel": -1,
     "default_z_layer": 3,
@@ -46597,7 +46775,7 @@ window.allobjects = function() {
     "gridH": 0.20000000298023224,
     "gridW": 0.13333334028720856,
     "spritesheet": "PixelSheet_01-hd",
-    "type": "deco",
+    "type": "pixel",
     "z": 9,
     "default_detail_color_channel": -1,
     "default_z_layer": 3,
@@ -46611,7 +46789,7 @@ window.allobjects = function() {
     "gridH": 0.5333333611488342,
     "gridW": 0.10000000149011612,
     "spritesheet": "PixelSheet_01-hd",
-    "type": "deco",
+    "type": "pixel",
     "z": 9,
     "default_detail_color_channel": -1,
     "default_z_layer": 3,
@@ -46625,7 +46803,7 @@ window.allobjects = function() {
     "gridH": 0.20000000298023224,
     "gridW": 0.10000000149011612,
     "spritesheet": "PixelSheet_01-hd",
-    "type": "deco",
+    "type": "pixel",
     "z": 9,
     "default_detail_color_channel": -1,
     "default_z_layer": 3,
@@ -46639,7 +46817,7 @@ window.allobjects = function() {
     "gridH": 0.5,
     "gridW": 0.5,
     "spritesheet": "PixelSheet_01-hd",
-    "type": "deco",
+    "type": "pixel",
     "z": 9,
     "default_detail_color_channel": -1,
     "default_z_layer": 3,
@@ -46653,7 +46831,7 @@ window.allobjects = function() {
     "gridH": 0.5,
     "gridW": 0.5,
     "spritesheet": "PixelSheet_01-hd",
-    "type": "deco",
+    "type": "pixel",
     "z": 9,
     "default_detail_color_channel": -1,
     "default_z_layer": 3,
@@ -46667,7 +46845,7 @@ window.allobjects = function() {
     "gridH": 0.1666666716337204,
     "gridW": 0.5,
     "spritesheet": "PixelSheet_01-hd",
-    "type": "deco",
+    "type": "pixel",
     "z": 9,
     "default_detail_color_channel": -1,
     "default_z_layer": 3,
@@ -46681,7 +46859,7 @@ window.allobjects = function() {
     "gridH": 0.13333334028720856,
     "gridW": 0.13333334028720856,
     "spritesheet": "PixelSheet_01-hd",
-    "type": "deco",
+    "type": "pixel",
     "z": 9,
     "default_detail_color_channel": -1,
     "default_z_layer": 3,
@@ -46695,7 +46873,7 @@ window.allobjects = function() {
     "gridH": 0.20000000298023224,
     "gridW": 0.06666667014360428,
     "spritesheet": "PixelSheet_01-hd",
-    "type": "deco",
+    "type": "pixel",
     "z": 9,
     "default_detail_color_channel": -1,
     "default_z_layer": 3,
@@ -46709,7 +46887,7 @@ window.allobjects = function() {
     "gridH": 0.4000000059604645,
     "gridW": 0.20000000298023224,
     "spritesheet": "PixelSheet_01-hd",
-    "type": "deco",
+    "type": "pixel",
     "z": 9,
     "default_detail_color_channel": -1,
     "default_z_layer": 3,
@@ -46723,7 +46901,7 @@ window.allobjects = function() {
     "gridH": 0.30000001192092896,
     "gridW": 0.4333333373069763,
     "spritesheet": "PixelSheet_01-hd",
-    "type": "deco",
+    "type": "pixel",
     "z": 9,
     "default_detail_color_channel": -1,
     "default_z_layer": 3,
@@ -46746,7 +46924,7 @@ window.allobjects = function() {
     "gridH": 0.5,
     "gridW": 0.5,
     "spritesheet": "PixelSheet_01-hd",
-    "type": "deco",
+    "type": "pixel",
     "z": 9,
     "default_z_layer": 3,
     "default_z_order": 9
@@ -46768,7 +46946,7 @@ window.allobjects = function() {
     "gridH": 0.5,
     "gridW": 0.5,
     "spritesheet": "PixelSheet_01-hd",
-    "type": "deco",
+    "type": "pixel",
     "z": 9,
     "default_z_layer": 3,
     "default_z_order": 9
@@ -46790,7 +46968,7 @@ window.allobjects = function() {
     "gridH": 0.03333333507180214,
     "gridW": 0.4000000059604645,
     "spritesheet": "PixelSheet_01-hd",
-    "type": "deco",
+    "type": "pixel",
     "z": 9,
     "default_z_layer": 3,
     "default_z_order": 9
@@ -46812,7 +46990,7 @@ window.allobjects = function() {
     "gridH": 0.7666666507720947,
     "gridW": 0.46666666865348816,
     "spritesheet": "PixelSheet_01-hd",
-    "type": "deco",
+    "type": "pixel",
     "z": 9,
     "default_z_layer": 3,
     "default_z_order": 9
@@ -46834,7 +47012,7 @@ window.allobjects = function() {
     "gridH": 0.23333333432674408,
     "gridW": 0.10000000149011612,
     "spritesheet": "PixelSheet_01-hd",
-    "type": "deco",
+    "type": "pixel",
     "z": 9,
     "default_z_layer": 3,
     "default_z_order": 9
@@ -46856,7 +47034,7 @@ window.allobjects = function() {
     "gridH": 0.5333333611488342,
     "gridW": 0.5,
     "spritesheet": "PixelSheet_01-hd",
-    "type": "deco",
+    "type": "pixel",
     "z": 9,
     "default_z_layer": 3,
     "default_z_order": 9
@@ -46878,7 +47056,7 @@ window.allobjects = function() {
     "gridH": 0.30000001192092896,
     "gridW": 0.4333333373069763,
     "spritesheet": "PixelSheet_01-hd",
-    "type": "deco",
+    "type": "pixel",
     "z": 9,
     "default_z_layer": 3,
     "default_z_order": 9
@@ -46900,7 +47078,7 @@ window.allobjects = function() {
     "gridH": 0.1666666716337204,
     "gridW": 0.10000000149011612,
     "spritesheet": "PixelSheet_01-hd",
-    "type": "deco",
+    "type": "pixel",
     "z": 9,
     "default_z_layer": 3,
     "default_z_order": 9
@@ -46922,7 +47100,7 @@ window.allobjects = function() {
     "gridH": 0.36666667461395264,
     "gridW": 0.20000000298023224,
     "spritesheet": "PixelSheet_01-hd",
-    "type": "deco",
+    "type": "pixel",
     "z": 9,
     "default_z_layer": 3,
     "default_z_order": 9
@@ -46935,7 +47113,7 @@ window.allobjects = function() {
     "gridH": 0.5333333611488342,
     "gridW": 0.13333334028720856,
     "spritesheet": "PixelSheet_01-hd",
-    "type": "deco",
+    "type": "pixel",
     "z": 9,
     "default_detail_color_channel": -1,
     "default_z_layer": 3,
@@ -46949,7 +47127,7 @@ window.allobjects = function() {
     "gridH": 0.1666666716337204,
     "gridW": 0.13333334028720856,
     "spritesheet": "PixelSheet_01-hd",
-    "type": "deco",
+    "type": "pixel",
     "z": 9,
     "default_detail_color_channel": -1,
     "default_z_layer": 3,
@@ -46972,7 +47150,7 @@ window.allobjects = function() {
     "gridH": 0.5,
     "gridW": 0.5,
     "spritesheet": "PixelSheet_01-hd",
-    "type": "deco",
+    "type": "pixel",
     "z": 9,
     "default_z_layer": 3,
     "default_z_order": 9
@@ -46985,7 +47163,7 @@ window.allobjects = function() {
     "gridH": 0.1666666716337204,
     "gridW": 0.46666666865348816,
     "spritesheet": "PixelSheet_01-hd",
-    "type": "deco",
+    "type": "pixel",
     "z": 9,
     "default_detail_color_channel": -1,
     "default_z_layer": 3,
@@ -46999,7 +47177,7 @@ window.allobjects = function() {
     "gridH": 0.4333333373069763,
     "gridW": 0.03333333507180214,
     "spritesheet": "PixelSheet_01-hd",
-    "type": "deco",
+    "type": "pixel",
     "z": 9,
     "default_detail_color_channel": -1,
     "default_z_layer": 3,
@@ -47022,7 +47200,7 @@ window.allobjects = function() {
     "gridH": 0.5,
     "gridW": 0.5,
     "spritesheet": "PixelSheet_01-hd",
-    "type": "deco",
+    "type": "pixel",
     "z": 9,
     "default_z_layer": 3,
     "default_z_order": 9
@@ -47035,7 +47213,7 @@ window.allobjects = function() {
     "gridH": 0.1666666716337204,
     "gridW": 0.5,
     "spritesheet": "PixelSheet_01-hd",
-    "type": "deco",
+    "type": "pixel",
     "z": 9,
     "default_detail_color_channel": -1,
     "default_z_layer": 3,
@@ -47058,7 +47236,7 @@ window.allobjects = function() {
     "gridH": 0.5,
     "gridW": 0.5,
     "spritesheet": "PixelSheet_01-hd",
-    "type": "deco",
+    "type": "pixel",
     "z": 9,
     "default_z_layer": 3,
     "default_z_order": 9
@@ -47071,7 +47249,7 @@ window.allobjects = function() {
     "gridH": 0.5,
     "gridW": 0.03333333507180214,
     "spritesheet": "PixelSheet_01-hd",
-    "type": "deco",
+    "type": "pixel",
     "z": 9,
     "default_detail_color_channel": -1,
     "default_z_layer": 3,
@@ -47094,7 +47272,7 @@ window.allobjects = function() {
     "gridH": 0.5,
     "gridW": 0.5,
     "spritesheet": "PixelSheet_01-hd",
-    "type": "deco",
+    "type": "pixel",
     "z": 9,
     "default_z_layer": 3,
     "default_z_order": 9
@@ -47107,7 +47285,7 @@ window.allobjects = function() {
     "gridH": 0.46666666865348816,
     "gridW": 0.03333333507180214,
     "spritesheet": "PixelSheet_01-hd",
-    "type": "deco",
+    "type": "pixel",
     "z": 9,
     "default_detail_color_channel": -1,
     "default_z_layer": 3,
@@ -47121,7 +47299,7 @@ window.allobjects = function() {
     "gridH": 0.03333333507180214,
     "gridW": 0.4333333373069763,
     "spritesheet": "PixelSheet_01-hd",
-    "type": "deco",
+    "type": "pixel",
     "z": 9,
     "default_detail_color_channel": -1,
     "default_z_layer": 3,
@@ -47144,7 +47322,7 @@ window.allobjects = function() {
     "gridH": 0.5,
     "gridW": 0.5,
     "spritesheet": "PixelSheet_01-hd",
-    "type": "deco",
+    "type": "pixel",
     "z": 9,
     "default_z_layer": 3,
     "default_z_order": 9
@@ -47157,7 +47335,7 @@ window.allobjects = function() {
     "gridH": 0.03333333507180214,
     "gridW": 0.5,
     "spritesheet": "PixelSheet_01-hd",
-    "type": "deco",
+    "type": "pixel",
     "z": 9,
     "default_detail_color_channel": -1,
     "default_z_layer": 3,
@@ -47180,7 +47358,7 @@ window.allobjects = function() {
     "gridH": 0.5,
     "gridW": 0.5,
     "spritesheet": "PixelSheet_01-hd",
-    "type": "deco",
+    "type": "pixel",
     "z": 9,
     "default_z_layer": 3,
     "default_z_order": 9
@@ -47193,7 +47371,7 @@ window.allobjects = function() {
     "gridH": 0.5,
     "gridW": 0.03333333507180214,
     "spritesheet": "PixelSheet_01-hd",
-    "type": "deco",
+    "type": "pixel",
     "z": 9,
     "default_detail_color_channel": -1,
     "default_z_layer": 3,
@@ -47216,7 +47394,7 @@ window.allobjects = function() {
     "gridH": 0.5,
     "gridW": 0.5,
     "spritesheet": "PixelSheet_01-hd",
-    "type": "deco",
+    "type": "pixel",
     "z": 9,
     "default_z_layer": 3,
     "default_z_order": 9
@@ -47229,7 +47407,7 @@ window.allobjects = function() {
     "gridH": 0.03333333507180214,
     "gridW": 0.4333333373069763,
     "spritesheet": "PixelSheet_01-hd",
-    "type": "deco",
+    "type": "pixel",
     "z": 9,
     "default_detail_color_channel": -1,
     "default_z_layer": 3,
@@ -47243,7 +47421,7 @@ window.allobjects = function() {
     "gridH": 0.4333333373069763,
     "gridW": 0.03333333507180214,
     "spritesheet": "PixelSheet_01-hd",
-    "type": "deco",
+    "type": "pixel",
     "z": 9,
     "default_detail_color_channel": -1,
     "default_z_layer": 3,
@@ -47266,7 +47444,7 @@ window.allobjects = function() {
     "gridH": 0.5,
     "gridW": 0.5,
     "spritesheet": "PixelSheet_01-hd",
-    "type": "deco",
+    "type": "pixel",
     "z": 9,
     "default_z_layer": 3,
     "default_z_order": 9
@@ -47279,7 +47457,7 @@ window.allobjects = function() {
     "gridH": 0.1666666716337204,
     "gridW": 0.4333333373069763,
     "spritesheet": "PixelSheet_01-hd",
-    "type": "deco",
+    "type": "pixel",
     "z": 9,
     "default_detail_color_channel": -1,
     "default_z_layer": 3,
@@ -47293,7 +47471,7 @@ window.allobjects = function() {
     "gridH": 0.4333333373069763,
     "gridW": 0.03333333507180214,
     "spritesheet": "PixelSheet_01-hd",
-    "type": "deco",
+    "type": "pixel",
     "z": 9,
     "default_detail_color_channel": -1,
     "default_z_layer": 3,
@@ -47316,7 +47494,7 @@ window.allobjects = function() {
     "gridH": 0.5,
     "gridW": 0.5,
     "spritesheet": "PixelSheet_01-hd",
-    "type": "deco",
+    "type": "pixel",
     "z": 9,
     "default_z_layer": 3,
     "default_z_order": 9
@@ -47329,7 +47507,7 @@ window.allobjects = function() {
     "gridH": 0.03333333507180214,
     "gridW": 0.4333333373069763,
     "spritesheet": "PixelSheet_01-hd",
-    "type": "deco",
+    "type": "pixel",
     "z": 9,
     "default_detail_color_channel": -1,
     "default_z_layer": 3,
@@ -47343,7 +47521,7 @@ window.allobjects = function() {
     "gridH": 0.4333333373069763,
     "gridW": 0.03333333507180214,
     "spritesheet": "PixelSheet_01-hd",
-    "type": "deco",
+    "type": "pixel",
     "z": 9,
     "default_detail_color_channel": -1,
     "default_z_layer": 3,
@@ -47366,7 +47544,7 @@ window.allobjects = function() {
     "gridH": 0.5,
     "gridW": 0.5,
     "spritesheet": "PixelSheet_01-hd",
-    "type": "deco",
+    "type": "pixel",
     "z": 9,
     "default_z_layer": 3,
     "default_z_order": 9
@@ -47379,7 +47557,7 @@ window.allobjects = function() {
     "gridH": 0.06666667014360428,
     "gridW": 0.03333333507180214,
     "spritesheet": "PixelSheet_01-hd",
-    "type": "deco",
+    "type": "pixel",
     "z": 9,
     "default_detail_color_channel": -1,
     "default_z_layer": 3,
@@ -47402,7 +47580,7 @@ window.allobjects = function() {
     "gridH": 0.5,
     "gridW": 0.5,
     "spritesheet": "PixelSheet_01-hd",
-    "type": "deco",
+    "type": "pixel",
     "z": 9,
     "default_z_layer": 3,
     "default_z_order": 9
@@ -47415,7 +47593,7 @@ window.allobjects = function() {
     "gridH": 0.03333333507180214,
     "gridW": 0.06666667014360428,
     "spritesheet": "PixelSheet_01-hd",
-    "type": "deco",
+    "type": "pixel",
     "z": 9,
     "default_detail_color_channel": -1,
     "default_z_layer": 3,
@@ -47438,7 +47616,7 @@ window.allobjects = function() {
     "gridH": 0.5,
     "gridW": 0.5,
     "spritesheet": "PixelSheet_01-hd",
-    "type": "deco",
+    "type": "pixel",
     "z": 9,
     "default_z_layer": 3,
     "default_z_order": 9
@@ -47451,7 +47629,7 @@ window.allobjects = function() {
     "gridH": 0.1666666716337204,
     "gridW": 0.5,
     "spritesheet": "PixelSheet_01-hd",
-    "type": "deco",
+    "type": "pixel",
     "z": 9,
     "default_detail_color_channel": -1,
     "default_z_layer": 3,
@@ -47474,7 +47652,7 @@ window.allobjects = function() {
     "gridH": 0.5,
     "gridW": 0.5,
     "spritesheet": "PixelSheet_01-hd",
-    "type": "deco",
+    "type": "pixel",
     "z": 9,
     "default_z_layer": 3,
     "default_z_order": 9
@@ -47487,7 +47665,7 @@ window.allobjects = function() {
     "gridH": 0.5,
     "gridW": 0.03333333507180214,
     "spritesheet": "PixelSheet_01-hd",
-    "type": "deco",
+    "type": "pixel",
     "z": 9,
     "default_detail_color_channel": -1,
     "default_z_layer": 3,
@@ -47510,7 +47688,7 @@ window.allobjects = function() {
     "gridH": 0.5,
     "gridW": 0.5,
     "spritesheet": "PixelSheet_01-hd",
-    "type": "deco",
+    "type": "pixel",
     "z": 9,
     "default_z_layer": 3,
     "default_z_order": 9
@@ -47523,7 +47701,7 @@ window.allobjects = function() {
     "gridH": 0.03333333507180214,
     "gridW": 0.5,
     "spritesheet": "PixelSheet_01-hd",
-    "type": "deco",
+    "type": "pixel",
     "z": 9,
     "default_detail_color_channel": -1,
     "default_z_layer": 3,
@@ -47546,7 +47724,7 @@ window.allobjects = function() {
     "gridH": 0.5,
     "gridW": 0.5,
     "spritesheet": "PixelSheet_01-hd",
-    "type": "deco",
+    "type": "pixel",
     "z": 9,
     "default_z_layer": 3,
     "default_z_order": 9
@@ -47559,7 +47737,7 @@ window.allobjects = function() {
     "gridH": 0.5,
     "gridW": 0.03333333507180214,
     "spritesheet": "PixelSheet_01-hd",
-    "type": "deco",
+    "type": "pixel",
     "z": 9,
     "default_detail_color_channel": -1,
     "default_z_layer": 3,
@@ -47573,7 +47751,7 @@ window.allobjects = function() {
     "gridH": 0.1666666716337204,
     "gridW": 0.10000000149011612,
     "spritesheet": "PixelSheet_01-hd",
-    "type": "deco",
+    "type": "pixel",
     "z": 9,
     "default_detail_color_channel": -1,
     "default_z_layer": 3,
@@ -47596,7 +47774,7 @@ window.allobjects = function() {
     "gridH": 0.5,
     "gridW": 0.5,
     "spritesheet": "PixelSheet_01-hd",
-    "type": "deco",
+    "type": "pixel",
     "z": 9,
     "default_z_layer": 3,
     "default_z_order": 9
@@ -47609,7 +47787,7 @@ window.allobjects = function() {
     "gridH": 0.03333333507180214,
     "gridW": 0.5,
     "spritesheet": "PixelSheet_01-hd",
-    "type": "deco",
+    "type": "pixel",
     "z": 9,
     "default_detail_color_channel": -1,
     "default_z_layer": 3,
@@ -47623,7 +47801,7 @@ window.allobjects = function() {
     "gridH": 0.10000000149011612,
     "gridW": 0.03333333507180214,
     "spritesheet": "PixelSheet_01-hd",
-    "type": "deco",
+    "type": "pixel",
     "z": 9,
     "default_detail_color_channel": -1,
     "default_z_layer": 3,
@@ -47646,7 +47824,7 @@ window.allobjects = function() {
     "gridH": 0.5,
     "gridW": 0.5,
     "spritesheet": "PixelSheet_01-hd",
-    "type": "deco",
+    "type": "pixel",
     "z": 9,
     "default_z_layer": 3,
     "default_z_order": 9
@@ -47659,7 +47837,7 @@ window.allobjects = function() {
     "gridH": 0.5,
     "gridW": 0.03333333507180214,
     "spritesheet": "PixelSheet_01-hd",
-    "type": "deco",
+    "type": "pixel",
     "z": 9,
     "default_detail_color_channel": -1,
     "default_z_layer": 3,
@@ -47673,7 +47851,7 @@ window.allobjects = function() {
     "gridH": 0.03333333507180214,
     "gridW": 0.10000000149011612,
     "spritesheet": "PixelSheet_01-hd",
-    "type": "deco",
+    "type": "pixel",
     "z": 9,
     "default_detail_color_channel": -1,
     "default_z_layer": 3,
@@ -47696,7 +47874,7 @@ window.allobjects = function() {
     "gridH": 0.5,
     "gridW": 0.5,
     "spritesheet": "PixelSheet_01-hd",
-    "type": "deco",
+    "type": "pixel",
     "z": 9,
     "default_z_layer": 3,
     "default_z_order": 9
@@ -47709,7 +47887,7 @@ window.allobjects = function() {
     "gridH": 0.1666666716337204,
     "gridW": 0.46666666865348816,
     "spritesheet": "PixelSheet_01-hd",
-    "type": "deco",
+    "type": "pixel",
     "z": 9,
     "default_detail_color_channel": -1,
     "default_z_layer": 3,
@@ -47732,7 +47910,7 @@ window.allobjects = function() {
     "gridH": 0.5,
     "gridW": 0.5,
     "spritesheet": "PixelSheet_01-hd",
-    "type": "deco",
+    "type": "pixel",
     "z": 9,
     "default_z_layer": 3,
     "default_z_order": 9
@@ -47745,7 +47923,7 @@ window.allobjects = function() {
     "gridH": 0.1666666716337204,
     "gridW": 0.4333333373069763,
     "spritesheet": "PixelSheet_01-hd",
-    "type": "deco",
+    "type": "pixel",
     "z": 9,
     "default_detail_color_channel": -1,
     "default_z_layer": 3,
@@ -47759,7 +47937,7 @@ window.allobjects = function() {
     "gridH": 0.36666667461395264,
     "gridW": 0.03333333507180214,
     "spritesheet": "PixelSheet_01-hd",
-    "type": "deco",
+    "type": "pixel",
     "z": 9,
     "default_detail_color_channel": -1,
     "default_z_layer": 3,
@@ -47782,7 +47960,7 @@ window.allobjects = function() {
     "gridH": 0.5,
     "gridW": 0.5,
     "spritesheet": "PixelSheet_01-hd",
-    "type": "deco",
+    "type": "pixel",
     "z": 9,
     "default_z_layer": 3,
     "default_z_order": 9
@@ -47795,7 +47973,7 @@ window.allobjects = function() {
     "gridH": 0.03333333507180214,
     "gridW": 0.4333333373069763,
     "spritesheet": "PixelSheet_01-hd",
-    "type": "deco",
+    "type": "pixel",
     "z": 9,
     "default_detail_color_channel": -1,
     "default_z_layer": 3,
@@ -47809,7 +47987,7 @@ window.allobjects = function() {
     "gridH": 0.36666667461395264,
     "gridW": 0.03333333507180214,
     "spritesheet": "PixelSheet_01-hd",
-    "type": "deco",
+    "type": "pixel",
     "z": 9,
     "default_detail_color_channel": -1,
     "default_z_layer": 3,
@@ -47832,7 +48010,7 @@ window.allobjects = function() {
     "gridH": 0.46666666865348816,
     "gridW": 1.0666667222976685,
     "spritesheet": "PixelSheet_01-hd",
-    "type": "deco",
+    "type": "pixel",
     "z": 9,
     "default_z_layer": 3,
     "default_z_order": 9
@@ -47854,7 +48032,7 @@ window.allobjects = function() {
     "gridH": 0.5,
     "gridW": 1.1333333253860474,
     "spritesheet": "PixelSheet_01-hd",
-    "type": "deco",
+    "type": "pixel",
     "z": 10,
     "default_z_layer": 3,
     "default_z_order": 10
@@ -47876,7 +48054,7 @@ window.allobjects = function() {
     "gridH": 0.03333333507180214,
     "gridW": 0.9333333373069763,
     "spritesheet": "PixelSheet_01-hd",
-    "type": "deco",
+    "type": "pixel",
     "z": 9,
     "default_z_layer": 3,
     "default_z_order": 9
@@ -47889,7 +48067,7 @@ window.allobjects = function() {
     "gridH": 0.03333333507180214,
     "gridW": 0.03333333507180214,
     "spritesheet": "PixelSheet_01-hd",
-    "type": "deco",
+    "type": "pixel",
     "z": 10,
     "default_detail_color_channel": -1,
     "default_z_layer": 3,
@@ -47912,7 +48090,7 @@ window.allobjects = function() {
     "gridH": 0.46666666865348816,
     "gridW": 1.0666667222976685,
     "spritesheet": "PixelSheet_01-hd",
-    "type": "deco",
+    "type": "pixel",
     "z": 9,
     "default_z_layer": 3,
     "default_z_order": 9
@@ -47934,7 +48112,7 @@ window.allobjects = function() {
     "gridH": 0.5,
     "gridW": 1.1333333253860474,
     "spritesheet": "PixelSheet_01-hd",
-    "type": "deco",
+    "type": "pixel",
     "z": 10,
     "default_z_layer": 3,
     "default_z_order": 10
@@ -47956,7 +48134,7 @@ window.allobjects = function() {
     "gridH": 0.23333333432674408,
     "gridW": 0.8999999761581421,
     "spritesheet": "PixelSheet_01-hd",
-    "type": "deco",
+    "type": "pixel",
     "z": 9,
     "default_z_layer": 3,
     "default_z_order": 9
@@ -47978,7 +48156,7 @@ window.allobjects = function() {
     "gridH": 0.9666666388511658,
     "gridW": 1.100000023841858,
     "spritesheet": "PixelSheet_01-hd",
-    "type": "deco",
+    "type": "pixel",
     "z": 9,
     "default_z_layer": 3,
     "default_z_order": 9
@@ -47991,7 +48169,7 @@ window.allobjects = function() {
     "gridH": 0.03333333507180214,
     "gridW": 0.03333333507180214,
     "spritesheet": "PixelSheet_01-hd",
-    "type": "deco",
+    "type": "pixel",
     "z": 9,
     "default_detail_color_channel": -1,
     "default_z_layer": 3,
@@ -48014,7 +48192,7 @@ window.allobjects = function() {
     "gridH": 0.5,
     "gridW": 0.5,
     "spritesheet": "PixelSheet_01-hd",
-    "type": "deco",
+    "type": "pixel",
     "z": 9,
     "default_z_layer": 3,
     "default_z_order": 9
@@ -48036,7 +48214,7 @@ window.allobjects = function() {
     "gridH": 0.5,
     "gridW": 0.5,
     "spritesheet": "PixelSheet_01-hd",
-    "type": "deco",
+    "type": "pixel",
     "z": 9,
     "default_z_layer": 3,
     "default_z_order": 9
@@ -48058,7 +48236,7 @@ window.allobjects = function() {
     "gridH": 0.5,
     "gridW": 0.5,
     "spritesheet": "PixelSheet_01-hd",
-    "type": "deco",
+    "type": "pixel",
     "z": 9,
     "default_z_layer": 3,
     "default_z_order": 9
@@ -48080,7 +48258,7 @@ window.allobjects = function() {
     "gridH": 0.5,
     "gridW": 0.5,
     "spritesheet": "PixelSheet_01-hd",
-    "type": "deco",
+    "type": "pixel",
     "z": 9,
     "default_z_layer": 3,
     "default_z_order": 9
@@ -48102,7 +48280,7 @@ window.allobjects = function() {
     "gridH": 0.5,
     "gridW": 0.5,
     "spritesheet": "PixelSheet_01-hd",
-    "type": "deco",
+    "type": "pixel",
     "z": 9,
     "default_z_layer": 3,
     "default_z_order": 9
@@ -54064,20 +54242,6 @@ window.allobjects = function() {
   },
   "3001": {
     "can_color": true,
-    "children": [
-      {
-        "frame": "d_animWave_02b_color_001.png",
-        "localDy": 0,
-        "tint": 52224,
-        "z": -100
-      },
-      {
-        "frame": "d_animWave_02b_001.png",
-        "localDy": 0,
-        "tint": 65280,
-        "z": -1
-      }
-    ],
     "default_base_color_channel": 1,
     "default_detail_color_channel": 1,
     "frame": "d_animWave_02b_001.png",
@@ -55573,7 +55737,7 @@ window.allobjects = function() {
     "gridH": 0.03333333507180214,
     "gridW": 0.03333333507180214,
     "spritesheet": "PixelSheet_01-hd",
-    "type": "deco",
+    "type": "pixel",
     "z": 9,
     "default_detail_color_channel": -1,
     "default_z_layer": 3,
@@ -55587,7 +55751,7 @@ window.allobjects = function() {
     "gridH": 0.03333333507180214,
     "gridW": 0.03333333507180214,
     "spritesheet": "PixelSheet_01-hd",
-    "type": "deco",
+    "type": "pixel",
     "z": 9,
     "default_detail_color_channel": -1,
     "default_z_layer": 3,
@@ -55601,7 +55765,7 @@ window.allobjects = function() {
     "gridH": 0.03333333507180214,
     "gridW": 0.03333333507180214,
     "spritesheet": "PixelSheet_01-hd",
-    "type": "deco",
+    "type": "pixel",
     "z": 9,
     "default_detail_color_channel": -1,
     "default_z_layer": 3,
@@ -55615,7 +55779,7 @@ window.allobjects = function() {
     "gridH": 0.03333333507180214,
     "gridW": 0.03333333507180214,
     "spritesheet": "PixelSheet_01-hd",
-    "type": "deco",
+    "type": "pixel",
     "z": 9,
     "default_detail_color_channel": -1,
     "default_z_layer": 3,
@@ -55629,7 +55793,7 @@ window.allobjects = function() {
     "gridH": 0.03333333507180214,
     "gridW": 0.03333333507180214,
     "spritesheet": "PixelSheet_01-hd",
-    "type": "deco",
+    "type": "pixel",
     "z": 9,
     "default_detail_color_channel": -1,
     "default_z_layer": 3,
@@ -55643,7 +55807,7 @@ window.allobjects = function() {
     "gridH": 0.03333333507180214,
     "gridW": 0.03333333507180214,
     "spritesheet": "PixelSheet_01-hd",
-    "type": "deco",
+    "type": "pixel",
     "z": 9,
     "default_detail_color_channel": -1,
     "default_z_layer": 3,
@@ -55666,7 +55830,7 @@ window.allobjects = function() {
     "gridH": 0.5333333611488342,
     "gridW": 0.5333333611488342,
     "spritesheet": "PixelSheet_01-hd",
-    "type": "deco",
+    "type": "pixel",
     "z": 9,
     "default_z_layer": 3,
     "default_z_order": 9
@@ -55679,7 +55843,7 @@ window.allobjects = function() {
     "gridH": 0.46666666865348816,
     "gridW": 0.46666666865348816,
     "spritesheet": "PixelSheet_01-hd",
-    "type": "deco",
+    "type": "pixel",
     "z": 9,
     "default_detail_color_channel": -1,
     "default_z_layer": 3,
@@ -55702,7 +55866,7 @@ window.allobjects = function() {
     "gridH": 0.5333333611488342,
     "gridW": 0.5333333611488342,
     "spritesheet": "PixelSheet_01-hd",
-    "type": "deco",
+    "type": "pixel",
     "z": 9,
     "default_z_layer": 3,
     "default_z_order": 9
@@ -55715,7 +55879,7 @@ window.allobjects = function() {
     "gridH": 0.5333333611488342,
     "gridW": 0.2666666805744171,
     "spritesheet": "PixelSheet_01-hd",
-    "type": "deco",
+    "type": "pixel",
     "z": 9,
     "default_detail_color_channel": -1,
     "default_z_layer": 3,
@@ -55738,7 +55902,7 @@ window.allobjects = function() {
     "gridH": 0.5333333611488342,
     "gridW": 0.5333333611488342,
     "spritesheet": "PixelSheet_01-hd",
-    "type": "deco",
+    "type": "pixel",
     "z": 9,
     "default_z_layer": 3,
     "default_z_order": 9
@@ -55751,7 +55915,7 @@ window.allobjects = function() {
     "gridH": 0.20000000298023224,
     "gridW": 0.5333333611488342,
     "spritesheet": "PixelSheet_01-hd",
-    "type": "deco",
+    "type": "pixel",
     "z": 9,
     "default_detail_color_channel": -1,
     "default_z_layer": 3,
@@ -55774,7 +55938,7 @@ window.allobjects = function() {
     "gridH": 0.5333333611488342,
     "gridW": 0.5333333611488342,
     "spritesheet": "PixelSheet_01-hd",
-    "type": "deco",
+    "type": "pixel",
     "z": 9,
     "default_z_layer": 3,
     "default_z_order": 9
@@ -55787,7 +55951,7 @@ window.allobjects = function() {
     "gridH": 0.5333333611488342,
     "gridW": 0.10000000149011612,
     "spritesheet": "PixelSheet_01-hd",
-    "type": "deco",
+    "type": "pixel",
     "z": 9,
     "default_detail_color_channel": -1,
     "default_z_layer": 3,
@@ -55810,7 +55974,7 @@ window.allobjects = function() {
     "gridH": 0.5333333611488342,
     "gridW": 0.5333333611488342,
     "spritesheet": "PixelSheet_01-hd",
-    "type": "deco",
+    "type": "pixel",
     "z": 9,
     "default_z_layer": 3,
     "default_z_order": 9
@@ -55823,7 +55987,7 @@ window.allobjects = function() {
     "gridH": 0.10000000149011612,
     "gridW": 0.5,
     "spritesheet": "PixelSheet_01-hd",
-    "type": "deco",
+    "type": "pixel",
     "z": 9,
     "default_detail_color_channel": -1,
     "default_z_layer": 3,
@@ -55837,7 +56001,7 @@ window.allobjects = function() {
     "gridH": 0.03333333507180214,
     "gridW": 0.03333333507180214,
     "spritesheet": "PixelSheet_01-hd",
-    "type": "deco",
+    "type": "pixel",
     "z": 9,
     "default_detail_color_channel": -1,
     "default_z_layer": 3,
@@ -55860,7 +56024,7 @@ window.allobjects = function() {
     "gridH": 0.5333333611488342,
     "gridW": 0.5333333611488342,
     "spritesheet": "PixelSheet_01-hd",
-    "type": "deco",
+    "type": "pixel",
     "z": 9,
     "default_z_layer": 3,
     "default_z_order": 9
@@ -55873,7 +56037,7 @@ window.allobjects = function() {
     "gridH": 0.4333333373069763,
     "gridW": 0.2666666805744171,
     "spritesheet": "PixelSheet_01-hd",
-    "type": "deco",
+    "type": "pixel",
     "z": 9,
     "default_detail_color_channel": -1,
     "default_z_layer": 3,
@@ -55896,7 +56060,7 @@ window.allobjects = function() {
     "gridH": 0.5333333611488342,
     "gridW": 0.5333333611488342,
     "spritesheet": "PixelSheet_01-hd",
-    "type": "deco",
+    "type": "pixel",
     "z": 9,
     "default_z_layer": 3,
     "default_z_order": 9
@@ -55909,7 +56073,7 @@ window.allobjects = function() {
     "gridH": 0.5333333611488342,
     "gridW": 0.5333333611488342,
     "spritesheet": "PixelSheet_01-hd",
-    "type": "deco",
+    "type": "pixel",
     "z": 9,
     "default_detail_color_channel": -1,
     "default_z_layer": 3,
@@ -55923,7 +56087,7 @@ window.allobjects = function() {
     "gridH": 0.3333333432674408,
     "gridW": 0.4000000059604645,
     "spritesheet": "PixelSheet_01-hd",
-    "type": "deco",
+    "type": "pixel",
     "z": 9,
     "default_detail_color_channel": -1,
     "default_z_layer": 3,
@@ -55937,7 +56101,7 @@ window.allobjects = function() {
     "gridH": 0.46666666865348816,
     "gridW": 0.4333333373069763,
     "spritesheet": "PixelSheet_01-hd",
-    "type": "deco",
+    "type": "pixel",
     "z": 9,
     "default_detail_color_channel": -1,
     "default_z_layer": 3,
@@ -55960,7 +56124,7 @@ window.allobjects = function() {
     "gridH": 0.23333333432674408,
     "gridW": 0.5333333611488342,
     "spritesheet": "PixelSheet_01-hd",
-    "type": "deco",
+    "type": "pixel",
     "z": 9,
     "default_z_layer": 3,
     "default_z_order": 9
@@ -55982,7 +56146,7 @@ window.allobjects = function() {
     "gridH": 0.1666666716337204,
     "gridW": 0.5333333611488342,
     "spritesheet": "PixelSheet_01-hd",
-    "type": "deco",
+    "type": "pixel",
     "z": 9,
     "default_z_layer": 3,
     "default_z_order": 9
@@ -56004,7 +56168,7 @@ window.allobjects = function() {
     "gridH": 0.10000000149011612,
     "gridW": 0.36666667461395264,
     "spritesheet": "PixelSheet_01-hd",
-    "type": "deco",
+    "type": "pixel",
     "z": 9,
     "default_z_layer": 3,
     "default_z_order": 9
@@ -56026,7 +56190,7 @@ window.allobjects = function() {
     "gridH": 0.10000000149011612,
     "gridW": 0.4333333373069763,
     "spritesheet": "PixelSheet_01-hd",
-    "type": "deco",
+    "type": "pixel",
     "z": 9,
     "default_z_layer": 3,
     "default_z_order": 9
@@ -56048,7 +56212,7 @@ window.allobjects = function() {
     "gridH": 0.5333333611488342,
     "gridW": 0.5333333611488342,
     "spritesheet": "PixelSheet_01-hd",
-    "type": "deco",
+    "type": "pixel",
     "z": 9,
     "default_z_layer": 3,
     "default_z_order": 9
@@ -56070,7 +56234,7 @@ window.allobjects = function() {
     "gridH": 0.5333333611488342,
     "gridW": 0.5333333611488342,
     "spritesheet": "PixelSheet_01-hd",
-    "type": "deco",
+    "type": "pixel",
     "z": 9,
     "default_z_layer": 3,
     "default_z_order": 9
@@ -56092,7 +56256,7 @@ window.allobjects = function() {
     "gridH": 0.5333333611488342,
     "gridW": 0.5,
     "spritesheet": "PixelSheet_01-hd",
-    "type": "deco",
+    "type": "pixel",
     "z": 9,
     "default_z_layer": 3,
     "default_z_order": 9
@@ -56114,7 +56278,7 @@ window.allobjects = function() {
     "gridH": 0.5333333611488342,
     "gridW": 0.4333333373069763,
     "spritesheet": "PixelSheet_01-hd",
-    "type": "deco",
+    "type": "pixel",
     "z": 9,
     "default_z_layer": 3,
     "default_z_order": 9
@@ -56136,7 +56300,7 @@ window.allobjects = function() {
     "gridH": 0.5,
     "gridW": 0.46666666865348816,
     "spritesheet": "PixelSheet_01-hd",
-    "type": "deco",
+    "type": "pixel",
     "z": 9,
     "default_z_layer": 3,
     "default_z_order": 9
@@ -56158,7 +56322,7 @@ window.allobjects = function() {
     "gridH": 0.5333333611488342,
     "gridW": 0.2666666805744171,
     "spritesheet": "PixelSheet_01-hd",
-    "type": "deco",
+    "type": "pixel",
     "z": 9,
     "default_z_layer": 3,
     "default_z_order": 9
@@ -56180,7 +56344,7 @@ window.allobjects = function() {
     "gridH": 0.4333333373069763,
     "gridW": 0.23333333432674408,
     "spritesheet": "PixelSheet_01-hd",
-    "type": "deco",
+    "type": "pixel",
     "z": 9,
     "default_z_layer": 3,
     "default_z_order": 9
@@ -56202,7 +56366,7 @@ window.allobjects = function() {
     "gridH": 0.5,
     "gridW": 0.5,
     "spritesheet": "PixelSheet_01-hd",
-    "type": "deco",
+    "type": "pixel",
     "z": 9,
     "default_z_layer": 3,
     "default_z_order": 9
@@ -56215,7 +56379,7 @@ window.allobjects = function() {
     "gridH": 0.5333333611488342,
     "gridW": 0.5,
     "spritesheet": "PixelSheet_01-hd",
-    "type": "deco",
+    "type": "pixel",
     "z": 9,
     "default_detail_color_channel": -1,
     "default_z_layer": 3,
@@ -56229,7 +56393,7 @@ window.allobjects = function() {
     "gridH": 0.4000000059604645,
     "gridW": 0.3333333432674408,
     "spritesheet": "PixelSheet_01-hd",
-    "type": "deco",
+    "type": "pixel",
     "z": 9,
     "default_detail_color_channel": -1,
     "default_z_layer": 3,
@@ -56252,7 +56416,7 @@ window.allobjects = function() {
     "gridH": 0.1666666716337204,
     "gridW": 0.3333333432674408,
     "spritesheet": "PixelSheet_01-hd",
-    "type": "deco",
+    "type": "pixel",
     "z": 9,
     "default_z_layer": 3,
     "default_z_order": 9
@@ -56274,7 +56438,7 @@ window.allobjects = function() {
     "gridH": 0.1666666716337204,
     "gridW": 0.4333333373069763,
     "spritesheet": "PixelSheet_01-hd",
-    "type": "deco",
+    "type": "pixel",
     "z": 9,
     "default_z_layer": 3,
     "default_z_order": 9
@@ -56296,7 +56460,7 @@ window.allobjects = function() {
     "gridH": 0.1666666716337204,
     "gridW": 0.46666666865348816,
     "spritesheet": "PixelSheet_01-hd",
-    "type": "deco",
+    "type": "pixel",
     "z": 9,
     "default_z_layer": 3,
     "default_z_order": 9
@@ -56318,7 +56482,7 @@ window.allobjects = function() {
     "gridH": 0.4000000059604645,
     "gridW": 0.4000000059604645,
     "spritesheet": "PixelSheet_01-hd",
-    "type": "deco",
+    "type": "pixel",
     "z": 9,
     "default_z_layer": 3,
     "default_z_order": 9
@@ -56340,7 +56504,7 @@ window.allobjects = function() {
     "gridH": 0.23333333432674408,
     "gridW": 0.13333334028720856,
     "spritesheet": "PixelSheet_01-hd",
-    "type": "deco",
+    "type": "pixel",
     "z": 9,
     "default_z_layer": 3,
     "default_z_order": 9
@@ -56362,7 +56526,7 @@ window.allobjects = function() {
     "gridH": 0.23333333432674408,
     "gridW": 0.30000001192092896,
     "spritesheet": "PixelSheet_01-hd",
-    "type": "deco",
+    "type": "pixel",
     "z": 9,
     "default_z_layer": 3,
     "default_z_order": 9
@@ -56384,7 +56548,7 @@ window.allobjects = function() {
     "gridH": 0.2666666805744171,
     "gridW": 0.36666667461395264,
     "spritesheet": "PixelSheet_01-hd",
-    "type": "deco",
+    "type": "pixel",
     "z": 9,
     "default_z_layer": 3,
     "default_z_order": 9
@@ -56406,7 +56570,7 @@ window.allobjects = function() {
     "gridH": 0.4333333373069763,
     "gridW": 0.4000000059604645,
     "spritesheet": "PixelSheet_01-hd",
-    "type": "deco",
+    "type": "pixel",
     "z": 9,
     "default_z_layer": 3,
     "default_z_order": 9
@@ -56428,7 +56592,7 @@ window.allobjects = function() {
     "gridH": 0.23333333432674408,
     "gridW": 0.20000000298023224,
     "spritesheet": "PixelSheet_01-hd",
-    "type": "deco",
+    "type": "pixel",
     "z": 9,
     "default_z_layer": 3,
     "default_z_order": 9
@@ -56450,7 +56614,7 @@ window.allobjects = function() {
     "gridH": 0.30000001192092896,
     "gridW": 0.23333333432674408,
     "spritesheet": "PixelSheet_01-hd",
-    "type": "deco",
+    "type": "pixel",
     "z": 9,
     "default_z_layer": 3,
     "default_z_order": 9
@@ -56463,7 +56627,7 @@ window.allobjects = function() {
     "gridH": 0.23333333432674408,
     "gridW": 0.5333333611488342,
     "spritesheet": "PixelSheet_01-hd",
-    "type": "deco",
+    "type": "pixel",
     "z": 9,
     "default_detail_color_channel": -1,
     "default_z_layer": 3,
@@ -56486,7 +56650,7 @@ window.allobjects = function() {
     "gridH": 0.46666666865348816,
     "gridW": 0.5333333611488342,
     "spritesheet": "PixelSheet_01-hd",
-    "type": "deco",
+    "type": "pixel",
     "z": 9,
     "default_z_layer": 3,
     "default_z_order": 9
@@ -56508,7 +56672,7 @@ window.allobjects = function() {
     "gridH": 0.5333333611488342,
     "gridW": 0.5333333611488342,
     "spritesheet": "PixelSheet_01-hd",
-    "type": "deco",
+    "type": "pixel",
     "z": 9,
     "default_z_layer": 3,
     "default_z_order": 9
@@ -56530,7 +56694,7 @@ window.allobjects = function() {
     "gridH": 0.5,
     "gridW": 0.5333333611488342,
     "spritesheet": "PixelSheet_01-hd",
-    "type": "deco",
+    "type": "pixel",
     "z": 9,
     "default_z_layer": 3,
     "default_z_order": 9
@@ -56552,7 +56716,7 @@ window.allobjects = function() {
     "gridH": 0.5333333611488342,
     "gridW": 0.5333333611488342,
     "spritesheet": "PixelSheet_01-hd",
-    "type": "deco",
+    "type": "pixel",
     "z": 9,
     "default_z_layer": 3,
     "default_z_order": 9
@@ -56574,7 +56738,7 @@ window.allobjects = function() {
     "gridH": 0.5333333611488342,
     "gridW": 0.36666667461395264,
     "spritesheet": "PixelSheet_01-hd",
-    "type": "deco",
+    "type": "pixel",
     "z": 9,
     "default_z_layer": 3,
     "default_z_order": 9
@@ -56596,7 +56760,7 @@ window.allobjects = function() {
     "gridH": 0.30000001192092896,
     "gridW": 0.36666667461395264,
     "spritesheet": "PixelSheet_01-hd",
-    "type": "deco",
+    "type": "pixel",
     "z": 9,
     "default_z_layer": 3,
     "default_z_order": 9
@@ -56618,7 +56782,7 @@ window.allobjects = function() {
     "gridH": 0.5333333611488342,
     "gridW": 0.4333333373069763,
     "spritesheet": "PixelSheet_01-hd",
-    "type": "deco",
+    "type": "pixel",
     "z": 9,
     "default_z_layer": 3,
     "default_z_order": 9
@@ -56640,7 +56804,7 @@ window.allobjects = function() {
     "gridH": 0.5333333611488342,
     "gridW": 0.5333333611488342,
     "spritesheet": "PixelSheet_01-hd",
-    "type": "deco",
+    "type": "pixel",
     "z": 9,
     "default_z_layer": 3,
     "default_z_order": 9
@@ -56662,7 +56826,7 @@ window.allobjects = function() {
     "gridH": 0.3333333432674408,
     "gridW": 0.5333333611488342,
     "spritesheet": "PixelSheet_01-hd",
-    "type": "deco",
+    "type": "pixel",
     "z": 9,
     "default_z_layer": 3,
     "default_z_order": 9
@@ -56684,7 +56848,7 @@ window.allobjects = function() {
     "gridH": 0.5333333611488342,
     "gridW": 0.5333333611488342,
     "spritesheet": "PixelSheet_01-hd",
-    "type": "deco",
+    "type": "pixel",
     "z": 9,
     "default_z_layer": 3,
     "default_z_order": 9
@@ -56697,7 +56861,7 @@ window.allobjects = function() {
     "gridH": 0.5666666626930237,
     "gridW": 0.5333333611488342,
     "spritesheet": "PixelSheet_01-hd",
-    "type": "deco",
+    "type": "pixel",
     "z": 9,
     "default_detail_color_channel": -1,
     "default_z_layer": 3,
@@ -56711,7 +56875,7 @@ window.allobjects = function() {
     "gridH": 0.06666667014360428,
     "gridW": 0.5333333611488342,
     "spritesheet": "PixelSheet_01-hd",
-    "type": "deco",
+    "type": "pixel",
     "z": 9,
     "default_detail_color_channel": -1,
     "default_z_layer": 3,
@@ -56725,7 +56889,7 @@ window.allobjects = function() {
     "gridH": 0.5666666626930237,
     "gridW": 0.5666666626930237,
     "spritesheet": "PixelSheet_01-hd",
-    "type": "deco",
+    "type": "pixel",
     "z": 9,
     "default_detail_color_channel": -1,
     "default_z_layer": 3,
@@ -56739,7 +56903,7 @@ window.allobjects = function() {
     "gridH": 0.5333333611488342,
     "gridW": 0.06666667014360428,
     "spritesheet": "PixelSheet_01-hd",
-    "type": "deco",
+    "type": "pixel",
     "z": 9,
     "default_detail_color_channel": -1,
     "default_z_layer": 3,
@@ -56753,7 +56917,7 @@ window.allobjects = function() {
     "gridH": 0.5333333611488342,
     "gridW": 0.06666667014360428,
     "spritesheet": "PixelSheet_01-hd",
-    "type": "deco",
+    "type": "pixel",
     "z": 9,
     "default_detail_color_channel": -1,
     "default_z_layer": 3,
@@ -56767,7 +56931,7 @@ window.allobjects = function() {
     "gridH": 0.5666666626930237,
     "gridW": 0.5666666626930237,
     "spritesheet": "PixelSheet_01-hd",
-    "type": "deco",
+    "type": "pixel",
     "z": 9,
     "default_detail_color_channel": -1,
     "default_z_layer": 3,
@@ -56781,7 +56945,7 @@ window.allobjects = function() {
     "gridH": 0.06666667014360428,
     "gridW": 0.5333333611488342,
     "spritesheet": "PixelSheet_01-hd",
-    "type": "deco",
+    "type": "pixel",
     "z": 9,
     "default_detail_color_channel": -1,
     "default_z_layer": 3,
@@ -56795,7 +56959,7 @@ window.allobjects = function() {
     "gridH": 0.5666666626930237,
     "gridW": 0.5666666626930237,
     "spritesheet": "PixelSheet_01-hd",
-    "type": "deco",
+    "type": "pixel",
     "z": 9,
     "default_detail_color_channel": -1,
     "default_z_layer": 3,
@@ -56809,7 +56973,7 @@ window.allobjects = function() {
     "gridH": 0.03333333507180214,
     "gridW": 0.03333333507180214,
     "spritesheet": "PixelSheet_01-hd",
-    "type": "deco",
+    "type": "pixel",
     "z": 9,
     "default_detail_color_channel": -1,
     "default_z_layer": 3,
@@ -56832,7 +56996,7 @@ window.allobjects = function() {
     "gridH": 0.20000000298023224,
     "gridW": 0.5333333611488342,
     "spritesheet": "PixelSheet_01-hd",
-    "type": "deco",
+    "type": "pixel",
     "z": 9,
     "default_z_layer": 3,
     "default_z_order": 9
@@ -56854,7 +57018,7 @@ window.allobjects = function() {
     "gridH": 0.2666666805744171,
     "gridW": 0.5333333611488342,
     "spritesheet": "PixelSheet_01-hd",
-    "type": "deco",
+    "type": "pixel",
     "z": 9,
     "default_z_layer": 3,
     "default_z_order": 9
@@ -56876,7 +57040,7 @@ window.allobjects = function() {
     "gridH": 0.20000000298023224,
     "gridW": 0.5333333611488342,
     "spritesheet": "PixelSheet_01-hd",
-    "type": "deco",
+    "type": "pixel",
     "z": 9,
     "default_z_layer": 3,
     "default_z_order": 9
@@ -56898,7 +57062,7 @@ window.allobjects = function() {
     "gridH": 0.5333333611488342,
     "gridW": 0.5333333611488342,
     "spritesheet": "PixelSheet_01-hd",
-    "type": "deco",
+    "type": "pixel",
     "z": 9,
     "default_z_layer": 3,
     "default_z_order": 9
@@ -56920,7 +57084,7 @@ window.allobjects = function() {
     "gridH": 0.5333333611488342,
     "gridW": 0.5333333611488342,
     "spritesheet": "PixelSheet_01-hd",
-    "type": "deco",
+    "type": "pixel",
     "z": 9,
     "default_z_layer": 3,
     "default_z_order": 9
@@ -56933,7 +57097,7 @@ window.allobjects = function() {
     "gridH": 0.5333333611488342,
     "gridW": 0.5666666626930237,
     "spritesheet": "PixelSheet_01-hd",
-    "type": "deco",
+    "type": "pixel",
     "z": 9,
     "default_detail_color_channel": -1,
     "default_z_layer": 3,
@@ -56947,7 +57111,7 @@ window.allobjects = function() {
     "gridH": 0.5333333611488342,
     "gridW": 0.5666666626930237,
     "spritesheet": "PixelSheet_01-hd",
-    "type": "deco",
+    "type": "pixel",
     "z": 9,
     "default_detail_color_channel": -1,
     "default_z_layer": 3,
@@ -56970,7 +57134,7 @@ window.allobjects = function() {
     "gridH": 0.6000000238418579,
     "gridW": 0.5333333611488342,
     "spritesheet": "PixelSheet_01-hd",
-    "type": "deco",
+    "type": "pixel",
     "z": 9,
     "default_z_layer": 3,
     "default_z_order": 9
@@ -56992,7 +57156,7 @@ window.allobjects = function() {
     "gridH": 0.6000000238418579,
     "gridW": 0.5333333611488342,
     "spritesheet": "PixelSheet_01-hd",
-    "type": "deco",
+    "type": "pixel",
     "z": 9,
     "default_z_layer": 3,
     "default_z_order": 9
@@ -57014,7 +57178,7 @@ window.allobjects = function() {
     "gridH": 0.5,
     "gridW": 0.5333333611488342,
     "spritesheet": "PixelSheet_01-hd",
-    "type": "deco",
+    "type": "pixel",
     "z": 9,
     "default_z_layer": 3,
     "default_z_order": 9
@@ -57036,7 +57200,7 @@ window.allobjects = function() {
     "gridH": 0.20000000298023224,
     "gridW": 0.5333333611488342,
     "spritesheet": "PixelSheet_01-hd",
-    "type": "deco",
+    "type": "pixel",
     "z": 9,
     "default_z_layer": 3,
     "default_z_order": 9
@@ -57058,7 +57222,7 @@ window.allobjects = function() {
     "gridH": 0.36666667461395264,
     "gridW": 0.4000000059604645,
     "spritesheet": "PixelSheet_01-hd",
-    "type": "deco",
+    "type": "pixel",
     "z": 9,
     "default_z_layer": 3,
     "default_z_order": 9
@@ -57080,7 +57244,7 @@ window.allobjects = function() {
     "gridH": 0.30000001192092896,
     "gridW": 0.30000001192092896,
     "spritesheet": "PixelSheet_01-hd",
-    "type": "deco",
+    "type": "pixel",
     "z": 9,
     "default_z_layer": 3,
     "default_z_order": 9
@@ -57102,7 +57266,7 @@ window.allobjects = function() {
     "gridH": 0.5,
     "gridW": 0.46666666865348816,
     "spritesheet": "PixelSheet_01-hd",
-    "type": "deco",
+    "type": "pixel",
     "z": 9,
     "default_z_layer": 3,
     "default_z_order": 9
@@ -57124,7 +57288,7 @@ window.allobjects = function() {
     "gridH": 0.5,
     "gridW": 0.46666666865348816,
     "spritesheet": "PixelSheet_01-hd",
-    "type": "deco",
+    "type": "pixel",
     "z": 9,
     "default_z_layer": 3,
     "default_z_order": 9
@@ -57146,7 +57310,7 @@ window.allobjects = function() {
     "gridH": 0.10000000149011612,
     "gridW": 0.10000000149011612,
     "spritesheet": "PixelSheet_01-hd",
-    "type": "deco",
+    "type": "pixel",
     "z": 9,
     "default_z_layer": 3,
     "default_z_order": 9
@@ -57168,7 +57332,7 @@ window.allobjects = function() {
     "gridH": 0.5,
     "gridW": 0.5333333611488342,
     "spritesheet": "PixelSheet_01-hd",
-    "type": "deco",
+    "type": "pixel",
     "z": 9,
     "default_z_layer": 3,
     "default_z_order": 9
@@ -57181,7 +57345,7 @@ window.allobjects = function() {
     "gridH": 0.5666666626930237,
     "gridW": 0.6000000238418579,
     "spritesheet": "PixelSheet_01-hd",
-    "type": "deco",
+    "type": "pixel",
     "z": 9,
     "default_detail_color_channel": -1,
     "default_z_layer": 3,
@@ -57195,7 +57359,7 @@ window.allobjects = function() {
     "gridH": 0.10000000149011612,
     "gridW": 0.5333333611488342,
     "spritesheet": "PixelSheet_01-hd",
-    "type": "deco",
+    "type": "pixel",
     "z": 9,
     "default_detail_color_channel": -1,
     "default_z_layer": 3,
@@ -57218,7 +57382,7 @@ window.allobjects = function() {
     "gridH": 0.2666666805744171,
     "gridW": 0.2666666805744171,
     "spritesheet": "PixelSheet_01-hd",
-    "type": "deco",
+    "type": "pixel",
     "z": 9,
     "default_z_layer": 3,
     "default_z_order": 9
@@ -57240,7 +57404,7 @@ window.allobjects = function() {
     "gridH": 0.2666666805744171,
     "gridW": 0.5333333611488342,
     "spritesheet": "PixelSheet_01-hd",
-    "type": "deco",
+    "type": "pixel",
     "z": 9,
     "default_z_layer": 3,
     "default_z_order": 9
@@ -57262,7 +57426,7 @@ window.allobjects = function() {
     "gridH": 0.2666666805744171,
     "gridW": 0.2666666805744171,
     "spritesheet": "PixelSheet_01-hd",
-    "type": "deco",
+    "type": "pixel",
     "z": 9,
     "default_z_layer": 3,
     "default_z_order": 9
@@ -57284,7 +57448,7 @@ window.allobjects = function() {
     "gridH": 0.5333333611488342,
     "gridW": 0.4000000059604645,
     "spritesheet": "PixelSheet_01-hd",
-    "type": "deco",
+    "type": "pixel",
     "z": 9,
     "default_z_layer": 3,
     "default_z_order": 9
@@ -57306,7 +57470,7 @@ window.allobjects = function() {
     "gridH": 0.5333333611488342,
     "gridW": 0.5333333611488342,
     "spritesheet": "PixelSheet_01-hd",
-    "type": "deco",
+    "type": "pixel",
     "z": 9,
     "default_z_layer": 3,
     "default_z_order": 9
@@ -57328,7 +57492,7 @@ window.allobjects = function() {
     "gridH": 0.5333333611488342,
     "gridW": 0.4000000059604645,
     "spritesheet": "PixelSheet_01-hd",
-    "type": "deco",
+    "type": "pixel",
     "z": 9,
     "default_z_layer": 3,
     "default_z_order": 9
@@ -57350,7 +57514,7 @@ window.allobjects = function() {
     "gridH": 0.2666666805744171,
     "gridW": 0.36666667461395264,
     "spritesheet": "PixelSheet_01-hd",
-    "type": "deco",
+    "type": "pixel",
     "z": 9,
     "default_z_layer": 3,
     "default_z_order": 9
@@ -57372,7 +57536,7 @@ window.allobjects = function() {
     "gridH": 0.36666667461395264,
     "gridW": 0.5333333611488342,
     "spritesheet": "PixelSheet_01-hd",
-    "type": "deco",
+    "type": "pixel",
     "z": 9,
     "default_z_layer": 3,
     "default_z_order": 9
@@ -57394,7 +57558,7 @@ window.allobjects = function() {
     "gridH": 0.3333333432674408,
     "gridW": 0.4000000059604645,
     "spritesheet": "PixelSheet_01-hd",
-    "type": "deco",
+    "type": "pixel",
     "z": 9,
     "default_z_layer": 3,
     "default_z_order": 9
@@ -57416,7 +57580,7 @@ window.allobjects = function() {
     "gridH": 0.5333333611488342,
     "gridW": 0.5333333611488342,
     "spritesheet": "PixelSheet_01-hd",
-    "type": "deco",
+    "type": "pixel",
     "z": 9,
     "default_z_layer": 3,
     "default_z_order": 9
@@ -57438,7 +57602,7 @@ window.allobjects = function() {
     "gridH": 0.5333333611488342,
     "gridW": 0.5333333611488342,
     "spritesheet": "PixelSheet_01-hd",
-    "type": "deco",
+    "type": "pixel",
     "z": 9,
     "default_z_layer": 3,
     "default_z_order": 9
@@ -57460,7 +57624,7 @@ window.allobjects = function() {
     "gridH": 0.5333333611488342,
     "gridW": 0.5333333611488342,
     "spritesheet": "PixelSheet_01-hd",
-    "type": "deco",
+    "type": "pixel",
     "z": 9,
     "default_z_layer": 3,
     "default_z_order": 9
@@ -57482,7 +57646,7 @@ window.allobjects = function() {
     "gridH": 0.5333333611488342,
     "gridW": 0.5333333611488342,
     "spritesheet": "PixelSheet_01-hd",
-    "type": "deco",
+    "type": "pixel",
     "z": 9,
     "default_z_layer": 3,
     "default_z_order": 9
@@ -57504,7 +57668,7 @@ window.allobjects = function() {
     "gridH": 0.5333333611488342,
     "gridW": 0.5333333611488342,
     "spritesheet": "PixelSheet_01-hd",
-    "type": "deco",
+    "type": "pixel",
     "z": 9,
     "default_z_layer": 3,
     "default_z_order": 9
@@ -57526,7 +57690,7 @@ window.allobjects = function() {
     "gridH": 0.3333333432674408,
     "gridW": 0.5333333611488342,
     "spritesheet": "PixelSheet_01-hd",
-    "type": "deco",
+    "type": "pixel",
     "z": 9,
     "default_z_layer": 3,
     "default_z_order": 9
@@ -57548,7 +57712,7 @@ window.allobjects = function() {
     "gridH": 0.5333333611488342,
     "gridW": 0.5333333611488342,
     "spritesheet": "PixelSheet_01-hd",
-    "type": "deco",
+    "type": "pixel",
     "z": 9,
     "default_z_layer": 3,
     "default_z_order": 9
@@ -57570,7 +57734,7 @@ window.allobjects = function() {
     "gridH": 0.46666666865348816,
     "gridW": 0.46666666865348816,
     "spritesheet": "PixelSheet_01-hd",
-    "type": "deco",
+    "type": "pixel",
     "z": 9,
     "default_z_layer": 3,
     "default_z_order": 9
@@ -57592,7 +57756,7 @@ window.allobjects = function() {
     "gridH": 0.5666666626930237,
     "gridW": 0.5333333611488342,
     "spritesheet": "PixelSheet_01-hd",
-    "type": "deco",
+    "type": "pixel",
     "z": 9,
     "default_z_layer": 3,
     "default_z_order": 9
@@ -57614,7 +57778,7 @@ window.allobjects = function() {
     "gridH": 0.5333333611488342,
     "gridW": 0.5,
     "spritesheet": "PixelSheet_01-hd",
-    "type": "deco",
+    "type": "pixel",
     "z": 9,
     "default_z_layer": 3,
     "default_z_order": 9
@@ -57636,7 +57800,7 @@ window.allobjects = function() {
     "gridH": 0.36666667461395264,
     "gridW": 0.5333333611488342,
     "spritesheet": "PixelSheet_01-hd",
-    "type": "deco",
+    "type": "pixel",
     "z": 9,
     "default_z_layer": 3,
     "default_z_order": 9
@@ -57658,7 +57822,7 @@ window.allobjects = function() {
     "gridH": 0.6666666865348816,
     "gridW": 0.5,
     "spritesheet": "PixelSheet_01-hd",
-    "type": "deco",
+    "type": "pixel",
     "z": 9,
     "default_z_layer": 3,
     "default_z_order": 9
@@ -57680,7 +57844,7 @@ window.allobjects = function() {
     "gridH": 0.30000001192092896,
     "gridW": 0.5333333611488342,
     "spritesheet": "PixelSheet_01-hd",
-    "type": "deco",
+    "type": "pixel",
     "z": 9,
     "default_z_layer": 3,
     "default_z_order": 9
@@ -57702,7 +57866,7 @@ window.allobjects = function() {
     "gridH": 0.36666667461395264,
     "gridW": 0.5333333611488342,
     "spritesheet": "PixelSheet_01-hd",
-    "type": "deco",
+    "type": "pixel",
     "z": 9,
     "default_z_layer": 3,
     "default_z_order": 9
@@ -57724,7 +57888,7 @@ window.allobjects = function() {
     "gridH": 0.30000001192092896,
     "gridW": 0.3333333432674408,
     "spritesheet": "PixelSheet_01-hd",
-    "type": "deco",
+    "type": "pixel",
     "z": 9,
     "default_z_layer": 3,
     "default_z_order": 9
@@ -57746,7 +57910,7 @@ window.allobjects = function() {
     "gridH": 0.2666666805744171,
     "gridW": 0.13333334028720856,
     "spritesheet": "PixelSheet_01-hd",
-    "type": "deco",
+    "type": "pixel",
     "z": 9,
     "default_z_layer": 3,
     "default_z_order": 9
@@ -57768,7 +57932,7 @@ window.allobjects = function() {
     "gridH": 0.5333333611488342,
     "gridW": 0.5333333611488342,
     "spritesheet": "PixelSheet_01-hd",
-    "type": "deco",
+    "type": "pixel",
     "z": 9,
     "default_z_layer": 3,
     "default_z_order": 9
@@ -57790,7 +57954,7 @@ window.allobjects = function() {
     "gridH": 0.5333333611488342,
     "gridW": 0.5333333611488342,
     "spritesheet": "PixelSheet_01-hd",
-    "type": "deco",
+    "type": "pixel",
     "z": 9,
     "default_z_layer": 3,
     "default_z_order": 9
@@ -57812,7 +57976,7 @@ window.allobjects = function() {
     "gridH": 0.5333333611488342,
     "gridW": 0.5333333611488342,
     "spritesheet": "PixelSheet_01-hd",
-    "type": "deco",
+    "type": "pixel",
     "z": 9,
     "default_z_layer": 3,
     "default_z_order": 9
@@ -57834,7 +57998,7 @@ window.allobjects = function() {
     "gridH": 0.5333333611488342,
     "gridW": 0.5333333611488342,
     "spritesheet": "PixelSheet_01-hd",
-    "type": "deco",
+    "type": "pixel",
     "z": 9,
     "default_z_layer": 3,
     "default_z_order": 9
@@ -57856,7 +58020,7 @@ window.allobjects = function() {
     "gridH": 0.5333333611488342,
     "gridW": 0.5333333611488342,
     "spritesheet": "PixelSheet_01-hd",
-    "type": "deco",
+    "type": "pixel",
     "z": 9,
     "default_z_layer": 3,
     "default_z_order": 9
@@ -57878,7 +58042,7 @@ window.allobjects = function() {
     "gridH": 0.5333333611488342,
     "gridW": 0.5333333611488342,
     "spritesheet": "PixelSheet_01-hd",
-    "type": "deco",
+    "type": "pixel",
     "z": 9,
     "default_z_layer": 3,
     "default_z_order": 9
@@ -57900,7 +58064,7 @@ window.allobjects = function() {
     "gridH": 0.3333333432674408,
     "gridW": 0.5333333611488342,
     "spritesheet": "PixelSheet_01-hd",
-    "type": "deco",
+    "type": "pixel",
     "z": 9,
     "default_z_layer": 3,
     "default_z_order": 9
@@ -57922,7 +58086,7 @@ window.allobjects = function() {
     "gridH": 0.3333333432674408,
     "gridW": 0.5333333611488342,
     "spritesheet": "PixelSheet_01-hd",
-    "type": "deco",
+    "type": "pixel",
     "z": 9,
     "default_z_layer": 3,
     "default_z_order": 9
@@ -57944,7 +58108,7 @@ window.allobjects = function() {
     "gridH": 0.3333333432674408,
     "gridW": 0.5333333611488342,
     "spritesheet": "PixelSheet_01-hd",
-    "type": "deco",
+    "type": "pixel",
     "z": 9,
     "default_z_layer": 3,
     "default_z_order": 9
@@ -57966,7 +58130,7 @@ window.allobjects = function() {
     "gridH": 0.5333333611488342,
     "gridW": 0.5333333611488342,
     "spritesheet": "PixelSheet_01-hd",
-    "type": "deco",
+    "type": "pixel",
     "z": 9,
     "default_z_layer": 3,
     "default_z_order": 9
@@ -57988,7 +58152,7 @@ window.allobjects = function() {
     "gridH": 0.5333333611488342,
     "gridW": 0.46666666865348816,
     "spritesheet": "PixelSheet_01-hd",
-    "type": "deco",
+    "type": "pixel",
     "z": 9,
     "default_z_layer": 3,
     "default_z_order": 9
@@ -58010,7 +58174,7 @@ window.allobjects = function() {
     "gridH": 0.5333333611488342,
     "gridW": 0.5333333611488342,
     "spritesheet": "PixelSheet_01-hd",
-    "type": "deco",
+    "type": "pixel",
     "z": 9,
     "default_z_layer": 3,
     "default_z_order": 9
@@ -58032,7 +58196,7 @@ window.allobjects = function() {
     "gridH": 0.5333333611488342,
     "gridW": 0.5333333611488342,
     "spritesheet": "PixelSheet_01-hd",
-    "type": "deco",
+    "type": "pixel",
     "z": 9,
     "default_z_layer": 3,
     "default_z_order": 9
@@ -58054,7 +58218,7 @@ window.allobjects = function() {
     "gridH": 0.23333333432674408,
     "gridW": 0.5333333611488342,
     "spritesheet": "PixelSheet_01-hd",
-    "type": "deco",
+    "type": "pixel",
     "z": 9,
     "default_z_layer": 3,
     "default_z_order": 9
@@ -58076,7 +58240,7 @@ window.allobjects = function() {
     "gridH": 0.5333333611488342,
     "gridW": 0.5333333611488342,
     "spritesheet": "PixelSheet_01-hd",
-    "type": "deco",
+    "type": "pixel",
     "z": 9,
     "default_z_layer": 3,
     "default_z_order": 9
@@ -58098,7 +58262,7 @@ window.allobjects = function() {
     "gridH": 0.5333333611488342,
     "gridW": 0.5333333611488342,
     "spritesheet": "PixelSheet_01-hd",
-    "type": "deco",
+    "type": "pixel",
     "z": 9,
     "default_z_layer": 3,
     "default_z_order": 9
@@ -58120,7 +58284,7 @@ window.allobjects = function() {
     "gridH": 0.5333333611488342,
     "gridW": 0.5333333611488342,
     "spritesheet": "PixelSheet_01-hd",
-    "type": "deco",
+    "type": "pixel",
     "z": 9,
     "default_z_layer": 3,
     "default_z_order": 9
@@ -58142,7 +58306,7 @@ window.allobjects = function() {
     "gridH": 0.5333333611488342,
     "gridW": 0.5333333611488342,
     "spritesheet": "PixelSheet_01-hd",
-    "type": "deco",
+    "type": "pixel",
     "z": 9,
     "default_z_layer": 3,
     "default_z_order": 9
@@ -58164,7 +58328,7 @@ window.allobjects = function() {
     "gridH": 0.5333333611488342,
     "gridW": 0.5333333611488342,
     "spritesheet": "PixelSheet_01-hd",
-    "type": "deco",
+    "type": "pixel",
     "z": 9,
     "default_z_layer": 3,
     "default_z_order": 9
@@ -58186,7 +58350,7 @@ window.allobjects = function() {
     "gridH": 0.5333333611488342,
     "gridW": 0.5333333611488342,
     "spritesheet": "PixelSheet_01-hd",
-    "type": "deco",
+    "type": "pixel",
     "z": 9,
     "default_z_layer": 3,
     "default_z_order": 9
@@ -58208,7 +58372,7 @@ window.allobjects = function() {
     "gridH": 0.5333333611488342,
     "gridW": 0.5333333611488342,
     "spritesheet": "PixelSheet_01-hd",
-    "type": "deco",
+    "type": "pixel",
     "z": 9,
     "default_z_layer": 3,
     "default_z_order": 9
@@ -58230,7 +58394,7 @@ window.allobjects = function() {
     "gridH": 0.5333333611488342,
     "gridW": 0.5333333611488342,
     "spritesheet": "PixelSheet_01-hd",
-    "type": "deco",
+    "type": "pixel",
     "z": 9,
     "default_z_layer": 3,
     "default_z_order": 9
@@ -58252,7 +58416,7 @@ window.allobjects = function() {
     "gridH": 0.5333333611488342,
     "gridW": 0.5333333611488342,
     "spritesheet": "PixelSheet_01-hd",
-    "type": "deco",
+    "type": "pixel",
     "z": 9,
     "default_z_layer": 3,
     "default_z_order": 9
@@ -58274,7 +58438,7 @@ window.allobjects = function() {
     "gridH": 0.5333333611488342,
     "gridW": 0.5333333611488342,
     "spritesheet": "PixelSheet_01-hd",
-    "type": "deco",
+    "type": "pixel",
     "z": 9,
     "default_z_layer": 3,
     "default_z_order": 9
@@ -58296,7 +58460,7 @@ window.allobjects = function() {
     "gridH": 0.5333333611488342,
     "gridW": 0.5333333611488342,
     "spritesheet": "PixelSheet_01-hd",
-    "type": "deco",
+    "type": "pixel",
     "z": 9,
     "default_z_layer": 3,
     "default_z_order": 9
@@ -58318,7 +58482,7 @@ window.allobjects = function() {
     "gridH": 0.5333333611488342,
     "gridW": 0.6000000238418579,
     "spritesheet": "PixelSheet_01-hd",
-    "type": "deco",
+    "type": "pixel",
     "z": 9,
     "default_z_layer": 3,
     "default_z_order": 9
@@ -58340,7 +58504,7 @@ window.allobjects = function() {
     "gridH": 0.5333333611488342,
     "gridW": 0.46666666865348816,
     "spritesheet": "PixelSheet_01-hd",
-    "type": "deco",
+    "type": "pixel",
     "z": 9,
     "default_z_layer": 3,
     "default_z_order": 9
@@ -58362,7 +58526,7 @@ window.allobjects = function() {
     "gridH": 0.5333333611488342,
     "gridW": 0.46666666865348816,
     "spritesheet": "PixelSheet_01-hd",
-    "type": "deco",
+    "type": "pixel",
     "z": 9,
     "default_z_layer": 3,
     "default_z_order": 9
@@ -58384,7 +58548,7 @@ window.allobjects = function() {
     "gridH": 0.5333333611488342,
     "gridW": 0.6000000238418579,
     "spritesheet": "PixelSheet_01-hd",
-    "type": "deco",
+    "type": "pixel",
     "z": 9,
     "default_z_layer": 3,
     "default_z_order": 9
@@ -58406,7 +58570,7 @@ window.allobjects = function() {
     "gridH": 0.5333333611488342,
     "gridW": 0.5333333611488342,
     "spritesheet": "PixelSheet_01-hd",
-    "type": "deco",
+    "type": "pixel",
     "z": 9,
     "default_z_layer": 3,
     "default_z_order": 9
@@ -58428,7 +58592,7 @@ window.allobjects = function() {
     "gridH": 0.5333333611488342,
     "gridW": 0.5333333611488342,
     "spritesheet": "PixelSheet_01-hd",
-    "type": "deco",
+    "type": "pixel",
     "z": 9,
     "default_z_layer": 3,
     "default_z_order": 9
@@ -58450,7 +58614,7 @@ window.allobjects = function() {
     "gridH": 0.5333333611488342,
     "gridW": 0.5333333611488342,
     "spritesheet": "PixelSheet_01-hd",
-    "type": "deco",
+    "type": "pixel",
     "z": 9,
     "default_z_layer": 3,
     "default_z_order": 9
@@ -58472,7 +58636,7 @@ window.allobjects = function() {
     "gridH": 0.5333333611488342,
     "gridW": 0.5333333611488342,
     "spritesheet": "PixelSheet_01-hd",
-    "type": "deco",
+    "type": "pixel",
     "z": 9,
     "default_z_layer": 3,
     "default_z_order": 9
@@ -58494,7 +58658,7 @@ window.allobjects = function() {
     "gridH": 0.5333333611488342,
     "gridW": 0.5333333611488342,
     "spritesheet": "PixelSheet_01-hd",
-    "type": "deco",
+    "type": "pixel",
     "z": 9,
     "default_z_layer": 3,
     "default_z_order": 9
@@ -58516,7 +58680,7 @@ window.allobjects = function() {
     "gridH": 0.5333333611488342,
     "gridW": 0.5333333611488342,
     "spritesheet": "PixelSheet_01-hd",
-    "type": "deco",
+    "type": "pixel",
     "z": 9,
     "default_z_layer": 3,
     "default_z_order": 9
@@ -58538,7 +58702,7 @@ window.allobjects = function() {
     "gridH": 0.5333333611488342,
     "gridW": 0.5333333611488342,
     "spritesheet": "PixelSheet_01-hd",
-    "type": "deco",
+    "type": "pixel",
     "z": 9,
     "default_z_layer": 3,
     "default_z_order": 9
@@ -58560,7 +58724,7 @@ window.allobjects = function() {
     "gridH": 0.5333333611488342,
     "gridW": 0.5333333611488342,
     "spritesheet": "PixelSheet_01-hd",
-    "type": "deco",
+    "type": "pixel",
     "z": 9,
     "default_z_layer": 3,
     "default_z_order": 9
@@ -58582,7 +58746,7 @@ window.allobjects = function() {
     "gridH": 0.5333333611488342,
     "gridW": 0.5333333611488342,
     "spritesheet": "PixelSheet_01-hd",
-    "type": "deco",
+    "type": "pixel",
     "z": 9,
     "default_z_layer": 3,
     "default_z_order": 9
@@ -58604,7 +58768,7 @@ window.allobjects = function() {
     "gridH": 0.5333333611488342,
     "gridW": 0.5333333611488342,
     "spritesheet": "PixelSheet_01-hd",
-    "type": "deco",
+    "type": "pixel",
     "z": 9,
     "default_z_layer": 3,
     "default_z_order": 9
@@ -58626,7 +58790,7 @@ window.allobjects = function() {
     "gridH": 0.5333333611488342,
     "gridW": 0.5333333611488342,
     "spritesheet": "PixelSheet_01-hd",
-    "type": "deco",
+    "type": "pixel",
     "z": 9,
     "default_z_layer": 3,
     "default_z_order": 9
@@ -58648,7 +58812,7 @@ window.allobjects = function() {
     "gridH": 0.5333333611488342,
     "gridW": 0.5333333611488342,
     "spritesheet": "PixelSheet_01-hd",
-    "type": "deco",
+    "type": "pixel",
     "z": 9,
     "default_z_layer": 3,
     "default_z_order": 9
@@ -58670,7 +58834,7 @@ window.allobjects = function() {
     "gridH": 0.5333333611488342,
     "gridW": 0.5333333611488342,
     "spritesheet": "PixelSheet_01-hd",
-    "type": "deco",
+    "type": "pixel",
     "z": 9,
     "default_z_layer": 3,
     "default_z_order": 9
@@ -58692,7 +58856,7 @@ window.allobjects = function() {
     "gridH": 0.5333333611488342,
     "gridW": 0.5333333611488342,
     "spritesheet": "PixelSheet_01-hd",
-    "type": "deco",
+    "type": "pixel",
     "z": 9,
     "default_z_layer": 3,
     "default_z_order": 9
@@ -58714,7 +58878,7 @@ window.allobjects = function() {
     "gridH": 0.5333333611488342,
     "gridW": 0.5333333611488342,
     "spritesheet": "PixelSheet_01-hd",
-    "type": "deco",
+    "type": "pixel",
     "z": 9,
     "default_z_layer": 3,
     "default_z_order": 9
@@ -58736,7 +58900,7 @@ window.allobjects = function() {
     "gridH": 0.5333333611488342,
     "gridW": 0.5333333611488342,
     "spritesheet": "PixelSheet_01-hd",
-    "type": "deco",
+    "type": "pixel",
     "z": 9,
     "default_z_layer": 3,
     "default_z_order": 9
@@ -58758,7 +58922,7 @@ window.allobjects = function() {
     "gridH": 0.5333333611488342,
     "gridW": 0.5333333611488342,
     "spritesheet": "PixelSheet_01-hd",
-    "type": "deco",
+    "type": "pixel",
     "z": 9,
     "default_z_layer": 3,
     "default_z_order": 9
@@ -58780,7 +58944,7 @@ window.allobjects = function() {
     "gridH": 0.5333333611488342,
     "gridW": 0.5333333611488342,
     "spritesheet": "PixelSheet_01-hd",
-    "type": "deco",
+    "type": "pixel",
     "z": 9,
     "default_z_layer": 3,
     "default_z_order": 9
@@ -58802,7 +58966,7 @@ window.allobjects = function() {
     "gridH": 0.5333333611488342,
     "gridW": 0.5333333611488342,
     "spritesheet": "PixelSheet_01-hd",
-    "type": "deco",
+    "type": "pixel",
     "z": 9,
     "default_z_layer": 3,
     "default_z_order": 9
@@ -58824,7 +58988,7 @@ window.allobjects = function() {
     "gridH": 0.5333333611488342,
     "gridW": 0.5333333611488342,
     "spritesheet": "PixelSheet_01-hd",
-    "type": "deco",
+    "type": "pixel",
     "z": 9,
     "default_z_layer": 3,
     "default_z_order": 9
@@ -58846,7 +59010,7 @@ window.allobjects = function() {
     "gridH": 0.5333333611488342,
     "gridW": 0.5333333611488342,
     "spritesheet": "PixelSheet_01-hd",
-    "type": "deco",
+    "type": "pixel",
     "z": 9,
     "default_z_layer": 3,
     "default_z_order": 9
@@ -58868,7 +59032,7 @@ window.allobjects = function() {
     "gridH": 0.5333333611488342,
     "gridW": 0.5333333611488342,
     "spritesheet": "PixelSheet_01-hd",
-    "type": "deco",
+    "type": "pixel",
     "z": 9,
     "default_z_layer": 3,
     "default_z_order": 9
@@ -58890,7 +59054,7 @@ window.allobjects = function() {
     "gridH": 0.5333333611488342,
     "gridW": 0.5333333611488342,
     "spritesheet": "PixelSheet_01-hd",
-    "type": "deco",
+    "type": "pixel",
     "z": 9,
     "default_z_layer": 3,
     "default_z_order": 9
@@ -58912,7 +59076,7 @@ window.allobjects = function() {
     "gridH": 0.03333333507180214,
     "gridW": 0.03333333507180214,
     "spritesheet": "PixelSheet_01-hd",
-    "type": "deco",
+    "type": "pixel",
     "z": 9,
     "default_z_layer": 3,
     "default_z_order": 9
@@ -58934,7 +59098,7 @@ window.allobjects = function() {
     "gridH": 0.03333333507180214,
     "gridW": 0.03333333507180214,
     "spritesheet": "PixelSheet_01-hd",
-    "type": "deco",
+    "type": "pixel",
     "z": 9,
     "default_z_layer": 3,
     "default_z_order": 9
@@ -58956,7 +59120,7 @@ window.allobjects = function() {
     "gridH": 0.5333333611488342,
     "gridW": 0.5333333611488342,
     "spritesheet": "PixelSheet_01-hd",
-    "type": "deco",
+    "type": "pixel",
     "z": 9,
     "default_z_layer": 3,
     "default_z_order": 9
@@ -58978,7 +59142,7 @@ window.allobjects = function() {
     "gridH": 0.5333333611488342,
     "gridW": 0.5333333611488342,
     "spritesheet": "PixelSheet_01-hd",
-    "type": "deco",
+    "type": "pixel",
     "z": 9,
     "default_z_layer": 3,
     "default_z_order": 9
@@ -59000,7 +59164,7 @@ window.allobjects = function() {
     "gridH": 0.5333333611488342,
     "gridW": 0.5333333611488342,
     "spritesheet": "PixelSheet_01-hd",
-    "type": "deco",
+    "type": "pixel",
     "z": 9,
     "default_z_layer": 3,
     "default_z_order": 9
@@ -59022,7 +59186,7 @@ window.allobjects = function() {
     "gridH": 0.5333333611488342,
     "gridW": 0.5333333611488342,
     "spritesheet": "PixelSheet_01-hd",
-    "type": "deco",
+    "type": "pixel",
     "z": 9,
     "default_z_layer": 3,
     "default_z_order": 9
@@ -59044,7 +59208,7 @@ window.allobjects = function() {
     "gridH": 0.5333333611488342,
     "gridW": 0.5333333611488342,
     "spritesheet": "PixelSheet_01-hd",
-    "type": "deco",
+    "type": "pixel",
     "z": 9,
     "default_z_layer": 3,
     "default_z_order": 9
@@ -59066,7 +59230,7 @@ window.allobjects = function() {
     "gridH": 0.5333333611488342,
     "gridW": 0.5333333611488342,
     "spritesheet": "PixelSheet_01-hd",
-    "type": "deco",
+    "type": "pixel",
     "z": 9,
     "default_z_layer": 3,
     "default_z_order": 9
@@ -59088,7 +59252,7 @@ window.allobjects = function() {
     "gridH": 0.5333333611488342,
     "gridW": 0.5333333611488342,
     "spritesheet": "PixelSheet_01-hd",
-    "type": "deco",
+    "type": "pixel",
     "z": 9,
     "default_z_layer": 3,
     "default_z_order": 9
@@ -59110,7 +59274,7 @@ window.allobjects = function() {
     "gridH": 0.5333333611488342,
     "gridW": 0.5333333611488342,
     "spritesheet": "PixelSheet_01-hd",
-    "type": "deco",
+    "type": "pixel",
     "z": 9,
     "default_z_layer": 3,
     "default_z_order": 9
@@ -59132,7 +59296,7 @@ window.allobjects = function() {
     "gridH": 0.5333333611488342,
     "gridW": 0.5333333611488342,
     "spritesheet": "PixelSheet_01-hd",
-    "type": "deco",
+    "type": "pixel",
     "z": 9,
     "default_z_layer": 3,
     "default_z_order": 9
@@ -59154,7 +59318,7 @@ window.allobjects = function() {
     "gridH": 0.5333333611488342,
     "gridW": 0.5333333611488342,
     "spritesheet": "PixelSheet_01-hd",
-    "type": "deco",
+    "type": "pixel",
     "z": 9,
     "default_z_layer": 3,
     "default_z_order": 9
@@ -59176,7 +59340,7 @@ window.allobjects = function() {
     "gridH": 0.5333333611488342,
     "gridW": 0.5333333611488342,
     "spritesheet": "PixelSheet_01-hd",
-    "type": "deco",
+    "type": "pixel",
     "z": 9,
     "default_z_layer": 3,
     "default_z_order": 9
@@ -59198,7 +59362,7 @@ window.allobjects = function() {
     "gridH": 0.5333333611488342,
     "gridW": 0.5333333611488342,
     "spritesheet": "PixelSheet_01-hd",
-    "type": "deco",
+    "type": "pixel",
     "z": 9,
     "default_z_layer": 3,
     "default_z_order": 9
@@ -59220,7 +59384,7 @@ window.allobjects = function() {
     "gridH": 0.5333333611488342,
     "gridW": 0.5333333611488342,
     "spritesheet": "PixelSheet_01-hd",
-    "type": "deco",
+    "type": "pixel",
     "z": 9,
     "default_z_layer": 3,
     "default_z_order": 9
@@ -59242,7 +59406,7 @@ window.allobjects = function() {
     "gridH": 0.5333333611488342,
     "gridW": 0.5333333611488342,
     "spritesheet": "PixelSheet_01-hd",
-    "type": "deco",
+    "type": "pixel",
     "z": 9,
     "default_z_layer": 3,
     "default_z_order": 9
@@ -59264,7 +59428,7 @@ window.allobjects = function() {
     "gridH": 0.5333333611488342,
     "gridW": 0.03333333507180214,
     "spritesheet": "PixelSheet_01-hd",
-    "type": "deco",
+    "type": "pixel",
     "z": 9,
     "default_z_layer": 3,
     "default_z_order": 9
@@ -59286,7 +59450,7 @@ window.allobjects = function() {
     "gridH": 0.5333333611488342,
     "gridW": 0.5333333611488342,
     "spritesheet": "PixelSheet_01-hd",
-    "type": "deco",
+    "type": "pixel",
     "z": 9,
     "default_z_layer": 3,
     "default_z_order": 9
@@ -59308,7 +59472,7 @@ window.allobjects = function() {
     "gridH": 0.5333333611488342,
     "gridW": 0.5333333611488342,
     "spritesheet": "PixelSheet_01-hd",
-    "type": "deco",
+    "type": "pixel",
     "z": 9,
     "default_z_layer": 3,
     "default_z_order": 9
@@ -59330,7 +59494,7 @@ window.allobjects = function() {
     "gridH": 0.5333333611488342,
     "gridW": 0.5333333611488342,
     "spritesheet": "PixelSheet_01-hd",
-    "type": "deco",
+    "type": "pixel",
     "z": 9,
     "default_z_layer": 3,
     "default_z_order": 9
@@ -59352,7 +59516,7 @@ window.allobjects = function() {
     "gridH": 0.5333333611488342,
     "gridW": 0.5333333611488342,
     "spritesheet": "PixelSheet_01-hd",
-    "type": "deco",
+    "type": "pixel",
     "z": 9,
     "default_z_layer": 3,
     "default_z_order": 9
@@ -59374,7 +59538,7 @@ window.allobjects = function() {
     "gridH": 0.5333333611488342,
     "gridW": 0.5333333611488342,
     "spritesheet": "PixelSheet_01-hd",
-    "type": "deco",
+    "type": "pixel",
     "z": 9,
     "default_z_layer": 3,
     "default_z_order": 9
@@ -59396,7 +59560,7 @@ window.allobjects = function() {
     "gridH": 0.5333333611488342,
     "gridW": 0.5333333611488342,
     "spritesheet": "PixelSheet_01-hd",
-    "type": "deco",
+    "type": "pixel",
     "z": 9,
     "default_z_layer": 3,
     "default_z_order": 9
@@ -59418,7 +59582,7 @@ window.allobjects = function() {
     "gridH": 0.5333333611488342,
     "gridW": 0.5333333611488342,
     "spritesheet": "PixelSheet_01-hd",
-    "type": "deco",
+    "type": "pixel",
     "z": 9,
     "default_z_layer": 3,
     "default_z_order": 9
@@ -59440,7 +59604,7 @@ window.allobjects = function() {
     "gridH": 0.5333333611488342,
     "gridW": 0.5333333611488342,
     "spritesheet": "PixelSheet_01-hd",
-    "type": "deco",
+    "type": "pixel",
     "z": 9,
     "default_z_layer": 3,
     "default_z_order": 9
@@ -59462,7 +59626,7 @@ window.allobjects = function() {
     "gridH": 0.5333333611488342,
     "gridW": 0.5333333611488342,
     "spritesheet": "PixelSheet_01-hd",
-    "type": "deco",
+    "type": "pixel",
     "z": 9,
     "default_z_layer": 3,
     "default_z_order": 9
@@ -59484,7 +59648,7 @@ window.allobjects = function() {
     "gridH": 0.5333333611488342,
     "gridW": 0.5333333611488342,
     "spritesheet": "PixelSheet_01-hd",
-    "type": "deco",
+    "type": "pixel",
     "z": 9,
     "default_z_layer": 3,
     "default_z_order": 9
@@ -59506,7 +59670,7 @@ window.allobjects = function() {
     "gridH": 0.5333333611488342,
     "gridW": 0.5333333611488342,
     "spritesheet": "PixelSheet_01-hd",
-    "type": "deco",
+    "type": "pixel",
     "z": 9,
     "default_z_layer": 3,
     "default_z_order": 9
@@ -59528,7 +59692,7 @@ window.allobjects = function() {
     "gridH": 0.5333333611488342,
     "gridW": 0.5333333611488342,
     "spritesheet": "PixelSheet_01-hd",
-    "type": "deco",
+    "type": "pixel",
     "z": 9,
     "default_z_layer": 3,
     "default_z_order": 9
@@ -59550,7 +59714,7 @@ window.allobjects = function() {
     "gridH": 0.5333333611488342,
     "gridW": 0.5333333611488342,
     "spritesheet": "PixelSheet_01-hd",
-    "type": "deco",
+    "type": "pixel",
     "z": 9,
     "default_z_layer": 3,
     "default_z_order": 9
@@ -59572,7 +59736,7 @@ window.allobjects = function() {
     "gridH": 0.5333333611488342,
     "gridW": 0.5333333611488342,
     "spritesheet": "PixelSheet_01-hd",
-    "type": "deco",
+    "type": "pixel",
     "z": 9,
     "default_z_layer": 3,
     "default_z_order": 9
@@ -59594,7 +59758,7 @@ window.allobjects = function() {
     "gridH": 0.5333333611488342,
     "gridW": 0.5333333611488342,
     "spritesheet": "PixelSheet_01-hd",
-    "type": "deco",
+    "type": "pixel",
     "z": 9,
     "default_z_layer": 3,
     "default_z_order": 9
@@ -59616,7 +59780,7 @@ window.allobjects = function() {
     "gridH": 0.5333333611488342,
     "gridW": 0.5333333611488342,
     "spritesheet": "PixelSheet_01-hd",
-    "type": "deco",
+    "type": "pixel",
     "z": 9,
     "default_z_layer": 3,
     "default_z_order": 9
@@ -59638,7 +59802,7 @@ window.allobjects = function() {
     "gridH": 0.5333333611488342,
     "gridW": 0.5333333611488342,
     "spritesheet": "PixelSheet_01-hd",
-    "type": "deco",
+    "type": "pixel",
     "z": 9,
     "default_z_layer": 3,
     "default_z_order": 9
@@ -59660,7 +59824,7 @@ window.allobjects = function() {
     "gridH": 0.36666667461395264,
     "gridW": 0.5,
     "spritesheet": "PixelSheet_01-hd",
-    "type": "deco",
+    "type": "pixel",
     "z": 9,
     "default_z_layer": 3,
     "default_z_order": 9
@@ -59682,7 +59846,7 @@ window.allobjects = function() {
     "gridH": 0.30000001192092896,
     "gridW": 0.5333333611488342,
     "spritesheet": "PixelSheet_01-hd",
-    "type": "deco",
+    "type": "pixel",
     "z": 9,
     "default_z_layer": 3,
     "default_z_order": 9
@@ -59704,7 +59868,7 @@ window.allobjects = function() {
     "gridH": 0.30000001192092896,
     "gridW": 0.5,
     "spritesheet": "PixelSheet_01-hd",
-    "type": "deco",
+    "type": "pixel",
     "z": 9,
     "default_z_layer": 3,
     "default_z_order": 9
@@ -59726,7 +59890,7 @@ window.allobjects = function() {
     "gridH": 0.3333333432674408,
     "gridW": 0.3333333432674408,
     "spritesheet": "PixelSheet_01-hd",
-    "type": "deco",
+    "type": "pixel",
     "z": 9,
     "default_z_layer": 3,
     "default_z_order": 9
@@ -59748,7 +59912,7 @@ window.allobjects = function() {
     "gridH": 0.1666666716337204,
     "gridW": 0.20000000298023224,
     "spritesheet": "PixelSheet_01-hd",
-    "type": "deco",
+    "type": "pixel",
     "z": 9,
     "default_z_layer": 3,
     "default_z_order": 9
@@ -59770,7 +59934,7 @@ window.allobjects = function() {
     "gridH": 0.5333333611488342,
     "gridW": 0.5333333611488342,
     "spritesheet": "PixelSheet_01-hd",
-    "type": "deco",
+    "type": "pixel",
     "z": 9,
     "default_z_layer": 3,
     "default_z_order": 9
@@ -59792,7 +59956,7 @@ window.allobjects = function() {
     "gridH": 0.699999988079071,
     "gridW": 0.5333333611488342,
     "spritesheet": "PixelSheet_01-hd",
-    "type": "deco",
+    "type": "pixel",
     "z": 9,
     "default_z_layer": 3,
     "default_z_order": 9
@@ -59814,7 +59978,7 @@ window.allobjects = function() {
     "gridH": 0.4000000059604645,
     "gridW": 0.5333333611488342,
     "spritesheet": "PixelSheet_01-hd",
-    "type": "deco",
+    "type": "pixel",
     "z": 9,
     "default_z_layer": 3,
     "default_z_order": 9
@@ -59836,7 +60000,7 @@ window.allobjects = function() {
     "gridH": 0.36666667461395264,
     "gridW": 0.5333333611488342,
     "spritesheet": "PixelSheet_01-hd",
-    "type": "deco",
+    "type": "pixel",
     "z": 9,
     "default_z_layer": 3,
     "default_z_order": 9
@@ -59858,7 +60022,7 @@ window.allobjects = function() {
     "gridH": 0.3333333432674408,
     "gridW": 0.5333333611488342,
     "spritesheet": "PixelSheet_01-hd",
-    "type": "deco",
+    "type": "pixel",
     "z": 9,
     "default_z_layer": 3,
     "default_z_order": 9
@@ -59880,21 +60044,13 @@ window.allobjects = function() {
     "gridH": 0.23333333432674408,
     "gridW": 0.13333334028720856,
     "spritesheet": "PixelSheet_01-hd",
-    "type": "deco",
+    "type": "pixel",
     "z": 9,
     "default_z_layer": 3,
     "default_z_order": 9
   },
   "3303": {
     "can_color": true,
-    "children": [
-      {
-        "frame": "pixelart_803_color_002.png",
-        "localDy": 0,
-        "tint": 52224,
-        "z": 100
-      }
-    ],
     "default_base_color_channel": 1,
     "default_detail_color_channel": 2,
     "frame": "pixelart_803_002.png",
@@ -59902,21 +60058,20 @@ window.allobjects = function() {
     "gridH": 0.23333333432674408,
     "gridW": 0.06666667014360428,
     "spritesheet": "PixelSheet_01-hd",
-    "type": "deco",
+    "type": "pixel",
     "z": 9,
     "default_z_layer": 3,
-    "default_z_order": 9
+    "default_z_order": 9,
+    "animFrames": [
+      "pixelart_803_color_001.png",
+      "pixelart_803_color_002.png",
+      "pixelart_803_color_003.png",
+      "pixelart_803_color_004.png"
+    ],
+    "animInterval": 100
   },
   "3304": {
     "can_color": true,
-    "children": [
-      {
-        "frame": "pixelart_804_color_002.png",
-        "localDy": 0,
-        "tint": 52224,
-        "z": 100
-      }
-    ],
     "default_base_color_channel": 1,
     "default_detail_color_channel": 2,
     "frame": "pixelart_804_002.png",
@@ -59924,10 +60079,17 @@ window.allobjects = function() {
     "gridH": 0.30000001192092896,
     "gridW": 0.20000000298023224,
     "spritesheet": "PixelSheet_01-hd",
-    "type": "deco",
+    "type": "pixel",
     "z": 9,
     "default_z_layer": 3,
-    "default_z_order": 9
+    "default_z_order": 9,
+    "animFrames": [
+      "pixelart_804_color_001.png",
+      "pixelart_804_color_002.png",
+      "pixelart_804_color_003.png",
+      "pixelart_804_color_004.png"
+    ],
+    "animInterval": 100
   },
   "3305": {
     "can_color": true,
@@ -59946,7 +60108,7 @@ window.allobjects = function() {
     "gridH": 0.13333334028720856,
     "gridW": 0.2666666805744171,
     "spritesheet": "PixelSheet_01-hd",
-    "type": "deco",
+    "type": "pixel",
     "z": 9,
     "default_z_layer": 3,
     "default_z_order": 9
@@ -59968,7 +60130,7 @@ window.allobjects = function() {
     "gridH": 0.5333333611488342,
     "gridW": 0.2666666805744171,
     "spritesheet": "PixelSheet_01-hd",
-    "type": "deco",
+    "type": "pixel",
     "z": 9,
     "default_z_layer": 3,
     "default_z_order": 9
@@ -59990,7 +60152,7 @@ window.allobjects = function() {
     "gridH": 0.5333333611488342,
     "gridW": 0.2666666805744171,
     "spritesheet": "PixelSheet_01-hd",
-    "type": "deco",
+    "type": "pixel",
     "z": 9,
     "default_z_layer": 3,
     "default_z_order": 9
@@ -60012,7 +60174,7 @@ window.allobjects = function() {
     "gridH": 0.5333333611488342,
     "gridW": 0.5333333611488342,
     "spritesheet": "PixelSheet_01-hd",
-    "type": "deco",
+    "type": "pixel",
     "z": 9,
     "default_z_layer": 3,
     "default_z_order": 9
@@ -60034,7 +60196,7 @@ window.allobjects = function() {
     "gridH": 0.5333333611488342,
     "gridW": 0.5333333611488342,
     "spritesheet": "PixelSheet_01-hd",
-    "type": "deco",
+    "type": "pixel",
     "z": 9,
     "default_z_layer": 3,
     "default_z_order": 9
@@ -60056,7 +60218,7 @@ window.allobjects = function() {
     "gridH": 0.5333333611488342,
     "gridW": 0.5333333611488342,
     "spritesheet": "PixelSheet_01-hd",
-    "type": "deco",
+    "type": "pixel",
     "z": 9,
     "default_z_layer": 3,
     "default_z_order": 9
@@ -60078,7 +60240,7 @@ window.allobjects = function() {
     "gridH": 0.5333333611488342,
     "gridW": 0.5333333611488342,
     "spritesheet": "PixelSheet_01-hd",
-    "type": "deco",
+    "type": "pixel",
     "z": 9,
     "default_z_layer": 3,
     "default_z_order": 9
@@ -60100,7 +60262,7 @@ window.allobjects = function() {
     "gridH": 0.5333333611488342,
     "gridW": 0.5333333611488342,
     "spritesheet": "PixelSheet_01-hd",
-    "type": "deco",
+    "type": "pixel",
     "z": 9,
     "default_z_layer": 3,
     "default_z_order": 9
@@ -60122,7 +60284,7 @@ window.allobjects = function() {
     "gridH": 0.3333333432674408,
     "gridW": 0.5333333611488342,
     "spritesheet": "PixelSheet_01-hd",
-    "type": "deco",
+    "type": "pixel",
     "z": 9,
     "default_z_layer": 3,
     "default_z_order": 9
@@ -60144,7 +60306,7 @@ window.allobjects = function() {
     "gridH": 0.3333333432674408,
     "gridW": 0.5333333611488342,
     "spritesheet": "PixelSheet_01-hd",
-    "type": "deco",
+    "type": "pixel",
     "z": 9,
     "default_z_layer": 3,
     "default_z_order": 9
@@ -60166,7 +60328,7 @@ window.allobjects = function() {
     "gridH": 0.46666666865348816,
     "gridW": 0.5333333611488342,
     "spritesheet": "PixelSheet_01-hd",
-    "type": "deco",
+    "type": "pixel",
     "z": 9,
     "default_z_layer": 3,
     "default_z_order": 9
@@ -60188,7 +60350,7 @@ window.allobjects = function() {
     "gridH": 0.4000000059604645,
     "gridW": 0.5333333611488342,
     "spritesheet": "PixelSheet_01-hd",
-    "type": "deco",
+    "type": "pixel",
     "z": 9,
     "default_z_layer": 3,
     "default_z_order": 9
@@ -60210,7 +60372,7 @@ window.allobjects = function() {
     "gridH": 0.3333333432674408,
     "gridW": 0.5333333611488342,
     "spritesheet": "PixelSheet_01-hd",
-    "type": "deco",
+    "type": "pixel",
     "z": 9,
     "default_z_layer": 3,
     "default_z_order": 9
@@ -60232,7 +60394,7 @@ window.allobjects = function() {
     "gridH": 0.5333333611488342,
     "gridW": 0.5333333611488342,
     "spritesheet": "PixelSheet_01-hd",
-    "type": "deco",
+    "type": "pixel",
     "z": 9,
     "default_z_layer": 3,
     "default_z_order": 9
@@ -60254,7 +60416,7 @@ window.allobjects = function() {
     "gridH": 0.5333333611488342,
     "gridW": 0.5333333611488342,
     "spritesheet": "PixelSheet_01-hd",
-    "type": "deco",
+    "type": "pixel",
     "z": 9,
     "default_z_layer": 3,
     "default_z_order": 9
@@ -60276,7 +60438,7 @@ window.allobjects = function() {
     "gridH": 0.5333333611488342,
     "gridW": 0.5333333611488342,
     "spritesheet": "PixelSheet_01-hd",
-    "type": "deco",
+    "type": "pixel",
     "z": 9,
     "default_z_layer": 3,
     "default_z_order": 9
@@ -60298,7 +60460,7 @@ window.allobjects = function() {
     "gridH": 0.5333333611488342,
     "gridW": 0.5333333611488342,
     "spritesheet": "PixelSheet_01-hd",
-    "type": "deco",
+    "type": "pixel",
     "z": 9,
     "default_z_layer": 3,
     "default_z_order": 9
@@ -60320,7 +60482,7 @@ window.allobjects = function() {
     "gridH": 0.5333333611488342,
     "gridW": 0.5333333611488342,
     "spritesheet": "PixelSheet_01-hd",
-    "type": "deco",
+    "type": "pixel",
     "z": 9,
     "default_z_layer": 3,
     "default_z_order": 9
@@ -60342,7 +60504,7 @@ window.allobjects = function() {
     "gridH": 0.5333333611488342,
     "gridW": 0.5333333611488342,
     "spritesheet": "PixelSheet_01-hd",
-    "type": "deco",
+    "type": "pixel",
     "z": 9,
     "default_z_layer": 3,
     "default_z_order": 9
@@ -60364,7 +60526,7 @@ window.allobjects = function() {
     "gridH": 0.5333333611488342,
     "gridW": 0.5333333611488342,
     "spritesheet": "PixelSheet_01-hd",
-    "type": "deco",
+    "type": "pixel",
     "z": 9,
     "default_z_layer": 3,
     "default_z_order": 9
@@ -60386,7 +60548,7 @@ window.allobjects = function() {
     "gridH": 0.5333333611488342,
     "gridW": 0.5333333611488342,
     "spritesheet": "PixelSheet_01-hd",
-    "type": "deco",
+    "type": "pixel",
     "z": 9,
     "default_z_layer": 3,
     "default_z_order": 9
@@ -60408,7 +60570,7 @@ window.allobjects = function() {
     "gridH": 0.5333333611488342,
     "gridW": 0.5333333611488342,
     "spritesheet": "PixelSheet_01-hd",
-    "type": "deco",
+    "type": "pixel",
     "z": 9,
     "default_z_layer": 3,
     "default_z_order": 9
@@ -60430,7 +60592,7 @@ window.allobjects = function() {
     "gridH": 0.5333333611488342,
     "gridW": 0.5333333611488342,
     "spritesheet": "PixelSheet_01-hd",
-    "type": "deco",
+    "type": "pixel",
     "z": 9,
     "default_z_layer": 3,
     "default_z_order": 9
@@ -60452,7 +60614,7 @@ window.allobjects = function() {
     "gridH": 0.5333333611488342,
     "gridW": 0.5333333611488342,
     "spritesheet": "PixelSheet_01-hd",
-    "type": "deco",
+    "type": "pixel",
     "z": 9,
     "default_z_layer": 3,
     "default_z_order": 9
@@ -60474,7 +60636,7 @@ window.allobjects = function() {
     "gridH": 0.5333333611488342,
     "gridW": 0.5333333611488342,
     "spritesheet": "PixelSheet_01-hd",
-    "type": "deco",
+    "type": "pixel",
     "z": 9,
     "default_z_layer": 3,
     "default_z_order": 9
@@ -60496,7 +60658,7 @@ window.allobjects = function() {
     "gridH": 0.5333333611488342,
     "gridW": 0.5333333611488342,
     "spritesheet": "PixelSheet_01-hd",
-    "type": "deco",
+    "type": "pixel",
     "z": 9,
     "default_z_layer": 3,
     "default_z_order": 9
@@ -60518,7 +60680,7 @@ window.allobjects = function() {
     "gridH": 0.5333333611488342,
     "gridW": 0.5333333611488342,
     "spritesheet": "PixelSheet_01-hd",
-    "type": "deco",
+    "type": "pixel",
     "z": 9,
     "default_z_layer": 3,
     "default_z_order": 9
@@ -60540,7 +60702,7 @@ window.allobjects = function() {
     "gridH": 0.5333333611488342,
     "gridW": 0.5333333611488342,
     "spritesheet": "PixelSheet_01-hd",
-    "type": "deco",
+    "type": "pixel",
     "z": 9,
     "default_z_layer": 3,
     "default_z_order": 9
@@ -60562,7 +60724,7 @@ window.allobjects = function() {
     "gridH": 0.5333333611488342,
     "gridW": 0.5333333611488342,
     "spritesheet": "PixelSheet_01-hd",
-    "type": "deco",
+    "type": "pixel",
     "z": 9,
     "default_z_layer": 3,
     "default_z_order": 9
@@ -60584,7 +60746,7 @@ window.allobjects = function() {
     "gridH": 0.10000000149011612,
     "gridW": 0.06666667014360428,
     "spritesheet": "PixelSheet_01-hd",
-    "type": "deco",
+    "type": "pixel",
     "z": 9,
     "default_z_layer": 3,
     "default_z_order": 9
@@ -60597,7 +60759,7 @@ window.allobjects = function() {
     "gridH": 0.46666666865348816,
     "gridW": 0.03333333507180214,
     "spritesheet": "PixelSheet_01-hd",
-    "type": "deco",
+    "type": "pixel",
     "z": 9,
     "default_detail_color_channel": -1,
     "default_z_layer": 3,
@@ -60620,7 +60782,7 @@ window.allobjects = function() {
     "gridH": 0.3333333432674408,
     "gridW": 0.5333333611488342,
     "spritesheet": "PixelSheet_01-hd",
-    "type": "deco",
+    "type": "pixel",
     "z": 9,
     "default_z_layer": 3,
     "default_z_order": 9
@@ -60642,7 +60804,7 @@ window.allobjects = function() {
     "gridH": 0.4333333373069763,
     "gridW": 0.5333333611488342,
     "spritesheet": "PixelSheet_01-hd",
-    "type": "deco",
+    "type": "pixel",
     "z": 9,
     "default_z_layer": 3,
     "default_z_order": 9
@@ -60664,7 +60826,7 @@ window.allobjects = function() {
     "gridH": 0.5333333611488342,
     "gridW": 0.5333333611488342,
     "spritesheet": "PixelSheet_01-hd",
-    "type": "deco",
+    "type": "pixel",
     "z": 9,
     "default_z_layer": 3,
     "default_z_order": 9
@@ -60686,7 +60848,7 @@ window.allobjects = function() {
     "gridH": 0.5333333611488342,
     "gridW": 0.5333333611488342,
     "spritesheet": "PixelSheet_01-hd",
-    "type": "deco",
+    "type": "pixel",
     "z": 9,
     "default_z_layer": 3,
     "default_z_order": 9
@@ -60708,7 +60870,7 @@ window.allobjects = function() {
     "gridH": 0.5333333611488342,
     "gridW": 0.5333333611488342,
     "spritesheet": "PixelSheet_01-hd",
-    "type": "deco",
+    "type": "pixel",
     "z": 9,
     "default_z_layer": 3,
     "default_z_order": 9
@@ -60730,7 +60892,7 @@ window.allobjects = function() {
     "gridH": 0.5333333611488342,
     "gridW": 0.5333333611488342,
     "spritesheet": "PixelSheet_01-hd",
-    "type": "deco",
+    "type": "pixel",
     "z": 9,
     "default_z_layer": 3,
     "default_z_order": 9
@@ -60752,7 +60914,7 @@ window.allobjects = function() {
     "gridH": 0.5333333611488342,
     "gridW": 0.5333333611488342,
     "spritesheet": "PixelSheet_01-hd",
-    "type": "deco",
+    "type": "pixel",
     "z": 9,
     "default_z_layer": 3,
     "default_z_order": 9
@@ -60774,7 +60936,7 @@ window.allobjects = function() {
     "gridH": 0.5333333611488342,
     "gridW": 0.5333333611488342,
     "spritesheet": "PixelSheet_01-hd",
-    "type": "deco",
+    "type": "pixel",
     "z": 9,
     "default_z_layer": 3,
     "default_z_order": 9
@@ -60796,7 +60958,7 @@ window.allobjects = function() {
     "gridH": 0.5333333611488342,
     "gridW": 0.5333333611488342,
     "spritesheet": "PixelSheet_01-hd",
-    "type": "deco",
+    "type": "pixel",
     "z": 9,
     "default_z_layer": 3,
     "default_z_order": 9
@@ -60818,7 +60980,7 @@ window.allobjects = function() {
     "gridH": 0.03333333507180214,
     "gridW": 0.03333333507180214,
     "spritesheet": "PixelSheet_01-hd",
-    "type": "deco",
+    "type": "pixel",
     "z": 9,
     "default_z_layer": 3,
     "default_z_order": 9
@@ -60840,7 +61002,7 @@ window.allobjects = function() {
     "gridH": 0.5333333611488342,
     "gridW": 0.5333333611488342,
     "spritesheet": "PixelSheet_01-hd",
-    "type": "deco",
+    "type": "pixel",
     "z": 9,
     "default_z_layer": 3,
     "default_z_order": 9
@@ -60862,7 +61024,7 @@ window.allobjects = function() {
     "gridH": 0.5333333611488342,
     "gridW": 0.5333333611488342,
     "spritesheet": "PixelSheet_01-hd",
-    "type": "deco",
+    "type": "pixel",
     "z": 9,
     "default_z_layer": 3,
     "default_z_order": 9
@@ -60884,7 +61046,7 @@ window.allobjects = function() {
     "gridH": 0.5333333611488342,
     "gridW": 0.5333333611488342,
     "spritesheet": "PixelSheet_01-hd",
-    "type": "deco",
+    "type": "pixel",
     "z": 9,
     "default_z_layer": 3,
     "default_z_order": 9
@@ -60906,7 +61068,7 @@ window.allobjects = function() {
     "gridH": 0.5333333611488342,
     "gridW": 0.5333333611488342,
     "spritesheet": "PixelSheet_01-hd",
-    "type": "deco",
+    "type": "pixel",
     "z": 9,
     "default_z_layer": 3,
     "default_z_order": 9
@@ -60928,7 +61090,7 @@ window.allobjects = function() {
     "gridH": 0.5333333611488342,
     "gridW": 0.5333333611488342,
     "spritesheet": "PixelSheet_01-hd",
-    "type": "deco",
+    "type": "pixel",
     "z": 9,
     "default_z_layer": 3,
     "default_z_order": 9
@@ -60950,7 +61112,7 @@ window.allobjects = function() {
     "gridH": 0.5333333611488342,
     "gridW": 0.5333333611488342,
     "spritesheet": "PixelSheet_01-hd",
-    "type": "deco",
+    "type": "pixel",
     "z": 9,
     "default_z_layer": 3,
     "default_z_order": 9
@@ -60963,7 +61125,7 @@ window.allobjects = function() {
     "gridH": 0.03333333507180214,
     "gridW": 0.5333333611488342,
     "spritesheet": "PixelSheet_01-hd",
-    "type": "deco",
+    "type": "pixel",
     "z": 9,
     "default_detail_color_channel": -1,
     "default_z_layer": 3,
@@ -60977,7 +61139,7 @@ window.allobjects = function() {
     "gridH": 0.03333333507180214,
     "gridW": 0.46666666865348816,
     "spritesheet": "PixelSheet_01-hd",
-    "type": "deco",
+    "type": "pixel",
     "z": 9,
     "default_detail_color_channel": -1,
     "default_z_layer": 3,
@@ -60991,7 +61153,7 @@ window.allobjects = function() {
     "gridH": 0.5,
     "gridW": 0.03333333507180214,
     "spritesheet": "PixelSheet_01-hd",
-    "type": "deco",
+    "type": "pixel",
     "z": 9,
     "default_detail_color_channel": -1,
     "default_z_layer": 3,
@@ -61005,7 +61167,7 @@ window.allobjects = function() {
     "gridH": 0.03333333507180214,
     "gridW": 0.5333333611488342,
     "spritesheet": "PixelSheet_01-hd",
-    "type": "deco",
+    "type": "pixel",
     "z": 9,
     "default_detail_color_channel": -1,
     "default_z_layer": 3,
@@ -61019,7 +61181,7 @@ window.allobjects = function() {
     "gridH": 0.5333333611488342,
     "gridW": 0.03333333507180214,
     "spritesheet": "PixelSheet_01-hd",
-    "type": "deco",
+    "type": "pixel",
     "z": 9,
     "default_detail_color_channel": -1,
     "default_z_layer": 3,
@@ -61033,7 +61195,7 @@ window.allobjects = function() {
     "gridH": 0.5,
     "gridW": 0.03333333507180214,
     "spritesheet": "PixelSheet_01-hd",
-    "type": "deco",
+    "type": "pixel",
     "z": 9,
     "default_detail_color_channel": -1,
     "default_z_layer": 3,
@@ -61056,7 +61218,7 @@ window.allobjects = function() {
     "gridH": 0.5333333611488342,
     "gridW": 0.5333333611488342,
     "spritesheet": "PixelSheet_01-hd",
-    "type": "deco",
+    "type": "pixel",
     "z": 9,
     "default_z_layer": 3,
     "default_z_order": 9
@@ -61069,7 +61231,7 @@ window.allobjects = function() {
     "gridH": 0.03333333507180214,
     "gridW": 0.46666666865348816,
     "spritesheet": "PixelSheet_01-hd",
-    "type": "deco",
+    "type": "pixel",
     "z": 9,
     "default_detail_color_channel": -1,
     "default_z_layer": 3,
@@ -61092,7 +61254,7 @@ window.allobjects = function() {
     "gridH": 0.5333333611488342,
     "gridW": 0.5333333611488342,
     "spritesheet": "PixelSheet_01-hd",
-    "type": "deco",
+    "type": "pixel",
     "z": 9,
     "default_z_layer": 3,
     "default_z_order": 9
@@ -61114,7 +61276,7 @@ window.allobjects = function() {
     "gridH": 0.5333333611488342,
     "gridW": 0.5333333611488342,
     "spritesheet": "PixelSheet_01-hd",
-    "type": "deco",
+    "type": "pixel",
     "z": 9,
     "default_z_layer": 3,
     "default_z_order": 9
@@ -61136,7 +61298,7 @@ window.allobjects = function() {
     "gridH": 0.5333333611488342,
     "gridW": 0.5333333611488342,
     "spritesheet": "PixelSheet_01-hd",
-    "type": "deco",
+    "type": "pixel",
     "z": 9,
     "default_z_layer": 3,
     "default_z_order": 9
@@ -61158,7 +61320,7 @@ window.allobjects = function() {
     "gridH": 0.5333333611488342,
     "gridW": 0.5333333611488342,
     "spritesheet": "PixelSheet_01-hd",
-    "type": "deco",
+    "type": "pixel",
     "z": 9,
     "default_z_layer": 3,
     "default_z_order": 9
@@ -61180,7 +61342,7 @@ window.allobjects = function() {
     "gridH": 0.03333333507180214,
     "gridW": 0.03333333507180214,
     "spritesheet": "PixelSheet_01-hd",
-    "type": "deco",
+    "type": "pixel",
     "z": 9,
     "default_z_layer": 3,
     "default_z_order": 9
@@ -61202,7 +61364,7 @@ window.allobjects = function() {
     "gridH": 0.5333333611488342,
     "gridW": 0.5333333611488342,
     "spritesheet": "PixelSheet_01-hd",
-    "type": "deco",
+    "type": "pixel",
     "z": 9,
     "default_z_layer": 3,
     "default_z_order": 9
@@ -61224,7 +61386,7 @@ window.allobjects = function() {
     "gridH": 0.5333333611488342,
     "gridW": 0.5333333611488342,
     "spritesheet": "PixelSheet_01-hd",
-    "type": "deco",
+    "type": "pixel",
     "z": 9,
     "default_z_layer": 3,
     "default_z_order": 9
@@ -61246,7 +61408,7 @@ window.allobjects = function() {
     "gridH": 0.5333333611488342,
     "gridW": 0.5333333611488342,
     "spritesheet": "PixelSheet_01-hd",
-    "type": "deco",
+    "type": "pixel",
     "z": 9,
     "default_z_layer": 3,
     "default_z_order": 9
@@ -61268,7 +61430,7 @@ window.allobjects = function() {
     "gridH": 0.5333333611488342,
     "gridW": 0.5333333611488342,
     "spritesheet": "PixelSheet_01-hd",
-    "type": "deco",
+    "type": "pixel",
     "z": 9,
     "default_z_layer": 3,
     "default_z_order": 9
@@ -61290,7 +61452,7 @@ window.allobjects = function() {
     "gridH": 0.5333333611488342,
     "gridW": 0.5333333611488342,
     "spritesheet": "PixelSheet_01-hd",
-    "type": "deco",
+    "type": "pixel",
     "z": 9,
     "default_z_layer": 3,
     "default_z_order": 9
@@ -61312,7 +61474,7 @@ window.allobjects = function() {
     "gridH": 0.5333333611488342,
     "gridW": 0.5333333611488342,
     "spritesheet": "PixelSheet_01-hd",
-    "type": "deco",
+    "type": "pixel",
     "z": 9,
     "default_z_layer": 3,
     "default_z_order": 9
@@ -61334,7 +61496,7 @@ window.allobjects = function() {
     "gridH": 0.5333333611488342,
     "gridW": 0.5333333611488342,
     "spritesheet": "PixelSheet_01-hd",
-    "type": "deco",
+    "type": "pixel",
     "z": 9,
     "default_z_layer": 3,
     "default_z_order": 9
@@ -61356,7 +61518,7 @@ window.allobjects = function() {
     "gridH": 0.5333333611488342,
     "gridW": 0.5333333611488342,
     "spritesheet": "PixelSheet_01-hd",
-    "type": "deco",
+    "type": "pixel",
     "z": 9,
     "default_z_layer": 3,
     "default_z_order": 9
@@ -61378,7 +61540,7 @@ window.allobjects = function() {
     "gridH": 0.5333333611488342,
     "gridW": 0.5333333611488342,
     "spritesheet": "PixelSheet_01-hd",
-    "type": "deco",
+    "type": "pixel",
     "z": 9,
     "default_z_layer": 3,
     "default_z_order": 9
@@ -61400,7 +61562,7 @@ window.allobjects = function() {
     "gridH": 0.5333333611488342,
     "gridW": 0.5333333611488342,
     "spritesheet": "PixelSheet_01-hd",
-    "type": "deco",
+    "type": "pixel",
     "z": 9,
     "default_z_layer": 3,
     "default_z_order": 9
@@ -61422,7 +61584,7 @@ window.allobjects = function() {
     "gridH": 0.5333333611488342,
     "gridW": 0.5333333611488342,
     "spritesheet": "PixelSheet_01-hd",
-    "type": "deco",
+    "type": "pixel",
     "z": 9,
     "default_z_layer": 3,
     "default_z_order": 9
@@ -61444,7 +61606,7 @@ window.allobjects = function() {
     "gridH": 0.5333333611488342,
     "gridW": 0.5333333611488342,
     "spritesheet": "PixelSheet_01-hd",
-    "type": "deco",
+    "type": "pixel",
     "z": 9,
     "default_z_layer": 3,
     "default_z_order": 9
@@ -61466,7 +61628,7 @@ window.allobjects = function() {
     "gridH": 0.3333333432674408,
     "gridW": 0.3333333432674408,
     "spritesheet": "PixelSheet_01-hd",
-    "type": "deco",
+    "type": "pixel",
     "z": 9,
     "default_z_layer": 3,
     "default_z_order": 9
@@ -61488,7 +61650,7 @@ window.allobjects = function() {
     "gridH": 0.2666666805744171,
     "gridW": 0.46666666865348816,
     "spritesheet": "PixelSheet_01-hd",
-    "type": "deco",
+    "type": "pixel",
     "z": 9,
     "default_z_layer": 3,
     "default_z_order": 9
@@ -61510,7 +61672,7 @@ window.allobjects = function() {
     "gridH": 0.13333334028720856,
     "gridW": 0.46666666865348816,
     "spritesheet": "PixelSheet_01-hd",
-    "type": "deco",
+    "type": "pixel",
     "z": 9,
     "default_z_layer": 3,
     "default_z_order": 9
@@ -61532,7 +61694,7 @@ window.allobjects = function() {
     "gridH": 0.3333333432674408,
     "gridW": 0.3333333432674408,
     "spritesheet": "PixelSheet_01-hd",
-    "type": "deco",
+    "type": "pixel",
     "z": 9,
     "default_z_layer": 3,
     "default_z_order": 9
@@ -61554,7 +61716,7 @@ window.allobjects = function() {
     "gridH": 0.36666667461395264,
     "gridW": 0.1666666716337204,
     "spritesheet": "PixelSheet_01-hd",
-    "type": "deco",
+    "type": "pixel",
     "z": 9,
     "default_z_layer": 3,
     "default_z_order": 9
@@ -61576,7 +61738,7 @@ window.allobjects = function() {
     "gridH": 0.5,
     "gridW": 0.1666666716337204,
     "spritesheet": "PixelSheet_01-hd",
-    "type": "deco",
+    "type": "pixel",
     "z": 9,
     "default_z_layer": 3,
     "default_z_order": 9
@@ -61598,7 +61760,7 @@ window.allobjects = function() {
     "gridH": 0.4333333373069763,
     "gridW": 0.30000001192092896,
     "spritesheet": "PixelSheet_01-hd",
-    "type": "deco",
+    "type": "pixel",
     "z": 9,
     "default_z_layer": 3,
     "default_z_order": 9
@@ -61620,7 +61782,7 @@ window.allobjects = function() {
     "gridH": 0.5,
     "gridW": 0.4000000059604645,
     "spritesheet": "PixelSheet_01-hd",
-    "type": "deco",
+    "type": "pixel",
     "z": 9,
     "default_z_layer": 3,
     "default_z_order": 9
@@ -61642,7 +61804,7 @@ window.allobjects = function() {
     "gridH": 0.3333333432674408,
     "gridW": 0.3333333432674408,
     "spritesheet": "PixelSheet_01-hd",
-    "type": "deco",
+    "type": "pixel",
     "z": 9,
     "default_z_layer": 3,
     "default_z_order": 9
@@ -61664,7 +61826,7 @@ window.allobjects = function() {
     "gridH": 0.30000001192092896,
     "gridW": 0.30000001192092896,
     "spritesheet": "PixelSheet_01-hd",
-    "type": "deco",
+    "type": "pixel",
     "z": 9,
     "default_z_layer": 3,
     "default_z_order": 9
@@ -61686,7 +61848,7 @@ window.allobjects = function() {
     "gridH": 0.2666666805744171,
     "gridW": 0.2666666805744171,
     "spritesheet": "PixelSheet_01-hd",
-    "type": "deco",
+    "type": "pixel",
     "z": 9,
     "default_z_layer": 3,
     "default_z_order": 9
@@ -61708,7 +61870,7 @@ window.allobjects = function() {
     "gridH": 0.23333333432674408,
     "gridW": 0.23333333432674408,
     "spritesheet": "PixelSheet_01-hd",
-    "type": "deco",
+    "type": "pixel",
     "z": 9,
     "default_z_layer": 3,
     "default_z_order": 9
@@ -61730,7 +61892,7 @@ window.allobjects = function() {
     "gridH": 0.20000000298023224,
     "gridW": 0.20000000298023224,
     "spritesheet": "PixelSheet_01-hd",
-    "type": "deco",
+    "type": "pixel",
     "z": 9,
     "default_z_layer": 3,
     "default_z_order": 9
@@ -61752,7 +61914,7 @@ window.allobjects = function() {
     "gridH": 0.36666667461395264,
     "gridW": 0.6333333253860474,
     "spritesheet": "PixelSheet_01-hd",
-    "type": "deco",
+    "type": "pixel",
     "z": 9,
     "default_z_layer": 3,
     "default_z_order": 9
@@ -61774,7 +61936,7 @@ window.allobjects = function() {
     "gridH": 0.36666667461395264,
     "gridW": 0.6333333253860474,
     "spritesheet": "PixelSheet_01-hd",
-    "type": "deco",
+    "type": "pixel",
     "z": 9,
     "default_z_layer": 3,
     "default_z_order": 9
@@ -61796,7 +61958,7 @@ window.allobjects = function() {
     "gridH": 0.36666667461395264,
     "gridW": 0.36666667461395264,
     "spritesheet": "PixelSheet_01-hd",
-    "type": "deco",
+    "type": "pixel",
     "z": 9,
     "default_z_layer": 3,
     "default_z_order": 9
@@ -61818,7 +61980,7 @@ window.allobjects = function() {
     "gridH": 0.3333333432674408,
     "gridW": 0.20000000298023224,
     "spritesheet": "PixelSheet_01-hd",
-    "type": "deco",
+    "type": "pixel",
     "z": 9,
     "default_z_layer": 3,
     "default_z_order": 9
@@ -61840,7 +62002,7 @@ window.allobjects = function() {
     "gridH": 0.4000000059604645,
     "gridW": 0.5333333611488342,
     "spritesheet": "PixelSheet_01-hd",
-    "type": "deco",
+    "type": "pixel",
     "z": 9,
     "default_z_layer": 3,
     "default_z_order": 9
@@ -61862,7 +62024,7 @@ window.allobjects = function() {
     "gridH": 0.4000000059604645,
     "gridW": 0.5333333611488342,
     "spritesheet": "PixelSheet_01-hd",
-    "type": "deco",
+    "type": "pixel",
     "z": 9,
     "default_z_layer": 3,
     "default_z_order": 9
@@ -61884,7 +62046,7 @@ window.allobjects = function() {
     "gridH": 0.4000000059604645,
     "gridW": 0.5333333611488342,
     "spritesheet": "PixelSheet_01-hd",
-    "type": "deco",
+    "type": "pixel",
     "z": 9,
     "default_z_layer": 3,
     "default_z_order": 9
@@ -61906,7 +62068,7 @@ window.allobjects = function() {
     "gridH": 0.36666667461395264,
     "gridW": 0.5333333611488342,
     "spritesheet": "PixelSheet_01-hd",
-    "type": "deco",
+    "type": "pixel",
     "z": 9,
     "default_z_layer": 3,
     "default_z_order": 9
@@ -61919,7 +62081,7 @@ window.allobjects = function() {
     "gridH": 0.06666667014360428,
     "gridW": 0.5,
     "spritesheet": "PixelSheet_01-hd",
-    "type": "deco",
+    "type": "pixel",
     "z": 10,
     "default_detail_color_channel": -1,
     "default_z_layer": 3,
@@ -61933,7 +62095,7 @@ window.allobjects = function() {
     "gridH": 0.03333333507180214,
     "gridW": 0.5333333611488342,
     "spritesheet": "PixelSheet_01-hd",
-    "type": "deco",
+    "type": "pixel",
     "z": 10,
     "default_detail_color_channel": -1,
     "default_z_layer": 3,
@@ -61947,7 +62109,7 @@ window.allobjects = function() {
     "gridH": 0.03333333507180214,
     "gridW": 0.5333333611488342,
     "spritesheet": "PixelSheet_01-hd",
-    "type": "deco",
+    "type": "pixel",
     "z": 10,
     "default_detail_color_channel": -1,
     "default_z_layer": 3,
@@ -61961,7 +62123,7 @@ window.allobjects = function() {
     "gridH": 0.03333333507180214,
     "gridW": 0.5,
     "spritesheet": "PixelSheet_01-hd",
-    "type": "deco",
+    "type": "pixel",
     "z": 10,
     "default_detail_color_channel": -1,
     "default_z_layer": 3,
@@ -61984,7 +62146,7 @@ window.allobjects = function() {
     "gridH": 0.20000000298023224,
     "gridW": 0.1666666716337204,
     "spritesheet": "PixelSheet_01-hd",
-    "type": "deco",
+    "type": "pixel",
     "z": 9,
     "default_z_layer": 3,
     "default_z_order": 9
@@ -62006,7 +62168,7 @@ window.allobjects = function() {
     "gridH": 0.1666666716337204,
     "gridW": 0.23333333432674408,
     "spritesheet": "PixelSheet_01-hd",
-    "type": "deco",
+    "type": "pixel",
     "z": 9,
     "default_z_layer": 3,
     "default_z_order": 9
@@ -62028,7 +62190,7 @@ window.allobjects = function() {
     "gridH": 0.20000000298023224,
     "gridW": 0.30000001192092896,
     "spritesheet": "PixelSheet_01-hd",
-    "type": "deco",
+    "type": "pixel",
     "z": 9,
     "default_z_layer": 3,
     "default_z_order": 9
@@ -62050,7 +62212,7 @@ window.allobjects = function() {
     "gridH": 0.1666666716337204,
     "gridW": 0.23333333432674408,
     "spritesheet": "PixelSheet_01-hd",
-    "type": "deco",
+    "type": "pixel",
     "z": 9,
     "default_z_layer": 3,
     "default_z_order": 9
@@ -62072,7 +62234,7 @@ window.allobjects = function() {
     "gridH": 0.1666666716337204,
     "gridW": 0.4333333373069763,
     "spritesheet": "PixelSheet_01-hd",
-    "type": "deco",
+    "type": "pixel",
     "z": 9,
     "default_z_layer": 3,
     "default_z_order": 9
@@ -62094,7 +62256,7 @@ window.allobjects = function() {
     "gridH": 0.30000001192092896,
     "gridW": 0.5,
     "spritesheet": "PixelSheet_01-hd",
-    "type": "deco",
+    "type": "pixel",
     "z": 9,
     "default_z_layer": 3,
     "default_z_order": 9
@@ -62116,7 +62278,7 @@ window.allobjects = function() {
     "gridH": 0.30000001192092896,
     "gridW": 0.6666666865348816,
     "spritesheet": "PixelSheet_01-hd",
-    "type": "deco",
+    "type": "pixel",
     "z": 9,
     "default_z_layer": 3,
     "default_z_order": 9
@@ -62138,7 +62300,7 @@ window.allobjects = function() {
     "gridH": 0.2666666805744171,
     "gridW": 0.2666666805744171,
     "spritesheet": "PixelSheet_01-hd",
-    "type": "deco",
+    "type": "pixel",
     "z": 9,
     "default_z_layer": 3,
     "default_z_order": 9
@@ -62160,7 +62322,7 @@ window.allobjects = function() {
     "gridH": 0.2666666805744171,
     "gridW": 0.2666666805744171,
     "spritesheet": "PixelSheet_01-hd",
-    "type": "deco",
+    "type": "pixel",
     "z": 9,
     "default_z_layer": 3,
     "default_z_order": 9
@@ -62182,7 +62344,7 @@ window.allobjects = function() {
     "gridH": 0.2666666805744171,
     "gridW": 0.2666666805744171,
     "spritesheet": "PixelSheet_01-hd",
-    "type": "deco",
+    "type": "pixel",
     "z": 9,
     "default_z_layer": 3,
     "default_z_order": 9
@@ -62204,7 +62366,7 @@ window.allobjects = function() {
     "gridH": 0.20000000298023224,
     "gridW": 0.5333333611488342,
     "spritesheet": "PixelSheet_01-hd",
-    "type": "deco",
+    "type": "pixel",
     "z": 9,
     "default_z_layer": 3,
     "default_z_order": 9
@@ -62226,7 +62388,7 @@ window.allobjects = function() {
     "gridH": 0.20000000298023224,
     "gridW": 0.4333333373069763,
     "spritesheet": "PixelSheet_01-hd",
-    "type": "deco",
+    "type": "pixel",
     "z": 9,
     "default_z_layer": 3,
     "default_z_order": 9
@@ -62248,7 +62410,7 @@ window.allobjects = function() {
     "gridH": 0.20000000298023224,
     "gridW": 0.6000000238418579,
     "spritesheet": "PixelSheet_01-hd",
-    "type": "deco",
+    "type": "pixel",
     "z": 9,
     "default_z_layer": 3,
     "default_z_order": 9
@@ -62270,7 +62432,7 @@ window.allobjects = function() {
     "gridH": 0.20000000298023224,
     "gridW": 0.6000000238418579,
     "spritesheet": "PixelSheet_01-hd",
-    "type": "deco",
+    "type": "pixel",
     "z": 9,
     "default_z_layer": 3,
     "default_z_order": 9
@@ -62292,7 +62454,7 @@ window.allobjects = function() {
     "gridH": 0.20000000298023224,
     "gridW": 0.6000000238418579,
     "spritesheet": "PixelSheet_01-hd",
-    "type": "deco",
+    "type": "pixel",
     "z": 9,
     "default_z_layer": 3,
     "default_z_order": 9
@@ -62314,7 +62476,7 @@ window.allobjects = function() {
     "gridH": 0.23333333432674408,
     "gridW": 0.3333333432674408,
     "spritesheet": "PixelSheet_01-hd",
-    "type": "deco",
+    "type": "pixel",
     "z": 9,
     "default_z_layer": 3,
     "default_z_order": 9
@@ -62336,7 +62498,7 @@ window.allobjects = function() {
     "gridH": 0.23333333432674408,
     "gridW": 0.36666667461395264,
     "spritesheet": "PixelSheet_01-hd",
-    "type": "deco",
+    "type": "pixel",
     "z": 9,
     "default_z_layer": 3,
     "default_z_order": 9
@@ -62358,7 +62520,7 @@ window.allobjects = function() {
     "gridH": 0.23333333432674408,
     "gridW": 0.46666666865348816,
     "spritesheet": "PixelSheet_01-hd",
-    "type": "deco",
+    "type": "pixel",
     "z": 9,
     "default_z_layer": 3,
     "default_z_order": 9
@@ -62380,7 +62542,7 @@ window.allobjects = function() {
     "gridH": 0.20000000298023224,
     "gridW": 0.3333333432674408,
     "spritesheet": "PixelSheet_01-hd",
-    "type": "deco",
+    "type": "pixel",
     "z": 9,
     "default_z_layer": 3,
     "default_z_order": 9
@@ -62402,7 +62564,7 @@ window.allobjects = function() {
     "gridH": 0.20000000298023224,
     "gridW": 0.4000000059604645,
     "spritesheet": "PixelSheet_01-hd",
-    "type": "deco",
+    "type": "pixel",
     "z": 9,
     "default_z_layer": 3,
     "default_z_order": 9
@@ -62424,7 +62586,7 @@ window.allobjects = function() {
     "gridH": 0.1666666716337204,
     "gridW": 0.5,
     "spritesheet": "PixelSheet_01-hd",
-    "type": "deco",
+    "type": "pixel",
     "z": 9,
     "default_z_layer": 3,
     "default_z_order": 9
@@ -62446,7 +62608,7 @@ window.allobjects = function() {
     "gridH": 0.4333333373069763,
     "gridW": 0.30000001192092896,
     "spritesheet": "PixelSheet_01-hd",
-    "type": "deco",
+    "type": "pixel",
     "z": 9,
     "default_z_layer": 3,
     "default_z_order": 9
@@ -62468,7 +62630,7 @@ window.allobjects = function() {
     "gridH": 0.46666666865348816,
     "gridW": 0.10000000149011612,
     "spritesheet": "PixelSheet_01-hd",
-    "type": "deco",
+    "type": "pixel",
     "z": 9,
     "default_z_layer": 3,
     "default_z_order": 9
@@ -62490,7 +62652,7 @@ window.allobjects = function() {
     "gridH": 0.5333333611488342,
     "gridW": 0.3333333432674408,
     "spritesheet": "PixelSheet_01-hd",
-    "type": "deco",
+    "type": "pixel",
     "z": 9,
     "default_z_layer": 3,
     "default_z_order": 9
@@ -62512,7 +62674,7 @@ window.allobjects = function() {
     "gridH": 0.5333333611488342,
     "gridW": 0.4000000059604645,
     "spritesheet": "PixelSheet_01-hd",
-    "type": "deco",
+    "type": "pixel",
     "z": 9,
     "default_z_layer": 3,
     "default_z_order": 9
@@ -62534,7 +62696,7 @@ window.allobjects = function() {
     "gridH": 0.5333333611488342,
     "gridW": 0.36666667461395264,
     "spritesheet": "PixelSheet_01-hd",
-    "type": "deco",
+    "type": "pixel",
     "z": 9,
     "default_z_layer": 3,
     "default_z_order": 9
@@ -62556,7 +62718,7 @@ window.allobjects = function() {
     "gridH": 0.20000000298023224,
     "gridW": 0.5333333611488342,
     "spritesheet": "PixelSheet_01-hd",
-    "type": "deco",
+    "type": "pixel",
     "z": 9,
     "default_z_layer": 3,
     "default_z_order": 9
@@ -62578,7 +62740,7 @@ window.allobjects = function() {
     "gridH": 0.20000000298023224,
     "gridW": 0.03333333507180214,
     "spritesheet": "PixelSheet_01-hd",
-    "type": "deco",
+    "type": "pixel",
     "z": 9,
     "default_z_layer": 3,
     "default_z_order": 9
@@ -62600,7 +62762,7 @@ window.allobjects = function() {
     "gridH": 0.20000000298023224,
     "gridW": 0.20000000298023224,
     "spritesheet": "PixelSheet_01-hd",
-    "type": "deco",
+    "type": "pixel",
     "z": 9,
     "default_z_layer": 3,
     "default_z_order": 9
@@ -62622,7 +62784,7 @@ window.allobjects = function() {
     "gridH": 0.2666666805744171,
     "gridW": 0.2666666805744171,
     "spritesheet": "PixelSheet_01-hd",
-    "type": "deco",
+    "type": "pixel",
     "z": 9,
     "default_z_layer": 3,
     "default_z_order": 9
@@ -62644,7 +62806,7 @@ window.allobjects = function() {
     "gridH": 0.20000000298023224,
     "gridW": 0.23333333432674408,
     "spritesheet": "PixelSheet_01-hd",
-    "type": "deco",
+    "type": "pixel",
     "z": 9,
     "default_z_layer": 3,
     "default_z_order": 9
@@ -62666,7 +62828,7 @@ window.allobjects = function() {
     "gridH": 0.2666666805744171,
     "gridW": 0.36666667461395264,
     "spritesheet": "PixelSheet_01-hd",
-    "type": "deco",
+    "type": "pixel",
     "z": 9,
     "default_z_layer": 3,
     "default_z_order": 9
@@ -62688,7 +62850,7 @@ window.allobjects = function() {
     "gridH": 0.36666667461395264,
     "gridW": 0.4000000059604645,
     "spritesheet": "PixelSheet_01-hd",
-    "type": "deco",
+    "type": "pixel",
     "z": 9,
     "default_z_layer": 3,
     "default_z_order": 9
@@ -62710,7 +62872,7 @@ window.allobjects = function() {
     "gridH": 0.3333333432674408,
     "gridW": 0.3333333432674408,
     "spritesheet": "PixelSheet_01-hd",
-    "type": "deco",
+    "type": "pixel",
     "z": 9,
     "default_z_layer": 3,
     "default_z_order": 9
@@ -62732,7 +62894,7 @@ window.allobjects = function() {
     "gridH": 0.20000000298023224,
     "gridW": 0.36666667461395264,
     "spritesheet": "PixelSheet_01-hd",
-    "type": "deco",
+    "type": "pixel",
     "z": 9,
     "default_z_layer": 3,
     "default_z_order": 9
@@ -62754,7 +62916,7 @@ window.allobjects = function() {
     "gridH": 0.36666667461395264,
     "gridW": 0.46666666865348816,
     "spritesheet": "PixelSheet_01-hd",
-    "type": "deco",
+    "type": "pixel",
     "z": 9,
     "default_z_layer": 3,
     "default_z_order": 9
@@ -62776,7 +62938,7 @@ window.allobjects = function() {
     "gridH": 0.2666666805744171,
     "gridW": 0.5333333611488342,
     "spritesheet": "PixelSheet_01-hd",
-    "type": "deco",
+    "type": "pixel",
     "z": 9,
     "default_z_layer": 3,
     "default_z_order": 9
@@ -62798,7 +62960,7 @@ window.allobjects = function() {
     "gridH": 0.36666667461395264,
     "gridW": 0.5333333611488342,
     "spritesheet": "PixelSheet_01-hd",
-    "type": "deco",
+    "type": "pixel",
     "z": 9,
     "default_z_layer": 3,
     "default_z_order": 9
@@ -62820,7 +62982,7 @@ window.allobjects = function() {
     "gridH": 0.36666667461395264,
     "gridW": 0.5333333611488342,
     "spritesheet": "PixelSheet_01-hd",
-    "type": "deco",
+    "type": "pixel",
     "z": 9,
     "default_z_layer": 3,
     "default_z_order": 9
@@ -62842,7 +63004,7 @@ window.allobjects = function() {
     "gridH": 0.20000000298023224,
     "gridW": 0.4333333373069763,
     "spritesheet": "PixelSheet_01-hd",
-    "type": "deco",
+    "type": "pixel",
     "z": 9,
     "default_z_layer": 3,
     "default_z_order": 9
@@ -62864,7 +63026,7 @@ window.allobjects = function() {
     "gridH": 0.30000001192092896,
     "gridW": 0.5,
     "spritesheet": "PixelSheet_01-hd",
-    "type": "deco",
+    "type": "pixel",
     "z": 9,
     "default_z_layer": 3,
     "default_z_order": 9
@@ -62886,7 +63048,7 @@ window.allobjects = function() {
     "gridH": 0.23333333432674408,
     "gridW": 0.20000000298023224,
     "spritesheet": "PixelSheet_01-hd",
-    "type": "deco",
+    "type": "pixel",
     "z": 9,
     "default_z_layer": 3,
     "default_z_order": 9
@@ -62908,7 +63070,7 @@ window.allobjects = function() {
     "gridH": 0.23333333432674408,
     "gridW": 0.20000000298023224,
     "spritesheet": "PixelSheet_01-hd",
-    "type": "deco",
+    "type": "pixel",
     "z": 9,
     "default_z_layer": 3,
     "default_z_order": 9
@@ -62930,7 +63092,7 @@ window.allobjects = function() {
     "gridH": 0.13333334028720856,
     "gridW": 0.2666666805744171,
     "spritesheet": "PixelSheet_01-hd",
-    "type": "deco",
+    "type": "pixel",
     "z": 9,
     "default_z_layer": 3,
     "default_z_order": 9
@@ -62952,7 +63114,7 @@ window.allobjects = function() {
     "gridH": 0.4000000059604645,
     "gridW": 0.20000000298023224,
     "spritesheet": "PixelSheet_01-hd",
-    "type": "deco",
+    "type": "pixel",
     "z": 9,
     "default_z_layer": 3,
     "default_z_order": 9
@@ -62974,7 +63136,7 @@ window.allobjects = function() {
     "gridH": 0.10000000149011612,
     "gridW": 0.23333333432674408,
     "spritesheet": "PixelSheet_01-hd",
-    "type": "deco",
+    "type": "pixel",
     "z": 9,
     "default_z_layer": 3,
     "default_z_order": 9
@@ -62996,7 +63158,7 @@ window.allobjects = function() {
     "gridH": 0.4000000059604645,
     "gridW": 0.23333333432674408,
     "spritesheet": "PixelSheet_01-hd",
-    "type": "deco",
+    "type": "pixel",
     "z": 9,
     "default_z_layer": 3,
     "default_z_order": 9
@@ -63018,7 +63180,7 @@ window.allobjects = function() {
     "gridH": 0.23333333432674408,
     "gridW": 0.23333333432674408,
     "spritesheet": "PixelSheet_01-hd",
-    "type": "deco",
+    "type": "pixel",
     "z": 9,
     "default_z_layer": 3,
     "default_z_order": 9
@@ -63040,7 +63202,7 @@ window.allobjects = function() {
     "gridH": 0.30000001192092896,
     "gridW": 0.2666666805744171,
     "spritesheet": "PixelSheet_01-hd",
-    "type": "deco",
+    "type": "pixel",
     "z": 9,
     "default_z_layer": 3,
     "default_z_order": 9
@@ -63062,7 +63224,7 @@ window.allobjects = function() {
     "gridH": 0.4000000059604645,
     "gridW": 0.20000000298023224,
     "spritesheet": "PixelSheet_01-hd",
-    "type": "deco",
+    "type": "pixel",
     "z": 9,
     "default_z_layer": 3,
     "default_z_order": 9
@@ -63084,7 +63246,7 @@ window.allobjects = function() {
     "gridH": 0.1666666716337204,
     "gridW": 0.20000000298023224,
     "spritesheet": "PixelSheet_01-hd",
-    "type": "deco",
+    "type": "pixel",
     "z": 9,
     "default_z_layer": 3,
     "default_z_order": 9
@@ -63106,7 +63268,7 @@ window.allobjects = function() {
     "gridH": 0.4000000059604645,
     "gridW": 0.1666666716337204,
     "spritesheet": "PixelSheet_01-hd",
-    "type": "deco",
+    "type": "pixel",
     "z": 9,
     "default_z_layer": 3,
     "default_z_order": 9
@@ -63128,7 +63290,7 @@ window.allobjects = function() {
     "gridH": 0.13333334028720856,
     "gridW": 0.1666666716337204,
     "spritesheet": "PixelSheet_01-hd",
-    "type": "deco",
+    "type": "pixel",
     "z": 9,
     "default_z_layer": 3,
     "default_z_order": 9
@@ -63150,7 +63312,7 @@ window.allobjects = function() {
     "gridH": 0.5333333611488342,
     "gridW": 0.4333333373069763,
     "spritesheet": "PixelSheet_01-hd",
-    "type": "deco",
+    "type": "pixel",
     "z": 9,
     "default_z_layer": 3,
     "default_z_order": 9
@@ -63172,7 +63334,7 @@ window.allobjects = function() {
     "gridH": 0.10000000149011612,
     "gridW": 0.13333334028720856,
     "spritesheet": "PixelSheet_01-hd",
-    "type": "deco",
+    "type": "pixel",
     "z": 9,
     "default_z_layer": 3,
     "default_z_order": 9
@@ -63194,7 +63356,7 @@ window.allobjects = function() {
     "gridH": 0.13333334028720856,
     "gridW": 0.1666666716337204,
     "spritesheet": "PixelSheet_01-hd",
-    "type": "deco",
+    "type": "pixel",
     "z": 9,
     "default_z_layer": 3,
     "default_z_order": 9
@@ -63216,7 +63378,7 @@ window.allobjects = function() {
     "gridH": 0.13333334028720856,
     "gridW": 0.46666666865348816,
     "spritesheet": "PixelSheet_01-hd",
-    "type": "deco",
+    "type": "pixel",
     "z": 9,
     "default_z_layer": 3,
     "default_z_order": 9
@@ -63238,7 +63400,7 @@ window.allobjects = function() {
     "gridH": 0.13333334028720856,
     "gridW": 0.20000000298023224,
     "spritesheet": "PixelSheet_01-hd",
-    "type": "deco",
+    "type": "pixel",
     "z": 9,
     "default_z_layer": 3,
     "default_z_order": 9
@@ -63260,7 +63422,7 @@ window.allobjects = function() {
     "gridH": 0.1666666716337204,
     "gridW": 0.30000001192092896,
     "spritesheet": "PixelSheet_01-hd",
-    "type": "deco",
+    "type": "pixel",
     "z": 9,
     "default_z_layer": 3,
     "default_z_order": 9
@@ -63282,7 +63444,7 @@ window.allobjects = function() {
     "gridH": 0.2666666805744171,
     "gridW": 0.4000000059604645,
     "spritesheet": "PixelSheet_01-hd",
-    "type": "deco",
+    "type": "pixel",
     "z": 9,
     "default_z_layer": 3,
     "default_z_order": 9
@@ -63304,7 +63466,7 @@ window.allobjects = function() {
     "gridH": 0.3333333432674408,
     "gridW": 0.5333333611488342,
     "spritesheet": "PixelSheet_01-hd",
-    "type": "deco",
+    "type": "pixel",
     "z": 9,
     "default_z_layer": 3,
     "default_z_order": 9
@@ -63326,7 +63488,7 @@ window.allobjects = function() {
     "gridH": 0.4000000059604645,
     "gridW": 1.0333333015441895,
     "spritesheet": "PixelSheet_01-hd",
-    "type": "deco",
+    "type": "pixel",
     "z": 9,
     "default_z_layer": 3,
     "default_z_order": 9
@@ -63348,7 +63510,7 @@ window.allobjects = function() {
     "gridH": 0.3333333432674408,
     "gridW": 0.2666666805744171,
     "spritesheet": "PixelSheet_01-hd",
-    "type": "deco",
+    "type": "pixel",
     "z": 9,
     "default_z_layer": 3,
     "default_z_order": 9
@@ -63370,7 +63532,7 @@ window.allobjects = function() {
     "gridH": 0.4000000059604645,
     "gridW": 0.4000000059604645,
     "spritesheet": "PixelSheet_01-hd",
-    "type": "deco",
+    "type": "pixel",
     "z": 9,
     "default_z_layer": 3,
     "default_z_order": 9
@@ -63392,7 +63554,7 @@ window.allobjects = function() {
     "gridH": 0.36666667461395264,
     "gridW": 0.36666667461395264,
     "spritesheet": "PixelSheet_01-hd",
-    "type": "deco",
+    "type": "pixel",
     "z": 9,
     "default_z_layer": 3,
     "default_z_order": 9
@@ -63414,7 +63576,7 @@ window.allobjects = function() {
     "gridH": 0.30000001192092896,
     "gridW": 0.2666666805744171,
     "spritesheet": "PixelSheet_01-hd",
-    "type": "deco",
+    "type": "pixel",
     "z": 9,
     "default_z_layer": 3,
     "default_z_order": 9
@@ -63436,7 +63598,7 @@ window.allobjects = function() {
     "gridH": 0.36666667461395264,
     "gridW": 0.2666666805744171,
     "spritesheet": "PixelSheet_01-hd",
-    "type": "deco",
+    "type": "pixel",
     "z": 9,
     "default_z_layer": 3,
     "default_z_order": 9
@@ -63458,7 +63620,7 @@ window.allobjects = function() {
     "gridH": 0.1666666716337204,
     "gridW": 0.4000000059604645,
     "spritesheet": "PixelSheet_01-hd",
-    "type": "deco",
+    "type": "pixel",
     "z": 9,
     "default_z_layer": 3,
     "default_z_order": 9
@@ -63480,7 +63642,7 @@ window.allobjects = function() {
     "gridH": 0.1666666716337204,
     "gridW": 0.4000000059604645,
     "spritesheet": "PixelSheet_01-hd",
-    "type": "deco",
+    "type": "pixel",
     "z": 9,
     "default_z_layer": 3,
     "default_z_order": 9
@@ -63502,7 +63664,7 @@ window.allobjects = function() {
     "gridH": 0.1666666716337204,
     "gridW": 0.1666666716337204,
     "spritesheet": "PixelSheet_01-hd",
-    "type": "deco",
+    "type": "pixel",
     "z": 9,
     "default_z_layer": 3,
     "default_z_order": 9
@@ -63524,7 +63686,7 @@ window.allobjects = function() {
     "gridH": 0.1666666716337204,
     "gridW": 0.1666666716337204,
     "spritesheet": "PixelSheet_01-hd",
-    "type": "deco",
+    "type": "pixel",
     "z": 9,
     "default_z_layer": 3,
     "default_z_order": 9
@@ -63546,7 +63708,7 @@ window.allobjects = function() {
     "gridH": 0.36666667461395264,
     "gridW": 0.36666667461395264,
     "spritesheet": "PixelSheet_01-hd",
-    "type": "deco",
+    "type": "pixel",
     "z": 9,
     "default_z_layer": 3,
     "default_z_order": 9
@@ -63568,7 +63730,7 @@ window.allobjects = function() {
     "gridH": 0.2666666805744171,
     "gridW": 0.4000000059604645,
     "spritesheet": "PixelSheet_01-hd",
-    "type": "deco",
+    "type": "pixel",
     "z": 9,
     "default_z_layer": 3,
     "default_z_order": 9
@@ -63590,7 +63752,7 @@ window.allobjects = function() {
     "gridH": 0.2666666805744171,
     "gridW": 0.4000000059604645,
     "spritesheet": "PixelSheet_01-hd",
-    "type": "deco",
+    "type": "pixel",
     "z": 9,
     "default_z_layer": 3,
     "default_z_order": 9
@@ -63612,7 +63774,7 @@ window.allobjects = function() {
     "gridH": 0.4333333373069763,
     "gridW": 0.23333333432674408,
     "spritesheet": "PixelSheet_01-hd",
-    "type": "deco",
+    "type": "pixel",
     "z": 9,
     "default_z_layer": 3,
     "default_z_order": 9
@@ -63634,7 +63796,7 @@ window.allobjects = function() {
     "gridH": 0.3333333432674408,
     "gridW": 0.23333333432674408,
     "spritesheet": "PixelSheet_01-hd",
-    "type": "deco",
+    "type": "pixel",
     "z": 9,
     "default_z_layer": 3,
     "default_z_order": 9
@@ -63656,7 +63818,7 @@ window.allobjects = function() {
     "gridH": 0.46666666865348816,
     "gridW": 0.5,
     "spritesheet": "PixelSheet_01-hd",
-    "type": "deco",
+    "type": "pixel",
     "z": 9,
     "default_z_layer": 3,
     "default_z_order": 9
@@ -63678,7 +63840,7 @@ window.allobjects = function() {
     "gridH": 0.2666666805744171,
     "gridW": 0.4333333373069763,
     "spritesheet": "PixelSheet_01-hd",
-    "type": "deco",
+    "type": "pixel",
     "z": 9,
     "default_z_layer": 3,
     "default_z_order": 9
@@ -63700,7 +63862,7 @@ window.allobjects = function() {
     "gridH": 0.36666667461395264,
     "gridW": 0.5,
     "spritesheet": "PixelSheet_01-hd",
-    "type": "deco",
+    "type": "pixel",
     "z": 9,
     "default_z_layer": 3,
     "default_z_order": 9
@@ -63722,21 +63884,13 @@ window.allobjects = function() {
     "gridH": 0.4333333373069763,
     "gridW": 0.5333333611488342,
     "spritesheet": "PixelSheet_01-hd",
-    "type": "deco",
+    "type": "pixel",
     "z": 9,
     "default_z_layer": 3,
     "default_z_order": 9
   },
   "3482": {
     "can_color": true,
-    "children": [
-      {
-        "frame": "pixelart_982_color_002.png",
-        "localDy": 0,
-        "tint": 52224,
-        "z": 100
-      }
-    ],
     "default_base_color_channel": 1,
     "default_detail_color_channel": 2,
     "frame": "pixelart_982_002.png",
@@ -63744,21 +63898,22 @@ window.allobjects = function() {
     "gridH": 0.4000000059604645,
     "gridW": 0.10000000149011612,
     "spritesheet": "PixelSheet_01-hd",
-    "type": "deco",
+    "type": "pixel",
     "z": 9,
     "default_z_layer": 3,
-    "default_z_order": 9
+    "default_z_order": 9,
+    "animFrames": [
+      "pixelart_982_color_001.png",
+      "pixelart_982_color_002.png",
+      "pixelart_982_color_003.png",
+      "pixelart_982_color_004.png",
+      "pixelart_982_color_005.png",
+      "pixelart_982_color_006.png",
+    ],
+    "animInterval": 100
   },
   "3483": {
     "can_color": true,
-    "children": [
-      {
-        "frame": "pixelart_983_color_005.png",
-        "localDy": 0,
-        "tint": 52224,
-        "z": 100
-      }
-    ],
     "default_base_color_channel": 1,
     "default_detail_color_channel": 2,
     "frame": "pixelart_983_005.png",
@@ -63766,10 +63921,19 @@ window.allobjects = function() {
     "gridH": 0.8666666746139526,
     "gridW": 0.20000000298023224,
     "spritesheet": "PixelSheet_01-hd",
-    "type": "deco",
+    "type": "pixel",
     "z": 9,
     "default_z_layer": 3,
-    "default_z_order": 9
+    "default_z_order": 9,
+    "animFrames": [
+      "pixelart_983_color_001.png",
+      "pixelart_983_color_002.png",
+      "pixelart_983_color_003.png",
+      "pixelart_983_color_004.png",
+      "pixelart_983_color_005.png",
+      "pixelart_983_color_006.png",
+    ],
+    "animInterval": 100
   },
   "3484": {
     "can_color": true,
@@ -63788,7 +63952,7 @@ window.allobjects = function() {
     "gridH": 0.9333333373069763,
     "gridW": 0.2666666805744171,
     "spritesheet": "PixelSheet_01-hd",
-    "type": "deco",
+    "type": "pixel",
     "z": 9,
     "default_z_layer": 3,
     "default_z_order": 9
@@ -63810,7 +63974,7 @@ window.allobjects = function() {
     "gridH": 0.36666667461395264,
     "gridW": 0.20000000298023224,
     "spritesheet": "PixelSheet_01-hd",
-    "type": "deco",
+    "type": "pixel",
     "z": 9,
     "default_z_layer": 3,
     "default_z_order": 9
@@ -63832,7 +63996,7 @@ window.allobjects = function() {
     "gridH": 0.4000000059604645,
     "gridW": 0.23333333432674408,
     "spritesheet": "PixelSheet_01-hd",
-    "type": "deco",
+    "type": "pixel",
     "z": 9,
     "default_z_layer": 3,
     "default_z_order": 9
@@ -63854,7 +64018,7 @@ window.allobjects = function() {
     "gridH": 0.5666666626930237,
     "gridW": 0.4333333373069763,
     "spritesheet": "PixelSheet_01-hd",
-    "type": "deco",
+    "type": "pixel",
     "z": 9,
     "default_z_layer": 3,
     "default_z_order": 9
@@ -63876,7 +64040,7 @@ window.allobjects = function() {
     "gridH": 0.1666666716337204,
     "gridW": 0.30000001192092896,
     "spritesheet": "PixelSheet_01-hd",
-    "type": "deco",
+    "type": "pixel",
     "z": 9,
     "default_z_layer": 3,
     "default_z_order": 9
@@ -63898,7 +64062,7 @@ window.allobjects = function() {
     "gridH": 0.10000000149011612,
     "gridW": 0.10000000149011612,
     "spritesheet": "PixelSheet_01-hd",
-    "type": "deco",
+    "type": "pixel",
     "z": 9,
     "default_z_layer": 3,
     "default_z_order": 9
@@ -63920,7 +64084,7 @@ window.allobjects = function() {
     "gridH": 0.1666666716337204,
     "gridW": 0.36666667461395264,
     "spritesheet": "PixelSheet_01-hd",
-    "type": "deco",
+    "type": "pixel",
     "z": 9,
     "default_z_layer": 3,
     "default_z_order": 9
@@ -63942,7 +64106,7 @@ window.allobjects = function() {
     "gridH": 0.1666666716337204,
     "gridW": 0.36666667461395264,
     "spritesheet": "PixelSheet_01-hd",
-    "type": "deco",
+    "type": "pixel",
     "z": 9,
     "default_z_layer": 3,
     "default_z_order": 9
@@ -63964,7 +64128,7 @@ window.allobjects = function() {
     "gridH": 0.13333334028720856,
     "gridW": 0.30000001192092896,
     "spritesheet": "PixelSheet_01-hd",
-    "type": "deco",
+    "type": "pixel",
     "z": 9,
     "default_z_layer": 3,
     "default_z_order": 9
@@ -63986,7 +64150,7 @@ window.allobjects = function() {
     "gridH": 0.2666666805744171,
     "gridW": 0.4000000059604645,
     "spritesheet": "PixelSheet_01-hd",
-    "type": "deco",
+    "type": "pixel",
     "z": 9,
     "default_z_layer": 3,
     "default_z_order": 9
@@ -63999,7 +64163,7 @@ window.allobjects = function() {
     "gridH": 0.46666666865348816,
     "gridW": 0.46666666865348816,
     "spritesheet": "PixelSheet_01-hd",
-    "type": "deco",
+    "type": "pixel",
     "z": 9,
     "default_detail_color_channel": -1,
     "default_z_layer": 3,
@@ -64013,7 +64177,7 @@ window.allobjects = function() {
     "gridH": 0.5,
     "gridW": 0.46666666865348816,
     "spritesheet": "PixelSheet_01-hd",
-    "type": "deco",
+    "type": "pixel",
     "z": 9,
     "default_detail_color_channel": -1,
     "default_z_layer": 3,
@@ -64027,7 +64191,7 @@ window.allobjects = function() {
     "gridH": 0.4333333373069763,
     "gridW": 0.46666666865348816,
     "spritesheet": "PixelSheet_01-hd",
-    "type": "deco",
+    "type": "pixel",
     "z": 9,
     "default_detail_color_channel": -1,
     "default_z_layer": 3,
@@ -64041,7 +64205,7 @@ window.allobjects = function() {
     "gridH": 0.4333333373069763,
     "gridW": 0.46666666865348816,
     "spritesheet": "PixelSheet_01-hd",
-    "type": "deco",
+    "type": "pixel",
     "z": 9,
     "default_detail_color_channel": -1,
     "default_z_layer": 3,
@@ -64055,7 +64219,7 @@ window.allobjects = function() {
     "gridH": 0.46666666865348816,
     "gridW": 0.5,
     "spritesheet": "PixelSheet_01-hd",
-    "type": "deco",
+    "type": "pixel",
     "z": 9,
     "default_detail_color_channel": -1,
     "default_z_layer": 3,
@@ -64069,7 +64233,7 @@ window.allobjects = function() {
     "gridH": 0.4000000059604645,
     "gridW": 0.4333333373069763,
     "spritesheet": "PixelSheet_01-hd",
-    "type": "deco",
+    "type": "pixel",
     "z": 9,
     "default_detail_color_channel": -1,
     "default_z_layer": 3,
@@ -64083,7 +64247,7 @@ window.allobjects = function() {
     "gridH": 0.46666666865348816,
     "gridW": 0.4333333373069763,
     "spritesheet": "PixelSheet_01-hd",
-    "type": "deco",
+    "type": "pixel",
     "z": 9,
     "default_detail_color_channel": -1,
     "default_z_layer": 3,
@@ -64106,7 +64270,7 @@ window.allobjects = function() {
     "gridH": 1,
     "gridW": 1.2999999523162842,
     "spritesheet": "PixelSheet_01-hd",
-    "type": "deco",
+    "type": "pixel",
     "z": 9,
     "default_z_layer": 3,
     "default_z_order": 9
@@ -64128,7 +64292,7 @@ window.allobjects = function() {
     "gridH": 1.0333333015441895,
     "gridW": 1.399999976158142,
     "spritesheet": "PixelSheet_01-hd",
-    "type": "deco",
+    "type": "pixel",
     "z": 9,
     "default_z_layer": 3,
     "default_z_order": 9
@@ -64150,7 +64314,7 @@ window.allobjects = function() {
     "gridH": 0.4000000059604645,
     "gridW": 0.46666666865348816,
     "spritesheet": "PixelSheet_01-hd",
-    "type": "deco",
+    "type": "pixel",
     "z": 9,
     "default_z_layer": 3,
     "default_z_order": 9
@@ -64172,7 +64336,7 @@ window.allobjects = function() {
     "gridH": 0.20000000298023224,
     "gridW": 0.4000000059604645,
     "spritesheet": "PixelSheet_01-hd",
-    "type": "deco",
+    "type": "pixel",
     "z": 9,
     "default_z_layer": 3,
     "default_z_order": 9
@@ -64194,7 +64358,7 @@ window.allobjects = function() {
     "gridH": 0.2666666805744171,
     "gridW": 0.46666666865348816,
     "spritesheet": "PixelSheet_01-hd",
-    "type": "deco",
+    "type": "pixel",
     "z": 9,
     "default_z_layer": 3,
     "default_z_order": 9
@@ -64216,7 +64380,7 @@ window.allobjects = function() {
     "gridH": 0.3333333432674408,
     "gridW": 0.46666666865348816,
     "spritesheet": "PixelSheet_01-hd",
-    "type": "deco",
+    "type": "pixel",
     "z": 9,
     "default_z_layer": 3,
     "default_z_order": 9
@@ -64238,7 +64402,7 @@ window.allobjects = function() {
     "gridH": 0.4333333373069763,
     "gridW": 0.4333333373069763,
     "spritesheet": "PixelSheet_01-hd",
-    "type": "deco",
+    "type": "pixel",
     "z": 9,
     "default_z_layer": 3,
     "default_z_order": 9
@@ -64260,7 +64424,7 @@ window.allobjects = function() {
     "gridH": 0.4000000059604645,
     "gridW": 0.4333333373069763,
     "spritesheet": "PixelSheet_01-hd",
-    "type": "deco",
+    "type": "pixel",
     "z": 9,
     "default_z_layer": 3,
     "default_z_order": 9
@@ -64282,7 +64446,7 @@ window.allobjects = function() {
     "gridH": 0.4333333373069763,
     "gridW": 0.4333333373069763,
     "spritesheet": "PixelSheet_01-hd",
-    "type": "deco",
+    "type": "pixel",
     "z": 9,
     "default_z_layer": 3,
     "default_z_order": 9
@@ -64304,7 +64468,7 @@ window.allobjects = function() {
     "gridH": 0.36666667461395264,
     "gridW": 0.5666666626930237,
     "spritesheet": "PixelSheet_01-hd",
-    "type": "deco",
+    "type": "pixel",
     "z": 9,
     "default_z_layer": 3,
     "default_z_order": 9
@@ -64317,7 +64481,7 @@ window.allobjects = function() {
     "gridH": 0.4333333373069763,
     "gridW": 0.06666667014360428,
     "spritesheet": "PixelSheet_01-hd",
-    "type": "deco",
+    "type": "pixel",
     "z": 9,
     "default_detail_color_channel": -1,
     "default_z_layer": 3,
@@ -64340,7 +64504,7 @@ window.allobjects = function() {
     "gridH": 0.4333333373069763,
     "gridW": 0.13333334028720856,
     "spritesheet": "PixelSheet_01-hd",
-    "type": "deco",
+    "type": "pixel",
     "z": 9,
     "default_z_layer": 3,
     "default_z_order": 9
@@ -64362,7 +64526,7 @@ window.allobjects = function() {
     "gridH": 0.5,
     "gridW": 0.46666666865348816,
     "spritesheet": "PixelSheet_01-hd",
-    "type": "deco",
+    "type": "pixel",
     "z": 9,
     "default_z_layer": 3,
     "default_z_order": 9
@@ -64384,7 +64548,7 @@ window.allobjects = function() {
     "gridH": 0.5,
     "gridW": 0.4333333373069763,
     "spritesheet": "PixelSheet_01-hd",
-    "type": "deco",
+    "type": "pixel",
     "z": 9,
     "default_z_layer": 3,
     "default_z_order": 9
@@ -64406,7 +64570,7 @@ window.allobjects = function() {
     "gridH": 0.46666666865348816,
     "gridW": 0.5666666626930237,
     "spritesheet": "PixelSheet_01-hd",
-    "type": "deco",
+    "type": "pixel",
     "z": 9,
     "default_z_layer": 3,
     "default_z_order": 9
@@ -64428,7 +64592,7 @@ window.allobjects = function() {
     "gridH": 0.5333333611488342,
     "gridW": 0.5333333611488342,
     "spritesheet": "PixelSheet_01-hd",
-    "type": "deco",
+    "type": "pixel",
     "z": 9,
     "default_z_layer": 3,
     "default_z_order": 9
@@ -64450,7 +64614,7 @@ window.allobjects = function() {
     "gridH": 0.5333333611488342,
     "gridW": 0.5333333611488342,
     "spritesheet": "PixelSheet_01-hd",
-    "type": "deco",
+    "type": "pixel",
     "z": 9,
     "default_z_layer": 3,
     "default_z_order": 9
@@ -64472,7 +64636,7 @@ window.allobjects = function() {
     "gridH": 0.5333333611488342,
     "gridW": 0.5333333611488342,
     "spritesheet": "PixelSheet_01-hd",
-    "type": "deco",
+    "type": "pixel",
     "z": 9,
     "default_z_layer": 3,
     "default_z_order": 9
@@ -64494,7 +64658,7 @@ window.allobjects = function() {
     "gridH": 0.5333333611488342,
     "gridW": 0.5333333611488342,
     "spritesheet": "PixelSheet_01-hd",
-    "type": "deco",
+    "type": "pixel",
     "z": 9,
     "default_z_layer": 3,
     "default_z_order": 9
@@ -64516,7 +64680,7 @@ window.allobjects = function() {
     "gridH": 0.5333333611488342,
     "gridW": 0.5333333611488342,
     "spritesheet": "PixelSheet_01-hd",
-    "type": "deco",
+    "type": "pixel",
     "z": 9,
     "default_z_layer": 3,
     "default_z_order": 9
@@ -64538,7 +64702,7 @@ window.allobjects = function() {
     "gridH": 0.5333333611488342,
     "gridW": 0.5333333611488342,
     "spritesheet": "PixelSheet_01-hd",
-    "type": "deco",
+    "type": "pixel",
     "z": 9,
     "default_z_layer": 3,
     "default_z_order": 9
@@ -64560,7 +64724,7 @@ window.allobjects = function() {
     "gridH": 0.5333333611488342,
     "gridW": 0.5333333611488342,
     "spritesheet": "PixelSheet_01-hd",
-    "type": "deco",
+    "type": "pixel",
     "z": 9,
     "default_z_layer": 3,
     "default_z_order": 9
@@ -64582,7 +64746,7 @@ window.allobjects = function() {
     "gridH": 0.5333333611488342,
     "gridW": 0.5333333611488342,
     "spritesheet": "PixelSheet_01-hd",
-    "type": "deco",
+    "type": "pixel",
     "z": 9,
     "default_z_layer": 3,
     "default_z_order": 9
@@ -64604,7 +64768,7 @@ window.allobjects = function() {
     "gridH": 0.5333333611488342,
     "gridW": 0.5333333611488342,
     "spritesheet": "PixelSheet_01-hd",
-    "type": "deco",
+    "type": "pixel",
     "z": 9,
     "default_z_layer": 3,
     "default_z_order": 9
@@ -64626,7 +64790,7 @@ window.allobjects = function() {
     "gridH": 0.5333333611488342,
     "gridW": 0.5333333611488342,
     "spritesheet": "PixelSheet_01-hd",
-    "type": "deco",
+    "type": "pixel",
     "z": 9,
     "default_z_layer": 3,
     "default_z_order": 9
@@ -64648,7 +64812,7 @@ window.allobjects = function() {
     "gridH": 0.5333333611488342,
     "gridW": 0.5333333611488342,
     "spritesheet": "PixelSheet_01-hd",
-    "type": "deco",
+    "type": "pixel",
     "z": 9,
     "default_z_layer": 3,
     "default_z_order": 9
@@ -64670,7 +64834,7 @@ window.allobjects = function() {
     "gridH": 0.5333333611488342,
     "gridW": 0.5333333611488342,
     "spritesheet": "PixelSheet_01-hd",
-    "type": "deco",
+    "type": "pixel",
     "z": 9,
     "default_z_layer": 3,
     "default_z_order": 9
@@ -64692,7 +64856,7 @@ window.allobjects = function() {
     "gridH": 0.5333333611488342,
     "gridW": 0.5333333611488342,
     "spritesheet": "PixelSheet_01-hd",
-    "type": "deco",
+    "type": "pixel",
     "z": 9,
     "default_z_layer": 3,
     "default_z_order": 9
@@ -64714,7 +64878,7 @@ window.allobjects = function() {
     "gridH": 0.5333333611488342,
     "gridW": 0.5333333611488342,
     "spritesheet": "PixelSheet_01-hd",
-    "type": "deco",
+    "type": "pixel",
     "z": 9,
     "default_z_layer": 3,
     "default_z_order": 9
@@ -64736,7 +64900,7 @@ window.allobjects = function() {
     "gridH": 0.5333333611488342,
     "gridW": 0.5333333611488342,
     "spritesheet": "PixelSheet_01-hd",
-    "type": "deco",
+    "type": "pixel",
     "z": 9,
     "default_z_layer": 3,
     "default_z_order": 9
@@ -64758,7 +64922,7 @@ window.allobjects = function() {
     "gridH": 0.5333333611488342,
     "gridW": 0.5333333611488342,
     "spritesheet": "PixelSheet_01-hd",
-    "type": "deco",
+    "type": "pixel",
     "z": 9,
     "default_z_layer": 3,
     "default_z_order": 9
@@ -64780,7 +64944,7 @@ window.allobjects = function() {
     "gridH": 0.5333333611488342,
     "gridW": 0.5333333611488342,
     "spritesheet": "PixelSheet_01-hd",
-    "type": "deco",
+    "type": "pixel",
     "z": 9,
     "default_z_layer": 3,
     "default_z_order": 9
@@ -64802,7 +64966,7 @@ window.allobjects = function() {
     "gridH": 0.5333333611488342,
     "gridW": 0.5333333611488342,
     "spritesheet": "PixelSheet_01-hd",
-    "type": "deco",
+    "type": "pixel",
     "z": 9,
     "default_z_layer": 3,
     "default_z_order": 9
@@ -64824,7 +64988,7 @@ window.allobjects = function() {
     "gridH": 0.5333333611488342,
     "gridW": 0.5333333611488342,
     "spritesheet": "PixelSheet_01-hd",
-    "type": "deco",
+    "type": "pixel",
     "z": 9,
     "default_z_layer": 3,
     "default_z_order": 9
@@ -64846,7 +65010,7 @@ window.allobjects = function() {
     "gridH": 0.5333333611488342,
     "gridW": 0.5333333611488342,
     "spritesheet": "PixelSheet_01-hd",
-    "type": "deco",
+    "type": "pixel",
     "z": 9,
     "default_z_layer": 3,
     "default_z_order": 9
@@ -64868,7 +65032,7 @@ window.allobjects = function() {
     "gridH": 0.5333333611488342,
     "gridW": 0.5333333611488342,
     "spritesheet": "PixelSheet_01-hd",
-    "type": "deco",
+    "type": "pixel",
     "z": 9,
     "default_z_layer": 3,
     "default_z_order": 9
@@ -64890,7 +65054,7 @@ window.allobjects = function() {
     "gridH": 0.5333333611488342,
     "gridW": 0.5333333611488342,
     "spritesheet": "PixelSheet_01-hd",
-    "type": "deco",
+    "type": "pixel",
     "z": 9,
     "default_z_layer": 3,
     "default_z_order": 9
@@ -64912,7 +65076,7 @@ window.allobjects = function() {
     "gridH": 0.13333334028720856,
     "gridW": 0.20000000298023224,
     "spritesheet": "PixelSheet_01-hd",
-    "type": "deco",
+    "type": "pixel",
     "z": 9,
     "default_z_layer": 3,
     "default_z_order": 9
@@ -64934,7 +65098,7 @@ window.allobjects = function() {
     "gridH": 0.10000000149011612,
     "gridW": 0.1666666716337204,
     "spritesheet": "PixelSheet_01-hd",
-    "type": "deco",
+    "type": "pixel",
     "z": 9,
     "default_z_layer": 3,
     "default_z_order": 9
@@ -64956,7 +65120,7 @@ window.allobjects = function() {
     "gridH": 0.5333333611488342,
     "gridW": 1.0666667222976685,
     "spritesheet": "PixelSheet_01-hd",
-    "type": "deco",
+    "type": "pixel",
     "z": 10,
     "default_z_layer": 3,
     "default_z_order": 10
@@ -64978,7 +65142,7 @@ window.allobjects = function() {
     "gridH": 0.1666666716337204,
     "gridW": 0.36666667461395264,
     "spritesheet": "PixelSheet_01-hd",
-    "type": "deco",
+    "type": "pixel",
     "z": 10,
     "default_z_layer": 3,
     "default_z_order": 10
@@ -64991,7 +65155,7 @@ window.allobjects = function() {
     "gridH": 0.03333333507180214,
     "gridW": 0.03333333507180214,
     "spritesheet": "PixelSheet_01-hd",
-    "type": "deco",
+    "type": "pixel",
     "z": 11,
     "default_detail_color_channel": -1,
     "default_z_layer": 3,
@@ -65005,7 +65169,7 @@ window.allobjects = function() {
     "gridH": 0.03333333507180214,
     "gridW": 0.06666667014360428,
     "spritesheet": "PixelSheet_01-hd",
-    "type": "deco",
+    "type": "pixel",
     "z": 11,
     "default_detail_color_channel": -1,
     "default_z_layer": 3,
@@ -65028,7 +65192,7 @@ window.allobjects = function() {
     "gridH": 0.46666666865348816,
     "gridW": 0.6666666865348816,
     "spritesheet": "PixelSheet_01-hd",
-    "type": "deco",
+    "type": "pixel",
     "z": 9,
     "default_z_layer": 3,
     "default_z_order": 9
@@ -65050,7 +65214,7 @@ window.allobjects = function() {
     "gridH": 0.46666666865348816,
     "gridW": 0.5,
     "spritesheet": "PixelSheet_01-hd",
-    "type": "deco",
+    "type": "pixel",
     "z": 9,
     "default_z_layer": 3,
     "default_z_order": 9
@@ -65072,7 +65236,7 @@ window.allobjects = function() {
     "gridH": 0.46666666865348816,
     "gridW": 0.6333333253860474,
     "spritesheet": "PixelSheet_01-hd",
-    "type": "deco",
+    "type": "pixel",
     "z": 9,
     "default_z_layer": 3,
     "default_z_order": 9
@@ -65085,7 +65249,7 @@ window.allobjects = function() {
     "gridH": 0.6666666865348816,
     "gridW": 0.6666666865348816,
     "spritesheet": "PixelSheet_01-hd",
-    "type": "deco",
+    "type": "pixel",
     "z": 9,
     "default_detail_color_channel": -1,
     "default_z_layer": 3,
@@ -65099,7 +65263,7 @@ window.allobjects = function() {
     "gridH": 0.6666666865348816,
     "gridW": 0.6666666865348816,
     "spritesheet": "PixelSheet_01-hd",
-    "type": "deco",
+    "type": "pixel",
     "z": 9,
     "default_detail_color_channel": -1,
     "default_z_layer": 3,
@@ -65122,7 +65286,7 @@ window.allobjects = function() {
     "gridH": 0.6666666865348816,
     "gridW": 0.36666667461395264,
     "spritesheet": "PixelSheet_01-hd",
-    "type": "deco",
+    "type": "pixel",
     "z": 9,
     "default_z_layer": 3,
     "default_z_order": 9
@@ -65144,7 +65308,7 @@ window.allobjects = function() {
     "gridH": 0.5,
     "gridW": 0.36666667461395264,
     "spritesheet": "PixelSheet_01-hd",
-    "type": "deco",
+    "type": "pixel",
     "z": 9,
     "default_z_layer": 3,
     "default_z_order": 9
@@ -65166,7 +65330,7 @@ window.allobjects = function() {
     "gridH": 0.6666666865348816,
     "gridW": 0.30000001192092896,
     "spritesheet": "PixelSheet_01-hd",
-    "type": "deco",
+    "type": "pixel",
     "z": 9,
     "default_z_layer": 3,
     "default_z_order": 9
@@ -65188,7 +65352,7 @@ window.allobjects = function() {
     "gridH": 0.5,
     "gridW": 0.30000001192092896,
     "spritesheet": "PixelSheet_01-hd",
-    "type": "deco",
+    "type": "pixel",
     "z": 9,
     "default_z_layer": 3,
     "default_z_order": 9
@@ -65210,7 +65374,7 @@ window.allobjects = function() {
     "gridH": 0.06666667014360428,
     "gridW": 0.6000000238418579,
     "spritesheet": "PixelSheet_01-hd",
-    "type": "deco",
+    "type": "pixel",
     "z": 9,
     "default_z_layer": 3,
     "default_z_order": 9
@@ -65232,7 +65396,7 @@ window.allobjects = function() {
     "gridH": 0.06666667014360428,
     "gridW": 0.6666666865348816,
     "spritesheet": "PixelSheet_01-hd",
-    "type": "deco",
+    "type": "pixel",
     "z": 9,
     "default_z_layer": 3,
     "default_z_order": 9
@@ -65254,7 +65418,7 @@ window.allobjects = function() {
     "gridH": 0.46666666865348816,
     "gridW": 0.06666667014360428,
     "spritesheet": "PixelSheet_01-hd",
-    "type": "deco",
+    "type": "pixel",
     "z": 9,
     "default_z_layer": 3,
     "default_z_order": 9
@@ -65267,7 +65431,7 @@ window.allobjects = function() {
     "gridH": 0.5666666626930237,
     "gridW": 0.6000000238418579,
     "spritesheet": "PixelSheet_01-hd",
-    "type": "deco",
+    "type": "pixel",
     "z": 9,
     "default_detail_color_channel": -1,
     "default_z_layer": 3,
@@ -65281,7 +65445,7 @@ window.allobjects = function() {
     "gridH": 0.5666666626930237,
     "gridW": 0.5666666626930237,
     "spritesheet": "PixelSheet_01-hd",
-    "type": "deco",
+    "type": "pixel",
     "z": 9,
     "default_detail_color_channel": -1,
     "default_z_layer": 3,
@@ -65295,7 +65459,7 @@ window.allobjects = function() {
     "gridH": 0.23333333432674408,
     "gridW": 0.6666666865348816,
     "spritesheet": "PixelSheet_01-hd",
-    "type": "deco",
+    "type": "pixel",
     "z": 9,
     "default_detail_color_channel": -1,
     "default_z_layer": 3,
@@ -65318,7 +65482,7 @@ window.allobjects = function() {
     "gridH": 0.13333334028720856,
     "gridW": 0.6000000238418579,
     "spritesheet": "PixelSheet_01-hd",
-    "type": "deco",
+    "type": "pixel",
     "z": 9,
     "default_z_layer": 3,
     "default_z_order": 9
@@ -65340,7 +65504,7 @@ window.allobjects = function() {
     "gridH": 0.13333334028720856,
     "gridW": 0.6333333253860474,
     "spritesheet": "PixelSheet_01-hd",
-    "type": "deco",
+    "type": "pixel",
     "z": 9,
     "default_z_layer": 3,
     "default_z_order": 9
@@ -65362,7 +65526,7 @@ window.allobjects = function() {
     "gridH": 0.13333334028720856,
     "gridW": 0.6333333253860474,
     "spritesheet": "PixelSheet_01-hd",
-    "type": "deco",
+    "type": "pixel",
     "z": 9,
     "default_z_layer": 3,
     "default_z_order": 9
@@ -65384,7 +65548,7 @@ window.allobjects = function() {
     "gridH": 0.13333334028720856,
     "gridW": 0.6666666865348816,
     "spritesheet": "PixelSheet_01-hd",
-    "type": "deco",
+    "type": "pixel",
     "z": 9,
     "default_z_layer": 3,
     "default_z_order": 9
@@ -65397,7 +65561,7 @@ window.allobjects = function() {
     "gridH": 0.3333333432674408,
     "gridW": 0.3333333432674408,
     "spritesheet": "PixelSheet_01-hd",
-    "type": "deco",
+    "type": "pixel",
     "z": 9,
     "default_detail_color_channel": -1,
     "default_z_layer": 3,
@@ -65411,7 +65575,7 @@ window.allobjects = function() {
     "gridH": 0.3333333432674408,
     "gridW": 0.3333333432674408,
     "spritesheet": "PixelSheet_01-hd",
-    "type": "deco",
+    "type": "pixel",
     "z": 9,
     "default_detail_color_channel": -1,
     "default_z_layer": 3,
@@ -65425,7 +65589,7 @@ window.allobjects = function() {
     "gridH": 0.20000000298023224,
     "gridW": 0.3333333432674408,
     "spritesheet": "PixelSheet_01-hd",
-    "type": "deco",
+    "type": "pixel",
     "z": 9,
     "default_detail_color_channel": -1,
     "default_z_layer": 3,
@@ -65439,7 +65603,7 @@ window.allobjects = function() {
     "gridH": 0.1666666716337204,
     "gridW": 0.3333333432674408,
     "spritesheet": "PixelSheet_01-hd",
-    "type": "deco",
+    "type": "pixel",
     "z": 9,
     "default_detail_color_channel": -1,
     "default_z_layer": 3,
@@ -65462,7 +65626,7 @@ window.allobjects = function() {
     "gridH": 0.4000000059604645,
     "gridW": 0.5333333611488342,
     "spritesheet": "PixelSheet_01-hd",
-    "type": "deco",
+    "type": "pixel",
     "z": 9,
     "default_z_layer": 3,
     "default_z_order": 9
@@ -65475,7 +65639,7 @@ window.allobjects = function() {
     "gridH": 0.03333333507180214,
     "gridW": 0.5333333611488342,
     "spritesheet": "PixelSheet_01-hd",
-    "type": "deco",
+    "type": "pixel",
     "z": 9,
     "default_detail_color_channel": -1,
     "default_z_layer": 3,
@@ -65489,7 +65653,7 @@ window.allobjects = function() {
     "gridH": 0.10000000149011612,
     "gridW": 0.5333333611488342,
     "spritesheet": "PixelSheet_01-hd",
-    "type": "deco",
+    "type": "pixel",
     "z": 9,
     "default_detail_color_channel": -1,
     "default_z_layer": 3,
@@ -65503,7 +65667,7 @@ window.allobjects = function() {
     "gridH": 0.1666666716337204,
     "gridW": 0.5333333611488342,
     "spritesheet": "PixelSheet_01-hd",
-    "type": "deco",
+    "type": "pixel",
     "z": 9,
     "default_detail_color_channel": -1,
     "default_z_layer": 3,
@@ -65526,7 +65690,7 @@ window.allobjects = function() {
     "gridH": 0.36666667461395264,
     "gridW": 0.46666666865348816,
     "spritesheet": "PixelSheet_01-hd",
-    "type": "deco",
+    "type": "pixel",
     "z": 9,
     "default_z_layer": 3,
     "default_z_order": 9
@@ -65548,7 +65712,7 @@ window.allobjects = function() {
     "gridH": 0.3333333432674408,
     "gridW": 0.5,
     "spritesheet": "PixelSheet_01-hd",
-    "type": "deco",
+    "type": "pixel",
     "z": 9,
     "default_z_layer": 3,
     "default_z_order": 9
@@ -65570,7 +65734,7 @@ window.allobjects = function() {
     "gridH": 0.10000000149011612,
     "gridW": 0.10000000149011612,
     "spritesheet": "PixelSheet_01-hd",
-    "type": "deco",
+    "type": "pixel",
     "z": 9,
     "default_z_layer": 3,
     "default_z_order": 9
@@ -65592,7 +65756,7 @@ window.allobjects = function() {
     "gridH": 0.7666666507720947,
     "gridW": 0.1666666716337204,
     "spritesheet": "PixelSheet_01-hd",
-    "type": "deco",
+    "type": "pixel",
     "z": 9,
     "default_z_layer": 3,
     "default_z_order": 9
@@ -65614,7 +65778,7 @@ window.allobjects = function() {
     "gridH": 0.6666666865348816,
     "gridW": 0.1666666716337204,
     "spritesheet": "PixelSheet_01-hd",
-    "type": "deco",
+    "type": "pixel",
     "z": 9,
     "default_z_layer": 3,
     "default_z_order": 9
@@ -65636,7 +65800,7 @@ window.allobjects = function() {
     "gridH": 0.800000011920929,
     "gridW": 1.0666667222976685,
     "spritesheet": "PixelSheet_01-hd",
-    "type": "deco",
+    "type": "pixel",
     "z": 9,
     "default_z_layer": 3,
     "default_z_order": 9
@@ -65658,7 +65822,7 @@ window.allobjects = function() {
     "gridH": 0.8333333134651184,
     "gridW": 0.4000000059604645,
     "spritesheet": "PixelSheet_01-hd",
-    "type": "deco",
+    "type": "pixel",
     "z": 9,
     "default_z_layer": 3,
     "default_z_order": 9
@@ -65680,7 +65844,7 @@ window.allobjects = function() {
     "gridH": 0.5,
     "gridW": 0.13333334028720856,
     "spritesheet": "PixelSheet_01-hd",
-    "type": "deco",
+    "type": "pixel",
     "z": 9,
     "default_z_layer": 3,
     "default_z_order": 9
@@ -65702,7 +65866,7 @@ window.allobjects = function() {
     "gridH": 0.4333333373069763,
     "gridW": 0.13333334028720856,
     "spritesheet": "PixelSheet_01-hd",
-    "type": "deco",
+    "type": "pixel",
     "z": 9,
     "default_z_layer": 3,
     "default_z_order": 9
@@ -65724,7 +65888,7 @@ window.allobjects = function() {
     "gridH": 0.20000000298023224,
     "gridW": 0.23333333432674408,
     "spritesheet": "PixelSheet_01-hd",
-    "type": "deco",
+    "type": "pixel",
     "z": 9,
     "default_z_layer": 3,
     "default_z_order": 9
@@ -65746,7 +65910,7 @@ window.allobjects = function() {
     "gridH": 0.20000000298023224,
     "gridW": 0.13333334028720856,
     "spritesheet": "PixelSheet_01-hd",
-    "type": "deco",
+    "type": "pixel",
     "z": 9,
     "default_z_layer": 3,
     "default_z_order": 9
@@ -65768,7 +65932,7 @@ window.allobjects = function() {
     "gridH": 0.3333333432674408,
     "gridW": 1.2999999523162842,
     "spritesheet": "PixelSheet_01-hd",
-    "type": "deco",
+    "type": "pixel",
     "z": 9,
     "default_z_layer": 3,
     "default_z_order": 9
@@ -65790,7 +65954,7 @@ window.allobjects = function() {
     "gridH": 0.4000000059604645,
     "gridW": 0.03333333507180214,
     "spritesheet": "PixelSheet_01-hd",
-    "type": "deco",
+    "type": "pixel",
     "z": 9,
     "default_z_layer": 3,
     "default_z_order": 9
@@ -65803,7 +65967,7 @@ window.allobjects = function() {
     "gridH": 0.10000000149011612,
     "gridW": 0.23333333432674408,
     "spritesheet": "PixelSheet_01-hd",
-    "type": "deco",
+    "type": "pixel",
     "z": 9,
     "default_detail_color_channel": -1,
     "default_z_layer": 3,
@@ -65817,7 +65981,7 @@ window.allobjects = function() {
     "gridH": 0.10000000149011612,
     "gridW": 0.03333333507180214,
     "spritesheet": "PixelSheet_01-hd",
-    "type": "deco",
+    "type": "pixel",
     "z": 9,
     "default_detail_color_channel": -1,
     "default_z_layer": 3,
@@ -65840,7 +66004,7 @@ window.allobjects = function() {
     "gridH": 0.2666666805744171,
     "gridW": 0.2666666805744171,
     "spritesheet": "PixelSheet_01-hd",
-    "type": "deco",
+    "type": "pixel",
     "z": 9,
     "default_z_layer": 3,
     "default_z_order": 9
@@ -65862,7 +66026,7 @@ window.allobjects = function() {
     "gridH": 0.2666666805744171,
     "gridW": 0.03333333507180214,
     "spritesheet": "PixelSheet_01-hd",
-    "type": "deco",
+    "type": "pixel",
     "z": 9,
     "default_z_layer": 3,
     "default_z_order": 9
@@ -65884,7 +66048,7 @@ window.allobjects = function() {
     "gridH": 0.2666666805744171,
     "gridW": 0.2666666805744171,
     "spritesheet": "PixelSheet_01-hd",
-    "type": "deco",
+    "type": "pixel",
     "z": 9,
     "default_z_layer": 3,
     "default_z_order": 9
@@ -65906,7 +66070,7 @@ window.allobjects = function() {
     "gridH": 0.03333333507180214,
     "gridW": 0.2666666805744171,
     "spritesheet": "PixelSheet_01-hd",
-    "type": "deco",
+    "type": "pixel",
     "z": 9,
     "default_z_layer": 3,
     "default_z_order": 9
@@ -65928,7 +66092,7 @@ window.allobjects = function() {
     "gridH": 0.03333333507180214,
     "gridW": 0.2666666805744171,
     "spritesheet": "PixelSheet_01-hd",
-    "type": "deco",
+    "type": "pixel",
     "z": 9,
     "default_z_layer": 3,
     "default_z_order": 9
@@ -65950,7 +66114,7 @@ window.allobjects = function() {
     "gridH": 0.2666666805744171,
     "gridW": 0.2666666805744171,
     "spritesheet": "PixelSheet_01-hd",
-    "type": "deco",
+    "type": "pixel",
     "z": 9,
     "default_z_layer": 3,
     "default_z_order": 9
@@ -65963,7 +66127,7 @@ window.allobjects = function() {
     "gridH": 0.2666666805744171,
     "gridW": 0.03333333507180214,
     "spritesheet": "PixelSheet_01-hd",
-    "type": "deco",
+    "type": "pixel",
     "z": 9,
     "default_detail_color_channel": -1,
     "default_z_layer": 3,
@@ -65986,7 +66150,7 @@ window.allobjects = function() {
     "gridH": 0.2666666805744171,
     "gridW": 0.2666666805744171,
     "spritesheet": "PixelSheet_01-hd",
-    "type": "deco",
+    "type": "pixel",
     "z": 9,
     "default_z_layer": 3,
     "default_z_order": 9
@@ -66008,7 +66172,7 @@ window.allobjects = function() {
     "gridH": 0.2666666805744171,
     "gridW": 0.2666666805744171,
     "spritesheet": "PixelSheet_01-hd",
-    "type": "deco",
+    "type": "pixel",
     "z": 9,
     "default_z_layer": 3,
     "default_z_order": 9
@@ -66030,7 +66194,7 @@ window.allobjects = function() {
     "gridH": 0.2666666805744171,
     "gridW": 0.2666666805744171,
     "spritesheet": "PixelSheet_01-hd",
-    "type": "deco",
+    "type": "pixel",
     "z": 9,
     "default_z_layer": 3,
     "default_z_order": 9
@@ -66052,7 +66216,7 @@ window.allobjects = function() {
     "gridH": 0.2666666805744171,
     "gridW": 0.2666666805744171,
     "spritesheet": "PixelSheet_01-hd",
-    "type": "deco",
+    "type": "pixel",
     "z": 9,
     "default_z_layer": 3,
     "default_z_order": 9
@@ -66074,7 +66238,7 @@ window.allobjects = function() {
     "gridH": 0.2666666805744171,
     "gridW": 0.2666666805744171,
     "spritesheet": "PixelSheet_01-hd",
-    "type": "deco",
+    "type": "pixel",
     "z": 9,
     "default_z_layer": 3,
     "default_z_order": 9
@@ -66087,7 +66251,7 @@ window.allobjects = function() {
     "gridH": 0.5333333611488342,
     "gridW": 0.5333333611488342,
     "spritesheet": "PixelSheet_01-hd",
-    "type": "deco",
+    "type": "pixel",
     "z": 9,
     "default_detail_color_channel": -1,
     "default_z_layer": 3,
@@ -66101,7 +66265,7 @@ window.allobjects = function() {
     "gridH": 0.5,
     "gridW": 0.5,
     "spritesheet": "PixelSheet_01-hd",
-    "type": "deco",
+    "type": "pixel",
     "z": 9,
     "default_detail_color_channel": -1,
     "default_z_layer": 3,
@@ -66766,7 +66930,7 @@ window.allobjects = function() {
     "gridH": 0.5333333611488342,
     "gridW": 0.5333333611488342,
     "spritesheet": "GJ_ParticleSheet-uhd",
-    "type": "deco",
+    "type": "particle",
     "z": 9,
     "default_detail_color_channel": -1,
     "default_z_layer": 3,
@@ -66780,7 +66944,7 @@ window.allobjects = function() {
     "gridH": 0.5333333611488342,
     "gridW": 0.5333333611488342,
     "spritesheet": "GJ_ParticleSheet-uhd",
-    "type": "deco",
+    "type": "particle",
     "z": 9,
     "default_detail_color_channel": -1,
     "default_z_layer": 3,
@@ -66794,7 +66958,7 @@ window.allobjects = function() {
     "gridH": 0.5333333611488342,
     "gridW": 0.5333333611488342,
     "spritesheet": "GJ_ParticleSheet-uhd",
-    "type": "deco",
+    "type": "particle",
     "z": 9,
     "default_detail_color_channel": -1,
     "default_z_layer": 3,
@@ -66808,7 +66972,7 @@ window.allobjects = function() {
     "gridH": 0.5333333611488342,
     "gridW": 0.5333333611488342,
     "spritesheet": "GJ_ParticleSheet-uhd",
-    "type": "deco",
+    "type": "particle",
     "z": 9,
     "default_detail_color_channel": -1,
     "default_z_layer": 3,
@@ -66822,7 +66986,7 @@ window.allobjects = function() {
     "gridH": 0.5333333611488342,
     "gridW": 0.5333333611488342,
     "spritesheet": "GJ_ParticleSheet-uhd",
-    "type": "deco",
+    "type": "particle",
     "z": 9,
     "default_detail_color_channel": -1,
     "default_z_layer": 3,
@@ -66836,7 +67000,7 @@ window.allobjects = function() {
     "gridH": 0.5333333611488342,
     "gridW": 0.5333333611488342,
     "spritesheet": "GJ_ParticleSheet-uhd",
-    "type": "deco",
+    "type": "particle",
     "z": 9,
     "default_detail_color_channel": -1,
     "default_z_layer": 3,
@@ -66850,7 +67014,7 @@ window.allobjects = function() {
     "gridH": 0.5333333611488342,
     "gridW": 0.5333333611488342,
     "spritesheet": "GJ_ParticleSheet-uhd",
-    "type": "deco",
+    "type": "particle",
     "z": 9,
     "default_detail_color_channel": -1,
     "default_z_layer": 3,
@@ -66864,7 +67028,7 @@ window.allobjects = function() {
     "gridH": 0.5333333611488342,
     "gridW": 0.5333333611488342,
     "spritesheet": "GJ_ParticleSheet-uhd",
-    "type": "deco",
+    "type": "particle",
     "z": 9,
     "default_detail_color_channel": -1,
     "default_z_layer": 3,
@@ -66878,7 +67042,7 @@ window.allobjects = function() {
     "gridH": 0.5333333611488342,
     "gridW": 0.5333333611488342,
     "spritesheet": "GJ_ParticleSheet-uhd",
-    "type": "deco",
+    "type": "particle",
     "z": 9,
     "default_detail_color_channel": -1,
     "default_z_layer": 3,
@@ -66907,7 +67071,7 @@ window.allobjects = function() {
     "gridH": 0.5333333611488342,
     "gridW": 0.5333333611488342,
     "spritesheet": "GJ_ParticleSheet-uhd",
-    "type": "deco",
+    "type": "particle",
     "z": 9,
     "default_detail_color_channel": -1,
     "default_z_layer": 3,
@@ -66921,7 +67085,7 @@ window.allobjects = function() {
     "gridH": 0.5333333611488342,
     "gridW": 0.5333333611488342,
     "spritesheet": "GJ_ParticleSheet-uhd",
-    "type": "deco",
+    "type": "particle",
     "z": 9,
     "default_detail_color_channel": -1,
     "default_z_layer": 3,
@@ -66935,7 +67099,7 @@ window.allobjects = function() {
     "gridH": 0.5333333611488342,
     "gridW": 0.5333333611488342,
     "spritesheet": "GJ_ParticleSheet-uhd",
-    "type": "deco",
+    "type": "particle",
     "z": 9,
     "default_detail_color_channel": -1,
     "default_z_layer": 3,
@@ -66949,7 +67113,7 @@ window.allobjects = function() {
     "gridH": 0.5333333611488342,
     "gridW": 0.5333333611488342,
     "spritesheet": "GJ_ParticleSheet-uhd",
-    "type": "deco",
+    "type": "particle",
     "z": 9,
     "default_detail_color_channel": -1,
     "default_z_layer": 3,
@@ -67008,7 +67172,7 @@ window.allobjects = function() {
     "gridH": 0.5333333611488342,
     "gridW": 0.5333333611488342,
     "spritesheet": "PixelSheet_01-hd",
-    "type": "deco",
+    "type": "pixel",
     "z": 9,
     "default_detail_color_channel": -1,
     "default_z_layer": 3,
@@ -67022,7 +67186,7 @@ window.allobjects = function() {
     "gridH": 0.5333333611488342,
     "gridW": 0.5333333611488342,
     "spritesheet": "PixelSheet_01-hd",
-    "type": "deco",
+    "type": "pixel",
     "z": 9,
     "default_detail_color_channel": -1,
     "default_z_layer": 3,
@@ -67045,7 +67209,7 @@ window.allobjects = function() {
     "gridH": 0.2666666805744171,
     "gridW": 0.2666666805744171,
     "spritesheet": "PixelSheet_01-hd",
-    "type": "deco",
+    "type": "pixel",
     "z": 9,
     "default_z_layer": 3,
     "default_z_order": 9
@@ -67067,7 +67231,7 @@ window.allobjects = function() {
     "gridH": 0.2666666805744171,
     "gridW": 0.03333333507180214,
     "spritesheet": "PixelSheet_01-hd",
-    "type": "deco",
+    "type": "pixel",
     "z": 9,
     "default_z_layer": 3,
     "default_z_order": 9
@@ -67089,7 +67253,7 @@ window.allobjects = function() {
     "gridH": 0.2666666805744171,
     "gridW": 0.2666666805744171,
     "spritesheet": "PixelSheet_01-hd",
-    "type": "deco",
+    "type": "pixel",
     "z": 9,
     "default_z_layer": 3,
     "default_z_order": 9
@@ -67111,7 +67275,7 @@ window.allobjects = function() {
     "gridH": 0.03333333507180214,
     "gridW": 0.2666666805744171,
     "spritesheet": "PixelSheet_01-hd",
-    "type": "deco",
+    "type": "pixel",
     "z": 9,
     "default_z_layer": 3,
     "default_z_order": 9
@@ -67133,7 +67297,7 @@ window.allobjects = function() {
     "gridH": 0.03333333507180214,
     "gridW": 0.2666666805744171,
     "spritesheet": "PixelSheet_01-hd",
-    "type": "deco",
+    "type": "pixel",
     "z": 9,
     "default_z_layer": 3,
     "default_z_order": 9
@@ -67155,7 +67319,7 @@ window.allobjects = function() {
     "gridH": 0.2666666805744171,
     "gridW": 0.2666666805744171,
     "spritesheet": "PixelSheet_01-hd",
-    "type": "deco",
+    "type": "pixel",
     "z": 9,
     "default_z_layer": 3,
     "default_z_order": 9
@@ -67177,7 +67341,7 @@ window.allobjects = function() {
     "gridH": 0.2666666805744171,
     "gridW": 0.03333333507180214,
     "spritesheet": "PixelSheet_01-hd",
-    "type": "deco",
+    "type": "pixel",
     "z": 9,
     "default_z_layer": 3,
     "default_z_order": 9
@@ -67199,7 +67363,7 @@ window.allobjects = function() {
     "gridH": 0.2666666805744171,
     "gridW": 0.2666666805744171,
     "spritesheet": "PixelSheet_01-hd",
-    "type": "deco",
+    "type": "pixel",
     "z": 9,
     "default_z_layer": 3,
     "default_z_order": 9
@@ -67221,7 +67385,7 @@ window.allobjects = function() {
     "gridH": 0.2666666805744171,
     "gridW": 0.2666666805744171,
     "spritesheet": "PixelSheet_01-hd",
-    "type": "deco",
+    "type": "pixel",
     "z": 9,
     "default_z_layer": 3,
     "default_z_order": 9
@@ -67243,7 +67407,7 @@ window.allobjects = function() {
     "gridH": 0.2666666805744171,
     "gridW": 0.2666666805744171,
     "spritesheet": "PixelSheet_01-hd",
-    "type": "deco",
+    "type": "pixel",
     "z": 9,
     "default_z_layer": 3,
     "default_z_order": 9
@@ -67265,7 +67429,7 @@ window.allobjects = function() {
     "gridH": 0.2666666805744171,
     "gridW": 0.2666666805744171,
     "spritesheet": "PixelSheet_01-hd",
-    "type": "deco",
+    "type": "pixel",
     "z": 9,
     "default_z_layer": 3,
     "default_z_order": 9
@@ -67287,7 +67451,7 @@ window.allobjects = function() {
     "gridH": 0.2666666805744171,
     "gridW": 0.2666666805744171,
     "spritesheet": "PixelSheet_01-hd",
-    "type": "deco",
+    "type": "pixel",
     "z": 9,
     "default_z_layer": 3,
     "default_z_order": 9
@@ -67309,7 +67473,7 @@ window.allobjects = function() {
     "gridH": 0.2666666805744171,
     "gridW": 0.2666666805744171,
     "spritesheet": "PixelSheet_01-hd",
-    "type": "deco",
+    "type": "pixel",
     "z": 9,
     "default_z_layer": 3,
     "default_z_order": 9
@@ -67331,7 +67495,7 @@ window.allobjects = function() {
     "gridH": 0.2666666805744171,
     "gridW": 0.03333333507180214,
     "spritesheet": "PixelSheet_01-hd",
-    "type": "deco",
+    "type": "pixel",
     "z": 9,
     "default_z_layer": 3,
     "default_z_order": 9
@@ -67353,7 +67517,7 @@ window.allobjects = function() {
     "gridH": 0.2666666805744171,
     "gridW": 0.2666666805744171,
     "spritesheet": "PixelSheet_01-hd",
-    "type": "deco",
+    "type": "pixel",
     "z": 9,
     "default_z_layer": 3,
     "default_z_order": 9
@@ -67375,7 +67539,7 @@ window.allobjects = function() {
     "gridH": 0.03333333507180214,
     "gridW": 0.2666666805744171,
     "spritesheet": "PixelSheet_01-hd",
-    "type": "deco",
+    "type": "pixel",
     "z": 9,
     "default_z_layer": 3,
     "default_z_order": 9
@@ -67397,7 +67561,7 @@ window.allobjects = function() {
     "gridH": 0.03333333507180214,
     "gridW": 0.2666666805744171,
     "spritesheet": "PixelSheet_01-hd",
-    "type": "deco",
+    "type": "pixel",
     "z": 9,
     "default_z_layer": 3,
     "default_z_order": 9
@@ -67419,7 +67583,7 @@ window.allobjects = function() {
     "gridH": 0.2666666805744171,
     "gridW": 0.2666666805744171,
     "spritesheet": "PixelSheet_01-hd",
-    "type": "deco",
+    "type": "pixel",
     "z": 9,
     "default_z_layer": 3,
     "default_z_order": 9
@@ -67441,7 +67605,7 @@ window.allobjects = function() {
     "gridH": 0.2666666805744171,
     "gridW": 0.03333333507180214,
     "spritesheet": "PixelSheet_01-hd",
-    "type": "deco",
+    "type": "pixel",
     "z": 9,
     "default_z_layer": 3,
     "default_z_order": 9
@@ -67463,7 +67627,7 @@ window.allobjects = function() {
     "gridH": 0.2666666805744171,
     "gridW": 0.2666666805744171,
     "spritesheet": "PixelSheet_01-hd",
-    "type": "deco",
+    "type": "pixel",
     "z": 9,
     "default_z_layer": 3,
     "default_z_order": 9
@@ -67485,7 +67649,7 @@ window.allobjects = function() {
     "gridH": 0.2666666805744171,
     "gridW": 0.2666666805744171,
     "spritesheet": "PixelSheet_01-hd",
-    "type": "deco",
+    "type": "pixel",
     "z": 9,
     "default_z_layer": 3,
     "default_z_order": 9
@@ -67507,7 +67671,7 @@ window.allobjects = function() {
     "gridH": 0.2666666805744171,
     "gridW": 0.2666666805744171,
     "spritesheet": "PixelSheet_01-hd",
-    "type": "deco",
+    "type": "pixel",
     "z": 9,
     "default_z_layer": 3,
     "default_z_order": 9
@@ -67529,7 +67693,7 @@ window.allobjects = function() {
     "gridH": 0.2666666805744171,
     "gridW": 0.2666666805744171,
     "spritesheet": "PixelSheet_01-hd",
-    "type": "deco",
+    "type": "pixel",
     "z": 9,
     "default_z_layer": 3,
     "default_z_order": 9
@@ -67551,7 +67715,7 @@ window.allobjects = function() {
     "gridH": 0.2666666805744171,
     "gridW": 0.2666666805744171,
     "spritesheet": "PixelSheet_01-hd",
-    "type": "deco",
+    "type": "pixel",
     "z": 9,
     "default_z_layer": 3,
     "default_z_order": 9
@@ -67573,7 +67737,7 @@ window.allobjects = function() {
     "gridH": 0.03333333507180214,
     "gridW": 0.03333333507180214,
     "spritesheet": "PixelSheet_01-hd",
-    "type": "deco",
+    "type": "pixel",
     "z": 9,
     "default_z_layer": 3,
     "default_z_order": 9
@@ -67595,7 +67759,7 @@ window.allobjects = function() {
     "gridH": 0.2666666805744171,
     "gridW": 0.2666666805744171,
     "spritesheet": "PixelSheet_01-hd",
-    "type": "deco",
+    "type": "pixel",
     "z": 9,
     "default_z_layer": 3,
     "default_z_order": 9
@@ -67617,7 +67781,7 @@ window.allobjects = function() {
     "gridH": 0.2666666805744171,
     "gridW": 0.03333333507180214,
     "spritesheet": "PixelSheet_01-hd",
-    "type": "deco",
+    "type": "pixel",
     "z": 9,
     "default_z_layer": 3,
     "default_z_order": 9
@@ -67639,7 +67803,7 @@ window.allobjects = function() {
     "gridH": 0.2666666805744171,
     "gridW": 0.2666666805744171,
     "spritesheet": "PixelSheet_01-hd",
-    "type": "deco",
+    "type": "pixel",
     "z": 9,
     "default_z_layer": 3,
     "default_z_order": 9
@@ -67661,7 +67825,7 @@ window.allobjects = function() {
     "gridH": 0.03333333507180214,
     "gridW": 0.2666666805744171,
     "spritesheet": "PixelSheet_01-hd",
-    "type": "deco",
+    "type": "pixel",
     "z": 9,
     "default_z_layer": 3,
     "default_z_order": 9
@@ -67683,7 +67847,7 @@ window.allobjects = function() {
     "gridH": 0.03333333507180214,
     "gridW": 0.2666666805744171,
     "spritesheet": "PixelSheet_01-hd",
-    "type": "deco",
+    "type": "pixel",
     "z": 9,
     "default_z_layer": 3,
     "default_z_order": 9
@@ -67705,7 +67869,7 @@ window.allobjects = function() {
     "gridH": 0.2666666805744171,
     "gridW": 0.2666666805744171,
     "spritesheet": "PixelSheet_01-hd",
-    "type": "deco",
+    "type": "pixel",
     "z": 9,
     "default_z_layer": 3,
     "default_z_order": 9
@@ -67727,7 +67891,7 @@ window.allobjects = function() {
     "gridH": 0.2666666805744171,
     "gridW": 0.03333333507180214,
     "spritesheet": "PixelSheet_01-hd",
-    "type": "deco",
+    "type": "pixel",
     "z": 9,
     "default_z_layer": 3,
     "default_z_order": 9
@@ -67749,7 +67913,7 @@ window.allobjects = function() {
     "gridH": 0.2666666805744171,
     "gridW": 0.2666666805744171,
     "spritesheet": "PixelSheet_01-hd",
-    "type": "deco",
+    "type": "pixel",
     "z": 9,
     "default_z_layer": 3,
     "default_z_order": 9
@@ -67771,7 +67935,7 @@ window.allobjects = function() {
     "gridH": 0.2666666805744171,
     "gridW": 0.2666666805744171,
     "spritesheet": "PixelSheet_01-hd",
-    "type": "deco",
+    "type": "pixel",
     "z": 9,
     "default_z_layer": 3,
     "default_z_order": 9
@@ -67793,7 +67957,7 @@ window.allobjects = function() {
     "gridH": 0.2666666805744171,
     "gridW": 0.2666666805744171,
     "spritesheet": "PixelSheet_01-hd",
-    "type": "deco",
+    "type": "pixel",
     "z": 9,
     "default_z_layer": 3,
     "default_z_order": 9
@@ -67815,7 +67979,7 @@ window.allobjects = function() {
     "gridH": 0.2666666805744171,
     "gridW": 0.2666666805744171,
     "spritesheet": "PixelSheet_01-hd",
-    "type": "deco",
+    "type": "pixel",
     "z": 9,
     "default_z_layer": 3,
     "default_z_order": 9
@@ -67837,7 +68001,7 @@ window.allobjects = function() {
     "gridH": 0.2666666805744171,
     "gridW": 0.2666666805744171,
     "spritesheet": "PixelSheet_01-hd",
-    "type": "deco",
+    "type": "pixel",
     "z": 9,
     "default_z_layer": 3,
     "default_z_order": 9
@@ -67859,7 +68023,7 @@ window.allobjects = function() {
     "gridH": 0.03333333507180214,
     "gridW": 0.03333333507180214,
     "spritesheet": "PixelSheet_01-hd",
-    "type": "deco",
+    "type": "pixel",
     "z": 9,
     "default_z_layer": 3,
     "default_z_order": 9
@@ -67881,7 +68045,7 @@ window.allobjects = function() {
     "gridH": 0.2666666805744171,
     "gridW": 0.2666666805744171,
     "spritesheet": "PixelSheet_01-hd",
-    "type": "deco",
+    "type": "pixel",
     "z": 9,
     "default_z_layer": 3,
     "default_z_order": 9
@@ -67903,7 +68067,7 @@ window.allobjects = function() {
     "gridH": 0.2666666805744171,
     "gridW": 0.03333333507180214,
     "spritesheet": "PixelSheet_01-hd",
-    "type": "deco",
+    "type": "pixel",
     "z": 9,
     "default_z_layer": 3,
     "default_z_order": 9
@@ -67925,7 +68089,7 @@ window.allobjects = function() {
     "gridH": 0.2666666805744171,
     "gridW": 0.2666666805744171,
     "spritesheet": "PixelSheet_01-hd",
-    "type": "deco",
+    "type": "pixel",
     "z": 9,
     "default_z_layer": 3,
     "default_z_order": 9
@@ -67947,7 +68111,7 @@ window.allobjects = function() {
     "gridH": 0.03333333507180214,
     "gridW": 0.2666666805744171,
     "spritesheet": "PixelSheet_01-hd",
-    "type": "deco",
+    "type": "pixel",
     "z": 9,
     "default_z_layer": 3,
     "default_z_order": 9
@@ -67969,7 +68133,7 @@ window.allobjects = function() {
     "gridH": 0.03333333507180214,
     "gridW": 0.2666666805744171,
     "spritesheet": "PixelSheet_01-hd",
-    "type": "deco",
+    "type": "pixel",
     "z": 9,
     "default_z_layer": 3,
     "default_z_order": 9
@@ -67991,7 +68155,7 @@ window.allobjects = function() {
     "gridH": 0.2666666805744171,
     "gridW": 0.2666666805744171,
     "spritesheet": "PixelSheet_01-hd",
-    "type": "deco",
+    "type": "pixel",
     "z": 9,
     "default_z_layer": 3,
     "default_z_order": 9
@@ -68013,7 +68177,7 @@ window.allobjects = function() {
     "gridH": 0.2666666805744171,
     "gridW": 0.03333333507180214,
     "spritesheet": "PixelSheet_01-hd",
-    "type": "deco",
+    "type": "pixel",
     "z": 9,
     "default_z_layer": 3,
     "default_z_order": 9
@@ -68035,7 +68199,7 @@ window.allobjects = function() {
     "gridH": 0.2666666805744171,
     "gridW": 0.2666666805744171,
     "spritesheet": "PixelSheet_01-hd",
-    "type": "deco",
+    "type": "pixel",
     "z": 9,
     "default_z_layer": 3,
     "default_z_order": 9
@@ -68057,7 +68221,7 @@ window.allobjects = function() {
     "gridH": 0.2666666805744171,
     "gridW": 0.2666666805744171,
     "spritesheet": "PixelSheet_01-hd",
-    "type": "deco",
+    "type": "pixel",
     "z": 9,
     "default_z_layer": 3,
     "default_z_order": 9
@@ -68079,7 +68243,7 @@ window.allobjects = function() {
     "gridH": 0.2666666805744171,
     "gridW": 0.2666666805744171,
     "spritesheet": "PixelSheet_01-hd",
-    "type": "deco",
+    "type": "pixel",
     "z": 9,
     "default_z_layer": 3,
     "default_z_order": 9
@@ -68101,7 +68265,7 @@ window.allobjects = function() {
     "gridH": 0.2666666805744171,
     "gridW": 0.2666666805744171,
     "spritesheet": "PixelSheet_01-hd",
-    "type": "deco",
+    "type": "pixel",
     "z": 9,
     "default_z_layer": 3,
     "default_z_order": 9
@@ -68123,7 +68287,7 @@ window.allobjects = function() {
     "gridH": 0.2666666805744171,
     "gridW": 0.2666666805744171,
     "spritesheet": "PixelSheet_01-hd",
-    "type": "deco",
+    "type": "pixel",
     "z": 9,
     "default_z_layer": 3,
     "default_z_order": 9
@@ -68145,7 +68309,7 @@ window.allobjects = function() {
     "gridH": 0.03333333507180214,
     "gridW": 0.03333333507180214,
     "spritesheet": "PixelSheet_01-hd",
-    "type": "deco",
+    "type": "pixel",
     "z": 9,
     "default_z_layer": 3,
     "default_z_order": 9
@@ -68167,7 +68331,7 @@ window.allobjects = function() {
     "gridH": 0.2666666805744171,
     "gridW": 0.2666666805744171,
     "spritesheet": "PixelSheet_01-hd",
-    "type": "deco",
+    "type": "pixel",
     "z": 9,
     "default_z_layer": 3,
     "default_z_order": 9
@@ -68189,7 +68353,7 @@ window.allobjects = function() {
     "gridH": 0.2666666805744171,
     "gridW": 0.03333333507180214,
     "spritesheet": "PixelSheet_01-hd",
-    "type": "deco",
+    "type": "pixel",
     "z": 9,
     "default_z_layer": 3,
     "default_z_order": 9
@@ -68211,7 +68375,7 @@ window.allobjects = function() {
     "gridH": 0.2666666805744171,
     "gridW": 0.2666666805744171,
     "spritesheet": "PixelSheet_01-hd",
-    "type": "deco",
+    "type": "pixel",
     "z": 9,
     "default_z_layer": 3,
     "default_z_order": 9
@@ -68233,7 +68397,7 @@ window.allobjects = function() {
     "gridH": 0.03333333507180214,
     "gridW": 0.2666666805744171,
     "spritesheet": "PixelSheet_01-hd",
-    "type": "deco",
+    "type": "pixel",
     "z": 9,
     "default_z_layer": 3,
     "default_z_order": 9
@@ -68255,7 +68419,7 @@ window.allobjects = function() {
     "gridH": 0.03333333507180214,
     "gridW": 0.2666666805744171,
     "spritesheet": "PixelSheet_01-hd",
-    "type": "deco",
+    "type": "pixel",
     "z": 9,
     "default_z_layer": 3,
     "default_z_order": 9
@@ -68277,7 +68441,7 @@ window.allobjects = function() {
     "gridH": 0.2666666805744171,
     "gridW": 0.2666666805744171,
     "spritesheet": "PixelSheet_01-hd",
-    "type": "deco",
+    "type": "pixel",
     "z": 9,
     "default_z_layer": 3,
     "default_z_order": 9
@@ -68299,7 +68463,7 @@ window.allobjects = function() {
     "gridH": 0.2666666805744171,
     "gridW": 0.03333333507180214,
     "spritesheet": "PixelSheet_01-hd",
-    "type": "deco",
+    "type": "pixel",
     "z": 9,
     "default_z_layer": 3,
     "default_z_order": 9
@@ -68321,7 +68485,7 @@ window.allobjects = function() {
     "gridH": 0.2666666805744171,
     "gridW": 0.2666666805744171,
     "spritesheet": "PixelSheet_01-hd",
-    "type": "deco",
+    "type": "pixel",
     "z": 9,
     "default_z_layer": 3,
     "default_z_order": 9
@@ -68343,7 +68507,7 @@ window.allobjects = function() {
     "gridH": 0.2666666805744171,
     "gridW": 0.2666666805744171,
     "spritesheet": "PixelSheet_01-hd",
-    "type": "deco",
+    "type": "pixel",
     "z": 9,
     "default_z_layer": 3,
     "default_z_order": 9
@@ -68365,7 +68529,7 @@ window.allobjects = function() {
     "gridH": 0.2666666805744171,
     "gridW": 0.2666666805744171,
     "spritesheet": "PixelSheet_01-hd",
-    "type": "deco",
+    "type": "pixel",
     "z": 9,
     "default_z_layer": 3,
     "default_z_order": 9
@@ -68387,7 +68551,7 @@ window.allobjects = function() {
     "gridH": 0.2666666805744171,
     "gridW": 0.2666666805744171,
     "spritesheet": "PixelSheet_01-hd",
-    "type": "deco",
+    "type": "pixel",
     "z": 9,
     "default_z_layer": 3,
     "default_z_order": 9
@@ -68409,7 +68573,7 @@ window.allobjects = function() {
     "gridH": 0.2666666805744171,
     "gridW": 0.2666666805744171,
     "spritesheet": "PixelSheet_01-hd",
-    "type": "deco",
+    "type": "pixel",
     "z": 9,
     "default_z_layer": 3,
     "default_z_order": 9
@@ -68431,7 +68595,7 @@ window.allobjects = function() {
     "gridH": 0.2666666805744171,
     "gridW": 0.2666666805744171,
     "spritesheet": "PixelSheet_01-hd",
-    "type": "deco",
+    "type": "pixel",
     "z": 9,
     "default_z_layer": 3,
     "default_z_order": 9
@@ -68453,7 +68617,7 @@ window.allobjects = function() {
     "gridH": 0.2666666805744171,
     "gridW": 0.03333333507180214,
     "spritesheet": "PixelSheet_01-hd",
-    "type": "deco",
+    "type": "pixel",
     "z": 9,
     "default_z_layer": 3,
     "default_z_order": 9
@@ -68475,7 +68639,7 @@ window.allobjects = function() {
     "gridH": 0.03333333507180214,
     "gridW": 0.23333333432674408,
     "spritesheet": "PixelSheet_01-hd",
-    "type": "deco",
+    "type": "pixel",
     "z": 9,
     "default_z_layer": 3,
     "default_z_order": 9
@@ -68497,7 +68661,7 @@ window.allobjects = function() {
     "gridH": 0.2666666805744171,
     "gridW": 0.2666666805744171,
     "spritesheet": "PixelSheet_01-hd",
-    "type": "deco",
+    "type": "pixel",
     "z": 9,
     "default_z_layer": 3,
     "default_z_order": 9
@@ -68519,7 +68683,7 @@ window.allobjects = function() {
     "gridH": 0.23333333432674408,
     "gridW": 0.03333333507180214,
     "spritesheet": "PixelSheet_01-hd",
-    "type": "deco",
+    "type": "pixel",
     "z": 9,
     "default_z_layer": 3,
     "default_z_order": 9
@@ -68541,7 +68705,7 @@ window.allobjects = function() {
     "gridH": 0.2666666805744171,
     "gridW": 0.23333333432674408,
     "spritesheet": "PixelSheet_01-hd",
-    "type": "deco",
+    "type": "pixel",
     "z": 9,
     "default_z_layer": 3,
     "default_z_order": 9
@@ -68563,7 +68727,7 @@ window.allobjects = function() {
     "gridH": 0.23333333432674408,
     "gridW": 0.23333333432674408,
     "spritesheet": "PixelSheet_01-hd",
-    "type": "deco",
+    "type": "pixel",
     "z": 9,
     "default_z_layer": 3,
     "default_z_order": 9
@@ -68585,7 +68749,7 @@ window.allobjects = function() {
     "gridH": 0.2666666805744171,
     "gridW": 0.2666666805744171,
     "spritesheet": "PixelSheet_01-hd",
-    "type": "deco",
+    "type": "pixel",
     "z": 9,
     "default_z_layer": 3,
     "default_z_order": 9
@@ -68607,7 +68771,7 @@ window.allobjects = function() {
     "gridH": 0.2666666805744171,
     "gridW": 0.03333333507180214,
     "spritesheet": "PixelSheet_01-hd",
-    "type": "deco",
+    "type": "pixel",
     "z": 9,
     "default_z_layer": 3,
     "default_z_order": 9
@@ -68629,7 +68793,7 @@ window.allobjects = function() {
     "gridH": 0.2666666805744171,
     "gridW": 0.2666666805744171,
     "spritesheet": "PixelSheet_01-hd",
-    "type": "deco",
+    "type": "pixel",
     "z": 9,
     "default_z_layer": 3,
     "default_z_order": 9
@@ -68651,7 +68815,7 @@ window.allobjects = function() {
     "gridH": 0.2666666805744171,
     "gridW": 0.2666666805744171,
     "spritesheet": "PixelSheet_01-hd",
-    "type": "deco",
+    "type": "pixel",
     "z": 9,
     "default_z_layer": 3,
     "default_z_order": 9
@@ -68673,7 +68837,7 @@ window.allobjects = function() {
     "gridH": 0.2666666805744171,
     "gridW": 0.2666666805744171,
     "spritesheet": "PixelSheet_01-hd",
-    "type": "deco",
+    "type": "pixel",
     "z": 9,
     "default_z_layer": 3,
     "default_z_order": 9
@@ -68695,7 +68859,7 @@ window.allobjects = function() {
     "gridH": 0.2666666805744171,
     "gridW": 0.2666666805744171,
     "spritesheet": "PixelSheet_01-hd",
-    "type": "deco",
+    "type": "pixel",
     "z": 9,
     "default_z_layer": 3,
     "default_z_order": 9
@@ -68717,7 +68881,7 @@ window.allobjects = function() {
     "gridH": 0.2666666805744171,
     "gridW": 0.2666666805744171,
     "spritesheet": "PixelSheet_01-hd",
-    "type": "deco",
+    "type": "pixel",
     "z": 9,
     "default_z_layer": 3,
     "default_z_order": 9
@@ -68730,7 +68894,7 @@ window.allobjects = function() {
     "gridH": 0.2666666805744171,
     "gridW": 0.03333333507180214,
     "spritesheet": "PixelSheet_01-hd",
-    "type": "deco",
+    "type": "pixel",
     "z": 9,
     "default_detail_color_channel": -1,
     "default_z_layer": 3,
@@ -68753,7 +68917,7 @@ window.allobjects = function() {
     "gridH": 0.2666666805744171,
     "gridW": 0.2666666805744171,
     "spritesheet": "PixelSheet_01-hd",
-    "type": "deco",
+    "type": "pixel",
     "z": 9,
     "default_z_layer": 3,
     "default_z_order": 9
@@ -68775,7 +68939,7 @@ window.allobjects = function() {
     "gridH": 0.2666666805744171,
     "gridW": 0.2666666805744171,
     "spritesheet": "PixelSheet_01-hd",
-    "type": "deco",
+    "type": "pixel",
     "z": 9,
     "default_z_layer": 3,
     "default_z_order": 9
@@ -68797,7 +68961,7 @@ window.allobjects = function() {
     "gridH": 0.2666666805744171,
     "gridW": 0.2666666805744171,
     "spritesheet": "PixelSheet_01-hd",
-    "type": "deco",
+    "type": "pixel",
     "z": 9,
     "default_z_layer": 3,
     "default_z_order": 9
@@ -68819,7 +68983,7 @@ window.allobjects = function() {
     "gridH": 0.2666666805744171,
     "gridW": 0.2666666805744171,
     "spritesheet": "PixelSheet_01-hd",
-    "type": "deco",
+    "type": "pixel",
     "z": 9,
     "default_z_layer": 3,
     "default_z_order": 9
@@ -68841,7 +69005,7 @@ window.allobjects = function() {
     "gridH": 0.2666666805744171,
     "gridW": 0.2666666805744171,
     "spritesheet": "PixelSheet_01-hd",
-    "type": "deco",
+    "type": "pixel",
     "z": 9,
     "default_z_layer": 3,
     "default_z_order": 9
@@ -68863,7 +69027,7 @@ window.allobjects = function() {
     "gridH": 0.2666666805744171,
     "gridW": 0.2666666805744171,
     "spritesheet": "PixelSheet_01-hd",
-    "type": "deco",
+    "type": "pixel",
     "z": 9,
     "default_z_layer": 3,
     "default_z_order": 9
@@ -68885,7 +69049,7 @@ window.allobjects = function() {
     "gridH": 0.2666666805744171,
     "gridW": 0.2666666805744171,
     "spritesheet": "PixelSheet_01-hd",
-    "type": "deco",
+    "type": "pixel",
     "z": 9,
     "default_z_layer": 3,
     "default_z_order": 9
@@ -68907,7 +69071,7 @@ window.allobjects = function() {
     "gridH": 0.2666666805744171,
     "gridW": 0.2666666805744171,
     "spritesheet": "PixelSheet_01-hd",
-    "type": "deco",
+    "type": "pixel",
     "z": 9,
     "default_z_layer": 3,
     "default_z_order": 9
@@ -68929,7 +69093,7 @@ window.allobjects = function() {
     "gridH": 0.2666666805744171,
     "gridW": 0.03333333507180214,
     "spritesheet": "PixelSheet_01-hd",
-    "type": "deco",
+    "type": "pixel",
     "z": 9,
     "default_z_layer": 3,
     "default_z_order": 9
@@ -68951,7 +69115,7 @@ window.allobjects = function() {
     "gridH": 0.5333333611488342,
     "gridW": 0.5333333611488342,
     "spritesheet": "PixelSheet_01-hd",
-    "type": "deco",
+    "type": "pixel",
     "z": 9,
     "default_z_layer": 3,
     "default_z_order": 9
@@ -68973,7 +69137,7 @@ window.allobjects = function() {
     "gridH": 0.5333333611488342,
     "gridW": 0.5333333611488342,
     "spritesheet": "PixelSheet_01-hd",
-    "type": "deco",
+    "type": "pixel",
     "z": 9,
     "default_z_layer": 3,
     "default_z_order": 9
@@ -68986,7 +69150,7 @@ window.allobjects = function() {
     "gridH": 0.3333333432674408,
     "gridW": 0.3333333432674408,
     "spritesheet": "PixelSheet_01-hd",
-    "type": "deco",
+    "type": "pixel",
     "z": 9,
     "default_detail_color_channel": -1,
     "default_z_layer": 3,
@@ -69009,7 +69173,7 @@ window.allobjects = function() {
     "gridH": 0.5333333611488342,
     "gridW": 0.5333333611488342,
     "spritesheet": "PixelSheet_01-hd",
-    "type": "deco",
+    "type": "pixel",
     "z": 9,
     "default_z_layer": 3,
     "default_z_order": 9
@@ -69022,7 +69186,7 @@ window.allobjects = function() {
     "gridH": 0.20000000298023224,
     "gridW": 0.03333333507180214,
     "spritesheet": "PixelSheet_01-hd",
-    "type": "deco",
+    "type": "pixel",
     "z": 10,
     "default_detail_color_channel": -1,
     "default_z_layer": 3,
@@ -69045,7 +69209,7 @@ window.allobjects = function() {
     "gridH": 0.46666666865348816,
     "gridW": 0.5,
     "spritesheet": "PixelSheet_01-hd",
-    "type": "deco",
+    "type": "pixel",
     "z": 9,
     "default_z_layer": 3,
     "default_z_order": 9
@@ -69067,7 +69231,7 @@ window.allobjects = function() {
     "gridH": 0.3333333432674408,
     "gridW": 0.5333333611488342,
     "spritesheet": "PixelSheet_01-hd",
-    "type": "deco",
+    "type": "pixel",
     "z": 9,
     "default_z_layer": 3,
     "default_z_order": 9
@@ -69089,7 +69253,7 @@ window.allobjects = function() {
     "gridH": 0.23333333432674408,
     "gridW": 0.23333333432674408,
     "spritesheet": "PixelSheet_01-hd",
-    "type": "deco",
+    "type": "pixel",
     "z": 9,
     "default_z_layer": 3,
     "default_z_order": 9
@@ -69111,7 +69275,7 @@ window.allobjects = function() {
     "gridH": 0.1666666716337204,
     "gridW": 0.23333333432674408,
     "spritesheet": "PixelSheet_01-hd",
-    "type": "deco",
+    "type": "pixel",
     "z": 9,
     "default_z_layer": 3,
     "default_z_order": 9
@@ -69133,7 +69297,7 @@ window.allobjects = function() {
     "gridH": 0.1666666716337204,
     "gridW": 0.20000000298023224,
     "spritesheet": "PixelSheet_01-hd",
-    "type": "deco",
+    "type": "pixel",
     "z": 9,
     "default_z_layer": 3,
     "default_z_order": 9
@@ -69155,7 +69319,7 @@ window.allobjects = function() {
     "gridH": 0.1666666716337204,
     "gridW": 0.23333333432674408,
     "spritesheet": "PixelSheet_01-hd",
-    "type": "deco",
+    "type": "pixel",
     "z": 9,
     "default_z_layer": 3,
     "default_z_order": 9
@@ -69168,7 +69332,7 @@ window.allobjects = function() {
     "gridH": 0.5333333611488342,
     "gridW": 0.5333333611488342,
     "spritesheet": "GJ_ParticleSheet-uhd",
-    "type": "solid",
+    "type": "particle",
     "z": 2,
     "default_detail_color_channel": -1,
     "default_z_layer": 5,
@@ -69182,7 +69346,7 @@ window.allobjects = function() {
     "gridH": 0.5333333611488342,
     "gridW": 0.5333333611488342,
     "spritesheet": "GJ_ParticleSheet-uhd",
-    "type": "deco",
+    "type": "particle",
     "z": 9,
     "default_detail_color_channel": -1,
     "default_z_layer": 3,
@@ -69196,7 +69360,7 @@ window.allobjects = function() {
     "gridH": 0.5333333611488342,
     "gridW": 0.5333333611488342,
     "spritesheet": "GJ_ParticleSheet-uhd",
-    "type": "deco",
+    "type": "particle",
     "z": 9,
     "default_detail_color_channel": -1,
     "default_z_layer": 3,
@@ -69210,7 +69374,7 @@ window.allobjects = function() {
     "gridH": 0.5333333611488342,
     "gridW": 0.5333333611488342,
     "spritesheet": "GJ_ParticleSheet-uhd",
-    "type": "deco",
+    "type": "particle",
     "z": 9,
     "default_detail_color_channel": -1,
     "default_z_layer": 3,
@@ -69224,7 +69388,7 @@ window.allobjects = function() {
     "gridH": 0.5333333611488342,
     "gridW": 0.5333333611488342,
     "spritesheet": "GJ_ParticleSheet-uhd",
-    "type": "deco",
+    "type": "particle",
     "z": 9,
     "default_detail_color_channel": -1,
     "default_z_layer": 3,
@@ -69238,7 +69402,7 @@ window.allobjects = function() {
     "gridH": 0.5333333611488342,
     "gridW": 0.5333333611488342,
     "spritesheet": "GJ_ParticleSheet-uhd",
-    "type": "deco",
+    "type": "particle",
     "z": 9,
     "default_detail_color_channel": -1,
     "default_z_layer": 3,
@@ -69252,7 +69416,7 @@ window.allobjects = function() {
     "gridH": 0.5333333611488342,
     "gridW": 0.5333333611488342,
     "spritesheet": "GJ_ParticleSheet-uhd",
-    "type": "deco",
+    "type": "particle",
     "z": 9,
     "default_detail_color_channel": -1,
     "default_z_layer": 3,
@@ -69266,7 +69430,7 @@ window.allobjects = function() {
     "gridH": 0.5333333611488342,
     "gridW": 0.5333333611488342,
     "spritesheet": "GJ_ParticleSheet-uhd",
-    "type": "deco",
+    "type": "particle",
     "z": 9,
     "default_detail_color_channel": -1,
     "default_z_layer": 3,
@@ -69280,7 +69444,7 @@ window.allobjects = function() {
     "gridH": 0.5333333611488342,
     "gridW": 0.5333333611488342,
     "spritesheet": "GJ_ParticleSheet-uhd",
-    "type": "deco",
+    "type": "particle",
     "z": 9,
     "default_detail_color_channel": -1,
     "default_z_layer": 3,
@@ -69294,7 +69458,7 @@ window.allobjects = function() {
     "gridH": 0.5333333611488342,
     "gridW": 0.5333333611488342,
     "spritesheet": "GJ_ParticleSheet-uhd",
-    "type": "deco",
+    "type": "particle",
     "z": 9,
     "default_detail_color_channel": -1,
     "default_z_layer": 3,
@@ -69308,7 +69472,7 @@ window.allobjects = function() {
     "gridH": 0.5333333611488342,
     "gridW": 0.5333333611488342,
     "spritesheet": "GJ_ParticleSheet-uhd",
-    "type": "deco",
+    "type": "particle",
     "z": 9,
     "default_detail_color_channel": -1,
     "default_z_layer": 3,
@@ -69322,7 +69486,7 @@ window.allobjects = function() {
     "gridH": 0.5333333611488342,
     "gridW": 0.5333333611488342,
     "spritesheet": "GJ_ParticleSheet-uhd",
-    "type": "deco",
+    "type": "particle",
     "z": 9,
     "default_detail_color_channel": -1,
     "default_z_layer": 3,
@@ -69336,7 +69500,7 @@ window.allobjects = function() {
     "gridH": 0.5333333611488342,
     "gridW": 0.5333333611488342,
     "spritesheet": "GJ_ParticleSheet-uhd",
-    "type": "deco",
+    "type": "particle",
     "z": 9,
     "default_detail_color_channel": -1,
     "default_z_layer": 3,
@@ -69350,7 +69514,7 @@ window.allobjects = function() {
     "gridH": 0.5333333611488342,
     "gridW": 0.5333333611488342,
     "spritesheet": "GJ_ParticleSheet-uhd",
-    "type": "deco",
+    "type": "particle",
     "z": 9,
     "default_detail_color_channel": -1,
     "default_z_layer": 3,
@@ -69364,7 +69528,7 @@ window.allobjects = function() {
     "gridH": 0.5333333611488342,
     "gridW": 0.5333333611488342,
     "spritesheet": "GJ_ParticleSheet-uhd",
-    "type": "deco",
+    "type": "particle",
     "z": 9,
     "default_detail_color_channel": -1,
     "default_z_layer": 3,
@@ -69378,7 +69542,7 @@ window.allobjects = function() {
     "gridH": 0.5333333611488342,
     "gridW": 0.5333333611488342,
     "spritesheet": "GJ_ParticleSheet-uhd",
-    "type": "deco",
+    "type": "particle",
     "z": 9,
     "default_detail_color_channel": -1,
     "default_z_layer": 3,
@@ -69392,7 +69556,7 @@ window.allobjects = function() {
     "gridH": 0.5333333611488342,
     "gridW": 0.5333333611488342,
     "spritesheet": "GJ_ParticleSheet-uhd",
-    "type": "deco",
+    "type": "particle",
     "z": 9,
     "default_detail_color_channel": -1,
     "default_z_layer": 3,
@@ -69406,7 +69570,7 @@ window.allobjects = function() {
     "gridH": 0.5333333611488342,
     "gridW": 0.5333333611488342,
     "spritesheet": "GJ_ParticleSheet-uhd",
-    "type": "deco",
+    "type": "particle",
     "z": 9,
     "default_detail_color_channel": -1,
     "default_z_layer": 3,
@@ -69420,7 +69584,7 @@ window.allobjects = function() {
     "gridH": 0.5333333611488342,
     "gridW": 0.5333333611488342,
     "spritesheet": "GJ_ParticleSheet-uhd",
-    "type": "deco",
+    "type": "particle",
     "z": 9,
     "default_detail_color_channel": -1,
     "default_z_layer": 3,
@@ -69434,7 +69598,7 @@ window.allobjects = function() {
     "gridH": 0.5333333611488342,
     "gridW": 0.5333333611488342,
     "spritesheet": "GJ_ParticleSheet-uhd",
-    "type": "deco",
+    "type": "particle",
     "z": 9,
     "default_detail_color_channel": -1,
     "default_z_layer": 3,
@@ -69448,7 +69612,7 @@ window.allobjects = function() {
     "gridH": 0.5333333611488342,
     "gridW": 0.5333333611488342,
     "spritesheet": "GJ_ParticleSheet-uhd",
-    "type": "deco",
+    "type": "particle",
     "z": 9,
     "default_detail_color_channel": -1,
     "default_z_layer": 3,
@@ -69462,7 +69626,7 @@ window.allobjects = function() {
     "gridH": 0.5333333611488342,
     "gridW": 0.5333333611488342,
     "spritesheet": "GJ_ParticleSheet-uhd",
-    "type": "deco",
+    "type": "particle",
     "z": 9,
     "default_detail_color_channel": -1,
     "default_z_layer": 3,
@@ -69476,7 +69640,7 @@ window.allobjects = function() {
     "gridH": 0.5333333611488342,
     "gridW": 0.5333333611488342,
     "spritesheet": "GJ_ParticleSheet-uhd",
-    "type": "deco",
+    "type": "particle",
     "z": 9,
     "default_detail_color_channel": -1,
     "default_z_layer": 3,
@@ -69490,7 +69654,7 @@ window.allobjects = function() {
     "gridH": 0.5333333611488342,
     "gridW": 0.5333333611488342,
     "spritesheet": "GJ_ParticleSheet-uhd",
-    "type": "deco",
+    "type": "particle",
     "z": 9,
     "default_detail_color_channel": -1,
     "default_z_layer": 3,
@@ -69504,7 +69668,7 @@ window.allobjects = function() {
     "gridH": 0.5333333611488342,
     "gridW": 0.5333333611488342,
     "spritesheet": "GJ_ParticleSheet-uhd",
-    "type": "deco",
+    "type": "particle",
     "z": 9,
     "default_detail_color_channel": -1,
     "default_z_layer": 3,
@@ -69518,7 +69682,7 @@ window.allobjects = function() {
     "gridH": 0.5333333611488342,
     "gridW": 0.5333333611488342,
     "spritesheet": "GJ_ParticleSheet-uhd",
-    "type": "deco",
+    "type": "particle",
     "z": 9,
     "default_detail_color_channel": -1,
     "default_z_layer": 3,
@@ -69532,7 +69696,7 @@ window.allobjects = function() {
     "gridH": 0.5333333611488342,
     "gridW": 0.5333333611488342,
     "spritesheet": "GJ_ParticleSheet-uhd",
-    "type": "deco",
+    "type": "particle",
     "z": 9,
     "default_detail_color_channel": -1,
     "default_z_layer": 3,
@@ -69546,7 +69710,7 @@ window.allobjects = function() {
     "gridH": 0.5333333611488342,
     "gridW": 0.5333333611488342,
     "spritesheet": "GJ_ParticleSheet-uhd",
-    "type": "deco",
+    "type": "particle",
     "z": 9,
     "default_detail_color_channel": -1,
     "default_z_layer": 3,
@@ -69560,7 +69724,7 @@ window.allobjects = function() {
     "gridH": 0.5333333611488342,
     "gridW": 0.5333333611488342,
     "spritesheet": "GJ_ParticleSheet-uhd",
-    "type": "deco",
+    "type": "particle",
     "z": 9,
     "default_detail_color_channel": -1,
     "default_z_layer": 3,
@@ -69574,7 +69738,7 @@ window.allobjects = function() {
     "gridH": 0.5333333611488342,
     "gridW": 0.5333333611488342,
     "spritesheet": "GJ_ParticleSheet-uhd",
-    "type": "deco",
+    "type": "particle",
     "z": 9,
     "default_detail_color_channel": -1,
     "default_z_layer": 3,
@@ -69588,7 +69752,7 @@ window.allobjects = function() {
     "gridH": 0.5333333611488342,
     "gridW": 0.5333333611488342,
     "spritesheet": "GJ_ParticleSheet-uhd",
-    "type": "deco",
+    "type": "particle",
     "z": 9,
     "default_detail_color_channel": -1,
     "default_z_layer": 3,
@@ -69602,7 +69766,7 @@ window.allobjects = function() {
     "gridH": 0.5333333611488342,
     "gridW": 0.5333333611488342,
     "spritesheet": "GJ_ParticleSheet-uhd",
-    "type": "deco",
+    "type": "particle",
     "z": 9,
     "default_detail_color_channel": -1,
     "default_z_layer": 3,
@@ -69616,7 +69780,7 @@ window.allobjects = function() {
     "gridH": 0.5333333611488342,
     "gridW": 0.5333333611488342,
     "spritesheet": "GJ_ParticleSheet-uhd",
-    "type": "deco",
+    "type": "particle",
     "z": 9,
     "default_detail_color_channel": -1,
     "default_z_layer": 3,
@@ -69630,7 +69794,7 @@ window.allobjects = function() {
     "gridH": 0.5333333611488342,
     "gridW": 0.5333333611488342,
     "spritesheet": "GJ_ParticleSheet-uhd",
-    "type": "deco",
+    "type": "particle",
     "z": 9,
     "default_detail_color_channel": -1,
     "default_z_layer": 3,
@@ -69644,7 +69808,7 @@ window.allobjects = function() {
     "gridH": 0.5333333611488342,
     "gridW": 0.5333333611488342,
     "spritesheet": "GJ_ParticleSheet-uhd",
-    "type": "deco",
+    "type": "particle",
     "z": 9,
     "default_detail_color_channel": -1,
     "default_z_layer": 3,
@@ -69658,7 +69822,7 @@ window.allobjects = function() {
     "gridH": 0.5333333611488342,
     "gridW": 0.5333333611488342,
     "spritesheet": "GJ_ParticleSheet-uhd",
-    "type": "deco",
+    "type": "particle",
     "z": 9,
     "default_detail_color_channel": -1,
     "default_z_layer": 3,
@@ -69672,7 +69836,7 @@ window.allobjects = function() {
     "gridH": 0.5333333611488342,
     "gridW": 0.5333333611488342,
     "spritesheet": "GJ_ParticleSheet-uhd",
-    "type": "deco",
+    "type": "particle",
     "z": 9,
     "default_detail_color_channel": -1,
     "default_z_layer": 3,
@@ -69686,7 +69850,7 @@ window.allobjects = function() {
     "gridH": 0.5333333611488342,
     "gridW": 0.5333333611488342,
     "spritesheet": "GJ_ParticleSheet-uhd",
-    "type": "deco",
+    "type": "particle",
     "z": 9,
     "default_detail_color_channel": -1,
     "default_z_layer": 3,
@@ -69700,7 +69864,7 @@ window.allobjects = function() {
     "gridH": 0.5333333611488342,
     "gridW": 0.5333333611488342,
     "spritesheet": "GJ_ParticleSheet-uhd",
-    "type": "deco",
+    "type": "particle",
     "z": 9,
     "default_detail_color_channel": -1,
     "default_z_layer": 3,
@@ -69714,7 +69878,7 @@ window.allobjects = function() {
     "gridH": 0.5333333611488342,
     "gridW": 0.5333333611488342,
     "spritesheet": "GJ_ParticleSheet-uhd",
-    "type": "deco",
+    "type": "particle",
     "z": 9,
     "default_detail_color_channel": -1,
     "default_z_layer": 3,
@@ -69728,7 +69892,7 @@ window.allobjects = function() {
     "gridH": 0.5333333611488342,
     "gridW": 0.5333333611488342,
     "spritesheet": "GJ_ParticleSheet-uhd",
-    "type": "deco",
+    "type": "particle",
     "z": 9,
     "default_detail_color_channel": -1,
     "default_z_layer": 3,
@@ -69742,7 +69906,7 @@ window.allobjects = function() {
     "gridH": 0.5333333611488342,
     "gridW": 0.5333333611488342,
     "spritesheet": "GJ_ParticleSheet-uhd",
-    "type": "deco",
+    "type": "particle",
     "z": 9,
     "default_detail_color_channel": -1,
     "default_z_layer": 3,
@@ -69756,7 +69920,7 @@ window.allobjects = function() {
     "gridH": 0.5333333611488342,
     "gridW": 0.5333333611488342,
     "spritesheet": "GJ_ParticleSheet-uhd",
-    "type": "deco",
+    "type": "particle",
     "z": 9,
     "default_detail_color_channel": -1,
     "default_z_layer": 3,
@@ -69770,7 +69934,7 @@ window.allobjects = function() {
     "gridH": 0.5333333611488342,
     "gridW": 0.5333333611488342,
     "spritesheet": "GJ_ParticleSheet-uhd",
-    "type": "deco",
+    "type": "particle",
     "z": 9,
     "default_detail_color_channel": -1,
     "default_z_layer": 3,
@@ -69784,7 +69948,7 @@ window.allobjects = function() {
     "gridH": 0.5333333611488342,
     "gridW": 0.5333333611488342,
     "spritesheet": "GJ_ParticleSheet-uhd",
-    "type": "deco",
+    "type": "particle",
     "z": 9,
     "default_detail_color_channel": -1,
     "default_z_layer": 3,
@@ -69798,7 +69962,7 @@ window.allobjects = function() {
     "gridH": 0.5333333611488342,
     "gridW": 0.5333333611488342,
     "spritesheet": "GJ_ParticleSheet-uhd",
-    "type": "deco",
+    "type": "particle",
     "z": 9,
     "default_detail_color_channel": -1,
     "default_z_layer": 3,
@@ -69812,7 +69976,7 @@ window.allobjects = function() {
     "gridH": 0.5333333611488342,
     "gridW": 0.5333333611488342,
     "spritesheet": "GJ_ParticleSheet-uhd",
-    "type": "deco",
+    "type": "particle",
     "z": 9,
     "default_detail_color_channel": -1,
     "default_z_layer": 3,
@@ -69826,7 +69990,7 @@ window.allobjects = function() {
     "gridH": 0.5333333611488342,
     "gridW": 0.5333333611488342,
     "spritesheet": "GJ_ParticleSheet-uhd",
-    "type": "deco",
+    "type": "particle",
     "z": 9,
     "default_detail_color_channel": -1,
     "default_z_layer": 3,
@@ -69840,7 +70004,7 @@ window.allobjects = function() {
     "gridH": 0.5333333611488342,
     "gridW": 0.5333333611488342,
     "spritesheet": "GJ_ParticleSheet-uhd",
-    "type": "deco",
+    "type": "particle",
     "z": 9,
     "default_detail_color_channel": -1,
     "default_z_layer": 3,
@@ -69854,7 +70018,7 @@ window.allobjects = function() {
     "gridH": 0.5333333611488342,
     "gridW": 0.5333333611488342,
     "spritesheet": "GJ_ParticleSheet-uhd",
-    "type": "deco",
+    "type": "particle",
     "z": 9,
     "default_detail_color_channel": -1,
     "default_z_layer": 3,
@@ -69868,7 +70032,7 @@ window.allobjects = function() {
     "gridH": 0.5333333611488342,
     "gridW": 0.5333333611488342,
     "spritesheet": "GJ_ParticleSheet-uhd",
-    "type": "deco",
+    "type": "particle",
     "z": 9,
     "default_detail_color_channel": -1,
     "default_z_layer": 3,
@@ -69882,7 +70046,7 @@ window.allobjects = function() {
     "gridH": 0.5333333611488342,
     "gridW": 0.5333333611488342,
     "spritesheet": "GJ_ParticleSheet-uhd",
-    "type": "deco",
+    "type": "particle",
     "z": 9,
     "default_detail_color_channel": -1,
     "default_z_layer": 3,
@@ -69896,7 +70060,7 @@ window.allobjects = function() {
     "gridH": 0.5333333611488342,
     "gridW": 0.5333333611488342,
     "spritesheet": "GJ_ParticleSheet-uhd",
-    "type": "deco",
+    "type": "particle",
     "z": 9,
     "default_detail_color_channel": -1,
     "default_z_layer": 3,
@@ -69910,7 +70074,7 @@ window.allobjects = function() {
     "gridH": 0.5333333611488342,
     "gridW": 0.5333333611488342,
     "spritesheet": "GJ_ParticleSheet-uhd",
-    "type": "deco",
+    "type": "particle",
     "z": 9,
     "default_detail_color_channel": -1,
     "default_z_layer": 3,
@@ -69924,7 +70088,7 @@ window.allobjects = function() {
     "gridH": 0.5333333611488342,
     "gridW": 0.5333333611488342,
     "spritesheet": "GJ_ParticleSheet-uhd",
-    "type": "deco",
+    "type": "particle",
     "z": 9,
     "default_detail_color_channel": -1,
     "default_z_layer": 3,
@@ -69938,7 +70102,7 @@ window.allobjects = function() {
     "gridH": 0.5333333611488342,
     "gridW": 0.5333333611488342,
     "spritesheet": "GJ_ParticleSheet-uhd",
-    "type": "deco",
+    "type": "particle",
     "z": 9,
     "default_detail_color_channel": -1,
     "default_z_layer": 3,
@@ -69952,7 +70116,7 @@ window.allobjects = function() {
     "gridH": 0.5333333611488342,
     "gridW": 0.5333333611488342,
     "spritesheet": "GJ_ParticleSheet-uhd",
-    "type": "deco",
+    "type": "particle",
     "z": 9,
     "default_detail_color_channel": -1,
     "default_z_layer": 3,
@@ -69966,7 +70130,7 @@ window.allobjects = function() {
     "gridH": 0.5333333611488342,
     "gridW": 0.5333333611488342,
     "spritesheet": "GJ_ParticleSheet-uhd",
-    "type": "deco",
+    "type": "particle",
     "z": 9,
     "default_detail_color_channel": -1,
     "default_z_layer": 3,
@@ -69980,7 +70144,7 @@ window.allobjects = function() {
     "gridH": 0.5333333611488342,
     "gridW": 0.5333333611488342,
     "spritesheet": "GJ_ParticleSheet-uhd",
-    "type": "deco",
+    "type": "particle",
     "z": 9,
     "default_detail_color_channel": -1,
     "default_z_layer": 3,
@@ -69994,7 +70158,7 @@ window.allobjects = function() {
     "gridH": 0.5333333611488342,
     "gridW": 0.5333333611488342,
     "spritesheet": "GJ_ParticleSheet-uhd",
-    "type": "deco",
+    "type": "particle",
     "z": 9,
     "default_detail_color_channel": -1,
     "default_z_layer": 3,
@@ -70008,7 +70172,7 @@ window.allobjects = function() {
     "gridH": 0.5333333611488342,
     "gridW": 0.5333333611488342,
     "spritesheet": "GJ_ParticleSheet-uhd",
-    "type": "deco",
+    "type": "particle",
     "z": 9,
     "default_detail_color_channel": -1,
     "default_z_layer": 3,
@@ -70022,7 +70186,7 @@ window.allobjects = function() {
     "gridH": 0.5333333611488342,
     "gridW": 0.5333333611488342,
     "spritesheet": "GJ_ParticleSheet-uhd",
-    "type": "deco",
+    "type": "particle",
     "z": 9,
     "default_detail_color_channel": -1,
     "default_z_layer": 3,
@@ -70036,7 +70200,7 @@ window.allobjects = function() {
     "gridH": 0.5333333611488342,
     "gridW": 0.5333333611488342,
     "spritesheet": "GJ_ParticleSheet-uhd",
-    "type": "deco",
+    "type": "particle",
     "z": 9,
     "default_detail_color_channel": -1,
     "default_z_layer": 3,
@@ -70050,7 +70214,7 @@ window.allobjects = function() {
     "gridH": 0.5333333611488342,
     "gridW": 0.5333333611488342,
     "spritesheet": "GJ_ParticleSheet-uhd",
-    "type": "deco",
+    "type": "particle",
     "z": 9,
     "default_detail_color_channel": -1,
     "default_z_layer": 3,
@@ -70064,7 +70228,7 @@ window.allobjects = function() {
     "gridH": 0.5333333611488342,
     "gridW": 0.5333333611488342,
     "spritesheet": "GJ_ParticleSheet-uhd",
-    "type": "deco",
+    "type": "particle",
     "z": 9,
     "default_detail_color_channel": -1,
     "default_z_layer": 3,
@@ -70078,7 +70242,7 @@ window.allobjects = function() {
     "gridH": 0.5333333611488342,
     "gridW": 0.5333333611488342,
     "spritesheet": "GJ_ParticleSheet-uhd",
-    "type": "deco",
+    "type": "particle",
     "z": 9,
     "default_detail_color_channel": -1,
     "default_z_layer": 3,
@@ -70092,7 +70256,7 @@ window.allobjects = function() {
     "gridH": 0.5333333611488342,
     "gridW": 0.5333333611488342,
     "spritesheet": "GJ_ParticleSheet-uhd",
-    "type": "deco",
+    "type": "particle",
     "z": 9,
     "default_detail_color_channel": -1,
     "default_z_layer": 3,
@@ -70106,7 +70270,7 @@ window.allobjects = function() {
     "gridH": 0.5333333611488342,
     "gridW": 0.5333333611488342,
     "spritesheet": "GJ_ParticleSheet-uhd",
-    "type": "deco",
+    "type": "particle",
     "z": 9,
     "default_detail_color_channel": -1,
     "default_z_layer": 3,
@@ -70120,7 +70284,7 @@ window.allobjects = function() {
     "gridH": 0.5333333611488342,
     "gridW": 0.5333333611488342,
     "spritesheet": "GJ_ParticleSheet-uhd",
-    "type": "deco",
+    "type": "particle",
     "z": 9,
     "default_detail_color_channel": -1,
     "default_z_layer": 3,
@@ -70134,7 +70298,7 @@ window.allobjects = function() {
     "gridH": 0.5333333611488342,
     "gridW": 0.5333333611488342,
     "spritesheet": "GJ_ParticleSheet-uhd",
-    "type": "deco",
+    "type": "particle",
     "z": 9,
     "default_detail_color_channel": -1,
     "default_z_layer": 3,
@@ -70148,7 +70312,7 @@ window.allobjects = function() {
     "gridH": 0.5333333611488342,
     "gridW": 0.5333333611488342,
     "spritesheet": "GJ_ParticleSheet-uhd",
-    "type": "deco",
+    "type": "particle",
     "z": 9,
     "default_detail_color_channel": -1,
     "default_z_layer": 3,
@@ -70162,7 +70326,7 @@ window.allobjects = function() {
     "gridH": 0.5333333611488342,
     "gridW": 0.5333333611488342,
     "spritesheet": "GJ_ParticleSheet-uhd",
-    "type": "deco",
+    "type": "particle",
     "z": 9,
     "default_detail_color_channel": -1,
     "default_z_layer": 3,
@@ -70176,7 +70340,7 @@ window.allobjects = function() {
     "gridH": 0.5333333611488342,
     "gridW": 0.5333333611488342,
     "spritesheet": "GJ_ParticleSheet-uhd",
-    "type": "deco",
+    "type": "particle",
     "z": 9,
     "default_detail_color_channel": -1,
     "default_z_layer": 3,
@@ -70190,7 +70354,7 @@ window.allobjects = function() {
     "gridH": 0.5333333611488342,
     "gridW": 0.5333333611488342,
     "spritesheet": "GJ_ParticleSheet-uhd",
-    "type": "deco",
+    "type": "particle",
     "z": 9,
     "default_detail_color_channel": -1,
     "default_z_layer": 3,
@@ -70204,7 +70368,7 @@ window.allobjects = function() {
     "gridH": 0.5333333611488342,
     "gridW": 0.5333333611488342,
     "spritesheet": "GJ_ParticleSheet-uhd",
-    "type": "deco",
+    "type": "particle",
     "z": 9,
     "default_detail_color_channel": -1,
     "default_z_layer": 3,
@@ -70218,7 +70382,7 @@ window.allobjects = function() {
     "gridH": 0.5333333611488342,
     "gridW": 0.5333333611488342,
     "spritesheet": "GJ_ParticleSheet-uhd",
-    "type": "deco",
+    "type": "particle",
     "z": 9,
     "default_detail_color_channel": -1,
     "default_z_layer": 3,
@@ -70232,7 +70396,7 @@ window.allobjects = function() {
     "gridH": 0.5333333611488342,
     "gridW": 0.5333333611488342,
     "spritesheet": "GJ_ParticleSheet-uhd",
-    "type": "deco",
+    "type": "particle",
     "z": 9,
     "default_detail_color_channel": -1,
     "default_z_layer": 3,
@@ -70246,7 +70410,7 @@ window.allobjects = function() {
     "gridH": 0.5333333611488342,
     "gridW": 0.5333333611488342,
     "spritesheet": "GJ_ParticleSheet-uhd",
-    "type": "deco",
+    "type": "particle",
     "z": 9,
     "default_detail_color_channel": -1,
     "default_z_layer": 3,
@@ -70260,7 +70424,7 @@ window.allobjects = function() {
     "gridH": 0.5333333611488342,
     "gridW": 0.5333333611488342,
     "spritesheet": "GJ_ParticleSheet-uhd",
-    "type": "deco",
+    "type": "particle",
     "z": 9,
     "default_detail_color_channel": -1,
     "default_z_layer": 3,
@@ -70274,7 +70438,7 @@ window.allobjects = function() {
     "gridH": 0.5333333611488342,
     "gridW": 0.5333333611488342,
     "spritesheet": "GJ_ParticleSheet-uhd",
-    "type": "deco",
+    "type": "particle",
     "z": 9,
     "default_detail_color_channel": -1,
     "default_z_layer": 3,
@@ -70288,7 +70452,7 @@ window.allobjects = function() {
     "gridH": 0.5333333611488342,
     "gridW": 0.5333333611488342,
     "spritesheet": "GJ_ParticleSheet-uhd",
-    "type": "deco",
+    "type": "particle",
     "z": 9,
     "default_detail_color_channel": -1,
     "default_z_layer": 3,
@@ -70302,7 +70466,7 @@ window.allobjects = function() {
     "gridH": 0.5333333611488342,
     "gridW": 0.5333333611488342,
     "spritesheet": "GJ_ParticleSheet-uhd",
-    "type": "deco",
+    "type": "particle",
     "z": 9,
     "default_detail_color_channel": -1,
     "default_z_layer": 3,
@@ -70316,7 +70480,7 @@ window.allobjects = function() {
     "gridH": 0.5333333611488342,
     "gridW": 0.5333333611488342,
     "spritesheet": "GJ_ParticleSheet-uhd",
-    "type": "deco",
+    "type": "particle",
     "z": 9,
     "default_detail_color_channel": -1,
     "default_z_layer": 3,
@@ -70330,7 +70494,7 @@ window.allobjects = function() {
     "gridH": 0.5333333611488342,
     "gridW": 0.5333333611488342,
     "spritesheet": "GJ_ParticleSheet-uhd",
-    "type": "deco",
+    "type": "particle",
     "z": 9,
     "default_detail_color_channel": -1,
     "default_z_layer": 3,
@@ -70344,7 +70508,7 @@ window.allobjects = function() {
     "gridH": 0.5333333611488342,
     "gridW": 0.5333333611488342,
     "spritesheet": "GJ_ParticleSheet-uhd",
-    "type": "deco",
+    "type": "particle",
     "z": 9,
     "default_detail_color_channel": -1,
     "default_z_layer": 3,
@@ -70358,7 +70522,7 @@ window.allobjects = function() {
     "gridH": 0.5333333611488342,
     "gridW": 0.5333333611488342,
     "spritesheet": "GJ_ParticleSheet-uhd",
-    "type": "deco",
+    "type": "particle",
     "z": 9,
     "default_detail_color_channel": -1,
     "default_z_layer": 3,
@@ -70372,7 +70536,7 @@ window.allobjects = function() {
     "gridH": 0.5333333611488342,
     "gridW": 0.5333333611488342,
     "spritesheet": "GJ_ParticleSheet-uhd",
-    "type": "deco",
+    "type": "particle",
     "z": 9,
     "default_detail_color_channel": -1,
     "default_z_layer": 3,
@@ -70386,7 +70550,7 @@ window.allobjects = function() {
     "gridH": 0.5333333611488342,
     "gridW": 0.5333333611488342,
     "spritesheet": "GJ_ParticleSheet-uhd",
-    "type": "deco",
+    "type": "particle",
     "z": 9,
     "default_detail_color_channel": -1,
     "default_z_layer": 3,
@@ -70400,7 +70564,7 @@ window.allobjects = function() {
     "gridH": 0.5333333611488342,
     "gridW": 0.5333333611488342,
     "spritesheet": "GJ_ParticleSheet-uhd",
-    "type": "deco",
+    "type": "particle",
     "z": 9,
     "default_detail_color_channel": -1,
     "default_z_layer": 3,
@@ -70414,7 +70578,7 @@ window.allobjects = function() {
     "gridH": 0.5333333611488342,
     "gridW": 0.5333333611488342,
     "spritesheet": "GJ_ParticleSheet-uhd",
-    "type": "deco",
+    "type": "particle",
     "z": 9,
     "default_detail_color_channel": -1,
     "default_z_layer": 3,
@@ -70428,7 +70592,7 @@ window.allobjects = function() {
     "gridH": 0.5333333611488342,
     "gridW": 0.5333333611488342,
     "spritesheet": "GJ_ParticleSheet-uhd",
-    "type": "deco",
+    "type": "particle",
     "z": 9,
     "default_detail_color_channel": -1,
     "default_z_layer": 3,
@@ -70442,7 +70606,7 @@ window.allobjects = function() {
     "gridH": 0.5333333611488342,
     "gridW": 0.5333333611488342,
     "spritesheet": "GJ_ParticleSheet-uhd",
-    "type": "deco",
+    "type": "particle",
     "z": 9,
     "default_detail_color_channel": -1,
     "default_z_layer": 3,
@@ -70456,7 +70620,7 @@ window.allobjects = function() {
     "gridH": 0.5333333611488342,
     "gridW": 0.5333333611488342,
     "spritesheet": "GJ_ParticleSheet-uhd",
-    "type": "deco",
+    "type": "particle",
     "z": 9,
     "default_detail_color_channel": -1,
     "default_z_layer": 3,
@@ -70470,7 +70634,7 @@ window.allobjects = function() {
     "gridH": 0.5333333611488342,
     "gridW": 0.5333333611488342,
     "spritesheet": "GJ_ParticleSheet-uhd",
-    "type": "deco",
+    "type": "particle",
     "z": 9,
     "default_detail_color_channel": -1,
     "default_z_layer": 3,
@@ -70484,7 +70648,7 @@ window.allobjects = function() {
     "gridH": 0.5333333611488342,
     "gridW": 0.5333333611488342,
     "spritesheet": "GJ_ParticleSheet-uhd",
-    "type": "deco",
+    "type": "particle",
     "z": 9,
     "default_detail_color_channel": -1,
     "default_z_layer": 3,
@@ -70498,7 +70662,7 @@ window.allobjects = function() {
     "gridH": 0.5333333611488342,
     "gridW": 0.5333333611488342,
     "spritesheet": "GJ_ParticleSheet-uhd",
-    "type": "deco",
+    "type": "particle",
     "z": 9,
     "default_detail_color_channel": -1,
     "default_z_layer": 3,
@@ -70512,7 +70676,7 @@ window.allobjects = function() {
     "gridH": 0.5333333611488342,
     "gridW": 0.5333333611488342,
     "spritesheet": "GJ_ParticleSheet-uhd",
-    "type": "deco",
+    "type": "particle",
     "z": 9,
     "default_detail_color_channel": -1,
     "default_z_layer": 3,
@@ -70526,7 +70690,7 @@ window.allobjects = function() {
     "gridH": 0.5333333611488342,
     "gridW": 0.5333333611488342,
     "spritesheet": "GJ_ParticleSheet-uhd",
-    "type": "deco",
+    "type": "particle",
     "z": 9,
     "default_detail_color_channel": -1,
     "default_z_layer": 3,
@@ -70540,7 +70704,7 @@ window.allobjects = function() {
     "gridH": 0.5333333611488342,
     "gridW": 0.5333333611488342,
     "spritesheet": "GJ_ParticleSheet-uhd",
-    "type": "deco",
+    "type": "particle",
     "z": 9,
     "default_detail_color_channel": -1,
     "default_z_layer": 3,
@@ -70554,7 +70718,7 @@ window.allobjects = function() {
     "gridH": 0.5333333611488342,
     "gridW": 0.5333333611488342,
     "spritesheet": "GJ_ParticleSheet-uhd",
-    "type": "deco",
+    "type": "particle",
     "z": 9,
     "default_detail_color_channel": -1,
     "default_z_layer": 3,
@@ -70568,7 +70732,7 @@ window.allobjects = function() {
     "gridH": 0.5333333611488342,
     "gridW": 0.5333333611488342,
     "spritesheet": "GJ_ParticleSheet-uhd",
-    "type": "deco",
+    "type": "particle",
     "z": 9,
     "default_detail_color_channel": -1,
     "default_z_layer": 3,
@@ -70582,7 +70746,7 @@ window.allobjects = function() {
     "gridH": 0.5333333611488342,
     "gridW": 0.5333333611488342,
     "spritesheet": "GJ_ParticleSheet-uhd",
-    "type": "deco",
+    "type": "particle",
     "z": 9,
     "default_detail_color_channel": -1,
     "default_z_layer": 3,
@@ -70596,7 +70760,7 @@ window.allobjects = function() {
     "gridH": 0.5333333611488342,
     "gridW": 0.5333333611488342,
     "spritesheet": "GJ_ParticleSheet-uhd",
-    "type": "deco",
+    "type": "particle",
     "z": 9,
     "default_detail_color_channel": -1,
     "default_z_layer": 3,
@@ -70610,7 +70774,7 @@ window.allobjects = function() {
     "gridH": 0.5333333611488342,
     "gridW": 0.5333333611488342,
     "spritesheet": "GJ_ParticleSheet-uhd",
-    "type": "deco",
+    "type": "particle",
     "z": 9,
     "default_detail_color_channel": -1,
     "default_z_layer": 3,
@@ -70624,7 +70788,7 @@ window.allobjects = function() {
     "gridH": 0.5333333611488342,
     "gridW": 0.5333333611488342,
     "spritesheet": "GJ_ParticleSheet-uhd",
-    "type": "deco",
+    "type": "particle",
     "z": 9,
     "default_detail_color_channel": -1,
     "default_z_layer": 3,
@@ -70638,7 +70802,7 @@ window.allobjects = function() {
     "gridH": 0.5333333611488342,
     "gridW": 0.5333333611488342,
     "spritesheet": "GJ_ParticleSheet-uhd",
-    "type": "deco",
+    "type": "particle",
     "z": 9,
     "default_detail_color_channel": -1,
     "default_z_layer": 3,
@@ -70652,7 +70816,7 @@ window.allobjects = function() {
     "gridH": 0.5333333611488342,
     "gridW": 0.5333333611488342,
     "spritesheet": "GJ_ParticleSheet-uhd",
-    "type": "deco",
+    "type": "particle",
     "z": 9,
     "default_detail_color_channel": -1,
     "default_z_layer": 3,
@@ -70666,7 +70830,7 @@ window.allobjects = function() {
     "gridH": 0.5333333611488342,
     "gridW": 0.5333333611488342,
     "spritesheet": "GJ_ParticleSheet-uhd",
-    "type": "deco",
+    "type": "particle",
     "z": 9,
     "default_detail_color_channel": -1,
     "default_z_layer": 3,
@@ -70680,7 +70844,7 @@ window.allobjects = function() {
     "gridH": 0.5333333611488342,
     "gridW": 0.5333333611488342,
     "spritesheet": "GJ_ParticleSheet-uhd",
-    "type": "deco",
+    "type": "particle",
     "z": 9,
     "default_detail_color_channel": -1,
     "default_z_layer": 3,
@@ -70694,7 +70858,7 @@ window.allobjects = function() {
     "gridH": 0.5333333611488342,
     "gridW": 0.5333333611488342,
     "spritesheet": "GJ_ParticleSheet-uhd",
-    "type": "deco",
+    "type": "particle",
     "z": 9,
     "default_detail_color_channel": -1,
     "default_z_layer": 3,
@@ -70708,7 +70872,7 @@ window.allobjects = function() {
     "gridH": 0.5333333611488342,
     "gridW": 0.5333333611488342,
     "spritesheet": "GJ_ParticleSheet-uhd",
-    "type": "deco",
+    "type": "particle",
     "z": 9,
     "default_detail_color_channel": -1,
     "default_z_layer": 3,
@@ -70722,7 +70886,7 @@ window.allobjects = function() {
     "gridH": 0.5333333611488342,
     "gridW": 0.5333333611488342,
     "spritesheet": "GJ_ParticleSheet-uhd",
-    "type": "deco",
+    "type": "particle",
     "z": 9,
     "default_detail_color_channel": -1,
     "default_z_layer": 3,
@@ -70736,7 +70900,7 @@ window.allobjects = function() {
     "gridH": 0.5333333611488342,
     "gridW": 0.5333333611488342,
     "spritesheet": "GJ_ParticleSheet-uhd",
-    "type": "deco",
+    "type": "particle",
     "z": 9,
     "default_detail_color_channel": -1,
     "default_z_layer": 3,
@@ -70750,7 +70914,7 @@ window.allobjects = function() {
     "gridH": 0.5333333611488342,
     "gridW": 0.5333333611488342,
     "spritesheet": "GJ_ParticleSheet-uhd",
-    "type": "deco",
+    "type": "particle",
     "z": 9,
     "default_detail_color_channel": -1,
     "default_z_layer": 3,
@@ -70764,7 +70928,7 @@ window.allobjects = function() {
     "gridH": 0.5333333611488342,
     "gridW": 0.5333333611488342,
     "spritesheet": "GJ_ParticleSheet-uhd",
-    "type": "deco",
+    "type": "particle",
     "z": 9,
     "default_detail_color_channel": -1,
     "default_z_layer": 3,
@@ -70778,7 +70942,7 @@ window.allobjects = function() {
     "gridH": 0.5333333611488342,
     "gridW": 0.5333333611488342,
     "spritesheet": "GJ_ParticleSheet-uhd",
-    "type": "deco",
+    "type": "particle",
     "z": 9,
     "default_detail_color_channel": -1,
     "default_z_layer": 3,
@@ -70792,7 +70956,7 @@ window.allobjects = function() {
     "gridH": 0.5333333611488342,
     "gridW": 0.5333333611488342,
     "spritesheet": "GJ_ParticleSheet-uhd",
-    "type": "deco",
+    "type": "particle",
     "z": 9,
     "default_detail_color_channel": -1,
     "default_z_layer": 3,
@@ -70806,7 +70970,7 @@ window.allobjects = function() {
     "gridH": 0.5333333611488342,
     "gridW": 0.5333333611488342,
     "spritesheet": "GJ_ParticleSheet-uhd",
-    "type": "deco",
+    "type": "particle",
     "z": 9,
     "default_detail_color_channel": -1,
     "default_z_layer": 3,
@@ -70820,7 +70984,7 @@ window.allobjects = function() {
     "gridH": 0.5333333611488342,
     "gridW": 0.5333333611488342,
     "spritesheet": "GJ_ParticleSheet-uhd",
-    "type": "deco",
+    "type": "particle",
     "z": 9,
     "default_detail_color_channel": -1,
     "default_z_layer": 3,
@@ -70834,7 +70998,7 @@ window.allobjects = function() {
     "gridH": 0.5333333611488342,
     "gridW": 0.5333333611488342,
     "spritesheet": "GJ_ParticleSheet-uhd",
-    "type": "deco",
+    "type": "particle",
     "z": 9,
     "default_detail_color_channel": -1,
     "default_z_layer": 3,
@@ -70848,7 +71012,7 @@ window.allobjects = function() {
     "gridH": 0.5333333611488342,
     "gridW": 0.5333333611488342,
     "spritesheet": "GJ_ParticleSheet-uhd",
-    "type": "deco",
+    "type": "particle",
     "z": 9,
     "default_detail_color_channel": -1,
     "default_z_layer": 3,
@@ -70862,7 +71026,7 @@ window.allobjects = function() {
     "gridH": 0.5333333611488342,
     "gridW": 0.5333333611488342,
     "spritesheet": "GJ_ParticleSheet-uhd",
-    "type": "deco",
+    "type": "particle",
     "z": 9,
     "default_detail_color_channel": -1,
     "default_z_layer": 3,
@@ -70876,7 +71040,7 @@ window.allobjects = function() {
     "gridH": 0.5333333611488342,
     "gridW": 0.5333333611488342,
     "spritesheet": "GJ_ParticleSheet-uhd",
-    "type": "deco",
+    "type": "particle",
     "z": 9,
     "default_detail_color_channel": -1,
     "default_z_layer": 3,
@@ -70890,7 +71054,7 @@ window.allobjects = function() {
     "gridH": 0.5333333611488342,
     "gridW": 0.5333333611488342,
     "spritesheet": "GJ_ParticleSheet-uhd",
-    "type": "deco",
+    "type": "particle",
     "z": 9,
     "default_detail_color_channel": -1,
     "default_z_layer": 3,
@@ -70904,7 +71068,7 @@ window.allobjects = function() {
     "gridH": 0.5333333611488342,
     "gridW": 0.5333333611488342,
     "spritesheet": "GJ_ParticleSheet-uhd",
-    "type": "deco",
+    "type": "particle",
     "z": 9,
     "default_detail_color_channel": -1,
     "default_z_layer": 3,
@@ -70918,7 +71082,7 @@ window.allobjects = function() {
     "gridH": 0.5333333611488342,
     "gridW": 0.5333333611488342,
     "spritesheet": "GJ_ParticleSheet-uhd",
-    "type": "deco",
+    "type": "particle",
     "z": 9,
     "default_detail_color_channel": -1,
     "default_z_layer": 3,
@@ -70932,7 +71096,7 @@ window.allobjects = function() {
     "gridH": 0.5333333611488342,
     "gridW": 0.5333333611488342,
     "spritesheet": "GJ_ParticleSheet-uhd",
-    "type": "deco",
+    "type": "particle",
     "z": 9,
     "default_detail_color_channel": -1,
     "default_z_layer": 3,
@@ -70946,7 +71110,7 @@ window.allobjects = function() {
     "gridH": 0.5333333611488342,
     "gridW": 0.5333333611488342,
     "spritesheet": "GJ_ParticleSheet-uhd",
-    "type": "deco",
+    "type": "particle",
     "z": 9,
     "default_detail_color_channel": -1,
     "default_z_layer": 3,
@@ -70960,7 +71124,7 @@ window.allobjects = function() {
     "gridH": 0.5333333611488342,
     "gridW": 0.5333333611488342,
     "spritesheet": "GJ_ParticleSheet-uhd",
-    "type": "deco",
+    "type": "particle",
     "z": 9,
     "default_detail_color_channel": -1,
     "default_z_layer": 3,
@@ -70974,7 +71138,7 @@ window.allobjects = function() {
     "gridH": 0.5333333611488342,
     "gridW": 0.5333333611488342,
     "spritesheet": "GJ_ParticleSheet-uhd",
-    "type": "deco",
+    "type": "particle",
     "z": 9,
     "default_detail_color_channel": -1,
     "default_z_layer": 3,
@@ -70988,7 +71152,7 @@ window.allobjects = function() {
     "gridH": 0.5333333611488342,
     "gridW": 0.5333333611488342,
     "spritesheet": "GJ_ParticleSheet-uhd",
-    "type": "deco",
+    "type": "particle",
     "z": 9,
     "default_detail_color_channel": -1,
     "default_z_layer": 3,
@@ -71002,7 +71166,7 @@ window.allobjects = function() {
     "gridH": 0.5333333611488342,
     "gridW": 0.5333333611488342,
     "spritesheet": "GJ_ParticleSheet-uhd",
-    "type": "deco",
+    "type": "particle",
     "z": 9,
     "default_detail_color_channel": -1,
     "default_z_layer": 3,
@@ -71016,7 +71180,7 @@ window.allobjects = function() {
     "gridH": 0.5333333611488342,
     "gridW": 0.5333333611488342,
     "spritesheet": "GJ_ParticleSheet-uhd",
-    "type": "deco",
+    "type": "particle",
     "z": 9,
     "default_detail_color_channel": -1,
     "default_z_layer": 3,
@@ -71030,7 +71194,7 @@ window.allobjects = function() {
     "gridH": 0.5333333611488342,
     "gridW": 0.5333333611488342,
     "spritesheet": "GJ_ParticleSheet-uhd",
-    "type": "deco",
+    "type": "particle",
     "z": 9,
     "default_detail_color_channel": -1,
     "default_z_layer": 3,
@@ -71044,7 +71208,7 @@ window.allobjects = function() {
     "gridH": 0.5333333611488342,
     "gridW": 0.5333333611488342,
     "spritesheet": "GJ_ParticleSheet-uhd",
-    "type": "deco",
+    "type": "particle",
     "z": 9,
     "default_detail_color_channel": -1,
     "default_z_layer": 3,
@@ -71058,7 +71222,7 @@ window.allobjects = function() {
     "gridH": 0.5333333611488342,
     "gridW": 0.5333333611488342,
     "spritesheet": "GJ_ParticleSheet-uhd",
-    "type": "deco",
+    "type": "particle",
     "z": 9,
     "default_detail_color_channel": -1,
     "default_z_layer": 3,
@@ -71072,7 +71236,7 @@ window.allobjects = function() {
     "gridH": 0.5333333611488342,
     "gridW": 0.5333333611488342,
     "spritesheet": "GJ_ParticleSheet-uhd",
-    "type": "deco",
+    "type": "particle",
     "z": 9,
     "default_detail_color_channel": -1,
     "default_z_layer": 3,
@@ -71086,7 +71250,7 @@ window.allobjects = function() {
     "gridH": 0.5333333611488342,
     "gridW": 0.5333333611488342,
     "spritesheet": "GJ_ParticleSheet-uhd",
-    "type": "deco",
+    "type": "particle",
     "z": 9,
     "default_detail_color_channel": -1,
     "default_z_layer": 3,
@@ -71100,7 +71264,7 @@ window.allobjects = function() {
     "gridH": 0.5333333611488342,
     "gridW": 0.5333333611488342,
     "spritesheet": "GJ_ParticleSheet-uhd",
-    "type": "deco",
+    "type": "particle",
     "z": 9,
     "default_detail_color_channel": -1,
     "default_z_layer": 3,
@@ -71114,7 +71278,7 @@ window.allobjects = function() {
     "gridH": 0.5333333611488342,
     "gridW": 0.5333333611488342,
     "spritesheet": "GJ_ParticleSheet-uhd",
-    "type": "deco",
+    "type": "particle",
     "z": 9,
     "default_detail_color_channel": -1,
     "default_z_layer": 3,
@@ -71128,7 +71292,7 @@ window.allobjects = function() {
     "gridH": 0.5333333611488342,
     "gridW": 0.5333333611488342,
     "spritesheet": "GJ_ParticleSheet-uhd",
-    "type": "deco",
+    "type": "particle",
     "z": 9,
     "default_detail_color_channel": -1,
     "default_z_layer": 3,
@@ -71142,7 +71306,7 @@ window.allobjects = function() {
     "gridH": 0.5333333611488342,
     "gridW": 0.5333333611488342,
     "spritesheet": "GJ_ParticleSheet-uhd",
-    "type": "deco",
+    "type": "particle",
     "z": 9,
     "default_detail_color_channel": -1,
     "default_z_layer": 3,
@@ -71156,7 +71320,7 @@ window.allobjects = function() {
     "gridH": 0.5333333611488342,
     "gridW": 0.5333333611488342,
     "spritesheet": "GJ_ParticleSheet-uhd",
-    "type": "deco",
+    "type": "particle",
     "z": 9,
     "default_detail_color_channel": -1,
     "default_z_layer": 3,
@@ -71170,7 +71334,7 @@ window.allobjects = function() {
     "gridH": 0.5333333611488342,
     "gridW": 0.5333333611488342,
     "spritesheet": "GJ_ParticleSheet-uhd",
-    "type": "deco",
+    "type": "particle",
     "z": 9,
     "default_detail_color_channel": -1,
     "default_z_layer": 3,
@@ -71184,7 +71348,7 @@ window.allobjects = function() {
     "gridH": 0.5333333611488342,
     "gridW": 0.5333333611488342,
     "spritesheet": "GJ_ParticleSheet-uhd",
-    "type": "deco",
+    "type": "particle",
     "z": 9,
     "default_detail_color_channel": -1,
     "default_z_layer": 3,
@@ -71198,7 +71362,7 @@ window.allobjects = function() {
     "gridH": 0.5333333611488342,
     "gridW": 0.5333333611488342,
     "spritesheet": "GJ_ParticleSheet-uhd",
-    "type": "deco",
+    "type": "particle",
     "z": 9,
     "default_detail_color_channel": -1,
     "default_z_layer": 3,
@@ -71212,7 +71376,7 @@ window.allobjects = function() {
     "gridH": 0.5333333611488342,
     "gridW": 0.5333333611488342,
     "spritesheet": "GJ_ParticleSheet-uhd",
-    "type": "deco",
+    "type": "particle",
     "z": 9,
     "default_detail_color_channel": -1,
     "default_z_layer": 3,
@@ -71226,7 +71390,7 @@ window.allobjects = function() {
     "gridH": 0.5333333611488342,
     "gridW": 0.5333333611488342,
     "spritesheet": "GJ_ParticleSheet-uhd",
-    "type": "deco",
+    "type": "particle",
     "z": 9,
     "default_detail_color_channel": -1,
     "default_z_layer": 3,
@@ -71240,7 +71404,7 @@ window.allobjects = function() {
     "gridH": 0.5333333611488342,
     "gridW": 0.5333333611488342,
     "spritesheet": "GJ_ParticleSheet-uhd",
-    "type": "deco",
+    "type": "particle",
     "z": 9,
     "default_detail_color_channel": -1,
     "default_z_layer": 3,
@@ -71254,7 +71418,7 @@ window.allobjects = function() {
     "gridH": 0.5333333611488342,
     "gridW": 0.5333333611488342,
     "spritesheet": "GJ_ParticleSheet-uhd",
-    "type": "deco",
+    "type": "particle",
     "z": 9,
     "default_detail_color_channel": -1,
     "default_z_layer": 3,
@@ -71268,7 +71432,7 @@ window.allobjects = function() {
     "gridH": 0.5333333611488342,
     "gridW": 0.5333333611488342,
     "spritesheet": "GJ_ParticleSheet-uhd",
-    "type": "deco",
+    "type": "particle",
     "z": 9,
     "default_detail_color_channel": -1,
     "default_z_layer": 3,
@@ -71282,7 +71446,7 @@ window.allobjects = function() {
     "gridH": 0.5333333611488342,
     "gridW": 0.5333333611488342,
     "spritesheet": "GJ_ParticleSheet-uhd",
-    "type": "deco",
+    "type": "particle",
     "z": 9,
     "default_detail_color_channel": -1,
     "default_z_layer": 3,
@@ -71296,7 +71460,7 @@ window.allobjects = function() {
     "gridH": 0.5333333611488342,
     "gridW": 0.5333333611488342,
     "spritesheet": "GJ_ParticleSheet-uhd",
-    "type": "deco",
+    "type": "particle",
     "z": 9,
     "default_detail_color_channel": -1,
     "default_z_layer": 3,
@@ -71310,7 +71474,7 @@ window.allobjects = function() {
     "gridH": 0.5333333611488342,
     "gridW": 0.5333333611488342,
     "spritesheet": "GJ_ParticleSheet-uhd",
-    "type": "deco",
+    "type": "particle",
     "z": 9,
     "default_detail_color_channel": -1,
     "default_z_layer": 3,
@@ -71324,7 +71488,7 @@ window.allobjects = function() {
     "gridH": 0.5333333611488342,
     "gridW": 0.5333333611488342,
     "spritesheet": "GJ_ParticleSheet-uhd",
-    "type": "deco",
+    "type": "particle",
     "z": 9,
     "default_detail_color_channel": -1,
     "default_z_layer": 3,
@@ -71338,7 +71502,7 @@ window.allobjects = function() {
     "gridH": 0.5333333611488342,
     "gridW": 0.5333333611488342,
     "spritesheet": "GJ_ParticleSheet-uhd",
-    "type": "deco",
+    "type": "particle",
     "z": 9,
     "default_detail_color_channel": -1,
     "default_z_layer": 3,
@@ -71352,7 +71516,7 @@ window.allobjects = function() {
     "gridH": 0.5333333611488342,
     "gridW": 0.5333333611488342,
     "spritesheet": "GJ_ParticleSheet-uhd",
-    "type": "deco",
+    "type": "particle",
     "z": 9,
     "default_detail_color_channel": -1,
     "default_z_layer": 3,
@@ -71366,7 +71530,7 @@ window.allobjects = function() {
     "gridH": 0.5333333611488342,
     "gridW": 0.5333333611488342,
     "spritesheet": "GJ_ParticleSheet-uhd",
-    "type": "deco",
+    "type": "particle",
     "z": 9,
     "default_detail_color_channel": -1,
     "default_z_layer": 3,
@@ -71380,7 +71544,7 @@ window.allobjects = function() {
     "gridH": 1.0666667222976685,
     "gridW": 1.0666667222976685,
     "spritesheet": "GJ_ParticleSheet-uhd",
-    "type": "deco",
+    "type": "particle",
     "z": 9,
     "default_detail_color_channel": -1,
     "default_z_layer": 3,
@@ -71394,7 +71558,7 @@ window.allobjects = function() {
     "gridH": 1.0666667222976685,
     "gridW": 1.0666667222976685,
     "spritesheet": "GJ_ParticleSheet-uhd",
-    "type": "deco",
+    "type": "particle",
     "z": 9,
     "default_detail_color_channel": -1,
     "default_z_layer": 3,
@@ -71408,7 +71572,7 @@ window.allobjects = function() {
     "gridH": 1.0666667222976685,
     "gridW": 1.0666667222976685,
     "spritesheet": "GJ_ParticleSheet-uhd",
-    "type": "deco",
+    "type": "particle",
     "z": 9,
     "default_detail_color_channel": -1,
     "default_z_layer": 3,
@@ -71422,7 +71586,7 @@ window.allobjects = function() {
     "gridH": 1.0666667222976685,
     "gridW": 1.0666667222976685,
     "spritesheet": "GJ_ParticleSheet-uhd",
-    "type": "deco",
+    "type": "particle",
     "z": 9,
     "default_detail_color_channel": -1,
     "default_z_layer": 3,
@@ -71436,7 +71600,7 @@ window.allobjects = function() {
     "gridH": 1.0666667222976685,
     "gridW": 1.0666667222976685,
     "spritesheet": "GJ_ParticleSheet-uhd",
-    "type": "deco",
+    "type": "particle",
     "z": 9,
     "default_detail_color_channel": -1,
     "default_z_layer": 3,
@@ -71450,7 +71614,7 @@ window.allobjects = function() {
     "gridH": 1.0666667222976685,
     "gridW": 1.0666667222976685,
     "spritesheet": "GJ_ParticleSheet-uhd",
-    "type": "deco",
+    "type": "particle",
     "z": 9,
     "default_detail_color_channel": -1,
     "default_z_layer": 3,
@@ -71464,7 +71628,7 @@ window.allobjects = function() {
     "gridH": 1.0666667222976685,
     "gridW": 1.0666667222976685,
     "spritesheet": "GJ_ParticleSheet-uhd",
-    "type": "deco",
+    "type": "particle",
     "z": 9,
     "default_detail_color_channel": -1,
     "default_z_layer": 3,
@@ -71478,7 +71642,7 @@ window.allobjects = function() {
     "gridH": 1.0666667222976685,
     "gridW": 1.0666667222976685,
     "spritesheet": "GJ_ParticleSheet-uhd",
-    "type": "deco",
+    "type": "particle",
     "z": 9,
     "default_detail_color_channel": -1,
     "default_z_layer": 3,
@@ -71492,7 +71656,7 @@ window.allobjects = function() {
     "gridH": 1.0666667222976685,
     "gridW": 1.0666667222976685,
     "spritesheet": "GJ_ParticleSheet-uhd",
-    "type": "deco",
+    "type": "particle",
     "z": 9,
     "default_detail_color_channel": -1,
     "default_z_layer": 3,
@@ -71506,7 +71670,7 @@ window.allobjects = function() {
     "gridH": 1.0666667222976685,
     "gridW": 1.0666667222976685,
     "spritesheet": "GJ_ParticleSheet-uhd",
-    "type": "deco",
+    "type": "particle",
     "z": 9,
     "default_detail_color_channel": -1,
     "default_z_layer": 3,
@@ -71520,7 +71684,7 @@ window.allobjects = function() {
     "gridH": 1.0666667222976685,
     "gridW": 1.0666667222976685,
     "spritesheet": "GJ_ParticleSheet-uhd",
-    "type": "deco",
+    "type": "particle",
     "z": 9,
     "default_detail_color_channel": -1,
     "default_z_layer": 3,
@@ -71534,7 +71698,7 @@ window.allobjects = function() {
     "gridH": 1.0666667222976685,
     "gridW": 1.0666667222976685,
     "spritesheet": "GJ_ParticleSheet-uhd",
-    "type": "deco",
+    "type": "particle",
     "z": 9,
     "default_detail_color_channel": -1,
     "default_z_layer": 3,
@@ -71548,7 +71712,7 @@ window.allobjects = function() {
     "gridH": 1.0666667222976685,
     "gridW": 1.0666667222976685,
     "spritesheet": "GJ_ParticleSheet-uhd",
-    "type": "deco",
+    "type": "particle",
     "z": 9,
     "default_detail_color_channel": -1,
     "default_z_layer": 3,
@@ -71562,7 +71726,7 @@ window.allobjects = function() {
     "gridH": 1.0666667222976685,
     "gridW": 1.0666667222976685,
     "spritesheet": "GJ_ParticleSheet-uhd",
-    "type": "deco",
+    "type": "particle",
     "z": 9,
     "default_detail_color_channel": -1,
     "default_z_layer": 3,
@@ -71576,7 +71740,7 @@ window.allobjects = function() {
     "gridH": 1.0666667222976685,
     "gridW": 1.0666667222976685,
     "spritesheet": "GJ_ParticleSheet-uhd",
-    "type": "deco",
+    "type": "particle",
     "z": 9,
     "default_detail_color_channel": -1,
     "default_z_layer": 3,
@@ -71590,7 +71754,7 @@ window.allobjects = function() {
     "gridH": 1.0666667222976685,
     "gridW": 1.0666667222976685,
     "spritesheet": "GJ_ParticleSheet-uhd",
-    "type": "deco",
+    "type": "particle",
     "z": 9,
     "default_detail_color_channel": -1,
     "default_z_layer": 3,
@@ -71604,7 +71768,7 @@ window.allobjects = function() {
     "gridH": 1.0666667222976685,
     "gridW": 1.0666667222976685,
     "spritesheet": "GJ_ParticleSheet-uhd",
-    "type": "deco",
+    "type": "particle",
     "z": 9,
     "default_detail_color_channel": -1,
     "default_z_layer": 3,
@@ -71618,7 +71782,7 @@ window.allobjects = function() {
     "gridH": 1.0666667222976685,
     "gridW": 1.0666667222976685,
     "spritesheet": "GJ_ParticleSheet-uhd",
-    "type": "deco",
+    "type": "particle",
     "z": 9,
     "default_detail_color_channel": -1,
     "default_z_layer": 3,
@@ -71632,7 +71796,7 @@ window.allobjects = function() {
     "gridH": 1.0666667222976685,
     "gridW": 1.0666667222976685,
     "spritesheet": "GJ_ParticleSheet-uhd",
-    "type": "deco",
+    "type": "particle",
     "z": 9,
     "default_detail_color_channel": -1,
     "default_z_layer": 3,
@@ -71646,7 +71810,7 @@ window.allobjects = function() {
     "gridH": 1.0666667222976685,
     "gridW": 1.0666667222976685,
     "spritesheet": "GJ_ParticleSheet-uhd",
-    "type": "deco",
+    "type": "particle",
     "z": 9,
     "default_detail_color_channel": -1,
     "default_z_layer": 3,
@@ -71660,7 +71824,7 @@ window.allobjects = function() {
     "gridH": 1.0666667222976685,
     "gridW": 1.0666667222976685,
     "spritesheet": "GJ_ParticleSheet-uhd",
-    "type": "deco",
+    "type": "particle",
     "z": 9,
     "default_detail_color_channel": -1,
     "default_z_layer": 3,
@@ -71674,7 +71838,7 @@ window.allobjects = function() {
     "gridH": 1.0666667222976685,
     "gridW": 1.0666667222976685,
     "spritesheet": "GJ_ParticleSheet-uhd",
-    "type": "deco",
+    "type": "particle",
     "z": 9,
     "default_detail_color_channel": -1,
     "default_z_layer": 3,
@@ -71688,7 +71852,7 @@ window.allobjects = function() {
     "gridH": 1.0666667222976685,
     "gridW": 1.0666667222976685,
     "spritesheet": "GJ_ParticleSheet-uhd",
-    "type": "deco",
+    "type": "particle",
     "z": 9,
     "default_detail_color_channel": -1,
     "default_z_layer": 3,
@@ -71702,7 +71866,7 @@ window.allobjects = function() {
     "gridH": 1.0666667222976685,
     "gridW": 1.0666667222976685,
     "spritesheet": "GJ_ParticleSheet-uhd",
-    "type": "deco",
+    "type": "particle",
     "z": 9,
     "default_detail_color_channel": -1,
     "default_z_layer": 3,
@@ -71716,7 +71880,7 @@ window.allobjects = function() {
     "gridH": 1.0666667222976685,
     "gridW": 1.0666667222976685,
     "spritesheet": "GJ_ParticleSheet-uhd",
-    "type": "deco",
+    "type": "particle",
     "z": 9,
     "default_detail_color_channel": -1,
     "default_z_layer": 3,
@@ -71730,7 +71894,7 @@ window.allobjects = function() {
     "gridH": 1.0666667222976685,
     "gridW": 1.0666667222976685,
     "spritesheet": "GJ_ParticleSheet-uhd",
-    "type": "deco",
+    "type": "particle",
     "z": 9,
     "default_detail_color_channel": -1,
     "default_z_layer": 3,
@@ -71744,7 +71908,7 @@ window.allobjects = function() {
     "gridH": 1.0666667222976685,
     "gridW": 1.0666667222976685,
     "spritesheet": "GJ_ParticleSheet-uhd",
-    "type": "deco",
+    "type": "particle",
     "z": 9,
     "default_detail_color_channel": -1,
     "default_z_layer": 3,
@@ -71758,7 +71922,7 @@ window.allobjects = function() {
     "gridH": 1.0666667222976685,
     "gridW": 1.0666667222976685,
     "spritesheet": "GJ_ParticleSheet-uhd",
-    "type": "deco",
+    "type": "particle",
     "z": 9,
     "default_detail_color_channel": -1,
     "default_z_layer": 3,
@@ -71772,7 +71936,7 @@ window.allobjects = function() {
     "gridH": 1.0666667222976685,
     "gridW": 1.0666667222976685,
     "spritesheet": "GJ_ParticleSheet-uhd",
-    "type": "deco",
+    "type": "particle",
     "z": 9,
     "default_detail_color_channel": -1,
     "default_z_layer": 3,
@@ -71786,7 +71950,7 @@ window.allobjects = function() {
     "gridH": 1.0666667222976685,
     "gridW": 1.0666667222976685,
     "spritesheet": "GJ_ParticleSheet-uhd",
-    "type": "deco",
+    "type": "particle",
     "z": 9,
     "default_detail_color_channel": -1,
     "default_z_layer": 3,
@@ -71800,7 +71964,7 @@ window.allobjects = function() {
     "gridH": 1.0666667222976685,
     "gridW": 1.0666667222976685,
     "spritesheet": "GJ_ParticleSheet-uhd",
-    "type": "deco",
+    "type": "particle",
     "z": 9,
     "default_detail_color_channel": -1,
     "default_z_layer": 3,
@@ -71814,7 +71978,7 @@ window.allobjects = function() {
     "gridH": 1.0666667222976685,
     "gridW": 1.0666667222976685,
     "spritesheet": "GJ_ParticleSheet-uhd",
-    "type": "deco",
+    "type": "particle",
     "z": 9,
     "default_detail_color_channel": -1,
     "default_z_layer": 3,
@@ -71828,7 +71992,7 @@ window.allobjects = function() {
     "gridH": 1.0666667222976685,
     "gridW": 1.0666667222976685,
     "spritesheet": "GJ_ParticleSheet-uhd",
-    "type": "deco",
+    "type": "particle",
     "z": 9,
     "default_detail_color_channel": -1,
     "default_z_layer": 3,
@@ -71842,7 +72006,7 @@ window.allobjects = function() {
     "gridH": 1.0666667222976685,
     "gridW": 1.0666667222976685,
     "spritesheet": "GJ_ParticleSheet-uhd",
-    "type": "deco",
+    "type": "particle",
     "z": 9,
     "default_detail_color_channel": -1,
     "default_z_layer": 3,
@@ -71856,7 +72020,7 @@ window.allobjects = function() {
     "gridH": 1.0666667222976685,
     "gridW": 1.0666667222976685,
     "spritesheet": "GJ_ParticleSheet-uhd",
-    "type": "deco",
+    "type": "particle",
     "z": 9,
     "default_detail_color_channel": -1,
     "default_z_layer": 3,
@@ -71870,7 +72034,7 @@ window.allobjects = function() {
     "gridH": 0.5333333611488342,
     "gridW": 0.5333333611488342,
     "spritesheet": "GJ_ParticleSheet-uhd",
-    "type": "deco",
+    "type": "particle",
     "z": 9,
     "default_detail_color_channel": -1,
     "default_z_layer": 3,
@@ -71884,7 +72048,7 @@ window.allobjects = function() {
     "gridH": 0.5333333611488342,
     "gridW": 0.5333333611488342,
     "spritesheet": "GJ_ParticleSheet-uhd",
-    "type": "deco",
+    "type": "particle",
     "z": 9,
     "default_detail_color_channel": -1,
     "default_z_layer": 3,
@@ -71898,7 +72062,7 @@ window.allobjects = function() {
     "gridH": 0.5333333611488342,
     "gridW": 0.5333333611488342,
     "spritesheet": "GJ_ParticleSheet-uhd",
-    "type": "deco",
+    "type": "particle",
     "z": 9,
     "default_detail_color_channel": -1,
     "default_z_layer": 3,
@@ -71912,7 +72076,7 @@ window.allobjects = function() {
     "gridH": 0.5333333611488342,
     "gridW": 0.5333333611488342,
     "spritesheet": "GJ_ParticleSheet-uhd",
-    "type": "deco",
+    "type": "particle",
     "z": 9,
     "default_detail_color_channel": -1,
     "default_z_layer": 3,
@@ -71926,7 +72090,7 @@ window.allobjects = function() {
     "gridH": 0.5333333611488342,
     "gridW": 0.5333333611488342,
     "spritesheet": "GJ_ParticleSheet-uhd",
-    "type": "deco",
+    "type": "particle",
     "z": 9,
     "default_detail_color_channel": -1,
     "default_z_layer": 3,
@@ -71940,7 +72104,7 @@ window.allobjects = function() {
     "gridH": 0.5333333611488342,
     "gridW": 0.5333333611488342,
     "spritesheet": "GJ_ParticleSheet-uhd",
-    "type": "deco",
+    "type": "particle",
     "z": 9,
     "default_detail_color_channel": -1,
     "default_z_layer": 3,
@@ -71954,7 +72118,7 @@ window.allobjects = function() {
     "gridH": 0.5333333611488342,
     "gridW": 0.5333333611488342,
     "spritesheet": "GJ_ParticleSheet-uhd",
-    "type": "deco",
+    "type": "particle",
     "z": 9,
     "default_detail_color_channel": -1,
     "default_z_layer": 3,
@@ -71977,7 +72141,7 @@ window.allobjects = function() {
     "gridH": 0.5333333611488342,
     "gridW": 0.5333333611488342,
     "spritesheet": "PixelSheet_01-hd",
-    "type": "deco",
+    "type": "pixel",
     "z": 9,
     "default_z_layer": 3,
     "default_z_order": 9
@@ -71999,7 +72163,7 @@ window.allobjects = function() {
     "gridH": 0.5333333611488342,
     "gridW": 0.5333333611488342,
     "spritesheet": "PixelSheet_01-hd",
-    "type": "deco",
+    "type": "pixel",
     "z": 9,
     "default_z_layer": 3,
     "default_z_order": 9
@@ -72021,7 +72185,7 @@ window.allobjects = function() {
     "gridH": 0.5333333611488342,
     "gridW": 0.5333333611488342,
     "spritesheet": "PixelSheet_01-hd",
-    "type": "deco",
+    "type": "pixel",
     "z": 9,
     "default_z_layer": 3,
     "default_z_order": 9
@@ -72043,7 +72207,7 @@ window.allobjects = function() {
     "gridH": 0.5333333611488342,
     "gridW": 0.5333333611488342,
     "spritesheet": "PixelSheet_01-hd",
-    "type": "deco",
+    "type": "pixel",
     "z": 9,
     "default_z_layer": 3,
     "default_z_order": 9
@@ -72065,7 +72229,7 @@ window.allobjects = function() {
     "gridH": 0.1666666716337204,
     "gridW": 0.5,
     "spritesheet": "PixelSheet_01-hd",
-    "type": "deco",
+    "type": "pixel",
     "z": 9,
     "default_z_layer": 3,
     "default_z_order": 9
@@ -72087,7 +72251,7 @@ window.allobjects = function() {
     "gridH": 0.1666666716337204,
     "gridW": 0.5333333611488342,
     "spritesheet": "PixelSheet_01-hd",
-    "type": "deco",
+    "type": "pixel",
     "z": 9,
     "default_z_layer": 3,
     "default_z_order": 9
@@ -72109,7 +72273,7 @@ window.allobjects = function() {
     "gridH": 0.1666666716337204,
     "gridW": 0.5333333611488342,
     "spritesheet": "PixelSheet_01-hd",
-    "type": "deco",
+    "type": "pixel",
     "z": 9,
     "default_z_layer": 3,
     "default_z_order": 9
@@ -72131,7 +72295,7 @@ window.allobjects = function() {
     "gridH": 0.1666666716337204,
     "gridW": 0.5,
     "spritesheet": "PixelSheet_01-hd",
-    "type": "deco",
+    "type": "pixel",
     "z": 9,
     "default_z_layer": 3,
     "default_z_order": 9
@@ -72153,7 +72317,7 @@ window.allobjects = function() {
     "gridH": 0.5333333611488342,
     "gridW": 0.5333333611488342,
     "spritesheet": "PixelSheet_01-hd",
-    "type": "deco",
+    "type": "pixel",
     "z": 9,
     "default_z_layer": 3,
     "default_z_order": 9
@@ -72175,7 +72339,7 @@ window.allobjects = function() {
     "gridH": 0.5333333611488342,
     "gridW": 0.5333333611488342,
     "spritesheet": "PixelSheet_01-hd",
-    "type": "deco",
+    "type": "pixel",
     "z": 9,
     "default_z_layer": 3,
     "default_z_order": 9
@@ -72188,7 +72352,7 @@ window.allobjects = function() {
     "gridH": 0.03333333507180214,
     "gridW": 0.5,
     "spritesheet": "PixelSheet_01-hd",
-    "type": "deco",
+    "type": "pixel",
     "z": 9,
     "default_detail_color_channel": -1,
     "default_z_layer": 3,
@@ -72202,7 +72366,7 @@ window.allobjects = function() {
     "gridH": 0.03333333507180214,
     "gridW": 0.5333333611488342,
     "spritesheet": "PixelSheet_01-hd",
-    "type": "deco",
+    "type": "pixel",
     "z": 9,
     "default_detail_color_channel": -1,
     "default_z_layer": 3,
@@ -72225,7 +72389,7 @@ window.allobjects = function() {
     "gridH": 0.5333333611488342,
     "gridW": 0.5333333611488342,
     "spritesheet": "PixelSheet_01-hd",
-    "type": "deco",
+    "type": "pixel",
     "z": 9,
     "default_z_layer": 3,
     "default_z_order": 9
@@ -72247,7 +72411,7 @@ window.allobjects = function() {
     "gridH": 0.36666667461395264,
     "gridW": 0.5333333611488342,
     "spritesheet": "PixelSheet_01-hd",
-    "type": "deco",
+    "type": "pixel",
     "z": 9,
     "default_z_layer": 3,
     "default_z_order": 9
@@ -72269,7 +72433,7 @@ window.allobjects = function() {
     "gridH": 0.5333333611488342,
     "gridW": 0.5333333611488342,
     "spritesheet": "PixelSheet_01-hd",
-    "type": "deco",
+    "type": "pixel",
     "z": 9,
     "default_z_layer": 3,
     "default_z_order": 9
@@ -72291,7 +72455,7 @@ window.allobjects = function() {
     "gridH": 0.5333333611488342,
     "gridW": 0.3333333432674408,
     "spritesheet": "PixelSheet_01-hd",
-    "type": "deco",
+    "type": "pixel",
     "z": 9,
     "default_z_layer": 3,
     "default_z_order": 9
@@ -72313,7 +72477,7 @@ window.allobjects = function() {
     "gridH": 0.5333333611488342,
     "gridW": 0.4333333373069763,
     "spritesheet": "PixelSheet_01-hd",
-    "type": "deco",
+    "type": "pixel",
     "z": 9,
     "default_z_layer": 3,
     "default_z_order": 9
@@ -72335,7 +72499,7 @@ window.allobjects = function() {
     "gridH": 0.5333333611488342,
     "gridW": 0.5333333611488342,
     "spritesheet": "PixelSheet_01-hd",
-    "type": "deco",
+    "type": "pixel",
     "z": 9,
     "default_z_layer": 3,
     "default_z_order": 9
@@ -72357,7 +72521,7 @@ window.allobjects = function() {
     "gridH": 0.4333333373069763,
     "gridW": 0.5333333611488342,
     "spritesheet": "PixelSheet_01-hd",
-    "type": "deco",
+    "type": "pixel",
     "z": 9,
     "default_z_layer": 3,
     "default_z_order": 9
@@ -72379,7 +72543,7 @@ window.allobjects = function() {
     "gridH": 0.5333333611488342,
     "gridW": 0.5333333611488342,
     "spritesheet": "PixelSheet_01-hd",
-    "type": "deco",
+    "type": "pixel",
     "z": 9,
     "default_z_layer": 3,
     "default_z_order": 9
@@ -72401,7 +72565,7 @@ window.allobjects = function() {
     "gridH": 0.36666667461395264,
     "gridW": 0.30000001192092896,
     "spritesheet": "PixelSheet_01-hd",
-    "type": "deco",
+    "type": "pixel",
     "z": 9,
     "default_z_layer": 3,
     "default_z_order": 9
@@ -72423,7 +72587,7 @@ window.allobjects = function() {
     "gridH": 0.4333333373069763,
     "gridW": 0.30000001192092896,
     "spritesheet": "PixelSheet_01-hd",
-    "type": "deco",
+    "type": "pixel",
     "z": 9,
     "default_z_layer": 3,
     "default_z_order": 9
@@ -72445,7 +72609,7 @@ window.allobjects = function() {
     "gridH": 0.2666666805744171,
     "gridW": 0.20000000298023224,
     "spritesheet": "PixelSheet_01-hd",
-    "type": "deco",
+    "type": "pixel",
     "z": 9,
     "default_z_layer": 3,
     "default_z_order": 9
@@ -72458,7 +72622,7 @@ window.allobjects = function() {
     "gridH": 0.5333333611488342,
     "gridW": 0.5333333611488342,
     "spritesheet": "PixelSheet_01-hd",
-    "type": "deco",
+    "type": "pixel",
     "z": 9,
     "default_detail_color_channel": -1,
     "default_z_layer": 3,
@@ -72481,7 +72645,7 @@ window.allobjects = function() {
     "gridH": 0.5333333611488342,
     "gridW": 0.5333333611488342,
     "spritesheet": "PixelSheet_01-hd",
-    "type": "deco",
+    "type": "pixel",
     "z": 9,
     "default_z_layer": 3,
     "default_z_order": 9
@@ -72503,7 +72667,7 @@ window.allobjects = function() {
     "gridH": 0.5333333611488342,
     "gridW": 0.5333333611488342,
     "spritesheet": "PixelSheet_01-hd",
-    "type": "deco",
+    "type": "pixel",
     "z": 9,
     "default_z_layer": 3,
     "default_z_order": 9
@@ -72525,7 +72689,7 @@ window.allobjects = function() {
     "gridH": 0.5333333611488342,
     "gridW": 0.5333333611488342,
     "spritesheet": "PixelSheet_01-hd",
-    "type": "deco",
+    "type": "pixel",
     "z": 9,
     "default_z_layer": 3,
     "default_z_order": 9
@@ -72547,7 +72711,7 @@ window.allobjects = function() {
     "gridH": 0.5333333611488342,
     "gridW": 0.5333333611488342,
     "spritesheet": "PixelSheet_01-hd",
-    "type": "deco",
+    "type": "pixel",
     "z": 9,
     "default_z_layer": 3,
     "default_z_order": 9
@@ -72569,7 +72733,7 @@ window.allobjects = function() {
     "gridH": 0.5333333611488342,
     "gridW": 0.5333333611488342,
     "spritesheet": "PixelSheet_01-hd",
-    "type": "deco",
+    "type": "pixel",
     "z": 9,
     "default_z_layer": 3,
     "default_z_order": 9
@@ -72591,7 +72755,7 @@ window.allobjects = function() {
     "gridH": 0.5333333611488342,
     "gridW": 0.5333333611488342,
     "spritesheet": "PixelSheet_01-hd",
-    "type": "deco",
+    "type": "pixel",
     "z": 9,
     "default_z_layer": 3,
     "default_z_order": 9
@@ -72604,7 +72768,7 @@ window.allobjects = function() {
     "gridH": 0.5,
     "gridW": 0.13333334028720856,
     "spritesheet": "PixelSheet_01-hd",
-    "type": "deco",
+    "type": "pixel",
     "z": 9,
     "default_detail_color_channel": -1,
     "default_z_layer": 3,
@@ -72618,7 +72782,7 @@ window.allobjects = function() {
     "gridH": 0.5333333611488342,
     "gridW": 0.13333334028720856,
     "spritesheet": "PixelSheet_01-hd",
-    "type": "deco",
+    "type": "pixel",
     "z": 9,
     "default_detail_color_channel": -1,
     "default_z_layer": 3,
@@ -72632,7 +72796,7 @@ window.allobjects = function() {
     "gridH": 0.5,
     "gridW": 0.13333334028720856,
     "spritesheet": "PixelSheet_01-hd",
-    "type": "deco",
+    "type": "pixel",
     "z": 9,
     "default_detail_color_channel": -1,
     "default_z_layer": 3,
@@ -72646,7 +72810,7 @@ window.allobjects = function() {
     "gridH": 0.46666666865348816,
     "gridW": 0.13333334028720856,
     "spritesheet": "PixelSheet_01-hd",
-    "type": "deco",
+    "type": "pixel",
     "z": 9,
     "default_detail_color_channel": -1,
     "default_z_layer": 3,
@@ -72669,7 +72833,7 @@ window.allobjects = function() {
     "gridH": 0.5333333611488342,
     "gridW": 0.36666667461395264,
     "spritesheet": "PixelSheet_01-hd",
-    "type": "deco",
+    "type": "pixel",
     "z": 9,
     "default_z_layer": 3,
     "default_z_order": 9
@@ -72691,7 +72855,7 @@ window.allobjects = function() {
     "gridH": 0.5,
     "gridW": 0.36666667461395264,
     "spritesheet": "PixelSheet_01-hd",
-    "type": "deco",
+    "type": "pixel",
     "z": 9,
     "default_z_layer": 3,
     "default_z_order": 9
@@ -72713,7 +72877,7 @@ window.allobjects = function() {
     "gridH": 0.36666667461395264,
     "gridW": 0.5666666626930237,
     "spritesheet": "PixelSheet_01-hd",
-    "type": "deco",
+    "type": "pixel",
     "z": 9,
     "default_z_layer": 3,
     "default_z_order": 9
@@ -72735,7 +72899,7 @@ window.allobjects = function() {
     "gridH": 0.3333333432674408,
     "gridW": 0.5333333611488342,
     "spritesheet": "PixelSheet_01-hd",
-    "type": "deco",
+    "type": "pixel",
     "z": 9,
     "default_z_layer": 3,
     "default_z_order": 9
@@ -72757,7 +72921,7 @@ window.allobjects = function() {
     "gridH": 0.1666666716337204,
     "gridW": 0.5333333611488342,
     "spritesheet": "PixelSheet_01-hd",
-    "type": "deco",
+    "type": "pixel",
     "z": 9,
     "default_z_layer": 3,
     "default_z_order": 9
@@ -72779,7 +72943,7 @@ window.allobjects = function() {
     "gridH": 0.1666666716337204,
     "gridW": 0.5333333611488342,
     "spritesheet": "PixelSheet_01-hd",
-    "type": "deco",
+    "type": "pixel",
     "z": 9,
     "default_z_layer": 3,
     "default_z_order": 9
@@ -72792,7 +72956,7 @@ window.allobjects = function() {
     "gridH": 0.4333333373069763,
     "gridW": 0.5333333611488342,
     "spritesheet": "PixelSheet_01-hd",
-    "type": "deco",
+    "type": "pixel",
     "z": 9,
     "default_detail_color_channel": -1,
     "default_z_layer": 3,
@@ -72806,7 +72970,7 @@ window.allobjects = function() {
     "gridH": 0.4333333373069763,
     "gridW": 0.5333333611488342,
     "spritesheet": "PixelSheet_01-hd",
-    "type": "deco",
+    "type": "pixel",
     "z": 9,
     "default_detail_color_channel": -1,
     "default_z_layer": 3,
@@ -72820,7 +72984,7 @@ window.allobjects = function() {
     "gridH": 0.20000000298023224,
     "gridW": 0.2666666805744171,
     "spritesheet": "PixelSheet_01-hd",
-    "type": "deco",
+    "type": "pixel",
     "z": 9,
     "default_detail_color_channel": -1,
     "default_z_layer": 3,
@@ -72834,7 +72998,7 @@ window.allobjects = function() {
     "gridH": 0.30000001192092896,
     "gridW": 0.46666666865348816,
     "spritesheet": "PixelSheet_01-hd",
-    "type": "deco",
+    "type": "pixel",
     "z": 9,
     "default_detail_color_channel": -1,
     "default_z_layer": 3,
@@ -72848,7 +73012,7 @@ window.allobjects = function() {
     "gridH": 0.20000000298023224,
     "gridW": 0.3333333432674408,
     "spritesheet": "PixelSheet_01-hd",
-    "type": "deco",
+    "type": "pixel",
     "z": 9,
     "default_detail_color_channel": -1,
     "default_z_layer": 3,
@@ -72862,7 +73026,7 @@ window.allobjects = function() {
     "gridH": 0.1666666716337204,
     "gridW": 0.1666666716337204,
     "spritesheet": "PixelSheet_01-hd",
-    "type": "deco",
+    "type": "pixel",
     "z": 9,
     "default_detail_color_channel": -1,
     "default_z_layer": 3,
@@ -72885,7 +73049,7 @@ window.allobjects = function() {
     "gridH": 0.2666666805744171,
     "gridW": 0.2666666805744171,
     "spritesheet": "PixelSheet_01-hd",
-    "type": "deco",
+    "type": "pixel",
     "z": 9,
     "default_z_layer": 3,
     "default_z_order": 9
@@ -72907,7 +73071,7 @@ window.allobjects = function() {
     "gridH": 0.2666666805744171,
     "gridW": 0.2666666805744171,
     "spritesheet": "PixelSheet_01-hd",
-    "type": "deco",
+    "type": "pixel",
     "z": 9,
     "default_z_layer": 3,
     "default_z_order": 9
@@ -72929,7 +73093,7 @@ window.allobjects = function() {
     "gridH": 0.2666666805744171,
     "gridW": 0.03333333507180214,
     "spritesheet": "PixelSheet_01-hd",
-    "type": "deco",
+    "type": "pixel",
     "z": 9,
     "default_z_layer": 3,
     "default_z_order": 9
@@ -72951,7 +73115,7 @@ window.allobjects = function() {
     "gridH": 0.2666666805744171,
     "gridW": 0.2666666805744171,
     "spritesheet": "PixelSheet_01-hd",
-    "type": "deco",
+    "type": "pixel",
     "z": 9,
     "default_z_layer": 3,
     "default_z_order": 9
@@ -72973,7 +73137,7 @@ window.allobjects = function() {
     "gridH": 0.13333334028720856,
     "gridW": 0.03333333507180214,
     "spritesheet": "PixelSheet_01-hd",
-    "type": "deco",
+    "type": "pixel",
     "z": 9,
     "default_z_layer": 3,
     "default_z_order": 9
@@ -72995,7 +73159,7 @@ window.allobjects = function() {
     "gridH": 0.2666666805744171,
     "gridW": 0.2666666805744171,
     "spritesheet": "PixelSheet_01-hd",
-    "type": "deco",
+    "type": "pixel",
     "z": 9,
     "default_z_layer": 3,
     "default_z_order": 9
@@ -73017,7 +73181,7 @@ window.allobjects = function() {
     "gridH": 0.2666666805744171,
     "gridW": 0.1666666716337204,
     "spritesheet": "PixelSheet_01-hd",
-    "type": "deco",
+    "type": "pixel",
     "z": 9,
     "default_z_layer": 3,
     "default_z_order": 9
@@ -73039,7 +73203,7 @@ window.allobjects = function() {
     "gridH": 0.2666666805744171,
     "gridW": 0.1666666716337204,
     "spritesheet": "PixelSheet_01-hd",
-    "type": "deco",
+    "type": "pixel",
     "z": 9,
     "default_z_layer": 3,
     "default_z_order": 9
@@ -73061,7 +73225,7 @@ window.allobjects = function() {
     "gridH": 0.2666666805744171,
     "gridW": 0.2666666805744171,
     "spritesheet": "PixelSheet_01-hd",
-    "type": "deco",
+    "type": "pixel",
     "z": 9,
     "default_z_layer": 3,
     "default_z_order": 9
@@ -73083,7 +73247,7 @@ window.allobjects = function() {
     "gridH": 0.13333334028720856,
     "gridW": 0.03333333507180214,
     "spritesheet": "PixelSheet_01-hd",
-    "type": "deco",
+    "type": "pixel",
     "z": 9,
     "default_z_layer": 3,
     "default_z_order": 9
@@ -73105,7 +73269,7 @@ window.allobjects = function() {
     "gridH": 0.2666666805744171,
     "gridW": 0.2666666805744171,
     "spritesheet": "PixelSheet_01-hd",
-    "type": "deco",
+    "type": "pixel",
     "z": 9,
     "default_z_layer": 3,
     "default_z_order": 9
@@ -73127,7 +73291,7 @@ window.allobjects = function() {
     "gridH": 0.2666666805744171,
     "gridW": 0.13333334028720856,
     "spritesheet": "PixelSheet_01-hd",
-    "type": "deco",
+    "type": "pixel",
     "z": 9,
     "default_z_layer": 3,
     "default_z_order": 9
@@ -73149,7 +73313,7 @@ window.allobjects = function() {
     "gridH": 0.03333333507180214,
     "gridW": 0.13333334028720856,
     "spritesheet": "PixelSheet_01-hd",
-    "type": "deco",
+    "type": "pixel",
     "z": 9,
     "default_z_layer": 3,
     "default_z_order": 9
@@ -73171,7 +73335,7 @@ window.allobjects = function() {
     "gridH": 0.2666666805744171,
     "gridW": 0.13333334028720856,
     "spritesheet": "PixelSheet_01-hd",
-    "type": "deco",
+    "type": "pixel",
     "z": 9,
     "default_z_layer": 3,
     "default_z_order": 9
@@ -73193,7 +73357,7 @@ window.allobjects = function() {
     "gridH": 0.4333333373069763,
     "gridW": 0.3333333432674408,
     "spritesheet": "PixelSheet_01-hd",
-    "type": "deco",
+    "type": "pixel",
     "z": 9,
     "default_z_layer": 3,
     "default_z_order": 9
@@ -73215,7 +73379,7 @@ window.allobjects = function() {
     "gridH": 0.36666667461395264,
     "gridW": 0.3333333432674408,
     "spritesheet": "PixelSheet_01-hd",
-    "type": "deco",
+    "type": "pixel",
     "z": 9,
     "default_z_layer": 3,
     "default_z_order": 9
@@ -73237,7 +73401,7 @@ window.allobjects = function() {
     "gridH": 0.3333333432674408,
     "gridW": 0.30000001192092896,
     "spritesheet": "PixelSheet_01-hd",
-    "type": "deco",
+    "type": "pixel",
     "z": 9,
     "default_z_layer": 3,
     "default_z_order": 9
@@ -73250,7 +73414,7 @@ window.allobjects = function() {
     "gridH": 0.23333333432674408,
     "gridW": 0.36666667461395264,
     "spritesheet": "PixelSheet_01-hd",
-    "type": "deco",
+    "type": "pixel",
     "z": 9,
     "default_detail_color_channel": -1,
     "default_z_layer": 3,
@@ -73273,7 +73437,7 @@ window.allobjects = function() {
     "gridH": 0.5333333611488342,
     "gridW": 0.5333333611488342,
     "spritesheet": "PixelSheet_01-hd",
-    "type": "deco",
+    "type": "pixel",
     "z": 9,
     "default_z_layer": 3,
     "default_z_order": 9
@@ -73295,7 +73459,7 @@ window.allobjects = function() {
     "gridH": 0.46666666865348816,
     "gridW": 0.5333333611488342,
     "spritesheet": "PixelSheet_01-hd",
-    "type": "deco",
+    "type": "pixel",
     "z": 9,
     "default_z_layer": 3,
     "default_z_order": 9
@@ -73317,7 +73481,7 @@ window.allobjects = function() {
     "gridH": 0.5333333611488342,
     "gridW": 0.5333333611488342,
     "spritesheet": "PixelSheet_01-hd",
-    "type": "deco",
+    "type": "pixel",
     "z": 9,
     "default_z_layer": 3,
     "default_z_order": 9
@@ -73330,7 +73494,7 @@ window.allobjects = function() {
     "gridH": 0.5333333611488342,
     "gridW": 0.5333333611488342,
     "spritesheet": "PixelSheet_01-hd",
-    "type": "deco",
+    "type": "pixel",
     "z": 9,
     "default_detail_color_channel": -1,
     "default_z_layer": 3,
@@ -73353,7 +73517,7 @@ window.allobjects = function() {
     "gridH": 0.4333333373069763,
     "gridW": 0.5333333611488342,
     "spritesheet": "PixelSheet_01-hd",
-    "type": "deco",
+    "type": "pixel",
     "z": 9,
     "default_z_layer": 3,
     "default_z_order": 9
@@ -73366,7 +73530,7 @@ window.allobjects = function() {
     "gridH": 0.46666666865348816,
     "gridW": 0.5333333611488342,
     "spritesheet": "PixelSheet_01-hd",
-    "type": "deco",
+    "type": "pixel",
     "z": 9,
     "default_detail_color_channel": -1,
     "default_z_layer": 3,
@@ -73389,7 +73553,7 @@ window.allobjects = function() {
     "gridH": 0.5,
     "gridW": 0.5333333611488342,
     "spritesheet": "PixelSheet_01-hd",
-    "type": "deco",
+    "type": "pixel",
     "z": 9,
     "default_z_layer": 3,
     "default_z_order": 9
@@ -73411,7 +73575,7 @@ window.allobjects = function() {
     "gridH": 0.2666666805744171,
     "gridW": 0.3333333432674408,
     "spritesheet": "PixelSheet_01-hd",
-    "type": "deco",
+    "type": "pixel",
     "z": 9,
     "default_z_layer": 3,
     "default_z_order": 9
@@ -73433,7 +73597,7 @@ window.allobjects = function() {
     "gridH": 0.5333333611488342,
     "gridW": 0.5333333611488342,
     "spritesheet": "PixelSheet_01-hd",
-    "type": "deco",
+    "type": "pixel",
     "z": 9,
     "default_z_layer": 3,
     "default_z_order": 9
@@ -73455,7 +73619,7 @@ window.allobjects = function() {
     "gridH": 0.5333333611488342,
     "gridW": 0.2666666805744171,
     "spritesheet": "PixelSheet_01-hd",
-    "type": "deco",
+    "type": "pixel",
     "z": 9,
     "default_z_layer": 3,
     "default_z_order": 9
@@ -73477,7 +73641,7 @@ window.allobjects = function() {
     "gridH": 0.5333333611488342,
     "gridW": 0.5333333611488342,
     "spritesheet": "PixelSheet_01-hd",
-    "type": "deco",
+    "type": "pixel",
     "z": 9,
     "default_z_layer": 3,
     "default_z_order": 9
@@ -73499,7 +73663,7 @@ window.allobjects = function() {
     "gridH": 0.5333333611488342,
     "gridW": 0.2666666805744171,
     "spritesheet": "PixelSheet_01-hd",
-    "type": "deco",
+    "type": "pixel",
     "z": 9,
     "default_z_layer": 3,
     "default_z_order": 9
@@ -73521,7 +73685,7 @@ window.allobjects = function() {
     "gridH": 0.7666666507720947,
     "gridW": 0.6333333253860474,
     "spritesheet": "PixelSheet_01-hd",
-    "type": "deco",
+    "type": "pixel",
     "z": 9,
     "default_z_layer": 3,
     "default_z_order": 9
@@ -73534,7 +73698,7 @@ window.allobjects = function() {
     "gridH": 0.2666666805744171,
     "gridW": 0.2666666805744171,
     "spritesheet": "PixelSheet_01-hd",
-    "type": "deco",
+    "type": "pixel",
     "z": 9,
     "default_detail_color_channel": -1,
     "default_z_layer": 3,
@@ -73548,7 +73712,7 @@ window.allobjects = function() {
     "gridH": 0.2666666805744171,
     "gridW": 0.2666666805744171,
     "spritesheet": "PixelSheet_01-hd",
-    "type": "deco",
+    "type": "pixel",
     "z": 9,
     "default_detail_color_channel": -1,
     "default_z_layer": 3,
@@ -73562,7 +73726,7 @@ window.allobjects = function() {
     "gridH": 0.03333333507180214,
     "gridW": 0.13333334028720856,
     "spritesheet": "PixelSheet_01-hd",
-    "type": "deco",
+    "type": "pixel",
     "z": 9,
     "default_detail_color_channel": -1,
     "default_z_layer": 3,
@@ -73576,7 +73740,7 @@ window.allobjects = function() {
     "gridH": 0.13333334028720856,
     "gridW": 0.03333333507180214,
     "spritesheet": "PixelSheet_01-hd",
-    "type": "deco",
+    "type": "pixel",
     "z": 9,
     "default_detail_color_channel": -1,
     "default_z_layer": 3,
@@ -73590,7 +73754,7 @@ window.allobjects = function() {
     "gridH": 0.36666667461395264,
     "gridW": 0.3333333432674408,
     "spritesheet": "PixelSheet_01-hd",
-    "type": "deco",
+    "type": "pixel",
     "z": 9,
     "default_detail_color_channel": -1,
     "default_z_layer": 3,
@@ -73604,7 +73768,7 @@ window.allobjects = function() {
     "gridH": 0.46666666865348816,
     "gridW": 0.46666666865348816,
     "spritesheet": "PixelSheet_01-hd",
-    "type": "deco",
+    "type": "pixel",
     "z": 9,
     "default_detail_color_channel": -1,
     "default_z_layer": 3,
@@ -73618,7 +73782,7 @@ window.allobjects = function() {
     "gridH": 0.46666666865348816,
     "gridW": 0.46666666865348816,
     "spritesheet": "PixelSheet_01-hd",
-    "type": "deco",
+    "type": "pixel",
     "z": 9,
     "default_detail_color_channel": -1,
     "default_z_layer": 3,
@@ -73632,7 +73796,7 @@ window.allobjects = function() {
     "gridH": 0.36666667461395264,
     "gridW": 0.3333333432674408,
     "spritesheet": "PixelSheet_01-hd",
-    "type": "deco",
+    "type": "pixel",
     "z": 9,
     "default_detail_color_channel": -1,
     "default_z_layer": 3,
@@ -73655,7 +73819,7 @@ window.allobjects = function() {
     "gridH": 0.5,
     "gridW": 0.5333333611488342,
     "spritesheet": "PixelSheet_01-hd",
-    "type": "deco",
+    "type": "pixel",
     "z": 9,
     "default_z_layer": 3,
     "default_z_order": 9
@@ -73677,7 +73841,7 @@ window.allobjects = function() {
     "gridH": 0.5,
     "gridW": 0.30000001192092896,
     "spritesheet": "PixelSheet_01-hd",
-    "type": "deco",
+    "type": "pixel",
     "z": 9,
     "default_z_layer": 3,
     "default_z_order": 9
@@ -73699,7 +73863,7 @@ window.allobjects = function() {
     "gridH": 0.2666666805744171,
     "gridW": 0.30000001192092896,
     "spritesheet": "PixelSheet_01-hd",
-    "type": "deco",
+    "type": "pixel",
     "z": 9,
     "default_z_layer": 3,
     "default_z_order": 9
@@ -73721,7 +73885,7 @@ window.allobjects = function() {
     "gridH": 0.5333333611488342,
     "gridW": 0.5333333611488342,
     "spritesheet": "PixelSheet_01-hd",
-    "type": "deco",
+    "type": "pixel",
     "z": 9,
     "default_z_layer": 3,
     "default_z_order": 9
@@ -73743,7 +73907,7 @@ window.allobjects = function() {
     "gridH": 0.5333333611488342,
     "gridW": 0.5333333611488342,
     "spritesheet": "PixelSheet_01-hd",
-    "type": "deco",
+    "type": "pixel",
     "z": 9,
     "default_z_layer": 3,
     "default_z_order": 9
@@ -73765,7 +73929,7 @@ window.allobjects = function() {
     "gridH": 0.03333333507180214,
     "gridW": 0.5333333611488342,
     "spritesheet": "PixelSheet_01-hd",
-    "type": "deco",
+    "type": "pixel",
     "z": 9,
     "default_z_layer": 3,
     "default_z_order": 9
@@ -73787,7 +73951,7 @@ window.allobjects = function() {
     "gridH": 0.5333333611488342,
     "gridW": 0.5333333611488342,
     "spritesheet": "PixelSheet_01-hd",
-    "type": "deco",
+    "type": "pixel",
     "z": 9,
     "default_z_layer": 3,
     "default_z_order": 9
@@ -73809,7 +73973,7 @@ window.allobjects = function() {
     "gridH": 0.5333333611488342,
     "gridW": 0.5333333611488342,
     "spritesheet": "PixelSheet_01-hd",
-    "type": "deco",
+    "type": "pixel",
     "z": 9,
     "default_z_layer": 3,
     "default_z_order": 9
@@ -73831,7 +73995,7 @@ window.allobjects = function() {
     "gridH": 0.5333333611488342,
     "gridW": 0.5333333611488342,
     "spritesheet": "PixelSheet_01-hd",
-    "type": "deco",
+    "type": "pixel",
     "z": 9,
     "default_z_layer": 3,
     "default_z_order": 9
@@ -73853,7 +74017,7 @@ window.allobjects = function() {
     "gridH": 0.5333333611488342,
     "gridW": 0.4000000059604645,
     "spritesheet": "PixelSheet_01-hd",
-    "type": "deco",
+    "type": "pixel",
     "z": 9,
     "default_z_layer": 3,
     "default_z_order": 9
@@ -73875,7 +74039,7 @@ window.allobjects = function() {
     "gridH": 0.5333333611488342,
     "gridW": 0.5333333611488342,
     "spritesheet": "PixelSheet_01-hd",
-    "type": "deco",
+    "type": "pixel",
     "z": 9,
     "default_z_layer": 3,
     "default_z_order": 9
@@ -73897,7 +74061,7 @@ window.allobjects = function() {
     "gridH": 0.5333333611488342,
     "gridW": 0.5333333611488342,
     "spritesheet": "PixelSheet_01-hd",
-    "type": "deco",
+    "type": "pixel",
     "z": 9,
     "default_z_layer": 3,
     "default_z_order": 9
@@ -73919,7 +74083,7 @@ window.allobjects = function() {
     "gridH": 0.5333333611488342,
     "gridW": 0.5333333611488342,
     "spritesheet": "PixelSheet_01-hd",
-    "type": "deco",
+    "type": "pixel",
     "z": 9,
     "default_z_layer": 3,
     "default_z_order": 9
@@ -73941,7 +74105,7 @@ window.allobjects = function() {
     "gridH": 0.5333333611488342,
     "gridW": 0.5333333611488342,
     "spritesheet": "PixelSheet_01-hd",
-    "type": "deco",
+    "type": "pixel",
     "z": 9,
     "default_z_layer": 3,
     "default_z_order": 9
@@ -73963,7 +74127,7 @@ window.allobjects = function() {
     "gridH": 0.36666667461395264,
     "gridW": 0.36666667461395264,
     "spritesheet": "PixelSheet_01-hd",
-    "type": "deco",
+    "type": "pixel",
     "z": 9,
     "default_z_layer": 3,
     "default_z_order": 9
@@ -73985,7 +74149,7 @@ window.allobjects = function() {
     "gridH": 0.23333333432674408,
     "gridW": 0.4000000059604645,
     "spritesheet": "PixelSheet_01-hd",
-    "type": "deco",
+    "type": "pixel",
     "z": 9,
     "default_z_layer": 3,
     "default_z_order": 9
@@ -74007,7 +74171,7 @@ window.allobjects = function() {
     "gridH": 0.46666666865348816,
     "gridW": 0.2666666805744171,
     "spritesheet": "PixelSheet_01-hd",
-    "type": "deco",
+    "type": "pixel",
     "z": 9,
     "default_z_layer": 3,
     "default_z_order": 9
@@ -74029,7 +74193,7 @@ window.allobjects = function() {
     "gridH": 0.4000000059604645,
     "gridW": 0.4000000059604645,
     "spritesheet": "PixelSheet_01-hd",
-    "type": "deco",
+    "type": "pixel",
     "z": 9,
     "default_z_layer": 3,
     "default_z_order": 9
@@ -74051,7 +74215,7 @@ window.allobjects = function() {
     "gridH": 0.4000000059604645,
     "gridW": 0.4000000059604645,
     "spritesheet": "PixelSheet_01-hd",
-    "type": "deco",
+    "type": "pixel",
     "z": 9,
     "default_z_layer": 3,
     "default_z_order": 9
@@ -74073,7 +74237,7 @@ window.allobjects = function() {
     "gridH": 0.4000000059604645,
     "gridW": 0.03333333507180214,
     "spritesheet": "PixelSheet_01-hd",
-    "type": "deco",
+    "type": "pixel",
     "z": 9,
     "default_z_layer": 3,
     "default_z_order": 9
@@ -74095,7 +74259,7 @@ window.allobjects = function() {
     "gridH": 0.03333333507180214,
     "gridW": 0.4000000059604645,
     "spritesheet": "PixelSheet_01-hd",
-    "type": "deco",
+    "type": "pixel",
     "z": 9,
     "default_z_layer": 3,
     "default_z_order": 9
@@ -74117,7 +74281,7 @@ window.allobjects = function() {
     "gridH": 0.03333333507180214,
     "gridW": 0.4000000059604645,
     "spritesheet": "PixelSheet_01-hd",
-    "type": "deco",
+    "type": "pixel",
     "z": 9,
     "default_z_layer": 3,
     "default_z_order": 9
@@ -74139,7 +74303,7 @@ window.allobjects = function() {
     "gridH": 0.4000000059604645,
     "gridW": 0.03333333507180214,
     "spritesheet": "PixelSheet_01-hd",
-    "type": "deco",
+    "type": "pixel",
     "z": 9,
     "default_z_layer": 3,
     "default_z_order": 9
@@ -74161,7 +74325,7 @@ window.allobjects = function() {
     "gridH": 0.2666666805744171,
     "gridW": 0.2666666805744171,
     "spritesheet": "PixelSheet_01-hd",
-    "type": "deco",
+    "type": "pixel",
     "z": 9,
     "default_z_layer": 3,
     "default_z_order": 9
@@ -74183,7 +74347,7 @@ window.allobjects = function() {
     "gridH": 0.1666666716337204,
     "gridW": 0.2666666805744171,
     "spritesheet": "PixelSheet_01-hd",
-    "type": "deco",
+    "type": "pixel",
     "z": 9,
     "default_z_layer": 3,
     "default_z_order": 9
@@ -74205,7 +74369,7 @@ window.allobjects = function() {
     "gridH": 0.10000000149011612,
     "gridW": 0.2666666805744171,
     "spritesheet": "PixelSheet_01-hd",
-    "type": "deco",
+    "type": "pixel",
     "z": 9,
     "default_z_layer": 3,
     "default_z_order": 9
@@ -74227,7 +74391,7 @@ window.allobjects = function() {
     "gridH": 0.20000000298023224,
     "gridW": 0.23333333432674408,
     "spritesheet": "PixelSheet_01-hd",
-    "type": "deco",
+    "type": "pixel",
     "z": 9,
     "default_z_layer": 3,
     "default_z_order": 9
@@ -74249,7 +74413,7 @@ window.allobjects = function() {
     "gridH": 0.13333334028720856,
     "gridW": 0.23333333432674408,
     "spritesheet": "PixelSheet_01-hd",
-    "type": "deco",
+    "type": "pixel",
     "z": 9,
     "default_z_layer": 3,
     "default_z_order": 9
@@ -74271,7 +74435,7 @@ window.allobjects = function() {
     "gridH": 0.1666666716337204,
     "gridW": 0.23333333432674408,
     "spritesheet": "PixelSheet_01-hd",
-    "type": "deco",
+    "type": "pixel",
     "z": 9,
     "default_z_layer": 3,
     "default_z_order": 9
@@ -74293,7 +74457,7 @@ window.allobjects = function() {
     "gridH": 0.23333333432674408,
     "gridW": 0.23333333432674408,
     "spritesheet": "PixelSheet_01-hd",
-    "type": "deco",
+    "type": "pixel",
     "z": 9,
     "default_z_layer": 3,
     "default_z_order": 9
@@ -74315,7 +74479,7 @@ window.allobjects = function() {
     "gridH": 0.03333333507180214,
     "gridW": 0.23333333432674408,
     "spritesheet": "PixelSheet_01-hd",
-    "type": "deco",
+    "type": "pixel",
     "z": 9,
     "default_z_layer": 3,
     "default_z_order": 9
@@ -74337,7 +74501,7 @@ window.allobjects = function() {
     "gridH": 0.23333333432674408,
     "gridW": 0.23333333432674408,
     "spritesheet": "PixelSheet_01-hd",
-    "type": "deco",
+    "type": "pixel",
     "z": 9,
     "default_z_layer": 3,
     "default_z_order": 9
@@ -74359,7 +74523,7 @@ window.allobjects = function() {
     "gridH": 0.2666666805744171,
     "gridW": 0.2666666805744171,
     "spritesheet": "PixelSheet_01-hd",
-    "type": "deco",
+    "type": "pixel",
     "z": 9,
     "default_z_layer": 3,
     "default_z_order": 9
@@ -74381,7 +74545,7 @@ window.allobjects = function() {
     "gridH": 0.2666666805744171,
     "gridW": 0.03333333507180214,
     "spritesheet": "PixelSheet_01-hd",
-    "type": "deco",
+    "type": "pixel",
     "z": 9,
     "default_z_layer": 3,
     "default_z_order": 9
@@ -74403,7 +74567,7 @@ window.allobjects = function() {
     "gridH": 0.2666666805744171,
     "gridW": 0.2666666805744171,
     "spritesheet": "PixelSheet_01-hd",
-    "type": "deco",
+    "type": "pixel",
     "z": 9,
     "default_z_layer": 3,
     "default_z_order": 9
@@ -74425,7 +74589,7 @@ window.allobjects = function() {
     "gridH": 0.2666666805744171,
     "gridW": 0.03333333507180214,
     "spritesheet": "PixelSheet_01-hd",
-    "type": "deco",
+    "type": "pixel",
     "z": 9,
     "default_z_layer": 3,
     "default_z_order": 9
@@ -74447,7 +74611,7 @@ window.allobjects = function() {
     "gridH": 0.03333333507180214,
     "gridW": 0.2666666805744171,
     "spritesheet": "PixelSheet_01-hd",
-    "type": "deco",
+    "type": "pixel",
     "z": 9,
     "default_z_layer": 3,
     "default_z_order": 9
@@ -74469,7 +74633,7 @@ window.allobjects = function() {
     "gridH": 0.46666666865348816,
     "gridW": 0.03333333507180214,
     "spritesheet": "PixelSheet_01-hd",
-    "type": "deco",
+    "type": "pixel",
     "z": 9,
     "default_z_layer": 3,
     "default_z_order": 9
@@ -74491,7 +74655,7 @@ window.allobjects = function() {
     "gridH": 0.3333333432674408,
     "gridW": 0.3333333432674408,
     "spritesheet": "PixelSheet_01-hd",
-    "type": "deco",
+    "type": "pixel",
     "z": 9,
     "default_z_layer": 3,
     "default_z_order": 9
@@ -74513,7 +74677,7 @@ window.allobjects = function() {
     "gridH": 0.3333333432674408,
     "gridW": 0.03333333507180214,
     "spritesheet": "PixelSheet_01-hd",
-    "type": "deco",
+    "type": "pixel",
     "z": 9,
     "default_z_layer": 3,
     "default_z_order": 9
@@ -74535,7 +74699,7 @@ window.allobjects = function() {
     "gridH": 0.3333333432674408,
     "gridW": 0.3333333432674408,
     "spritesheet": "PixelSheet_01-hd",
-    "type": "deco",
+    "type": "pixel",
     "z": 9,
     "default_z_layer": 3,
     "default_z_order": 9
@@ -74557,7 +74721,7 @@ window.allobjects = function() {
     "gridH": 0.3333333432674408,
     "gridW": 0.3333333432674408,
     "spritesheet": "PixelSheet_01-hd",
-    "type": "deco",
+    "type": "pixel",
     "z": 9,
     "default_z_layer": 3,
     "default_z_order": 9
@@ -74579,7 +74743,7 @@ window.allobjects = function() {
     "gridH": 0.23333333432674408,
     "gridW": 0.23333333432674408,
     "spritesheet": "PixelSheet_01-hd",
-    "type": "deco",
+    "type": "pixel",
     "z": 9,
     "default_z_layer": 3,
     "default_z_order": 9
@@ -74601,7 +74765,7 @@ window.allobjects = function() {
     "gridH": 0.23333333432674408,
     "gridW": 0.23333333432674408,
     "spritesheet": "PixelSheet_01-hd",
-    "type": "deco",
+    "type": "pixel",
     "z": 9,
     "default_z_layer": 3,
     "default_z_order": 9
@@ -74623,7 +74787,7 @@ window.allobjects = function() {
     "gridH": 0.23333333432674408,
     "gridW": 0.46666666865348816,
     "spritesheet": "PixelSheet_01-hd",
-    "type": "deco",
+    "type": "pixel",
     "z": 9,
     "default_z_layer": 3,
     "default_z_order": 9
@@ -74645,7 +74809,7 @@ window.allobjects = function() {
     "gridH": 0.03333333507180214,
     "gridW": 0.46666666865348816,
     "spritesheet": "PixelSheet_01-hd",
-    "type": "deco",
+    "type": "pixel",
     "z": 9,
     "default_z_layer": 3,
     "default_z_order": 9
@@ -74667,7 +74831,7 @@ window.allobjects = function() {
     "gridH": 0.23333333432674408,
     "gridW": 0.6666666865348816,
     "spritesheet": "PixelSheet_01-hd",
-    "type": "deco",
+    "type": "pixel",
     "z": 9,
     "default_z_layer": 3,
     "default_z_order": 9
@@ -74689,7 +74853,7 @@ window.allobjects = function() {
     "gridH": 0.3333333432674408,
     "gridW": 0.3333333432674408,
     "spritesheet": "PixelSheet_01-hd",
-    "type": "deco",
+    "type": "pixel",
     "z": 9,
     "default_z_layer": 3,
     "default_z_order": 9
@@ -74711,7 +74875,7 @@ window.allobjects = function() {
     "gridH": 0.03333333507180214,
     "gridW": 0.3333333432674408,
     "spritesheet": "PixelSheet_01-hd",
-    "type": "deco",
+    "type": "pixel",
     "z": 9,
     "default_z_layer": 3,
     "default_z_order": 9
@@ -74733,7 +74897,7 @@ window.allobjects = function() {
     "gridH": 0.2666666805744171,
     "gridW": 0.3333333432674408,
     "spritesheet": "PixelSheet_01-hd",
-    "type": "deco",
+    "type": "pixel",
     "z": 9,
     "default_z_layer": 3,
     "default_z_order": 9
@@ -74755,7 +74919,7 @@ window.allobjects = function() {
     "gridH": 0.30000001192092896,
     "gridW": 0.3333333432674408,
     "spritesheet": "PixelSheet_01-hd",
-    "type": "deco",
+    "type": "pixel",
     "z": 9,
     "default_z_layer": 3,
     "default_z_order": 9
@@ -74777,7 +74941,7 @@ window.allobjects = function() {
     "gridH": 0.3333333432674408,
     "gridW": 0.3333333432674408,
     "spritesheet": "PixelSheet_01-hd",
-    "type": "deco",
+    "type": "pixel",
     "z": 9,
     "default_z_layer": 3,
     "default_z_order": 9
@@ -74799,7 +74963,7 @@ window.allobjects = function() {
     "gridH": 0.3333333432674408,
     "gridW": 0.3333333432674408,
     "spritesheet": "PixelSheet_01-hd",
-    "type": "deco",
+    "type": "pixel",
     "z": 9,
     "default_z_layer": 3,
     "default_z_order": 9
@@ -74821,7 +74985,7 @@ window.allobjects = function() {
     "gridH": 0.30000001192092896,
     "gridW": 0.20000000298023224,
     "spritesheet": "PixelSheet_01-hd",
-    "type": "deco",
+    "type": "pixel",
     "z": 9,
     "default_z_layer": 3,
     "default_z_order": 9
@@ -74843,7 +75007,7 @@ window.allobjects = function() {
     "gridH": 0.1666666716337204,
     "gridW": 0.2666666805744171,
     "spritesheet": "PixelSheet_01-hd",
-    "type": "deco",
+    "type": "pixel",
     "z": 9,
     "default_z_layer": 3,
     "default_z_order": 9
@@ -74865,7 +75029,7 @@ window.allobjects = function() {
     "gridH": 0.3333333432674408,
     "gridW": 0.3333333432674408,
     "spritesheet": "PixelSheet_01-hd",
-    "type": "deco",
+    "type": "pixel",
     "z": 9,
     "default_z_layer": 3,
     "default_z_order": 9
@@ -74887,7 +75051,7 @@ window.allobjects = function() {
     "gridH": 0.5,
     "gridW": 0.4333333373069763,
     "spritesheet": "PixelSheet_01-hd",
-    "type": "deco",
+    "type": "pixel",
     "z": 9,
     "default_z_layer": 3,
     "default_z_order": 9
@@ -74909,7 +75073,7 @@ window.allobjects = function() {
     "gridH": 0.20000000298023224,
     "gridW": 0.699999988079071,
     "spritesheet": "PixelSheet_01-hd",
-    "type": "deco",
+    "type": "pixel",
     "z": 9,
     "default_z_layer": 3,
     "default_z_order": 9
@@ -74931,7 +75095,7 @@ window.allobjects = function() {
     "gridH": 0.20000000298023224,
     "gridW": 0.6000000238418579,
     "spritesheet": "PixelSheet_01-hd",
-    "type": "deco",
+    "type": "pixel",
     "z": 9,
     "default_z_layer": 3,
     "default_z_order": 9
@@ -74953,7 +75117,7 @@ window.allobjects = function() {
     "gridH": 0.4333333373069763,
     "gridW": 0.5333333611488342,
     "spritesheet": "PixelSheet_01-hd",
-    "type": "deco",
+    "type": "pixel",
     "z": 9,
     "default_z_layer": 3,
     "default_z_order": 9
@@ -74975,7 +75139,7 @@ window.allobjects = function() {
     "gridH": 0.3333333432674408,
     "gridW": 0.36666667461395264,
     "spritesheet": "PixelSheet_01-hd",
-    "type": "deco",
+    "type": "pixel",
     "z": 9,
     "default_z_layer": 3,
     "default_z_order": 9
@@ -74988,7 +75152,7 @@ window.allobjects = function() {
     "gridH": 0.20000000298023224,
     "gridW": 0.5,
     "spritesheet": "PixelSheet_01-hd",
-    "type": "deco",
+    "type": "pixel",
     "z": 9,
     "default_detail_color_channel": -1,
     "default_z_layer": 3,
@@ -75002,7 +75166,7 @@ window.allobjects = function() {
     "gridH": 0.20000000298023224,
     "gridW": 0.30000001192092896,
     "spritesheet": "PixelSheet_01-hd",
-    "type": "deco",
+    "type": "pixel",
     "z": 9,
     "default_detail_color_channel": -1,
     "default_z_layer": 3,
@@ -75025,7 +75189,7 @@ window.allobjects = function() {
     "gridH": 0.30000001192092896,
     "gridW": 0.6666666865348816,
     "spritesheet": "PixelSheet_01-hd",
-    "type": "deco",
+    "type": "pixel",
     "z": 9,
     "default_z_layer": 3,
     "default_z_order": 9
@@ -75047,7 +75211,7 @@ window.allobjects = function() {
     "gridH": 0.5,
     "gridW": 0.6333333253860474,
     "spritesheet": "PixelSheet_01-hd",
-    "type": "deco",
+    "type": "pixel",
     "z": 9,
     "default_z_layer": 3,
     "default_z_order": 9
@@ -75069,7 +75233,7 @@ window.allobjects = function() {
     "gridH": 0.4000000059604645,
     "gridW": 0.4000000059604645,
     "spritesheet": "PixelSheet_01-hd",
-    "type": "deco",
+    "type": "pixel",
     "z": 9,
     "default_z_layer": 3,
     "default_z_order": 9
@@ -75091,7 +75255,7 @@ window.allobjects = function() {
     "gridH": 0.36666667461395264,
     "gridW": 0.699999988079071,
     "spritesheet": "PixelSheet_01-hd",
-    "type": "deco",
+    "type": "pixel",
     "z": 9,
     "default_z_layer": 3,
     "default_z_order": 9
@@ -75104,7 +75268,7 @@ window.allobjects = function() {
     "gridH": 0.3333333432674408,
     "gridW": 0.4333333373069763,
     "spritesheet": "PixelSheet_01-hd",
-    "type": "deco",
+    "type": "pixel",
     "z": 9,
     "default_detail_color_channel": -1,
     "default_z_layer": 3,
@@ -75118,7 +75282,7 @@ window.allobjects = function() {
     "gridH": 0.23333333432674408,
     "gridW": 0.4000000059604645,
     "spritesheet": "PixelSheet_01-hd",
-    "type": "deco",
+    "type": "pixel",
     "z": 9,
     "default_detail_color_channel": -1,
     "default_z_layer": 3,
@@ -75141,7 +75305,7 @@ window.allobjects = function() {
     "gridH": 0.36666667461395264,
     "gridW": 0.5,
     "spritesheet": "PixelSheet_01-hd",
-    "type": "deco",
+    "type": "pixel",
     "z": 9,
     "default_z_layer": 3,
     "default_z_order": 9
@@ -75163,7 +75327,7 @@ window.allobjects = function() {
     "gridH": 0.30000001192092896,
     "gridW": 0.36666667461395264,
     "spritesheet": "PixelSheet_01-hd",
-    "type": "deco",
+    "type": "pixel",
     "z": 9,
     "default_z_layer": 3,
     "default_z_order": 9
@@ -75176,7 +75340,7 @@ window.allobjects = function() {
     "gridH": 0.20000000298023224,
     "gridW": 0.6333333253860474,
     "spritesheet": "PixelSheet_01-hd",
-    "type": "deco",
+    "type": "pixel",
     "z": 9,
     "default_detail_color_channel": -1,
     "default_z_layer": 3,
@@ -75190,7 +75354,7 @@ window.allobjects = function() {
     "gridH": 0.3333333432674408,
     "gridW": 0.5333333611488342,
     "spritesheet": "PixelSheet_01-hd",
-    "type": "deco",
+    "type": "pixel",
     "z": 9,
     "default_detail_color_channel": -1,
     "default_z_layer": 3,
@@ -75213,7 +75377,7 @@ window.allobjects = function() {
     "gridH": 0.30000001192092896,
     "gridW": 0.9333333373069763,
     "spritesheet": "PixelSheet_01-hd",
-    "type": "deco",
+    "type": "pixel",
     "z": 9,
     "default_z_layer": 3,
     "default_z_order": 9
@@ -75235,7 +75399,7 @@ window.allobjects = function() {
     "gridH": 0.3333333432674408,
     "gridW": 0.30000001192092896,
     "spritesheet": "PixelSheet_01-hd",
-    "type": "deco",
+    "type": "pixel",
     "z": 9,
     "default_z_layer": 3,
     "default_z_order": 9
@@ -75257,7 +75421,7 @@ window.allobjects = function() {
     "gridH": 0.2666666805744171,
     "gridW": 0.2666666805744171,
     "spritesheet": "PixelSheet_01-hd",
-    "type": "deco",
+    "type": "pixel",
     "z": 9,
     "default_z_layer": 3,
     "default_z_order": 9
@@ -75270,7 +75434,7 @@ window.allobjects = function() {
     "gridH": 0.23333333432674408,
     "gridW": 0.4000000059604645,
     "spritesheet": "PixelSheet_01-hd",
-    "type": "deco",
+    "type": "pixel",
     "z": 9,
     "default_detail_color_channel": -1,
     "default_z_layer": 3,
@@ -75284,7 +75448,7 @@ window.allobjects = function() {
     "gridH": 0.20000000298023224,
     "gridW": 0.36666667461395264,
     "spritesheet": "PixelSheet_01-hd",
-    "type": "deco",
+    "type": "pixel",
     "z": 9,
     "default_detail_color_channel": -1,
     "default_z_layer": 3,
@@ -75307,7 +75471,7 @@ window.allobjects = function() {
     "gridH": 0.2666666805744171,
     "gridW": 0.4333333373069763,
     "spritesheet": "PixelSheet_01-hd",
-    "type": "deco",
+    "type": "pixel",
     "z": 9,
     "default_z_layer": 3,
     "default_z_order": 9
@@ -75329,7 +75493,7 @@ window.allobjects = function() {
     "gridH": 0.5666666626930237,
     "gridW": 0.5666666626930237,
     "spritesheet": "PixelSheet_01-hd",
-    "type": "deco",
+    "type": "pixel",
     "z": 9,
     "default_z_layer": 3,
     "default_z_order": 9
@@ -75351,7 +75515,7 @@ window.allobjects = function() {
     "gridH": 0.5,
     "gridW": 1.0666667222976685,
     "spritesheet": "PixelSheet_01-hd",
-    "type": "deco",
+    "type": "pixel",
     "z": 9,
     "default_z_layer": 3,
     "default_z_order": 9
@@ -75373,7 +75537,7 @@ window.allobjects = function() {
     "gridH": 0.4333333373069763,
     "gridW": 0.800000011920929,
     "spritesheet": "PixelSheet_01-hd",
-    "type": "deco",
+    "type": "pixel",
     "z": 9,
     "default_z_layer": 3,
     "default_z_order": 9
@@ -75395,7 +75559,7 @@ window.allobjects = function() {
     "gridH": 0.1666666716337204,
     "gridW": 0.1666666716337204,
     "spritesheet": "PixelSheet_01-hd",
-    "type": "deco",
+    "type": "pixel",
     "z": 9,
     "default_z_layer": 3,
     "default_z_order": 9
@@ -75417,7 +75581,7 @@ window.allobjects = function() {
     "gridH": 0.5666666626930237,
     "gridW": 0.5666666626930237,
     "spritesheet": "PixelSheet_01-hd",
-    "type": "deco",
+    "type": "pixel",
     "z": 9,
     "default_z_layer": 3,
     "default_z_order": 9
@@ -75439,7 +75603,7 @@ window.allobjects = function() {
     "gridH": 0.5666666626930237,
     "gridW": 0.5666666626930237,
     "spritesheet": "PixelSheet_01-hd",
-    "type": "deco",
+    "type": "pixel",
     "z": 9,
     "default_z_layer": 3,
     "default_z_order": 9
@@ -75461,7 +75625,7 @@ window.allobjects = function() {
     "gridH": 0.5666666626930237,
     "gridW": 0.7666666507720947,
     "spritesheet": "PixelSheet_01-hd",
-    "type": "deco",
+    "type": "pixel",
     "z": 9,
     "default_z_layer": 3,
     "default_z_order": 9
@@ -75483,7 +75647,7 @@ window.allobjects = function() {
     "gridH": 0.6000000238418579,
     "gridW": 0.46666666865348816,
     "spritesheet": "PixelSheet_01-hd",
-    "type": "deco",
+    "type": "pixel",
     "z": 9,
     "default_z_layer": 3,
     "default_z_order": 9
@@ -75505,7 +75669,7 @@ window.allobjects = function() {
     "gridH": 0.5333333611488342,
     "gridW": 0.7666666507720947,
     "spritesheet": "PixelSheet_01-hd",
-    "type": "deco",
+    "type": "pixel",
     "z": 9,
     "default_z_layer": 3,
     "default_z_order": 9
@@ -75518,7 +75682,7 @@ window.allobjects = function() {
     "gridH": 0.6666666865348816,
     "gridW": 0.4000000059604645,
     "spritesheet": "PixelSheet_01-hd",
-    "type": "deco",
+    "type": "pixel",
     "z": 9,
     "default_detail_color_channel": -1,
     "default_z_layer": 3,
@@ -75541,7 +75705,7 @@ window.allobjects = function() {
     "gridH": 0.5333333611488342,
     "gridW": 0.5333333611488342,
     "spritesheet": "PixelSheet_01-hd",
-    "type": "deco",
+    "type": "pixel",
     "z": 9,
     "default_z_layer": 3,
     "default_z_order": 9
@@ -75563,7 +75727,7 @@ window.allobjects = function() {
     "gridH": 0.9333333373069763,
     "gridW": 0.3333333432674408,
     "spritesheet": "PixelSheet_01-hd",
-    "type": "deco",
+    "type": "pixel",
     "z": 9,
     "default_z_layer": 3,
     "default_z_order": 9
@@ -75585,7 +75749,7 @@ window.allobjects = function() {
     "gridH": 0.4333333373069763,
     "gridW": 0.800000011920929,
     "spritesheet": "PixelSheet_01-hd",
-    "type": "deco",
+    "type": "pixel",
     "z": 9,
     "default_z_layer": 3,
     "default_z_order": 9
@@ -75607,7 +75771,7 @@ window.allobjects = function() {
     "gridH": 0.699999988079071,
     "gridW": 0.36666667461395264,
     "spritesheet": "PixelSheet_01-hd",
-    "type": "deco",
+    "type": "pixel",
     "z": 9,
     "default_z_layer": 3,
     "default_z_order": 9
@@ -75629,7 +75793,7 @@ window.allobjects = function() {
     "gridH": 0.10000000149011612,
     "gridW": 0.06666667014360428,
     "spritesheet": "PixelSheet_01-hd",
-    "type": "deco",
+    "type": "pixel",
     "z": 9,
     "default_z_layer": 3,
     "default_z_order": 9
@@ -75651,7 +75815,7 @@ window.allobjects = function() {
     "gridH": 0.5333333611488342,
     "gridW": 0.20000000298023224,
     "spritesheet": "PixelSheet_01-hd",
-    "type": "deco",
+    "type": "pixel",
     "z": 9,
     "default_z_layer": 3,
     "default_z_order": 9
@@ -75673,7 +75837,7 @@ window.allobjects = function() {
     "gridH": 0.36666667461395264,
     "gridW": 0.5666666626930237,
     "spritesheet": "PixelSheet_01-hd",
-    "type": "deco",
+    "type": "pixel",
     "z": 9,
     "default_z_layer": 3,
     "default_z_order": 9
@@ -75686,7 +75850,7 @@ window.allobjects = function() {
     "gridH": 0.3333333432674408,
     "gridW": 0.6666666865348816,
     "spritesheet": "PixelSheet_01-hd",
-    "type": "deco",
+    "type": "pixel",
     "z": 9,
     "default_detail_color_channel": -1,
     "default_z_layer": 3,
@@ -75700,7 +75864,7 @@ window.allobjects = function() {
     "gridH": 0.4333333373069763,
     "gridW": 0.4333333373069763,
     "spritesheet": "PixelSheet_01-hd",
-    "type": "deco",
+    "type": "pixel",
     "z": 9,
     "default_detail_color_channel": -1,
     "default_z_layer": 3,
@@ -75714,7 +75878,7 @@ window.allobjects = function() {
     "gridH": 0.5,
     "gridW": 0.4333333373069763,
     "spritesheet": "PixelSheet_01-hd",
-    "type": "deco",
+    "type": "pixel",
     "z": 9,
     "default_detail_color_channel": -1,
     "default_z_layer": 3,
@@ -75728,7 +75892,7 @@ window.allobjects = function() {
     "gridH": 0.6000000238418579,
     "gridW": 0.30000001192092896,
     "spritesheet": "PixelSheet_01-hd",
-    "type": "deco",
+    "type": "pixel",
     "z": 9,
     "default_detail_color_channel": -1,
     "default_z_layer": 3,
@@ -75751,7 +75915,7 @@ window.allobjects = function() {
     "gridH": 0.46666666865348816,
     "gridW": 0.699999988079071,
     "spritesheet": "PixelSheet_01-hd",
-    "type": "deco",
+    "type": "pixel",
     "z": 9,
     "default_z_layer": 3,
     "default_z_order": 9
@@ -75773,7 +75937,7 @@ window.allobjects = function() {
     "gridH": 0.30000001192092896,
     "gridW": 1.2666666507720947,
     "spritesheet": "PixelSheet_01-hd",
-    "type": "deco",
+    "type": "pixel",
     "z": 9,
     "default_z_layer": 3,
     "default_z_order": 9
@@ -75795,7 +75959,7 @@ window.allobjects = function() {
     "gridH": 0.5333333611488342,
     "gridW": 0.3333333432674408,
     "spritesheet": "PixelSheet_01-hd",
-    "type": "deco",
+    "type": "pixel",
     "z": 9,
     "default_z_layer": 3,
     "default_z_order": 9
@@ -75817,7 +75981,7 @@ window.allobjects = function() {
     "gridH": 0.5333333611488342,
     "gridW": 0.3333333432674408,
     "spritesheet": "PixelSheet_01-hd",
-    "type": "deco",
+    "type": "pixel",
     "z": 9,
     "default_z_layer": 3,
     "default_z_order": 9
@@ -75839,7 +76003,7 @@ window.allobjects = function() {
     "gridH": 0.36666667461395264,
     "gridW": 0.3333333432674408,
     "spritesheet": "PixelSheet_01-hd",
-    "type": "deco",
+    "type": "pixel",
     "z": 9,
     "default_z_layer": 3,
     "default_z_order": 9
@@ -75861,7 +76025,7 @@ window.allobjects = function() {
     "gridH": 0.3333333432674408,
     "gridW": 0.13333334028720856,
     "spritesheet": "PixelSheet_01-hd",
-    "type": "deco",
+    "type": "pixel",
     "z": 9,
     "default_z_layer": 3,
     "default_z_order": 9
@@ -75883,7 +76047,7 @@ window.allobjects = function() {
     "gridH": 0.5333333611488342,
     "gridW": 0.4000000059604645,
     "spritesheet": "PixelSheet_01-hd",
-    "type": "deco",
+    "type": "pixel",
     "z": 9,
     "default_z_layer": 3,
     "default_z_order": 9
@@ -75905,7 +76069,7 @@ window.allobjects = function() {
     "gridH": 0.2666666805744171,
     "gridW": 0.23333333432674408,
     "spritesheet": "PixelSheet_01-hd",
-    "type": "deco",
+    "type": "pixel",
     "z": 9,
     "default_z_layer": 3,
     "default_z_order": 9
@@ -75927,7 +76091,7 @@ window.allobjects = function() {
     "gridH": 0.2666666805744171,
     "gridW": 0.20000000298023224,
     "spritesheet": "PixelSheet_01-hd",
-    "type": "deco",
+    "type": "pixel",
     "z": 9,
     "default_z_layer": 3,
     "default_z_order": 9
@@ -75949,7 +76113,7 @@ window.allobjects = function() {
     "gridH": 0.20000000298023224,
     "gridW": 0.23333333432674408,
     "spritesheet": "PixelSheet_01-hd",
-    "type": "deco",
+    "type": "pixel",
     "z": 9,
     "default_z_layer": 3,
     "default_z_order": 9
@@ -75971,7 +76135,7 @@ window.allobjects = function() {
     "gridH": 0.5333333611488342,
     "gridW": 0.5,
     "spritesheet": "PixelSheet_01-hd",
-    "type": "deco",
+    "type": "pixel",
     "z": 9,
     "default_z_layer": 3,
     "default_z_order": 9
@@ -75993,7 +76157,7 @@ window.allobjects = function() {
     "gridH": 0.5333333611488342,
     "gridW": 0.5,
     "spritesheet": "PixelSheet_01-hd",
-    "type": "deco",
+    "type": "pixel",
     "z": 9,
     "default_z_layer": 3,
     "default_z_order": 9
@@ -76015,7 +76179,7 @@ window.allobjects = function() {
     "gridH": 0.5333333611488342,
     "gridW": 0.5,
     "spritesheet": "PixelSheet_01-hd",
-    "type": "deco",
+    "type": "pixel",
     "z": 9,
     "default_z_layer": 3,
     "default_z_order": 9
@@ -76037,7 +76201,7 @@ window.allobjects = function() {
     "gridH": 0.5333333611488342,
     "gridW": 0.46666666865348816,
     "spritesheet": "PixelSheet_01-hd",
-    "type": "deco",
+    "type": "pixel",
     "z": 9,
     "default_z_layer": 3,
     "default_z_order": 9
@@ -76059,7 +76223,7 @@ window.allobjects = function() {
     "gridH": 0.5333333611488342,
     "gridW": 0.5333333611488342,
     "spritesheet": "PixelSheet_01-hd",
-    "type": "deco",
+    "type": "pixel",
     "z": 9,
     "default_z_layer": 3,
     "default_z_order": 9
@@ -76081,7 +76245,7 @@ window.allobjects = function() {
     "gridH": 0.03333333507180214,
     "gridW": 0.4000000059604645,
     "spritesheet": "PixelSheet_01-hd",
-    "type": "deco",
+    "type": "pixel",
     "z": 9,
     "default_z_layer": 3,
     "default_z_order": 9
@@ -76094,7 +76258,7 @@ window.allobjects = function() {
     "gridH": 0.13333334028720856,
     "gridW": 0.20000000298023224,
     "spritesheet": "PixelSheet_01-hd",
-    "type": "deco",
+    "type": "pixel",
     "z": 9,
     "default_detail_color_channel": -1,
     "default_z_layer": 3,
@@ -76117,7 +76281,7 @@ window.allobjects = function() {
     "gridH": 0.2666666805744171,
     "gridW": 0.4000000059604645,
     "spritesheet": "PixelSheet_01-hd",
-    "type": "deco",
+    "type": "pixel",
     "z": 9,
     "default_z_layer": 3,
     "default_z_order": 9
@@ -76139,7 +76303,7 @@ window.allobjects = function() {
     "gridH": 0.03333333507180214,
     "gridW": 0.13333334028720856,
     "spritesheet": "PixelSheet_01-hd",
-    "type": "deco",
+    "type": "pixel",
     "z": 9,
     "default_z_layer": 3,
     "default_z_order": 9
@@ -76161,7 +76325,7 @@ window.allobjects = function() {
     "gridH": 0.2666666805744171,
     "gridW": 0.4000000059604645,
     "spritesheet": "PixelSheet_01-hd",
-    "type": "deco",
+    "type": "pixel",
     "z": 9,
     "default_z_layer": 3,
     "default_z_order": 9
@@ -76183,7 +76347,7 @@ window.allobjects = function() {
     "gridH": 0.30000001192092896,
     "gridW": 0.4333333373069763,
     "spritesheet": "PixelSheet_01-hd",
-    "type": "deco",
+    "type": "pixel",
     "z": 9,
     "default_z_layer": 3,
     "default_z_order": 9
@@ -76205,7 +76369,7 @@ window.allobjects = function() {
     "gridH": 0.23333333432674408,
     "gridW": 0.46666666865348816,
     "spritesheet": "PixelSheet_01-hd",
-    "type": "deco",
+    "type": "pixel",
     "z": 9,
     "default_z_layer": 3,
     "default_z_order": 9
@@ -76227,7 +76391,7 @@ window.allobjects = function() {
     "gridH": 0.3333333432674408,
     "gridW": 0.13333334028720856,
     "spritesheet": "PixelSheet_01-hd",
-    "type": "deco",
+    "type": "pixel",
     "z": 9,
     "default_z_layer": 3,
     "default_z_order": 9
@@ -76249,7 +76413,7 @@ window.allobjects = function() {
     "gridH": 0.5333333611488342,
     "gridW": 0.5333333611488342,
     "spritesheet": "PixelSheet_01-hd",
-    "type": "deco",
+    "type": "pixel",
     "z": 9,
     "default_z_layer": 3,
     "default_z_order": 9
@@ -76271,7 +76435,7 @@ window.allobjects = function() {
     "gridH": 0.2666666805744171,
     "gridW": 0.20000000298023224,
     "spritesheet": "PixelSheet_01-hd",
-    "type": "deco",
+    "type": "pixel",
     "z": 9,
     "default_z_layer": 3,
     "default_z_order": 9
@@ -76293,7 +76457,7 @@ window.allobjects = function() {
     "gridH": 0.03333333507180214,
     "gridW": 0.20000000298023224,
     "spritesheet": "PixelSheet_01-hd",
-    "type": "deco",
+    "type": "pixel",
     "z": 9,
     "default_z_layer": 3,
     "default_z_order": 9
@@ -76315,7 +76479,7 @@ window.allobjects = function() {
     "gridH": 0.5333333611488342,
     "gridW": 0.5333333611488342,
     "spritesheet": "PixelSheet_01-hd",
-    "type": "deco",
+    "type": "pixel",
     "z": 9,
     "default_z_layer": 3,
     "default_z_order": 9
@@ -76337,7 +76501,7 @@ window.allobjects = function() {
     "gridH": 0.8999999761581421,
     "gridW": 0.5,
     "spritesheet": "PixelSheet_01-hd",
-    "type": "deco",
+    "type": "pixel",
     "z": 9,
     "default_z_layer": 3,
     "default_z_order": 9
@@ -76359,7 +76523,7 @@ window.allobjects = function() {
     "gridH": 0.30000001192092896,
     "gridW": 0.4333333373069763,
     "spritesheet": "PixelSheet_01-hd",
-    "type": "deco",
+    "type": "pixel",
     "z": 9,
     "default_z_layer": 3,
     "default_z_order": 9
@@ -76381,7 +76545,7 @@ window.allobjects = function() {
     "gridH": 0.36666667461395264,
     "gridW": 0.5333333611488342,
     "spritesheet": "PixelSheet_01-hd",
-    "type": "deco",
+    "type": "pixel",
     "z": 9,
     "default_z_layer": 3,
     "default_z_order": 9
@@ -76403,7 +76567,7 @@ window.allobjects = function() {
     "gridH": 0.5333333611488342,
     "gridW": 0.5333333611488342,
     "spritesheet": "PixelSheet_01-hd",
-    "type": "deco",
+    "type": "pixel",
     "z": 9,
     "default_z_layer": 3,
     "default_z_order": 9
@@ -76425,7 +76589,7 @@ window.allobjects = function() {
     "gridH": 0.5333333611488342,
     "gridW": 0.5333333611488342,
     "spritesheet": "PixelSheet_01-hd",
-    "type": "deco",
+    "type": "pixel",
     "z": 9,
     "default_z_layer": 3,
     "default_z_order": 9
@@ -76447,7 +76611,7 @@ window.allobjects = function() {
     "gridH": 0.3333333432674408,
     "gridW": 0.3333333432674408,
     "spritesheet": "PixelSheet_01-hd",
-    "type": "deco",
+    "type": "pixel",
     "z": 9,
     "default_z_layer": 3,
     "default_z_order": 9
@@ -76469,7 +76633,7 @@ window.allobjects = function() {
     "gridH": 0.5333333611488342,
     "gridW": 0.2666666805744171,
     "spritesheet": "PixelSheet_01-hd",
-    "type": "deco",
+    "type": "pixel",
     "z": 9,
     "default_z_layer": 3,
     "default_z_order": 9
@@ -76491,7 +76655,7 @@ window.allobjects = function() {
     "gridH": 0.5333333611488342,
     "gridW": 0.2666666805744171,
     "spritesheet": "PixelSheet_01-hd",
-    "type": "deco",
+    "type": "pixel",
     "z": 9,
     "default_z_layer": 3,
     "default_z_order": 9
@@ -76513,7 +76677,7 @@ window.allobjects = function() {
     "gridH": 0.5666666626930237,
     "gridW": 0.5333333611488342,
     "spritesheet": "PixelSheet_01-hd",
-    "type": "deco",
+    "type": "pixel",
     "z": 9,
     "default_z_layer": 3,
     "default_z_order": 9
@@ -76535,7 +76699,7 @@ window.allobjects = function() {
     "gridH": 0.5333333611488342,
     "gridW": 0.5333333611488342,
     "spritesheet": "PixelSheet_01-hd",
-    "type": "deco",
+    "type": "pixel",
     "z": 9,
     "default_z_layer": 3,
     "default_z_order": 9
@@ -76557,7 +76721,7 @@ window.allobjects = function() {
     "gridH": 0.46666666865348816,
     "gridW": 0.5333333611488342,
     "spritesheet": "PixelSheet_01-hd",
-    "type": "deco",
+    "type": "pixel",
     "z": 9,
     "default_z_layer": 3,
     "default_z_order": 9
@@ -76579,7 +76743,7 @@ window.allobjects = function() {
     "gridH": 0.5333333611488342,
     "gridW": 0.5333333611488342,
     "spritesheet": "PixelSheet_01-hd",
-    "type": "deco",
+    "type": "pixel",
     "z": 9,
     "default_z_layer": 3,
     "default_z_order": 9
@@ -76601,7 +76765,7 @@ window.allobjects = function() {
     "gridH": 0.46666666865348816,
     "gridW": 0.5333333611488342,
     "spritesheet": "PixelSheet_01-hd",
-    "type": "deco",
+    "type": "pixel",
     "z": 9,
     "default_z_layer": 3,
     "default_z_order": 9
@@ -76623,7 +76787,7 @@ window.allobjects = function() {
     "gridH": 0.4333333373069763,
     "gridW": 0.03333333507180214,
     "spritesheet": "PixelSheet_01-hd",
-    "type": "deco",
+    "type": "pixel",
     "z": 9,
     "default_z_layer": 3,
     "default_z_order": 9
@@ -76645,7 +76809,7 @@ window.allobjects = function() {
     "gridH": 0.5333333611488342,
     "gridW": 0.5333333611488342,
     "spritesheet": "PixelSheet_01-hd",
-    "type": "deco",
+    "type": "pixel",
     "z": 9,
     "default_z_layer": 3,
     "default_z_order": 9
@@ -76667,7 +76831,7 @@ window.allobjects = function() {
     "gridH": 0.5333333611488342,
     "gridW": 0.03333333507180214,
     "spritesheet": "PixelSheet_01-hd",
-    "type": "deco",
+    "type": "pixel",
     "z": 9,
     "default_z_layer": 3,
     "default_z_order": 9
@@ -76689,7 +76853,7 @@ window.allobjects = function() {
     "gridH": 0.5333333611488342,
     "gridW": 0.46666666865348816,
     "spritesheet": "PixelSheet_01-hd",
-    "type": "deco",
+    "type": "pixel",
     "z": 9,
     "default_z_layer": 3,
     "default_z_order": 9
@@ -76711,7 +76875,7 @@ window.allobjects = function() {
     "gridH": 0.03333333507180214,
     "gridW": 0.46666666865348816,
     "spritesheet": "PixelSheet_01-hd",
-    "type": "deco",
+    "type": "pixel",
     "z": 9,
     "default_z_layer": 3,
     "default_z_order": 9
@@ -76733,7 +76897,7 @@ window.allobjects = function() {
     "gridH": 0.5,
     "gridW": 0.46666666865348816,
     "spritesheet": "PixelSheet_01-hd",
-    "type": "deco",
+    "type": "pixel",
     "z": 9,
     "default_z_layer": 3,
     "default_z_order": 9
@@ -76755,7 +76919,7 @@ window.allobjects = function() {
     "gridH": 0.5333333611488342,
     "gridW": 0.5333333611488342,
     "spritesheet": "PixelSheet_01-hd",
-    "type": "deco",
+    "type": "pixel",
     "z": 9,
     "default_z_layer": 3,
     "default_z_order": 9
@@ -76777,7 +76941,7 @@ window.allobjects = function() {
     "gridH": 0.03333333507180214,
     "gridW": 0.5333333611488342,
     "spritesheet": "PixelSheet_01-hd",
-    "type": "deco",
+    "type": "pixel",
     "z": 9,
     "default_z_layer": 3,
     "default_z_order": 9
@@ -76799,7 +76963,7 @@ window.allobjects = function() {
     "gridH": 0.46666666865348816,
     "gridW": 0.5333333611488342,
     "spritesheet": "PixelSheet_01-hd",
-    "type": "deco",
+    "type": "pixel",
     "z": 9,
     "default_z_layer": 3,
     "default_z_order": 9
@@ -76821,7 +76985,7 @@ window.allobjects = function() {
     "gridH": 0.30000001192092896,
     "gridW": 0.46666666865348816,
     "spritesheet": "PixelSheet_01-hd",
-    "type": "deco",
+    "type": "pixel",
     "z": 9,
     "default_z_layer": 3,
     "default_z_order": 9
@@ -76843,7 +77007,7 @@ window.allobjects = function() {
     "gridH": 0.13333334028720856,
     "gridW": 0.4333333373069763,
     "spritesheet": "PixelSheet_01-hd",
-    "type": "deco",
+    "type": "pixel",
     "z": 9,
     "default_z_layer": 3,
     "default_z_order": 9
@@ -76865,7 +77029,7 @@ window.allobjects = function() {
     "gridH": 0.2666666805744171,
     "gridW": 0.36666667461395264,
     "spritesheet": "PixelSheet_01-hd",
-    "type": "deco",
+    "type": "pixel",
     "z": 9,
     "default_z_layer": 3,
     "default_z_order": 9
@@ -76887,7 +77051,7 @@ window.allobjects = function() {
     "gridH": 0.36666667461395264,
     "gridW": 0.4333333373069763,
     "spritesheet": "PixelSheet_01-hd",
-    "type": "deco",
+    "type": "pixel",
     "z": 9,
     "default_z_layer": 3,
     "default_z_order": 9
@@ -76909,7 +77073,7 @@ window.allobjects = function() {
     "gridH": 0.5333333611488342,
     "gridW": 0.5333333611488342,
     "spritesheet": "PixelSheet_01-hd",
-    "type": "deco",
+    "type": "pixel",
     "z": 9,
     "default_z_layer": 3,
     "default_z_order": 9
@@ -76931,7 +77095,7 @@ window.allobjects = function() {
     "gridH": 0.5333333611488342,
     "gridW": 0.13333334028720856,
     "spritesheet": "PixelSheet_01-hd",
-    "type": "deco",
+    "type": "pixel",
     "z": 9,
     "default_z_layer": 3,
     "default_z_order": 9
@@ -76953,7 +77117,7 @@ window.allobjects = function() {
     "gridH": 0.4333333373069763,
     "gridW": 0.4333333373069763,
     "spritesheet": "PixelSheet_01-hd",
-    "type": "deco",
+    "type": "pixel",
     "z": 9,
     "default_z_layer": 3,
     "default_z_order": 9
@@ -76975,7 +77139,7 @@ window.allobjects = function() {
     "gridH": 0.4333333373069763,
     "gridW": 0.4000000059604645,
     "spritesheet": "PixelSheet_01-hd",
-    "type": "deco",
+    "type": "pixel",
     "z": 9,
     "default_z_layer": 3,
     "default_z_order": 9
@@ -76997,7 +77161,7 @@ window.allobjects = function() {
     "gridH": 0.4333333373069763,
     "gridW": 0.4333333373069763,
     "spritesheet": "PixelSheet_01-hd",
-    "type": "deco",
+    "type": "pixel",
     "z": 9,
     "default_z_layer": 3,
     "default_z_order": 9
@@ -77019,7 +77183,7 @@ window.allobjects = function() {
     "gridH": 0.03333333507180214,
     "gridW": 0.4333333373069763,
     "spritesheet": "PixelSheet_01-hd",
-    "type": "deco",
+    "type": "pixel",
     "z": 9,
     "default_z_layer": 3,
     "default_z_order": 9
@@ -77041,7 +77205,7 @@ window.allobjects = function() {
     "gridH": 0.5333333611488342,
     "gridW": 0.4333333373069763,
     "spritesheet": "PixelSheet_01-hd",
-    "type": "deco",
+    "type": "pixel",
     "z": 9,
     "default_z_layer": 3,
     "default_z_order": 9
@@ -77063,7 +77227,7 @@ window.allobjects = function() {
     "gridH": 0.1666666716337204,
     "gridW": 0.4000000059604645,
     "spritesheet": "PixelSheet_01-hd",
-    "type": "deco",
+    "type": "pixel",
     "z": 9,
     "default_z_layer": 3,
     "default_z_order": 9
@@ -77085,7 +77249,7 @@ window.allobjects = function() {
     "gridH": 0.4333333373069763,
     "gridW": 0.4333333373069763,
     "spritesheet": "PixelSheet_01-hd",
-    "type": "deco",
+    "type": "pixel",
     "z": 9,
     "default_z_layer": 3,
     "default_z_order": 9
@@ -77107,7 +77271,7 @@ window.allobjects = function() {
     "gridH": 0.5333333611488342,
     "gridW": 0.4333333373069763,
     "spritesheet": "PixelSheet_01-hd",
-    "type": "deco",
+    "type": "pixel",
     "z": 9,
     "default_z_layer": 3,
     "default_z_order": 9
@@ -77129,7 +77293,7 @@ window.allobjects = function() {
     "gridH": 0.5333333611488342,
     "gridW": 0.4333333373069763,
     "spritesheet": "PixelSheet_01-hd",
-    "type": "deco",
+    "type": "pixel",
     "z": 9,
     "default_z_layer": 3,
     "default_z_order": 9
@@ -77151,7 +77315,7 @@ window.allobjects = function() {
     "gridH": 0.8999999761581421,
     "gridW": 0.8999999761581421,
     "spritesheet": "PixelSheet_01-hd",
-    "type": "deco",
+    "type": "pixel",
     "z": 9,
     "default_z_layer": 3,
     "default_z_order": 9
@@ -77173,7 +77337,7 @@ window.allobjects = function() {
     "gridH": 0.8999999761581421,
     "gridW": 0.2666666805744171,
     "spritesheet": "PixelSheet_01-hd",
-    "type": "deco",
+    "type": "pixel",
     "z": 9,
     "default_z_layer": 3,
     "default_z_order": 9
@@ -77195,7 +77359,7 @@ window.allobjects = function() {
     "gridH": 0.36666667461395264,
     "gridW": 0.03333333507180214,
     "spritesheet": "PixelSheet_01-hd",
-    "type": "deco",
+    "type": "pixel",
     "z": 9,
     "default_z_layer": 3,
     "default_z_order": 9
@@ -77217,7 +77381,7 @@ window.allobjects = function() {
     "gridH": 0.5666666626930237,
     "gridW": 0.6666666865348816,
     "spritesheet": "PixelSheet_01-hd",
-    "type": "deco",
+    "type": "pixel",
     "z": 9,
     "default_z_layer": 3,
     "default_z_order": 9
@@ -77239,7 +77403,7 @@ window.allobjects = function() {
     "gridH": 0.03333333507180214,
     "gridW": 0.6666666865348816,
     "spritesheet": "PixelSheet_01-hd",
-    "type": "deco",
+    "type": "pixel",
     "z": 9,
     "default_z_layer": 3,
     "default_z_order": 9
@@ -77261,7 +77425,7 @@ window.allobjects = function() {
     "gridH": 0.5333333611488342,
     "gridW": 0.5333333611488342,
     "spritesheet": "PixelSheet_01-hd",
-    "type": "deco",
+    "type": "pixel",
     "z": 9,
     "default_z_layer": 3,
     "default_z_order": 9
@@ -77283,7 +77447,7 @@ window.allobjects = function() {
     "gridH": 0.36666667461395264,
     "gridW": 0.5333333611488342,
     "spritesheet": "PixelSheet_01-hd",
-    "type": "deco",
+    "type": "pixel",
     "z": 9,
     "default_z_layer": 3,
     "default_z_order": 9
@@ -77305,7 +77469,7 @@ window.allobjects = function() {
     "gridH": 0.03333333507180214,
     "gridW": 0.1666666716337204,
     "spritesheet": "PixelSheet_01-hd",
-    "type": "deco",
+    "type": "pixel",
     "z": 9,
     "default_z_layer": 3,
     "default_z_order": 9
@@ -77327,7 +77491,7 @@ window.allobjects = function() {
     "gridH": 0.36666667461395264,
     "gridW": 0.36666667461395264,
     "spritesheet": "PixelSheet_01-hd",
-    "type": "deco",
+    "type": "pixel",
     "z": 9,
     "default_z_layer": 3,
     "default_z_order": 9
@@ -77349,7 +77513,7 @@ window.allobjects = function() {
     "gridH": 0.03333333507180214,
     "gridW": 0.36666667461395264,
     "spritesheet": "PixelSheet_01-hd",
-    "type": "deco",
+    "type": "pixel",
     "z": 9,
     "default_z_layer": 3,
     "default_z_order": 9
@@ -77371,7 +77535,7 @@ window.allobjects = function() {
     "gridH": 0.1666666716337204,
     "gridW": 0.4000000059604645,
     "spritesheet": "PixelSheet_01-hd",
-    "type": "deco",
+    "type": "pixel",
     "z": 9,
     "default_z_layer": 3,
     "default_z_order": 9
@@ -77393,7 +77557,7 @@ window.allobjects = function() {
     "gridH": 0.2666666805744171,
     "gridW": 0.23333333432674408,
     "spritesheet": "PixelSheet_01-hd",
-    "type": "deco",
+    "type": "pixel",
     "z": 9,
     "default_z_layer": 3,
     "default_z_order": 9
@@ -77415,7 +77579,7 @@ window.allobjects = function() {
     "gridH": 0.3333333432674408,
     "gridW": 0.2666666805744171,
     "spritesheet": "PixelSheet_01-hd",
-    "type": "deco",
+    "type": "pixel",
     "z": 9,
     "default_z_layer": 3,
     "default_z_order": 9
@@ -77437,7 +77601,7 @@ window.allobjects = function() {
     "gridH": 0.3333333432674408,
     "gridW": 0.46666666865348816,
     "spritesheet": "PixelSheet_01-hd",
-    "type": "deco",
+    "type": "pixel",
     "z": 9,
     "default_z_layer": 3,
     "default_z_order": 9
@@ -77459,7 +77623,7 @@ window.allobjects = function() {
     "gridH": 0.5,
     "gridW": 0.6000000238418579,
     "spritesheet": "PixelSheet_01-hd",
-    "type": "deco",
+    "type": "pixel",
     "z": 9,
     "default_z_layer": 3,
     "default_z_order": 9
@@ -77481,7 +77645,7 @@ window.allobjects = function() {
     "gridH": 0.03333333507180214,
     "gridW": 0.5333333611488342,
     "spritesheet": "PixelSheet_01-hd",
-    "type": "deco",
+    "type": "pixel",
     "z": 9,
     "default_z_layer": 3,
     "default_z_order": 9
@@ -77503,7 +77667,7 @@ window.allobjects = function() {
     "gridH": 0.4000000059604645,
     "gridW": 0.3333333432674408,
     "spritesheet": "PixelSheet_01-hd",
-    "type": "deco",
+    "type": "pixel",
     "z": 9,
     "default_z_layer": 3,
     "default_z_order": 9
@@ -77525,7 +77689,7 @@ window.allobjects = function() {
     "gridH": 0.5333333611488342,
     "gridW": 0.5333333611488342,
     "spritesheet": "PixelSheet_01-hd",
-    "type": "deco",
+    "type": "pixel",
     "z": 9,
     "default_z_layer": 3,
     "default_z_order": 9
@@ -77547,7 +77711,7 @@ window.allobjects = function() {
     "gridH": 0.5333333611488342,
     "gridW": 0.5333333611488342,
     "spritesheet": "PixelSheet_01-hd",
-    "type": "deco",
+    "type": "pixel",
     "z": 9,
     "default_z_layer": 3,
     "default_z_order": 9
@@ -77569,7 +77733,7 @@ window.allobjects = function() {
     "gridH": 0.2666666805744171,
     "gridW": 0.5333333611488342,
     "spritesheet": "PixelSheet_01-hd",
-    "type": "deco",
+    "type": "pixel",
     "z": 9,
     "default_z_layer": 3,
     "default_z_order": 9
@@ -77591,7 +77755,7 @@ window.allobjects = function() {
     "gridH": 0.2666666805744171,
     "gridW": 0.5333333611488342,
     "spritesheet": "PixelSheet_01-hd",
-    "type": "deco",
+    "type": "pixel",
     "z": 9,
     "default_z_layer": 3,
     "default_z_order": 9
@@ -77613,7 +77777,7 @@ window.allobjects = function() {
     "gridH": 0.2666666805744171,
     "gridW": 0.5333333611488342,
     "spritesheet": "PixelSheet_01-hd",
-    "type": "deco",
+    "type": "pixel",
     "z": 9,
     "default_z_layer": 3,
     "default_z_order": 9
@@ -77635,7 +77799,7 @@ window.allobjects = function() {
     "gridH": 0.2666666805744171,
     "gridW": 0.2666666805744171,
     "spritesheet": "PixelSheet_01-hd",
-    "type": "deco",
+    "type": "pixel",
     "z": 9,
     "default_z_layer": 3,
     "default_z_order": 9
@@ -77657,7 +77821,7 @@ window.allobjects = function() {
     "gridH": 0.4333333373069763,
     "gridW": 0.5333333611488342,
     "spritesheet": "PixelSheet_01-hd",
-    "type": "deco",
+    "type": "pixel",
     "z": 9,
     "default_z_layer": 3,
     "default_z_order": 9
@@ -77679,7 +77843,7 @@ window.allobjects = function() {
     "gridH": 0.4333333373069763,
     "gridW": 0.5333333611488342,
     "spritesheet": "PixelSheet_01-hd",
-    "type": "deco",
+    "type": "pixel",
     "z": 9,
     "default_z_layer": 3,
     "default_z_order": 9
@@ -77701,7 +77865,7 @@ window.allobjects = function() {
     "gridH": 0.5333333611488342,
     "gridW": 0.5333333611488342,
     "spritesheet": "PixelSheet_01-hd",
-    "type": "deco",
+    "type": "pixel",
     "z": 9,
     "default_z_layer": 3,
     "default_z_order": 9
@@ -77723,7 +77887,7 @@ window.allobjects = function() {
     "gridH": 0.2666666805744171,
     "gridW": 0.23333333432674408,
     "spritesheet": "PixelSheet_01-hd",
-    "type": "deco",
+    "type": "pixel",
     "z": 9,
     "default_z_layer": 3,
     "default_z_order": 9
@@ -77745,7 +77909,7 @@ window.allobjects = function() {
     "gridH": 0.5333333611488342,
     "gridW": 0.5333333611488342,
     "spritesheet": "PixelSheet_01-hd",
-    "type": "deco",
+    "type": "pixel",
     "z": 9,
     "default_z_layer": 3,
     "default_z_order": 9
@@ -77767,7 +77931,7 @@ window.allobjects = function() {
     "gridH": 0.2666666805744171,
     "gridW": 0.3333333432674408,
     "spritesheet": "PixelSheet_01-hd",
-    "type": "deco",
+    "type": "pixel",
     "z": 9,
     "default_z_layer": 3,
     "default_z_order": 9
@@ -77789,7 +77953,7 @@ window.allobjects = function() {
     "gridH": 0.30000001192092896,
     "gridW": 0.5,
     "spritesheet": "PixelSheet_01-hd",
-    "type": "deco",
+    "type": "pixel",
     "z": 9,
     "default_z_layer": 3,
     "default_z_order": 9
@@ -77811,7 +77975,7 @@ window.allobjects = function() {
     "gridH": 0.46666666865348816,
     "gridW": 0.5,
     "spritesheet": "PixelSheet_01-hd",
-    "type": "deco",
+    "type": "pixel",
     "z": 9,
     "default_z_layer": 3,
     "default_z_order": 9
@@ -77833,7 +77997,7 @@ window.allobjects = function() {
     "gridH": 0.5333333611488342,
     "gridW": 0.5333333611488342,
     "spritesheet": "PixelSheet_01-hd",
-    "type": "deco",
+    "type": "pixel",
     "z": 9,
     "default_z_layer": 3,
     "default_z_order": 9
@@ -77855,7 +78019,7 @@ window.allobjects = function() {
     "gridH": 0.5333333611488342,
     "gridW": 0.5333333611488342,
     "spritesheet": "PixelSheet_01-hd",
-    "type": "deco",
+    "type": "pixel",
     "z": 9,
     "default_z_layer": 3,
     "default_z_order": 9
@@ -77877,7 +78041,7 @@ window.allobjects = function() {
     "gridH": 0.30000001192092896,
     "gridW": 0.4333333373069763,
     "spritesheet": "PixelSheet_01-hd",
-    "type": "deco",
+    "type": "pixel",
     "z": 9,
     "default_z_layer": 3,
     "default_z_order": 9
@@ -77899,7 +78063,7 @@ window.allobjects = function() {
     "gridH": 0.2666666805744171,
     "gridW": 0.23333333432674408,
     "spritesheet": "PixelSheet_01-hd",
-    "type": "deco",
+    "type": "pixel",
     "z": 9,
     "default_z_layer": 3,
     "default_z_order": 9
@@ -77921,7 +78085,7 @@ window.allobjects = function() {
     "gridH": 0.3333333432674408,
     "gridW": 0.2666666805744171,
     "spritesheet": "PixelSheet_01-hd",
-    "type": "deco",
+    "type": "pixel",
     "z": 9,
     "default_z_layer": 3,
     "default_z_order": 9
@@ -77943,7 +78107,7 @@ window.allobjects = function() {
     "gridH": 0.3333333432674408,
     "gridW": 0.2666666805744171,
     "spritesheet": "PixelSheet_01-hd",
-    "type": "deco",
+    "type": "pixel",
     "z": 9,
     "default_z_layer": 3,
     "default_z_order": 9
@@ -77965,7 +78129,7 @@ window.allobjects = function() {
     "gridH": 0.2666666805744171,
     "gridW": 0.2666666805744171,
     "spritesheet": "PixelSheet_01-hd",
-    "type": "deco",
+    "type": "pixel",
     "z": 9,
     "default_z_layer": 3,
     "default_z_order": 9
@@ -77987,7 +78151,7 @@ window.allobjects = function() {
     "gridH": 0.2666666805744171,
     "gridW": 0.2666666805744171,
     "spritesheet": "PixelSheet_01-hd",
-    "type": "deco",
+    "type": "pixel",
     "z": 9,
     "default_z_layer": 3,
     "default_z_order": 9
@@ -78009,7 +78173,7 @@ window.allobjects = function() {
     "gridH": 0.1666666716337204,
     "gridW": 0.2666666805744171,
     "spritesheet": "PixelSheet_01-hd",
-    "type": "deco",
+    "type": "pixel",
     "z": 9,
     "default_z_layer": 3,
     "default_z_order": 9
@@ -78031,7 +78195,7 @@ window.allobjects = function() {
     "gridH": 0.1666666716337204,
     "gridW": 0.2666666805744171,
     "spritesheet": "PixelSheet_01-hd",
-    "type": "deco",
+    "type": "pixel",
     "z": 9,
     "default_z_layer": 3,
     "default_z_order": 9
@@ -78053,7 +78217,7 @@ window.allobjects = function() {
     "gridH": 0.2666666805744171,
     "gridW": 0.2666666805744171,
     "spritesheet": "PixelSheet_01-hd",
-    "type": "deco",
+    "type": "pixel",
     "z": 9,
     "default_z_layer": 3,
     "default_z_order": 9
@@ -78075,7 +78239,7 @@ window.allobjects = function() {
     "gridH": 0.5,
     "gridW": 0.5,
     "spritesheet": "PixelSheet_01-hd",
-    "type": "deco",
+    "type": "pixel",
     "z": 9,
     "default_z_layer": 3,
     "default_z_order": 9
@@ -78097,7 +78261,7 @@ window.allobjects = function() {
     "gridH": 0.5,
     "gridW": 0.5,
     "spritesheet": "PixelSheet_01-hd",
-    "type": "deco",
+    "type": "pixel",
     "z": 9,
     "default_z_layer": 3,
     "default_z_order": 9
@@ -78119,7 +78283,7 @@ window.allobjects = function() {
     "gridH": 0.46666666865348816,
     "gridW": 0.46666666865348816,
     "spritesheet": "PixelSheet_01-hd",
-    "type": "deco",
+    "type": "pixel",
     "z": 9,
     "default_z_layer": 3,
     "default_z_order": 9
@@ -78141,7 +78305,7 @@ window.allobjects = function() {
     "gridH": 0.6000000238418579,
     "gridW": 0.20000000298023224,
     "spritesheet": "PixelSheet_01-hd",
-    "type": "deco",
+    "type": "pixel",
     "z": 9,
     "default_z_layer": 3,
     "default_z_order": 9
@@ -78163,7 +78327,7 @@ window.allobjects = function() {
     "gridH": 0.5333333611488342,
     "gridW": 0.5333333611488342,
     "spritesheet": "PixelSheet_01-hd",
-    "type": "deco",
+    "type": "pixel",
     "z": 9,
     "default_z_layer": 3,
     "default_z_order": 9
@@ -78185,7 +78349,7 @@ window.allobjects = function() {
     "gridH": 0.5333333611488342,
     "gridW": 0.5333333611488342,
     "spritesheet": "PixelSheet_01-hd",
-    "type": "deco",
+    "type": "pixel",
     "z": 9,
     "default_z_layer": 3,
     "default_z_order": 9
@@ -78207,7 +78371,7 @@ window.allobjects = function() {
     "gridH": 0.5333333611488342,
     "gridW": 0.5333333611488342,
     "spritesheet": "PixelSheet_01-hd",
-    "type": "deco",
+    "type": "pixel",
     "z": 9,
     "default_z_layer": 3,
     "default_z_order": 9
@@ -78229,7 +78393,7 @@ window.allobjects = function() {
     "gridH": 0.5333333611488342,
     "gridW": 0.23333333432674408,
     "spritesheet": "PixelSheet_01-hd",
-    "type": "deco",
+    "type": "pixel",
     "z": 9,
     "default_z_layer": 3,
     "default_z_order": 9
@@ -78251,7 +78415,7 @@ window.allobjects = function() {
     "gridH": 0.46666666865348816,
     "gridW": 0.4000000059604645,
     "spritesheet": "PixelSheet_01-hd",
-    "type": "deco",
+    "type": "pixel",
     "z": 9,
     "default_z_layer": 3,
     "default_z_order": 9
@@ -78273,7 +78437,7 @@ window.allobjects = function() {
     "gridH": 0.1666666716337204,
     "gridW": 0.800000011920929,
     "spritesheet": "PixelSheet_01-hd",
-    "type": "deco",
+    "type": "pixel",
     "z": 9,
     "default_z_layer": 3,
     "default_z_order": 9
@@ -78295,7 +78459,7 @@ window.allobjects = function() {
     "gridH": 0.5333333611488342,
     "gridW": 0.5333333611488342,
     "spritesheet": "PixelSheet_01-hd",
-    "type": "deco",
+    "type": "pixel",
     "z": 9,
     "default_z_layer": 3,
     "default_z_order": 9
@@ -78317,7 +78481,7 @@ window.allobjects = function() {
     "gridH": 0.5333333611488342,
     "gridW": 0.20000000298023224,
     "spritesheet": "PixelSheet_01-hd",
-    "type": "deco",
+    "type": "pixel",
     "z": 9,
     "default_z_layer": 3,
     "default_z_order": 9
@@ -78339,7 +78503,7 @@ window.allobjects = function() {
     "gridH": 0.1666666716337204,
     "gridW": 0.03333333507180214,
     "spritesheet": "PixelSheet_01-hd",
-    "type": "deco",
+    "type": "pixel",
     "z": 9,
     "default_z_layer": 3,
     "default_z_order": 9
@@ -78361,7 +78525,7 @@ window.allobjects = function() {
     "gridH": 0.1666666716337204,
     "gridW": 0.1666666716337204,
     "spritesheet": "PixelSheet_01-hd",
-    "type": "deco",
+    "type": "pixel",
     "z": 9,
     "default_z_layer": 3,
     "default_z_order": 9
@@ -78383,7 +78547,7 @@ window.allobjects = function() {
     "gridH": 0.5333333611488342,
     "gridW": 0.5333333611488342,
     "spritesheet": "PixelSheet_01-hd",
-    "type": "deco",
+    "type": "pixel",
     "z": 9,
     "default_z_layer": 3,
     "default_z_order": 9
@@ -78405,7 +78569,7 @@ window.allobjects = function() {
     "gridH": 0.4000000059604645,
     "gridW": 0.5333333611488342,
     "spritesheet": "PixelSheet_01-hd",
-    "type": "deco",
+    "type": "pixel",
     "z": 9,
     "default_z_layer": 3,
     "default_z_order": 9
@@ -78427,7 +78591,7 @@ window.allobjects = function() {
     "gridH": 0.23333333432674408,
     "gridW": 0.2666666805744171,
     "spritesheet": "PixelSheet_01-hd",
-    "type": "deco",
+    "type": "pixel",
     "z": 9,
     "default_z_layer": 3,
     "default_z_order": 9
@@ -78449,7 +78613,7 @@ window.allobjects = function() {
     "gridH": 0.23333333432674408,
     "gridW": 0.36666667461395264,
     "spritesheet": "PixelSheet_01-hd",
-    "type": "deco",
+    "type": "pixel",
     "z": 9,
     "default_z_layer": 3,
     "default_z_order": 9
@@ -78471,7 +78635,7 @@ window.allobjects = function() {
     "gridH": 0.30000001192092896,
     "gridW": 0.36666667461395264,
     "spritesheet": "PixelSheet_01-hd",
-    "type": "deco",
+    "type": "pixel",
     "z": 10,
     "default_z_layer": 3,
     "default_z_order": 10
@@ -78493,7 +78657,7 @@ window.allobjects = function() {
     "gridH": 0.30000001192092896,
     "gridW": 0.1666666716337204,
     "spritesheet": "PixelSheet_01-hd",
-    "type": "deco",
+    "type": "pixel",
     "z": 10,
     "default_z_layer": 3,
     "default_z_order": 10
@@ -78515,7 +78679,7 @@ window.allobjects = function() {
     "gridH": 0.23333333432674408,
     "gridW": 0.3333333432674408,
     "spritesheet": "PixelSheet_01-hd",
-    "type": "deco",
+    "type": "pixel",
     "z": 10,
     "default_z_layer": 3,
     "default_z_order": 10
@@ -78537,7 +78701,7 @@ window.allobjects = function() {
     "gridH": 0.1666666716337204,
     "gridW": 0.13333334028720856,
     "spritesheet": "PixelSheet_01-hd",
-    "type": "deco",
+    "type": "pixel",
     "z": 10,
     "default_z_layer": 3,
     "default_z_order": 10
@@ -78550,7 +78714,7 @@ window.allobjects = function() {
     "gridH": 0.3333333432674408,
     "gridW": 0.4000000059604645,
     "spritesheet": "PixelSheet_01-hd",
-    "type": "deco",
+    "type": "pixel",
     "z": 10,
     "default_detail_color_channel": -1,
     "default_z_layer": 3,
@@ -78573,7 +78737,7 @@ window.allobjects = function() {
     "gridH": 0.03333333507180214,
     "gridW": 0.03333333507180214,
     "spritesheet": "PixelSheet_01-hd",
-    "type": "deco",
+    "type": "pixel",
     "z": 9,
     "default_z_layer": 3,
     "default_z_order": 9
@@ -78595,7 +78759,7 @@ window.allobjects = function() {
     "gridH": 0.5333333611488342,
     "gridW": 0.5333333611488342,
     "spritesheet": "PixelSheet_01-hd",
-    "type": "deco",
+    "type": "pixel",
     "z": 9,
     "default_z_layer": 3,
     "default_z_order": 9
@@ -78617,7 +78781,7 @@ window.allobjects = function() {
     "gridH": 0.3333333432674408,
     "gridW": 0.3333333432674408,
     "spritesheet": "PixelSheet_01-hd",
-    "type": "deco",
+    "type": "pixel",
     "z": 9,
     "default_z_layer": 3,
     "default_z_order": 9
@@ -78639,7 +78803,7 @@ window.allobjects = function() {
     "gridH": 0.5333333611488342,
     "gridW": 0.5333333611488342,
     "spritesheet": "PixelSheet_01-hd",
-    "type": "deco",
+    "type": "pixel",
     "z": 9,
     "default_z_layer": 3,
     "default_z_order": 9
@@ -78661,7 +78825,7 @@ window.allobjects = function() {
     "gridH": 0.36666667461395264,
     "gridW": 0.5333333611488342,
     "spritesheet": "PixelSheet_01-hd",
-    "type": "deco",
+    "type": "pixel",
     "z": 9,
     "default_z_layer": 3,
     "default_z_order": 9
@@ -78683,7 +78847,7 @@ window.allobjects = function() {
     "gridH": 0.5333333611488342,
     "gridW": 0.5333333611488342,
     "spritesheet": "PixelSheet_01-hd",
-    "type": "deco",
+    "type": "pixel",
     "z": 9,
     "default_z_layer": 3,
     "default_z_order": 9
@@ -78705,7 +78869,7 @@ window.allobjects = function() {
     "gridH": 0.13333334028720856,
     "gridW": 0.2666666805744171,
     "spritesheet": "PixelSheet_01-hd",
-    "type": "deco",
+    "type": "pixel",
     "z": 10,
     "default_z_layer": 3,
     "default_z_order": 10
@@ -78727,7 +78891,7 @@ window.allobjects = function() {
     "gridH": 0.1666666716337204,
     "gridW": 0.2666666805744171,
     "spritesheet": "PixelSheet_01-hd",
-    "type": "deco",
+    "type": "pixel",
     "z": 10,
     "default_z_layer": 3,
     "default_z_order": 10
@@ -78749,7 +78913,7 @@ window.allobjects = function() {
     "gridH": 0.23333333432674408,
     "gridW": 0.36666667461395264,
     "spritesheet": "PixelSheet_01-hd",
-    "type": "deco",
+    "type": "pixel",
     "z": 10,
     "default_z_layer": 3,
     "default_z_order": 10
@@ -78771,7 +78935,7 @@ window.allobjects = function() {
     "gridH": 0.36666667461395264,
     "gridW": 0.5333333611488342,
     "spritesheet": "PixelSheet_01-hd",
-    "type": "deco",
+    "type": "pixel",
     "z": 9,
     "default_z_layer": 3,
     "default_z_order": 9
@@ -78793,7 +78957,7 @@ window.allobjects = function() {
     "gridH": 0.36666667461395264,
     "gridW": 0.5333333611488342,
     "spritesheet": "PixelSheet_01-hd",
-    "type": "deco",
+    "type": "pixel",
     "z": 9,
     "default_z_layer": 3,
     "default_z_order": 9
@@ -78815,7 +78979,7 @@ window.allobjects = function() {
     "gridH": 0.36666667461395264,
     "gridW": 0.5333333611488342,
     "spritesheet": "PixelSheet_01-hd",
-    "type": "deco",
+    "type": "pixel",
     "z": 9,
     "default_z_layer": 3,
     "default_z_order": 9
@@ -78837,7 +79001,7 @@ window.allobjects = function() {
     "gridH": 0.3333333432674408,
     "gridW": 0.5333333611488342,
     "spritesheet": "PixelSheet_01-hd",
-    "type": "deco",
+    "type": "pixel",
     "z": 9,
     "default_z_layer": 3,
     "default_z_order": 9
@@ -78859,7 +79023,7 @@ window.allobjects = function() {
     "gridH": 0.2666666805744171,
     "gridW": 0.5333333611488342,
     "spritesheet": "PixelSheet_01-hd",
-    "type": "deco",
+    "type": "pixel",
     "z": 9,
     "default_z_layer": 3,
     "default_z_order": 9
@@ -78881,7 +79045,7 @@ window.allobjects = function() {
     "gridH": 0.2666666805744171,
     "gridW": 0.5333333611488342,
     "spritesheet": "PixelSheet_01-hd",
-    "type": "deco",
+    "type": "pixel",
     "z": 9,
     "default_z_layer": 3,
     "default_z_order": 9
@@ -78903,7 +79067,7 @@ window.allobjects = function() {
     "gridH": 0.2666666805744171,
     "gridW": 0.2666666805744171,
     "spritesheet": "PixelSheet_01-hd",
-    "type": "deco",
+    "type": "pixel",
     "z": 10,
     "default_z_layer": 3,
     "default_z_order": 10
@@ -78925,7 +79089,7 @@ window.allobjects = function() {
     "gridH": 0.20000000298023224,
     "gridW": 0.20000000298023224,
     "spritesheet": "PixelSheet_01-hd",
-    "type": "deco",
+    "type": "pixel",
     "z": 10,
     "default_z_layer": 3,
     "default_z_order": 10
@@ -78947,7 +79111,7 @@ window.allobjects = function() {
     "gridH": 0.23333333432674408,
     "gridW": 0.36666667461395264,
     "spritesheet": "PixelSheet_01-hd",
-    "type": "deco",
+    "type": "pixel",
     "z": 10,
     "default_z_layer": 3,
     "default_z_order": 10
@@ -78969,7 +79133,7 @@ window.allobjects = function() {
     "gridH": 0.5,
     "gridW": 0.5333333611488342,
     "spritesheet": "PixelSheet_01-hd",
-    "type": "deco",
+    "type": "pixel",
     "z": 9,
     "default_z_layer": 3,
     "default_z_order": 9
@@ -78991,7 +79155,7 @@ window.allobjects = function() {
     "gridH": 0.46666666865348816,
     "gridW": 0.4000000059604645,
     "spritesheet": "PixelSheet_01-hd",
-    "type": "deco",
+    "type": "pixel",
     "z": 9,
     "default_z_layer": 3,
     "default_z_order": 9
@@ -79013,7 +79177,7 @@ window.allobjects = function() {
     "gridH": 0.5,
     "gridW": 0.2666666805744171,
     "spritesheet": "PixelSheet_01-hd",
-    "type": "deco",
+    "type": "pixel",
     "z": 9,
     "default_z_layer": 3,
     "default_z_order": 9
@@ -79035,7 +79199,7 @@ window.allobjects = function() {
     "gridH": 0.30000001192092896,
     "gridW": 0.5333333611488342,
     "spritesheet": "PixelSheet_01-hd",
-    "type": "deco",
+    "type": "pixel",
     "z": 9,
     "default_z_layer": 3,
     "default_z_order": 9
@@ -79057,7 +79221,7 @@ window.allobjects = function() {
     "gridH": 0.20000000298023224,
     "gridW": 0.36666667461395264,
     "spritesheet": "PixelSheet_01-hd",
-    "type": "deco",
+    "type": "pixel",
     "z": 9,
     "default_z_layer": 3,
     "default_z_order": 9
@@ -79079,7 +79243,7 @@ window.allobjects = function() {
     "gridH": 0.3333333432674408,
     "gridW": 0.36666667461395264,
     "spritesheet": "PixelSheet_01-hd",
-    "type": "deco",
+    "type": "pixel",
     "z": 9,
     "default_z_layer": 3,
     "default_z_order": 9
@@ -79101,7 +79265,7 @@ window.allobjects = function() {
     "gridH": 0.6000000238418579,
     "gridW": 0.1666666716337204,
     "spritesheet": "PixelSheet_01-hd",
-    "type": "deco",
+    "type": "pixel",
     "z": 9,
     "default_z_layer": 3,
     "default_z_order": 9
@@ -79123,7 +79287,7 @@ window.allobjects = function() {
     "gridH": 0.4000000059604645,
     "gridW": 0.1666666716337204,
     "spritesheet": "PixelSheet_01-hd",
-    "type": "deco",
+    "type": "pixel",
     "z": 9,
     "default_z_layer": 3,
     "default_z_order": 9
@@ -79145,7 +79309,7 @@ window.allobjects = function() {
     "gridH": 0.4000000059604645,
     "gridW": 0.1666666716337204,
     "spritesheet": "PixelSheet_01-hd",
-    "type": "deco",
+    "type": "pixel",
     "z": 9,
     "default_z_layer": 3,
     "default_z_order": 9
@@ -79167,7 +79331,7 @@ window.allobjects = function() {
     "gridH": 0.2666666805744171,
     "gridW": 0.36666667461395264,
     "spritesheet": "PixelSheet_01-hd",
-    "type": "deco",
+    "type": "pixel",
     "z": 9,
     "default_z_layer": 3,
     "default_z_order": 9
@@ -79189,7 +79353,7 @@ window.allobjects = function() {
     "gridH": 0.13333334028720856,
     "gridW": 0.13333334028720856,
     "spritesheet": "PixelSheet_01-hd",
-    "type": "deco",
+    "type": "pixel",
     "z": 9,
     "default_z_layer": 3,
     "default_z_order": 9
@@ -79211,7 +79375,7 @@ window.allobjects = function() {
     "gridH": 0.03333333507180214,
     "gridW": 0.13333334028720856,
     "spritesheet": "PixelSheet_01-hd",
-    "type": "deco",
+    "type": "pixel",
     "z": 9,
     "default_z_layer": 3,
     "default_z_order": 9
@@ -79233,7 +79397,7 @@ window.allobjects = function() {
     "gridH": 0.13333334028720856,
     "gridW": 0.13333334028720856,
     "spritesheet": "PixelSheet_01-hd",
-    "type": "deco",
+    "type": "pixel",
     "z": 9,
     "default_z_layer": 3,
     "default_z_order": 9
@@ -79255,7 +79419,7 @@ window.allobjects = function() {
     "gridH": 0.13333334028720856,
     "gridW": 0.13333334028720856,
     "spritesheet": "PixelSheet_01-hd",
-    "type": "deco",
+    "type": "pixel",
     "z": 9,
     "default_z_layer": 3,
     "default_z_order": 9
@@ -79277,7 +79441,7 @@ window.allobjects = function() {
     "gridH": 0.20000000298023224,
     "gridW": 0.23333333432674408,
     "spritesheet": "PixelSheet_01-hd",
-    "type": "deco",
+    "type": "pixel",
     "z": 9,
     "default_z_layer": 3,
     "default_z_order": 9
@@ -79299,7 +79463,7 @@ window.allobjects = function() {
     "gridH": 0.10000000149011612,
     "gridW": 0.10000000149011612,
     "spritesheet": "PixelSheet_01-hd",
-    "type": "deco",
+    "type": "pixel",
     "z": 9,
     "default_z_layer": 3,
     "default_z_order": 9
@@ -79321,7 +79485,7 @@ window.allobjects = function() {
     "gridH": 0.5,
     "gridW": 0.1666666716337204,
     "spritesheet": "PixelSheet_01-hd",
-    "type": "deco",
+    "type": "pixel",
     "z": 9,
     "default_z_layer": 3,
     "default_z_order": 9
@@ -79343,7 +79507,7 @@ window.allobjects = function() {
     "gridH": 0.13333334028720856,
     "gridW": 0.20000000298023224,
     "spritesheet": "PixelSheet_01-hd",
-    "type": "deco",
+    "type": "pixel",
     "z": 9,
     "default_z_layer": 3,
     "default_z_order": 9
@@ -79365,7 +79529,7 @@ window.allobjects = function() {
     "gridH": 0.10000000149011612,
     "gridW": 0.13333334028720856,
     "spritesheet": "PixelSheet_01-hd",
-    "type": "deco",
+    "type": "pixel",
     "z": 9,
     "default_z_layer": 3,
     "default_z_order": 9
@@ -79387,7 +79551,7 @@ window.allobjects = function() {
     "gridH": 0.2666666805744171,
     "gridW": 0.1666666716337204,
     "spritesheet": "PixelSheet_01-hd",
-    "type": "deco",
+    "type": "pixel",
     "z": 9,
     "default_z_layer": 3,
     "default_z_order": 9
@@ -79409,7 +79573,7 @@ window.allobjects = function() {
     "gridH": 0.4000000059604645,
     "gridW": 0.23333333432674408,
     "spritesheet": "PixelSheet_01-hd",
-    "type": "deco",
+    "type": "pixel",
     "z": 9,
     "default_z_layer": 3,
     "default_z_order": 9
@@ -79431,7 +79595,7 @@ window.allobjects = function() {
     "gridH": 0.8999999761581421,
     "gridW": 0.8999999761581421,
     "spritesheet": "PixelSheet_01-hd",
-    "type": "deco",
+    "type": "pixel",
     "z": 9,
     "default_z_layer": 3,
     "default_z_order": 9
@@ -79453,7 +79617,7 @@ window.allobjects = function() {
     "gridH": 0.5333333611488342,
     "gridW": 0.23333333432674408,
     "spritesheet": "PixelSheet_01-hd",
-    "type": "deco",
+    "type": "pixel",
     "z": 9,
     "default_z_layer": 3,
     "default_z_order": 9
@@ -79475,7 +79639,7 @@ window.allobjects = function() {
     "gridH": 0.30000001192092896,
     "gridW": 0.2666666805744171,
     "spritesheet": "PixelSheet_01-hd",
-    "type": "deco",
+    "type": "pixel",
     "z": 9,
     "default_z_layer": 3,
     "default_z_order": 9
@@ -79497,7 +79661,7 @@ window.allobjects = function() {
     "gridH": 0.36666667461395264,
     "gridW": 0.1666666716337204,
     "spritesheet": "PixelSheet_01-hd",
-    "type": "deco",
+    "type": "pixel",
     "z": 9,
     "default_z_layer": 3,
     "default_z_order": 9
@@ -79519,7 +79683,7 @@ window.allobjects = function() {
     "gridH": 0.3333333432674408,
     "gridW": 0.23333333432674408,
     "spritesheet": "PixelSheet_01-hd",
-    "type": "deco",
+    "type": "pixel",
     "z": 9,
     "default_z_layer": 3,
     "default_z_order": 9
@@ -79541,7 +79705,7 @@ window.allobjects = function() {
     "gridH": 0.46666666865348816,
     "gridW": 0.30000001192092896,
     "spritesheet": "PixelSheet_01-hd",
-    "type": "deco",
+    "type": "pixel",
     "z": 9,
     "default_z_layer": 3,
     "default_z_order": 9
@@ -79563,7 +79727,7 @@ window.allobjects = function() {
     "gridH": 0.4333333373069763,
     "gridW": 0.3333333432674408,
     "spritesheet": "PixelSheet_01-hd",
-    "type": "deco",
+    "type": "pixel",
     "z": 9,
     "default_z_layer": 3,
     "default_z_order": 9
@@ -79585,7 +79749,7 @@ window.allobjects = function() {
     "gridH": 0.5333333611488342,
     "gridW": 0.4000000059604645,
     "spritesheet": "PixelSheet_01-hd",
-    "type": "deco",
+    "type": "pixel",
     "z": 9,
     "default_z_layer": 3,
     "default_z_order": 9
@@ -79598,7 +79762,7 @@ window.allobjects = function() {
     "gridH": 0.03333333507180214,
     "gridW": 0.3333333432674408,
     "spritesheet": "PixelSheet_01-hd",
-    "type": "deco",
+    "type": "pixel",
     "z": 9,
     "default_detail_color_channel": -1,
     "default_z_layer": 3,
@@ -79621,7 +79785,7 @@ window.allobjects = function() {
     "gridH": 0.4333333373069763,
     "gridW": 0.30000001192092896,
     "spritesheet": "PixelSheet_01-hd",
-    "type": "deco",
+    "type": "pixel",
     "z": 9,
     "default_z_layer": 3,
     "default_z_order": 9
@@ -79643,7 +79807,7 @@ window.allobjects = function() {
     "gridH": 0.10000000149011612,
     "gridW": 0.7333333492279053,
     "spritesheet": "PixelSheet_01-hd",
-    "type": "deco",
+    "type": "pixel",
     "z": 9,
     "default_z_layer": 3,
     "default_z_order": 9
@@ -79665,7 +79829,7 @@ window.allobjects = function() {
     "gridH": 0.13333334028720856,
     "gridW": 0.2666666805744171,
     "spritesheet": "PixelSheet_01-hd",
-    "type": "deco",
+    "type": "pixel",
     "z": 9,
     "default_z_layer": 3,
     "default_z_order": 9
@@ -79687,7 +79851,7 @@ window.allobjects = function() {
     "gridH": 0.1666666716337204,
     "gridW": 0.6333333253860474,
     "spritesheet": "PixelSheet_01-hd",
-    "type": "deco",
+    "type": "pixel",
     "z": 9,
     "default_z_layer": 3,
     "default_z_order": 9
@@ -79709,7 +79873,7 @@ window.allobjects = function() {
     "gridH": 0.10000000149011612,
     "gridW": 0.699999988079071,
     "spritesheet": "PixelSheet_01-hd",
-    "type": "deco",
+    "type": "pixel",
     "z": 9,
     "default_z_layer": 3,
     "default_z_order": 9
@@ -79731,7 +79895,7 @@ window.allobjects = function() {
     "gridH": 0.23333333432674408,
     "gridW": 0.36666667461395264,
     "spritesheet": "PixelSheet_01-hd",
-    "type": "deco",
+    "type": "pixel",
     "z": 9,
     "default_z_layer": 3,
     "default_z_order": 9
@@ -79744,7 +79908,7 @@ window.allobjects = function() {
     "gridH": 0.06666667014360428,
     "gridW": 0.5,
     "spritesheet": "PixelSheet_01-hd",
-    "type": "deco",
+    "type": "pixel",
     "z": 10,
     "default_detail_color_channel": -1,
     "default_z_layer": 3,
@@ -79758,7 +79922,7 @@ window.allobjects = function() {
     "gridH": 0.06666667014360428,
     "gridW": 0.5,
     "spritesheet": "PixelSheet_01-hd",
-    "type": "deco",
+    "type": "pixel",
     "z": 10,
     "default_detail_color_channel": -1,
     "default_z_layer": 3,
@@ -79772,7 +79936,7 @@ window.allobjects = function() {
     "gridH": 0.06666667014360428,
     "gridW": 0.46666666865348816,
     "spritesheet": "PixelSheet_01-hd",
-    "type": "deco",
+    "type": "pixel",
     "z": 10,
     "default_detail_color_channel": -1,
     "default_z_layer": 3,
@@ -79786,7 +79950,7 @@ window.allobjects = function() {
     "gridH": 0.5,
     "gridW": 0.20000000298023224,
     "spritesheet": "PixelSheet_01-hd",
-    "type": "deco",
+    "type": "pixel",
     "z": 10,
     "default_detail_color_channel": -1,
     "default_z_layer": 3,
@@ -79800,7 +79964,7 @@ window.allobjects = function() {
     "gridH": 0.5,
     "gridW": 0.13333334028720856,
     "spritesheet": "PixelSheet_01-hd",
-    "type": "deco",
+    "type": "pixel",
     "z": 10,
     "default_detail_color_channel": -1,
     "default_z_layer": 3,
@@ -79814,7 +79978,7 @@ window.allobjects = function() {
     "gridH": 0.5,
     "gridW": 0.46666666865348816,
     "spritesheet": "PixelSheet_01-hd",
-    "type": "deco",
+    "type": "pixel",
     "z": 10,
     "default_detail_color_channel": -1,
     "default_z_layer": 3,
@@ -79828,7 +79992,7 @@ window.allobjects = function() {
     "gridH": 0.06666667014360428,
     "gridW": 0.5333333611488342,
     "spritesheet": "PixelSheet_01-hd",
-    "type": "deco",
+    "type": "pixel",
     "z": 10,
     "default_detail_color_channel": -1,
     "default_z_layer": 3,
@@ -79842,7 +80006,7 @@ window.allobjects = function() {
     "gridH": 0.46666666865348816,
     "gridW": 0.46666666865348816,
     "spritesheet": "PixelSheet_01-hd",
-    "type": "deco",
+    "type": "pixel",
     "z": 10,
     "default_detail_color_channel": -1,
     "default_z_layer": 3,
@@ -79856,7 +80020,7 @@ window.allobjects = function() {
     "gridH": 0.5,
     "gridW": 0.5,
     "spritesheet": "PixelSheet_01-hd",
-    "type": "deco",
+    "type": "pixel",
     "z": 10,
     "default_detail_color_channel": -1,
     "default_z_layer": 3,
@@ -79870,7 +80034,7 @@ window.allobjects = function() {
     "gridH": 0.06666667014360428,
     "gridW": 0.06666667014360428,
     "spritesheet": "PixelSheet_01-hd",
-    "type": "deco",
+    "type": "pixel",
     "z": 10,
     "default_detail_color_channel": -1,
     "default_z_layer": 3,
@@ -79884,7 +80048,7 @@ window.allobjects = function() {
     "gridH": 0.5,
     "gridW": 1,
     "spritesheet": "PixelSheet_01-hd",
-    "type": "deco",
+    "type": "pixel",
     "z": 10,
     "default_detail_color_channel": -1,
     "default_z_layer": 3,
@@ -79898,7 +80062,7 @@ window.allobjects = function() {
     "gridH": 0.10000000149011612,
     "gridW": 0.1666666716337204,
     "spritesheet": "PixelSheet_01-hd",
-    "type": "deco",
+    "type": "pixel",
     "z": 10,
     "default_detail_color_channel": -1,
     "default_z_layer": 3,
@@ -79912,7 +80076,7 @@ window.allobjects = function() {
     "gridH": 0.10000000149011612,
     "gridW": 0.4333333373069763,
     "spritesheet": "PixelSheet_01-hd",
-    "type": "deco",
+    "type": "pixel",
     "z": 10,
     "default_detail_color_channel": -1,
     "default_z_layer": 3,
@@ -79926,7 +80090,7 @@ window.allobjects = function() {
     "gridH": 0.10000000149011612,
     "gridW": 0.46666666865348816,
     "spritesheet": "PixelSheet_01-hd",
-    "type": "deco",
+    "type": "pixel",
     "z": 10,
     "default_detail_color_channel": -1,
     "default_z_layer": 3,
@@ -79940,7 +80104,7 @@ window.allobjects = function() {
     "gridH": 0.10000000149011612,
     "gridW": 0.5,
     "spritesheet": "PixelSheet_01-hd",
-    "type": "deco",
+    "type": "pixel",
     "z": 10,
     "default_detail_color_channel": -1,
     "default_z_layer": 3,
@@ -79954,7 +80118,7 @@ window.allobjects = function() {
     "gridH": 0.10000000149011612,
     "gridW": 0.5333333611488342,
     "spritesheet": "PixelSheet_01-hd",
-    "type": "deco",
+    "type": "pixel",
     "z": 10,
     "default_detail_color_channel": -1,
     "default_z_layer": 3,
@@ -79977,7 +80141,7 @@ window.allobjects = function() {
     "gridH": 0.5333333611488342,
     "gridW": 0.5333333611488342,
     "spritesheet": "PixelSheet_01-hd",
-    "type": "deco",
+    "type": "pixel",
     "z": 9,
     "default_z_layer": 3,
     "default_z_order": 9
@@ -79999,7 +80163,7 @@ window.allobjects = function() {
     "gridH": 0.20000000298023224,
     "gridW": 0.20000000298023224,
     "spritesheet": "PixelSheet_01-hd",
-    "type": "deco",
+    "type": "pixel",
     "z": 9,
     "default_z_layer": 3,
     "default_z_order": 9
@@ -80021,7 +80185,7 @@ window.allobjects = function() {
     "gridH": 1,
     "gridW": 1,
     "spritesheet": "PixelSheet_01-hd",
-    "type": "deco",
+    "type": "pixel",
     "z": 9,
     "default_z_layer": 5,
     "default_z_order": 9
@@ -80043,7 +80207,7 @@ window.allobjects = function() {
     "gridH": 1,
     "gridW": 1,
     "spritesheet": "PixelSheet_01-hd",
-    "type": "deco",
+    "type": "pixel",
     "z": 9,
     "default_z_layer": 5,
     "default_z_order": 9
@@ -80065,7 +80229,7 @@ window.allobjects = function() {
     "gridH": 1,
     "gridW": 1,
     "spritesheet": "PixelSheet_01-hd",
-    "type": "deco",
+    "type": "pixel",
     "z": 9,
     "default_z_layer": 5,
     "default_z_order": 9
@@ -80087,7 +80251,7 @@ window.allobjects = function() {
     "gridH": 1,
     "gridW": 1,
     "spritesheet": "PixelSheet_01-hd",
-    "type": "deco",
+    "type": "pixel",
     "z": 9,
     "default_z_layer": 5,
     "default_z_order": 9
@@ -80109,7 +80273,7 @@ window.allobjects = function() {
     "gridH": 1,
     "gridW": 1,
     "spritesheet": "PixelSheet_01-hd",
-    "type": "deco",
+    "type": "pixel",
     "z": 9,
     "default_z_layer": 5,
     "default_z_order": 9
@@ -80131,7 +80295,7 @@ window.allobjects = function() {
     "gridH": 1,
     "gridW": 1,
     "spritesheet": "PixelSheet_01-hd",
-    "type": "deco",
+    "type": "pixel",
     "z": 9,
     "default_z_layer": 5,
     "default_z_order": 9
@@ -80153,7 +80317,7 @@ window.allobjects = function() {
     "gridH": 1,
     "gridW": 1,
     "spritesheet": "PixelSheet_01-hd",
-    "type": "deco",
+    "type": "pixel",
     "z": 9,
     "default_z_layer": 5,
     "default_z_order": 9
@@ -80175,7 +80339,7 @@ window.allobjects = function() {
     "gridH": 1,
     "gridW": 1,
     "spritesheet": "PixelSheet_01-hd",
-    "type": "deco",
+    "type": "pixel",
     "z": 9,
     "default_z_layer": 5,
     "default_z_order": 9
@@ -80197,7 +80361,7 @@ window.allobjects = function() {
     "gridH": 1,
     "gridW": 1,
     "spritesheet": "PixelSheet_01-hd",
-    "type": "deco",
+    "type": "pixel",
     "z": 9,
     "default_z_layer": 5,
     "default_z_order": 9
@@ -80219,7 +80383,7 @@ window.allobjects = function() {
     "gridH": 1,
     "gridW": 1,
     "spritesheet": "PixelSheet_01-hd",
-    "type": "deco",
+    "type": "pixel",
     "z": 9,
     "default_z_layer": 5,
     "default_z_order": 9
@@ -80241,7 +80405,7 @@ window.allobjects = function() {
     "gridH": 1,
     "gridW": 1,
     "spritesheet": "PixelSheet_01-hd",
-    "type": "deco",
+    "type": "pixel",
     "z": 9,
     "default_z_layer": 5,
     "default_z_order": 9
@@ -80263,7 +80427,7 @@ window.allobjects = function() {
     "gridH": 1,
     "gridW": 1,
     "spritesheet": "PixelSheet_01-hd",
-    "type": "deco",
+    "type": "pixel",
     "z": 9,
     "default_z_layer": 5,
     "default_z_order": 9
@@ -80285,7 +80449,7 @@ window.allobjects = function() {
     "gridH": 1,
     "gridW": 1,
     "spritesheet": "PixelSheet_01-hd",
-    "type": "deco",
+    "type": "pixel",
     "z": 9,
     "default_z_layer": 5,
     "default_z_order": 9
@@ -80307,7 +80471,7 @@ window.allobjects = function() {
     "gridH": 1,
     "gridW": 1,
     "spritesheet": "PixelSheet_01-hd",
-    "type": "deco",
+    "type": "pixel",
     "z": 9,
     "default_z_layer": 5,
     "default_z_order": 9
@@ -80329,7 +80493,7 @@ window.allobjects = function() {
     "gridH": 1,
     "gridW": 1,
     "spritesheet": "PixelSheet_01-hd",
-    "type": "deco",
+    "type": "pixel",
     "z": 9,
     "default_z_layer": 5,
     "default_z_order": 9
@@ -80351,7 +80515,7 @@ window.allobjects = function() {
     "gridH": 1,
     "gridW": 1,
     "spritesheet": "PixelSheet_01-hd",
-    "type": "deco",
+    "type": "pixel",
     "z": 9,
     "default_z_layer": 5,
     "default_z_order": 9
@@ -80373,7 +80537,7 @@ window.allobjects = function() {
     "gridH": 1,
     "gridW": 1,
     "spritesheet": "PixelSheet_01-hd",
-    "type": "deco",
+    "type": "pixel",
     "z": 9,
     "default_z_layer": 5,
     "default_z_order": 9
@@ -80395,7 +80559,7 @@ window.allobjects = function() {
     "gridH": 1,
     "gridW": 1,
     "spritesheet": "PixelSheet_01-hd",
-    "type": "deco",
+    "type": "pixel",
     "z": 9,
     "default_z_layer": 5,
     "default_z_order": 9
@@ -80417,7 +80581,7 @@ window.allobjects = function() {
     "gridH": 1,
     "gridW": 1,
     "spritesheet": "PixelSheet_01-hd",
-    "type": "deco",
+    "type": "pixel",
     "z": 9,
     "default_z_layer": 5,
     "default_z_order": 9
@@ -80439,7 +80603,7 @@ window.allobjects = function() {
     "gridH": 1,
     "gridW": 1,
     "spritesheet": "PixelSheet_01-hd",
-    "type": "deco",
+    "type": "pixel",
     "z": 9,
     "default_z_layer": 5,
     "default_z_order": 9
@@ -80461,7 +80625,7 @@ window.allobjects = function() {
     "gridH": 1,
     "gridW": 1,
     "spritesheet": "PixelSheet_01-hd",
-    "type": "deco",
+    "type": "pixel",
     "z": 9,
     "default_z_layer": 5,
     "default_z_order": 9
@@ -80483,7 +80647,7 @@ window.allobjects = function() {
     "gridH": 1,
     "gridW": 1,
     "spritesheet": "PixelSheet_01-hd",
-    "type": "deco",
+    "type": "pixel",
     "z": 9,
     "default_z_layer": 5,
     "default_z_order": 9
@@ -80505,7 +80669,7 @@ window.allobjects = function() {
     "gridH": 1,
     "gridW": 1,
     "spritesheet": "PixelSheet_01-hd",
-    "type": "deco",
+    "type": "pixel",
     "z": 9,
     "default_z_layer": 5,
     "default_z_order": 9
@@ -80527,7 +80691,7 @@ window.allobjects = function() {
     "gridH": 1,
     "gridW": 1,
     "spritesheet": "PixelSheet_01-hd",
-    "type": "deco",
+    "type": "pixel",
     "z": 9,
     "default_z_layer": 5,
     "default_z_order": 9
@@ -80549,7 +80713,7 @@ window.allobjects = function() {
     "gridH": 1,
     "gridW": 1,
     "spritesheet": "PixelSheet_01-hd",
-    "type": "deco",
+    "type": "pixel",
     "z": 9,
     "default_z_layer": 5,
     "default_z_order": 9
@@ -80571,7 +80735,7 @@ window.allobjects = function() {
     "gridH": 1,
     "gridW": 1,
     "spritesheet": "PixelSheet_01-hd",
-    "type": "deco",
+    "type": "pixel",
     "z": 9,
     "default_z_layer": 5,
     "default_z_order": 9
@@ -80593,7 +80757,7 @@ window.allobjects = function() {
     "gridH": 1,
     "gridW": 1,
     "spritesheet": "PixelSheet_01-hd",
-    "type": "deco",
+    "type": "pixel",
     "z": 9,
     "default_z_layer": 5,
     "default_z_order": 9
@@ -80615,7 +80779,7 @@ window.allobjects = function() {
     "gridH": 1,
     "gridW": 1,
     "spritesheet": "PixelSheet_01-hd",
-    "type": "deco",
+    "type": "pixel",
     "z": 9,
     "default_z_layer": 5,
     "default_z_order": 9
@@ -80637,7 +80801,7 @@ window.allobjects = function() {
     "gridH": 1,
     "gridW": 1,
     "spritesheet": "PixelSheet_01-hd",
-    "type": "deco",
+    "type": "pixel",
     "z": 9,
     "default_z_layer": 5,
     "default_z_order": 9
@@ -80659,7 +80823,7 @@ window.allobjects = function() {
     "gridH": 1,
     "gridW": 1,
     "spritesheet": "PixelSheet_01-hd",
-    "type": "deco",
+    "type": "pixel",
     "z": 9,
     "default_z_layer": 5,
     "default_z_order": 9
@@ -80681,7 +80845,7 @@ window.allobjects = function() {
     "gridH": 1,
     "gridW": 1,
     "spritesheet": "PixelSheet_01-hd",
-    "type": "deco",
+    "type": "pixel",
     "z": 9,
     "default_z_layer": 5,
     "default_z_order": 9
@@ -80703,7 +80867,7 @@ window.allobjects = function() {
     "gridH": 1,
     "gridW": 1,
     "spritesheet": "PixelSheet_01-hd",
-    "type": "deco",
+    "type": "pixel",
     "z": 9,
     "default_z_layer": 5,
     "default_z_order": 9
@@ -80725,7 +80889,7 @@ window.allobjects = function() {
     "gridH": 1,
     "gridW": 1,
     "spritesheet": "PixelSheet_01-hd",
-    "type": "deco",
+    "type": "pixel",
     "z": 9,
     "default_z_layer": 5,
     "default_z_order": 9
@@ -80747,7 +80911,7 @@ window.allobjects = function() {
     "gridH": 1,
     "gridW": 1,
     "spritesheet": "PixelSheet_01-hd",
-    "type": "deco",
+    "type": "pixel",
     "z": 9,
     "default_z_layer": 5,
     "default_z_order": 9
@@ -80769,7 +80933,7 @@ window.allobjects = function() {
     "gridH": 1,
     "gridW": 1,
     "spritesheet": "PixelSheet_01-hd",
-    "type": "deco",
+    "type": "pixel",
     "z": 9,
     "default_z_layer": 5,
     "default_z_order": 9
@@ -80791,7 +80955,7 @@ window.allobjects = function() {
     "gridH": 1,
     "gridW": 1,
     "spritesheet": "PixelSheet_01-hd",
-    "type": "deco",
+    "type": "pixel",
     "z": 9,
     "default_z_layer": 5,
     "default_z_order": 9
@@ -80813,7 +80977,7 @@ window.allobjects = function() {
     "gridH": 1,
     "gridW": 1,
     "spritesheet": "PixelSheet_01-hd",
-    "type": "deco",
+    "type": "pixel",
     "z": 9,
     "default_z_layer": 5,
     "default_z_order": 9
@@ -80835,7 +80999,7 @@ window.allobjects = function() {
     "gridH": 1,
     "gridW": 1,
     "spritesheet": "PixelSheet_01-hd",
-    "type": "deco",
+    "type": "pixel",
     "z": 9,
     "default_z_layer": 5,
     "default_z_order": 9
@@ -80857,7 +81021,7 @@ window.allobjects = function() {
     "gridH": 1,
     "gridW": 1,
     "spritesheet": "PixelSheet_01-hd",
-    "type": "deco",
+    "type": "pixel",
     "z": 9,
     "default_z_layer": 5,
     "default_z_order": 9
@@ -80879,7 +81043,7 @@ window.allobjects = function() {
     "gridH": 1,
     "gridW": 1,
     "spritesheet": "PixelSheet_01-hd",
-    "type": "deco",
+    "type": "pixel",
     "z": 9,
     "default_z_layer": 5,
     "default_z_order": 9
@@ -80901,7 +81065,7 @@ window.allobjects = function() {
     "gridH": 1,
     "gridW": 1,
     "spritesheet": "PixelSheet_01-hd",
-    "type": "deco",
+    "type": "pixel",
     "z": 9,
     "default_z_layer": 5,
     "default_z_order": 9
@@ -80923,7 +81087,7 @@ window.allobjects = function() {
     "gridH": 1,
     "gridW": 1,
     "spritesheet": "PixelSheet_01-hd",
-    "type": "deco",
+    "type": "pixel",
     "z": 9,
     "default_z_layer": 5,
     "default_z_order": 9
@@ -80945,7 +81109,7 @@ window.allobjects = function() {
     "gridH": 1,
     "gridW": 1,
     "spritesheet": "PixelSheet_01-hd",
-    "type": "deco",
+    "type": "pixel",
     "z": 9,
     "default_z_layer": 5,
     "default_z_order": 9
@@ -80967,7 +81131,7 @@ window.allobjects = function() {
     "gridH": 1,
     "gridW": 1,
     "spritesheet": "PixelSheet_01-hd",
-    "type": "deco",
+    "type": "pixel",
     "z": 9,
     "default_z_layer": 5,
     "default_z_order": 9
@@ -80989,7 +81153,7 @@ window.allobjects = function() {
     "gridH": 1,
     "gridW": 1,
     "spritesheet": "PixelSheet_01-hd",
-    "type": "deco",
+    "type": "pixel",
     "z": 9,
     "default_z_layer": 5,
     "default_z_order": 9
@@ -81011,7 +81175,7 @@ window.allobjects = function() {
     "gridH": 1,
     "gridW": 1,
     "spritesheet": "PixelSheet_01-hd",
-    "type": "deco",
+    "type": "pixel",
     "z": 9,
     "default_z_layer": 5,
     "default_z_order": 9
@@ -81033,7 +81197,7 @@ window.allobjects = function() {
     "gridH": 1,
     "gridW": 1,
     "spritesheet": "PixelSheet_01-hd",
-    "type": "deco",
+    "type": "pixel",
     "z": 9,
     "default_z_layer": 5,
     "default_z_order": 9
@@ -81055,7 +81219,7 @@ window.allobjects = function() {
     "gridH": 1,
     "gridW": 1,
     "spritesheet": "PixelSheet_01-hd",
-    "type": "deco",
+    "type": "pixel",
     "z": 9,
     "default_z_layer": 5,
     "default_z_order": 9
@@ -81077,7 +81241,7 @@ window.allobjects = function() {
     "gridH": 1,
     "gridW": 1,
     "spritesheet": "PixelSheet_01-hd",
-    "type": "deco",
+    "type": "pixel",
     "z": 9,
     "default_z_layer": 5,
     "default_z_order": 9
@@ -81099,7 +81263,7 @@ window.allobjects = function() {
     "gridH": 1,
     "gridW": 1,
     "spritesheet": "PixelSheet_01-hd",
-    "type": "deco",
+    "type": "pixel",
     "z": 9,
     "default_z_layer": 5,
     "default_z_order": 9
@@ -81121,7 +81285,7 @@ window.allobjects = function() {
     "gridH": 1,
     "gridW": 1,
     "spritesheet": "PixelSheet_01-hd",
-    "type": "deco",
+    "type": "pixel",
     "z": 9,
     "default_z_layer": 5,
     "default_z_order": 9
@@ -81143,7 +81307,7 @@ window.allobjects = function() {
     "gridH": 1,
     "gridW": 1,
     "spritesheet": "PixelSheet_01-hd",
-    "type": "deco",
+    "type": "pixel",
     "z": 9,
     "default_z_layer": 5,
     "default_z_order": 9
@@ -81165,7 +81329,7 @@ window.allobjects = function() {
     "gridH": 1,
     "gridW": 1,
     "spritesheet": "PixelSheet_01-hd",
-    "type": "deco",
+    "type": "pixel",
     "z": 9,
     "default_z_layer": 5,
     "default_z_order": 9
@@ -81187,7 +81351,7 @@ window.allobjects = function() {
     "gridH": 1,
     "gridW": 1,
     "spritesheet": "PixelSheet_01-hd",
-    "type": "deco",
+    "type": "pixel",
     "z": 9,
     "default_z_layer": 5,
     "default_z_order": 9
@@ -81209,7 +81373,7 @@ window.allobjects = function() {
     "gridH": 1,
     "gridW": 1,
     "spritesheet": "PixelSheet_01-hd",
-    "type": "deco",
+    "type": "pixel",
     "z": 9,
     "default_z_layer": 5,
     "default_z_order": 9
@@ -81231,7 +81395,7 @@ window.allobjects = function() {
     "gridH": 1,
     "gridW": 1,
     "spritesheet": "PixelSheet_01-hd",
-    "type": "deco",
+    "type": "pixel",
     "z": 9,
     "default_z_layer": 5,
     "default_z_order": 9
@@ -81253,7 +81417,7 @@ window.allobjects = function() {
     "gridH": 1,
     "gridW": 1,
     "spritesheet": "PixelSheet_01-hd",
-    "type": "deco",
+    "type": "pixel",
     "z": 9,
     "default_z_layer": 5,
     "default_z_order": 9
@@ -81275,7 +81439,7 @@ window.allobjects = function() {
     "gridH": 1,
     "gridW": 1,
     "spritesheet": "PixelSheet_01-hd",
-    "type": "deco",
+    "type": "pixel",
     "z": 9,
     "default_z_layer": 5,
     "default_z_order": 9
@@ -81297,7 +81461,7 @@ window.allobjects = function() {
     "gridH": 1,
     "gridW": 1,
     "spritesheet": "PixelSheet_01-hd",
-    "type": "deco",
+    "type": "pixel",
     "z": 9,
     "default_z_layer": 5,
     "default_z_order": 9
@@ -81319,7 +81483,7 @@ window.allobjects = function() {
     "gridH": 1,
     "gridW": 1,
     "spritesheet": "PixelSheet_01-hd",
-    "type": "deco",
+    "type": "pixel",
     "z": 9,
     "default_z_layer": 5,
     "default_z_order": 9
@@ -81341,7 +81505,7 @@ window.allobjects = function() {
     "gridH": 1,
     "gridW": 1,
     "spritesheet": "PixelSheet_01-hd",
-    "type": "deco",
+    "type": "pixel",
     "z": 9,
     "default_z_layer": 5,
     "default_z_order": 9
@@ -81363,7 +81527,7 @@ window.allobjects = function() {
     "gridH": 1,
     "gridW": 1,
     "spritesheet": "PixelSheet_01-hd",
-    "type": "deco",
+    "type": "pixel",
     "z": 9,
     "default_z_layer": 5,
     "default_z_order": 9
@@ -81385,7 +81549,7 @@ window.allobjects = function() {
     "gridH": 1,
     "gridW": 1,
     "spritesheet": "PixelSheet_01-hd",
-    "type": "deco",
+    "type": "pixel",
     "z": 9,
     "default_z_layer": 5,
     "default_z_order": 9
@@ -81407,7 +81571,7 @@ window.allobjects = function() {
     "gridH": 1,
     "gridW": 1,
     "spritesheet": "PixelSheet_01-hd",
-    "type": "deco",
+    "type": "pixel",
     "z": 9,
     "default_z_layer": 5,
     "default_z_order": 9
@@ -81429,7 +81593,7 @@ window.allobjects = function() {
     "gridH": 1,
     "gridW": 1,
     "spritesheet": "PixelSheet_01-hd",
-    "type": "deco",
+    "type": "pixel",
     "z": 9,
     "default_z_layer": 5,
     "default_z_order": 9
@@ -81451,7 +81615,7 @@ window.allobjects = function() {
     "gridH": 1,
     "gridW": 1,
     "spritesheet": "PixelSheet_01-hd",
-    "type": "deco",
+    "type": "pixel",
     "z": 9,
     "default_z_layer": 5,
     "default_z_order": 9
@@ -81473,7 +81637,7 @@ window.allobjects = function() {
     "gridH": 1,
     "gridW": 1,
     "spritesheet": "PixelSheet_01-hd",
-    "type": "deco",
+    "type": "pixel",
     "z": 9,
     "default_z_layer": 5,
     "default_z_order": 9
@@ -81495,7 +81659,7 @@ window.allobjects = function() {
     "gridH": 1,
     "gridW": 1,
     "spritesheet": "PixelSheet_01-hd",
-    "type": "deco",
+    "type": "pixel",
     "z": 9,
     "default_z_layer": 5,
     "default_z_order": 9
@@ -81517,7 +81681,7 @@ window.allobjects = function() {
     "gridH": 1,
     "gridW": 1,
     "spritesheet": "PixelSheet_01-hd",
-    "type": "deco",
+    "type": "pixel",
     "z": 9,
     "default_z_layer": 5,
     "default_z_order": 9
@@ -81539,7 +81703,7 @@ window.allobjects = function() {
     "gridH": 1,
     "gridW": 1,
     "spritesheet": "PixelSheet_01-hd",
-    "type": "deco",
+    "type": "pixel",
     "z": 9,
     "default_z_layer": 5,
     "default_z_order": 9
@@ -81561,7 +81725,7 @@ window.allobjects = function() {
     "gridH": 1,
     "gridW": 1,
     "spritesheet": "PixelSheet_01-hd",
-    "type": "deco",
+    "type": "pixel",
     "z": 9,
     "default_z_layer": 5,
     "default_z_order": 9
@@ -81583,7 +81747,7 @@ window.allobjects = function() {
     "gridH": 1,
     "gridW": 1,
     "spritesheet": "PixelSheet_01-hd",
-    "type": "deco",
+    "type": "pixel",
     "z": 9,
     "default_z_layer": 5,
     "default_z_order": 9
@@ -81605,7 +81769,7 @@ window.allobjects = function() {
     "gridH": 1,
     "gridW": 1,
     "spritesheet": "PixelSheet_01-hd",
-    "type": "deco",
+    "type": "pixel",
     "z": 9,
     "default_z_layer": 5,
     "default_z_order": 9
@@ -81627,7 +81791,7 @@ window.allobjects = function() {
     "gridH": 1,
     "gridW": 1,
     "spritesheet": "PixelSheet_01-hd",
-    "type": "deco",
+    "type": "pixel",
     "z": 9,
     "default_z_layer": 5,
     "default_z_order": 9
@@ -81649,7 +81813,7 @@ window.allobjects = function() {
     "gridH": 1,
     "gridW": 1,
     "spritesheet": "PixelSheet_01-hd",
-    "type": "deco",
+    "type": "pixel",
     "z": 9,
     "default_z_layer": 5,
     "default_z_order": 9
@@ -81671,7 +81835,7 @@ window.allobjects = function() {
     "gridH": 1,
     "gridW": 1,
     "spritesheet": "PixelSheet_01-hd",
-    "type": "deco",
+    "type": "pixel",
     "z": 9,
     "default_z_layer": 5,
     "default_z_order": 9
@@ -81693,7 +81857,7 @@ window.allobjects = function() {
     "gridH": 1,
     "gridW": 1,
     "spritesheet": "PixelSheet_01-hd",
-    "type": "deco",
+    "type": "pixel",
     "z": 9,
     "default_z_layer": 5,
     "default_z_order": 9
@@ -81715,7 +81879,7 @@ window.allobjects = function() {
     "gridH": 1,
     "gridW": 1,
     "spritesheet": "PixelSheet_01-hd",
-    "type": "deco",
+    "type": "pixel",
     "z": 9,
     "default_z_layer": 5,
     "default_z_order": 9
@@ -81737,7 +81901,7 @@ window.allobjects = function() {
     "gridH": 1,
     "gridW": 1,
     "spritesheet": "PixelSheet_01-hd",
-    "type": "deco",
+    "type": "pixel",
     "z": 9,
     "default_z_layer": 5,
     "default_z_order": 9
@@ -81759,7 +81923,7 @@ window.allobjects = function() {
     "gridH": 1,
     "gridW": 1,
     "spritesheet": "PixelSheet_01-hd",
-    "type": "deco",
+    "type": "pixel",
     "z": 9,
     "default_z_layer": 5,
     "default_z_order": 9
@@ -81781,7 +81945,7 @@ window.allobjects = function() {
     "gridH": 1,
     "gridW": 1,
     "spritesheet": "PixelSheet_01-hd",
-    "type": "deco",
+    "type": "pixel",
     "z": 9,
     "default_z_layer": 5,
     "default_z_order": 9
@@ -81803,7 +81967,7 @@ window.allobjects = function() {
     "gridH": 1,
     "gridW": 1,
     "spritesheet": "PixelSheet_01-hd",
-    "type": "deco",
+    "type": "pixel",
     "z": 9,
     "default_z_layer": 5,
     "default_z_order": 9
@@ -81825,7 +81989,7 @@ window.allobjects = function() {
     "gridH": 1,
     "gridW": 1,
     "spritesheet": "PixelSheet_01-hd",
-    "type": "deco",
+    "type": "pixel",
     "z": 9,
     "default_z_layer": 5,
     "default_z_order": 9
@@ -81847,7 +82011,7 @@ window.allobjects = function() {
     "gridH": 1,
     "gridW": 1,
     "spritesheet": "PixelSheet_01-hd",
-    "type": "deco",
+    "type": "pixel",
     "z": 9,
     "default_z_layer": 5,
     "default_z_order": 9
@@ -81869,7 +82033,7 @@ window.allobjects = function() {
     "gridH": 1,
     "gridW": 1,
     "spritesheet": "PixelSheet_01-hd",
-    "type": "deco",
+    "type": "pixel",
     "z": 9,
     "default_z_layer": 5,
     "default_z_order": 9
@@ -81891,7 +82055,7 @@ window.allobjects = function() {
     "gridH": 1,
     "gridW": 1,
     "spritesheet": "PixelSheet_01-hd",
-    "type": "deco",
+    "type": "pixel",
     "z": 9,
     "default_z_layer": 5,
     "default_z_order": 9
@@ -81913,7 +82077,7 @@ window.allobjects = function() {
     "gridH": 1,
     "gridW": 1,
     "spritesheet": "PixelSheet_01-hd",
-    "type": "deco",
+    "type": "pixel",
     "z": 9,
     "default_z_layer": 5,
     "default_z_order": 9
@@ -81935,7 +82099,7 @@ window.allobjects = function() {
     "gridH": 1,
     "gridW": 1,
     "spritesheet": "PixelSheet_01-hd",
-    "type": "deco",
+    "type": "pixel",
     "z": 9,
     "default_z_layer": 5,
     "default_z_order": 9
@@ -81957,7 +82121,7 @@ window.allobjects = function() {
     "gridH": 1,
     "gridW": 1,
     "spritesheet": "PixelSheet_01-hd",
-    "type": "deco",
+    "type": "pixel",
     "z": 9,
     "default_z_layer": 5,
     "default_z_order": 9
@@ -81979,7 +82143,7 @@ window.allobjects = function() {
     "gridH": 1,
     "gridW": 1,
     "spritesheet": "PixelSheet_01-hd",
-    "type": "deco",
+    "type": "pixel",
     "z": 9,
     "default_z_layer": 5,
     "default_z_order": 9
@@ -82001,7 +82165,7 @@ window.allobjects = function() {
     "gridH": 1,
     "gridW": 1,
     "spritesheet": "PixelSheet_01-hd",
-    "type": "deco",
+    "type": "pixel",
     "z": 9,
     "default_z_layer": 5,
     "default_z_order": 9
@@ -82023,7 +82187,7 @@ window.allobjects = function() {
     "gridH": 1,
     "gridW": 1,
     "spritesheet": "PixelSheet_01-hd",
-    "type": "deco",
+    "type": "pixel",
     "z": 9,
     "default_z_layer": 5,
     "default_z_order": 9
@@ -82045,7 +82209,7 @@ window.allobjects = function() {
     "gridH": 1,
     "gridW": 1,
     "spritesheet": "PixelSheet_01-hd",
-    "type": "deco",
+    "type": "pixel",
     "z": 9,
     "default_z_layer": 5,
     "default_z_order": 9
@@ -82067,7 +82231,7 @@ window.allobjects = function() {
     "gridH": 1,
     "gridW": 1,
     "spritesheet": "PixelSheet_01-hd",
-    "type": "deco",
+    "type": "pixel",
     "z": 9,
     "default_z_layer": 5,
     "default_z_order": 9
@@ -82089,7 +82253,7 @@ window.allobjects = function() {
     "gridH": 1,
     "gridW": 1,
     "spritesheet": "PixelSheet_01-hd",
-    "type": "deco",
+    "type": "pixel",
     "z": 9,
     "default_z_layer": 5,
     "default_z_order": 9
@@ -82111,7 +82275,7 @@ window.allobjects = function() {
     "gridH": 1,
     "gridW": 1,
     "spritesheet": "PixelSheet_01-hd",
-    "type": "deco",
+    "type": "pixel",
     "z": 9,
     "default_z_layer": 5,
     "default_z_order": 9
@@ -82133,7 +82297,7 @@ window.allobjects = function() {
     "gridH": 1,
     "gridW": 1,
     "spritesheet": "PixelSheet_01-hd",
-    "type": "deco",
+    "type": "pixel",
     "z": 9,
     "default_z_layer": 5,
     "default_z_order": 9
@@ -82155,7 +82319,7 @@ window.allobjects = function() {
     "gridH": 1,
     "gridW": 1,
     "spritesheet": "PixelSheet_01-hd",
-    "type": "deco",
+    "type": "pixel",
     "z": 9,
     "default_z_layer": 5,
     "default_z_order": 9
@@ -82177,7 +82341,7 @@ window.allobjects = function() {
     "gridH": 1,
     "gridW": 1,
     "spritesheet": "PixelSheet_01-hd",
-    "type": "deco",
+    "type": "pixel",
     "z": 9,
     "default_z_layer": 5,
     "default_z_order": 9
@@ -82199,7 +82363,7 @@ window.allobjects = function() {
     "gridH": 1,
     "gridW": 1,
     "spritesheet": "PixelSheet_01-hd",
-    "type": "deco",
+    "type": "pixel",
     "z": 9,
     "default_z_layer": 5,
     "default_z_order": 9
@@ -82221,7 +82385,7 @@ window.allobjects = function() {
     "gridH": 1,
     "gridW": 1,
     "spritesheet": "PixelSheet_01-hd",
-    "type": "deco",
+    "type": "pixel",
     "z": 9,
     "default_z_layer": 5,
     "default_z_order": 9
@@ -82243,7 +82407,7 @@ window.allobjects = function() {
     "gridH": 1,
     "gridW": 1,
     "spritesheet": "PixelSheet_01-hd",
-    "type": "deco",
+    "type": "pixel",
     "z": 9,
     "default_z_layer": 5,
     "default_z_order": 9
@@ -82265,7 +82429,7 @@ window.allobjects = function() {
     "gridH": 1,
     "gridW": 1,
     "spritesheet": "PixelSheet_01-hd",
-    "type": "deco",
+    "type": "pixel",
     "z": 9,
     "default_z_layer": 5,
     "default_z_order": 9
@@ -82287,7 +82451,7 @@ window.allobjects = function() {
     "gridH": 1,
     "gridW": 1,
     "spritesheet": "PixelSheet_01-hd",
-    "type": "deco",
+    "type": "pixel",
     "z": 9,
     "default_z_layer": 5,
     "default_z_order": 9
@@ -82309,7 +82473,7 @@ window.allobjects = function() {
     "gridH": 1,
     "gridW": 1,
     "spritesheet": "PixelSheet_01-hd",
-    "type": "deco",
+    "type": "pixel",
     "z": 9,
     "default_z_layer": 5,
     "default_z_order": 9
@@ -82331,7 +82495,7 @@ window.allobjects = function() {
     "gridH": 1,
     "gridW": 1,
     "spritesheet": "PixelSheet_01-hd",
-    "type": "deco",
+    "type": "pixel",
     "z": 9,
     "default_z_layer": 5,
     "default_z_order": 9
@@ -82353,7 +82517,7 @@ window.allobjects = function() {
     "gridH": 1,
     "gridW": 1,
     "spritesheet": "PixelSheet_01-hd",
-    "type": "deco",
+    "type": "pixel",
     "z": 9,
     "default_z_layer": 5,
     "default_z_order": 9
@@ -82375,7 +82539,7 @@ window.allobjects = function() {
     "gridH": 1,
     "gridW": 1,
     "spritesheet": "PixelSheet_01-hd",
-    "type": "deco",
+    "type": "pixel",
     "z": 9,
     "default_z_layer": 5,
     "default_z_order": 9
@@ -82397,7 +82561,7 @@ window.allobjects = function() {
     "gridH": 1,
     "gridW": 1,
     "spritesheet": "PixelSheet_01-hd",
-    "type": "deco",
+    "type": "pixel",
     "z": 9,
     "default_z_layer": 5,
     "default_z_order": 9
@@ -82419,7 +82583,7 @@ window.allobjects = function() {
     "gridH": 1,
     "gridW": 1,
     "spritesheet": "PixelSheet_01-hd",
-    "type": "deco",
+    "type": "pixel",
     "z": 9,
     "default_z_layer": 5,
     "default_z_order": 9
@@ -82441,7 +82605,7 @@ window.allobjects = function() {
     "gridH": 1,
     "gridW": 1,
     "spritesheet": "PixelSheet_01-hd",
-    "type": "deco",
+    "type": "pixel",
     "z": 9,
     "default_z_layer": 5,
     "default_z_order": 9
@@ -82463,7 +82627,7 @@ window.allobjects = function() {
     "gridH": 1,
     "gridW": 1,
     "spritesheet": "PixelSheet_01-hd",
-    "type": "deco",
+    "type": "pixel",
     "z": 9,
     "default_z_layer": 5,
     "default_z_order": 9
@@ -82485,7 +82649,7 @@ window.allobjects = function() {
     "gridH": 1,
     "gridW": 1,
     "spritesheet": "PixelSheet_01-hd",
-    "type": "deco",
+    "type": "pixel",
     "z": 9,
     "default_z_layer": 5,
     "default_z_order": 9
@@ -82507,7 +82671,7 @@ window.allobjects = function() {
     "gridH": 1,
     "gridW": 1,
     "spritesheet": "PixelSheet_01-hd",
-    "type": "deco",
+    "type": "pixel",
     "z": 9,
     "default_z_layer": 5,
     "default_z_order": 9
@@ -82529,7 +82693,7 @@ window.allobjects = function() {
     "gridH": 1,
     "gridW": 1,
     "spritesheet": "PixelSheet_01-hd",
-    "type": "deco",
+    "type": "pixel",
     "z": 9,
     "default_z_layer": 5,
     "default_z_order": 9
@@ -82551,7 +82715,7 @@ window.allobjects = function() {
     "gridH": 1,
     "gridW": 1,
     "spritesheet": "PixelSheet_01-hd",
-    "type": "deco",
+    "type": "pixel",
     "z": 9,
     "default_z_layer": 5,
     "default_z_order": 9
@@ -82573,7 +82737,7 @@ window.allobjects = function() {
     "gridH": 1,
     "gridW": 1,
     "spritesheet": "PixelSheet_01-hd",
-    "type": "deco",
+    "type": "pixel",
     "z": 9,
     "default_z_layer": 5,
     "default_z_order": 9
@@ -82595,7 +82759,7 @@ window.allobjects = function() {
     "gridH": 1,
     "gridW": 1,
     "spritesheet": "PixelSheet_01-hd",
-    "type": "deco",
+    "type": "pixel",
     "z": 9,
     "default_z_layer": 5,
     "default_z_order": 9
@@ -82617,7 +82781,7 @@ window.allobjects = function() {
     "gridH": 1,
     "gridW": 1,
     "spritesheet": "PixelSheet_01-hd",
-    "type": "deco",
+    "type": "pixel",
     "z": 9,
     "default_z_layer": 5,
     "default_z_order": 9
@@ -82639,7 +82803,7 @@ window.allobjects = function() {
     "gridH": 1,
     "gridW": 1,
     "spritesheet": "PixelSheet_01-hd",
-    "type": "deco",
+    "type": "pixel",
     "z": 9,
     "default_z_layer": 5,
     "default_z_order": 9
@@ -82661,7 +82825,7 @@ window.allobjects = function() {
     "gridH": 1,
     "gridW": 1,
     "spritesheet": "PixelSheet_01-hd",
-    "type": "deco",
+    "type": "pixel",
     "z": 9,
     "default_z_layer": 5,
     "default_z_order": 9
@@ -82683,7 +82847,7 @@ window.allobjects = function() {
     "gridH": 1,
     "gridW": 1,
     "spritesheet": "PixelSheet_01-hd",
-    "type": "deco",
+    "type": "pixel",
     "z": 9,
     "default_z_layer": 5,
     "default_z_order": 9
@@ -82705,7 +82869,7 @@ window.allobjects = function() {
     "gridH": 1,
     "gridW": 1,
     "spritesheet": "PixelSheet_01-hd",
-    "type": "deco",
+    "type": "pixel",
     "z": 9,
     "default_z_layer": 5,
     "default_z_order": 9
@@ -82727,7 +82891,7 @@ window.allobjects = function() {
     "gridH": 1,
     "gridW": 1,
     "spritesheet": "PixelSheet_01-hd",
-    "type": "deco",
+    "type": "pixel",
     "z": 9,
     "default_z_layer": 5,
     "default_z_order": 9
@@ -82749,7 +82913,7 @@ window.allobjects = function() {
     "gridH": 1,
     "gridW": 1,
     "spritesheet": "PixelSheet_01-hd",
-    "type": "deco",
+    "type": "pixel",
     "z": 9,
     "default_z_layer": 5,
     "default_z_order": 9
@@ -82771,7 +82935,7 @@ window.allobjects = function() {
     "gridH": 1,
     "gridW": 1,
     "spritesheet": "PixelSheet_01-hd",
-    "type": "deco",
+    "type": "pixel",
     "z": 9,
     "default_z_layer": 5,
     "default_z_order": 9
@@ -82793,7 +82957,7 @@ window.allobjects = function() {
     "gridH": 1,
     "gridW": 1,
     "spritesheet": "PixelSheet_01-hd",
-    "type": "deco",
+    "type": "pixel",
     "z": 9,
     "default_z_layer": 5,
     "default_z_order": 9
@@ -82815,7 +82979,7 @@ window.allobjects = function() {
     "gridH": 1,
     "gridW": 1,
     "spritesheet": "PixelSheet_01-hd",
-    "type": "deco",
+    "type": "pixel",
     "z": 9,
     "default_z_layer": 5,
     "default_z_order": 9
@@ -82837,7 +83001,7 @@ window.allobjects = function() {
     "gridH": 1,
     "gridW": 1,
     "spritesheet": "PixelSheet_01-hd",
-    "type": "deco",
+    "type": "pixel",
     "z": 9,
     "default_z_layer": 5,
     "default_z_order": 9
@@ -82859,7 +83023,7 @@ window.allobjects = function() {
     "gridH": 1,
     "gridW": 1,
     "spritesheet": "PixelSheet_01-hd",
-    "type": "deco",
+    "type": "pixel",
     "z": 9,
     "default_z_layer": 5,
     "default_z_order": 9
@@ -82881,7 +83045,7 @@ window.allobjects = function() {
     "gridH": 1,
     "gridW": 1,
     "spritesheet": "PixelSheet_01-hd",
-    "type": "deco",
+    "type": "pixel",
     "z": 9,
     "default_z_layer": 5,
     "default_z_order": 9
@@ -82903,7 +83067,7 @@ window.allobjects = function() {
     "gridH": 1,
     "gridW": 1,
     "spritesheet": "PixelSheet_01-hd",
-    "type": "deco",
+    "type": "pixel",
     "z": 9,
     "default_z_layer": 5,
     "default_z_order": 9
@@ -82925,7 +83089,7 @@ window.allobjects = function() {
     "gridH": 1,
     "gridW": 1,
     "spritesheet": "PixelSheet_01-hd",
-    "type": "deco",
+    "type": "pixel",
     "z": 9,
     "default_z_layer": 5,
     "default_z_order": 9
@@ -82947,7 +83111,7 @@ window.allobjects = function() {
     "gridH": 1,
     "gridW": 1,
     "spritesheet": "PixelSheet_01-hd",
-    "type": "deco",
+    "type": "pixel",
     "z": 9,
     "default_z_layer": 5,
     "default_z_order": 9
@@ -82969,7 +83133,7 @@ window.allobjects = function() {
     "gridH": 1,
     "gridW": 1,
     "spritesheet": "PixelSheet_01-hd",
-    "type": "deco",
+    "type": "pixel",
     "z": 9,
     "default_z_layer": 5,
     "default_z_order": 9
@@ -82991,7 +83155,7 @@ window.allobjects = function() {
     "gridH": 1,
     "gridW": 1,
     "spritesheet": "PixelSheet_01-hd",
-    "type": "deco",
+    "type": "pixel",
     "z": 9,
     "default_z_layer": 5,
     "default_z_order": 9
@@ -83013,7 +83177,7 @@ window.allobjects = function() {
     "gridH": 1,
     "gridW": 1,
     "spritesheet": "PixelSheet_01-hd",
-    "type": "deco",
+    "type": "pixel",
     "z": 9,
     "default_z_layer": 5,
     "default_z_order": 9
@@ -83035,7 +83199,7 @@ window.allobjects = function() {
     "gridH": 1,
     "gridW": 1,
     "spritesheet": "PixelSheet_01-hd",
-    "type": "deco",
+    "type": "pixel",
     "z": 9,
     "default_z_layer": 5,
     "default_z_order": 9
@@ -83057,7 +83221,7 @@ window.allobjects = function() {
     "gridH": 1,
     "gridW": 1,
     "spritesheet": "PixelSheet_01-hd",
-    "type": "deco",
+    "type": "pixel",
     "z": 9,
     "default_z_layer": 5,
     "default_z_order": 9
