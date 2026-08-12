@@ -6075,6 +6075,12 @@ _buildSettingsPopup() {
     */
     const updateEntries = [
       { text: "Update Log", scale: 1, font: "goldFont" },
+      { text: "Small Icon Kit changes", scale: 0.75, },
+      { text: "Low Detail Mode", scale: 0.75, },
+      { text: "Object culling changes", scale: 0.75, },
+      { text: "MOST Animated objects", scale: 0.75, },
+      { text: "Added a bunch of missing buttons", scale: 0.75, },
+      { text: "Level select info icon turned bouncy now :D", scale: 0.75, },
       { text: "Rotation for deco and saws", scale: 0.75, },
       { text: "Particlesheet added <3", scale: 0.75, },
       { text: "Better ball rotation ", scale: 0.75, },
@@ -6083,9 +6089,7 @@ _buildSettingsPopup() {
       { text: "Pulsing rods reworked a lil", scale: 0.75, },
       { text: "Breakable blocks break now.", scale: 0.75, },
       { text: "Fixed objects not showing in editor", scale: 0.65, },
-      { text: "I call it, the QOD update.", scale: 0.6, color: 0x708090},
-      { text: "quality of dash", scale: 0.5, color: 0x708090},
-      { text: "im like, 90% sure at least ONE feature broke", scale: 0.4, color: 0x708090},
+      { text: "^ I, Amethyst, did all this btw. ^", scale: 0.6, color: 0x9966cc},
       { text: "Slopes (very buggy)", scale: 0.75, color: 0xff9944 },
       { text: "THEY WILL BE FIXED-", scale: 0.75, },
       { text: "OVER TIME.", scale: 0.75, },
