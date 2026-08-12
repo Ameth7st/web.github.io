@@ -59,6 +59,9 @@ class Collider {
     return leftWall ? "left" : "right";
   }
 }
+const ldm_object = new Set([
+  503,505,504,1888,1887,1012,1013,1011,1886,1762,1763,1761,1269,1760,1270,1271,1274,1272,1273,1764,1765,1766,1767,1769,1292,1758,1291,1293,1759,1051,1058,1060,1752,1050,1052,1059,1061
+]);
  
 function _decodeTextObjectString(value) {
   if (value === undefined || value === null) return "";
@@ -1320,7 +1323,7 @@ window.LevelObject = class LevelObject {
     }
   }
   _isGlowVisible = () => {
-      return window.showGlow !== false && (!window.isEditor || window.showEditorGlow);
+      return !window.enableLDM && window.showGlow !== false && (!window.isEditor || window.showEditorGlow);
   };
   _getGlowAlphaMultiplier = () => {
       return window.glowOpacity !== undefined ? window.glowOpacity : 0.5;
@@ -1741,6 +1744,9 @@ window.LevelObject = class LevelObject {
 
   if (parseInt(levelObj?.id ?? 0, 10) === 749 && !levelObj?._generatedTeleportExit) {
     return objectDef || allObjects[749] || null;
+  }
+  if (window.enableLDM && ldm_object.has(parseInt(levelObj?.id ?? 0, 10))) {
+    return null;
   }
 
   if (objectDef && objectDef.type === triggerType) {
@@ -2313,7 +2319,7 @@ window.LevelObject = class LevelObject {
     }
   }
 
-  if (objectDef && objectDef.portalParticle && frameName && !window.isEditor && !scene?._editorPlaytestActive) {
+  if (objectDef && objectDef.portalParticle && frameName && !window.enableLDM && !window.isEditor && !scene?._editorPlaytestActive) {
     const particleWorldX = worldX;
     const particleWorldY = b(worldY);
     const radiusFactor = 2;
@@ -2630,6 +2636,8 @@ window.LevelObject = class LevelObject {
         _0x35f1ae.forEach((levelObj, index) => {
           if (!levelObj || levelObj.id === undefined) return;
 
+          if (window.enableLDM && ldm_object.has(parseInt(levelObj.id, 10))) return;
+
           const worldX = levelObj.x * 2;
           const textY = typeof b === 'function' ? b(levelObj.y * 2) : levelObj.y * 2;
 
@@ -2642,7 +2650,7 @@ window.LevelObject = class LevelObject {
           });
           idText.setOrigin(0.5);
           idText.setDepth(999); 
-          idText.setVisible(window.showObjectIds);
+          idText.setVisible(window.showObjectIds && !window.enableLDM);
 
           worldContainer.add(idText);
 
@@ -2681,6 +2689,10 @@ window.LevelObject = class LevelObject {
     this._endPortalShine.setTint(window.mainColor);
     this._endPortalShine.setScale(1, 960 / _0x3e25a9);
     this.additiveContainer.add(this._endPortalShine);
+    if (window.enableLDM) {
+      this._endPortalGameY = 240;
+      return;
+    }
     const _0x58cedb = _0x3b56d4 - 30;
     const _0x4f52b7 = {
       getRandomPoint: _0x4f04dd => {
@@ -2738,7 +2750,9 @@ window.LevelObject = class LevelObject {
     const _0x32e645 = b(_0x1be4c3);
     this._endPortalContainer.y = _0x32e645;
     this._endPortalShine.y = _0x32e645;
-    this._endPortalEmitter.y = _0x32e645;
+    if (this._endPortalEmitter) {
+      this._endPortalEmitter.y = _0x32e645;
+    }
     this._endPortalGameY = _0x1be4c3;
   }
   _isTriggerSaveObjectLive(uid) {
@@ -2904,12 +2918,54 @@ window.LevelObject = class LevelObject {
   }
   updateVisibility(_0xa5f1e1) {
     this.updateTriggerEditorVisuals();
+    if (window.enableLDM) {
+      try {
+        if (this._endPortalEmitter && typeof this._endPortalEmitter.stop === 'function') {
+          this._endPortalEmitter.stop();
+        }
+      } catch (e) {}
+      try {
+        if (Array.isArray(this._sections)) {
+          for (const sec of this._sections) {
+            if (!Array.isArray(sec)) continue;
+            for (const obj of sec) {
+              if (!obj) continue;
+              try {
+                if (typeof obj.stop === 'function') obj.stop();
+                if (obj.emitters && Array.isArray(obj.emitters)) {
+                  for (const em of obj.emitters) {
+                    try { if (typeof em.stop === 'function') em.stop(); } catch (e) {}
+                  }
+                }
+              } catch (e) {}
+            }
+          }
+        }
+      } catch (e) {}
+      try { if (this._glowSprites) for (const g of this._glowSprites) g.setVisible(false); } catch(e) {}
+    }
     const _0x1dce22 = this._sectionContainers.length - 1;
     if (_0x1dce22 < 0) {
       return;
     }
-    const particleScale = Math.max(0, Math.floor((_0xa5f1e1 - 200) / 400));
-    const sliderHeight = Math.min(_0x1dce22, Math.floor((_0xa5f1e1 + screenWidth + 200) / 400));
+    let cd = Number(window.cullDistance);
+    if (!Number.isFinite(cd)) cd = 3;
+    cd = Math.max(0, Math.min(3, Math.floor(cd)));
+
+    let particleScale, sliderHeight;
+    if (cd === 3) {
+      particleScale = Math.max(0, Math.floor((_0xa5f1e1 - 200) / 400));
+      sliderHeight = Math.min(_0x1dce22, Math.floor((_0xa5f1e1 + screenWidth + 200) / 400));
+    } else if (cd === 0) {
+      particleScale = _0x1dce22 + 1;
+      sliderHeight = -1;
+    } else {
+      const rightEdgeX = _0xa5f1e1 + screenWidth;
+      const centerSection = Math.max(0, Math.floor(rightEdgeX / 400));
+      const rangeRadius = cd;
+      particleScale = Math.max(0, centerSection - rangeRadius);
+      sliderHeight = Math.min(_0x1dce22, centerSection + rangeRadius);
+    }
     const _0x1800fc = this._visMinSec;
     const _0xc31046 = this._visMaxSec;
     if (_0x1800fc < 0) {
@@ -2946,7 +3002,7 @@ window.LevelObject = class LevelObject {
     }
   }
   updateObjectDebugIds() {
-    if (window.showObjectIds) {
+    if (window.showObjectIds && !window.enableLDM) {
       if (this._debugIdTextsList && this._debugIdTextsList.length > 0) {
         for (const idText of this._debugIdTextsList) {
           if (idText) idText.setVisible(true);
@@ -3298,6 +3354,7 @@ window.LevelObject = class LevelObject {
   }
 
   _startPulseTrigger(trig) {
+    if (window.enableLDM) return;
     if (!trig || !this._isTriggerSaveObjectLive(trig.uid)) return;
     const totalDur = trig.fadeIn + trig.hold + trig.fadeOut;
     this._activePulses.push({ trig, elapsed: 0, totalDuration: totalDur > 0 ? totalDur : 0.01 });
@@ -3581,6 +3638,7 @@ window.LevelObject = class LevelObject {
   }
 
   checkPulseTriggers(playerX) {
+    if (window.enableLDM) return;
     while (this._pulseTriggerIdx < this._pulseTriggers.length) {
       const trig = this._pulseTriggers[this._pulseTriggerIdx];
       if (trig.x > playerX) break;
@@ -3589,6 +3647,7 @@ window.LevelObject = class LevelObject {
     }
   }
   stepPulseTriggers(dt, colorManager) {
+    if (window.enableLDM) return;
     let i = 0;
     while (i < this._activePulses.length) {
       const pulse = this._activePulses[i];
