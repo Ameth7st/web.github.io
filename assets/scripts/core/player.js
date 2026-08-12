@@ -1572,6 +1572,22 @@ class PlayerObject {
       return;
     }
 
+    if (window.enableLDM) {
+      if (this._particleEmitter) this._particleEmitter.stop();
+      this._particleActive = false;
+      if (this._flyParticleEmitter) this._flyParticleEmitter.stop();
+      this._flyParticleActive = false;
+      if (this._flyParticle2Emitter) this._flyParticle2Emitter.stop();
+      this._flyParticle2Active = false;
+      if (this._shipDragEmitter) this._shipDragEmitter.stop();
+      this._shipDragActive = false;
+      this._streak.stop();
+      this._streak.reset();
+      this._waveTrail.stop();
+      this._waveTrail.reset();
+      return;
+    }
+
     if (this.p.isDead) {
       return;
     }
@@ -2295,11 +2311,13 @@ if (this.p.isFlying || this.p.isUfo) {
     }
     this.stopRotation();
     if (_0x4a38a5 && !this.p.isFlying && !this.p.isWave && !this.p.isSpider && !this._scene?._editorPlaytestActive) {
-      this._landIdx = !this._landIdx;
-      const _0x31584b = this._landIdx ? this._landEmitter1 : this._landEmitter2;
-      const _0x2248d5 = this._scene._playerWorldX;
-      const _0x17e0bb = this.p.gravityFlipped ? b(this.p.y) - 30 : b(this.p.y) + 30;
-      _0x31584b.explode(10, _0x2248d5, _0x17e0bb);
+      if (!window.enableLDM) {
+        this._landIdx = !this._landIdx;
+        const _0x31584b = this._landIdx ? this._landEmitter1 : this._landEmitter2;
+        const _0x2248d5 = this._scene._playerWorldX;
+        const _0x17e0bb = this.p.gravityFlipped ? b(this.p.y) - 30 : b(this.p.y) + 30;
+        _0x31584b.explode(10, _0x2248d5, _0x17e0bb);
+      }
     }
   }
   killPlayer() {
@@ -3573,7 +3591,9 @@ if (this.p.isFlying || this.p.isUfo) {
         this.p.canJump = false;
         this.p.isJumping = true;
         try {
-          this._flyParticle2Emitter.explode(6, this._scene._playerWorldX, b(this.p.y) + (this.p.gravityFlipped ? -18 : 18));
+          if (!window.enableLDM) {
+            this._flyParticle2Emitter.explode(6, this._scene._playerWorldX, b(this.p.y) + (this.p.gravityFlipped ? -18 : 18));
+          }
         } catch(e) {}
       }
     }
