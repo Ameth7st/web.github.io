@@ -2997,7 +2997,7 @@ window.LevelObject = class LevelObject {
         }
         const rotDeg = ((levelObj.rot || 0) % 360 + 360) % 360;
         const isUpsideDown = normRot => normRot === 180 || (levelObj.flipY && normRot === 0);
-        let minAngle = 240, maxAngle = 300;
+        let minAngle = 255, maxAngle = 285;
         let gravY = -500, gravX = 0;
         let offsetY = -2, offsetX = 0;
         if (isUpsideDown(rotDeg)) {
@@ -3020,16 +3020,16 @@ window.LevelObject = class LevelObject {
         }
         const _padEmitter = scene.add.particles(worldX + offsetX, b(worldY) + offsetY, "GJ_WebSheet", {
           frame: "square.png",
-          lifespan: { min: 200, max: 600 },
-          speed: { min: 180, max: 380 },
+          lifespan: { min: 250, max: 450 },
+          speed: { min: 180, max: 220 },
           angle: { min: minAngle, max: maxAngle },
           x: rotDeg === 90 || rotDeg === 270 ? 0 : { min: -_padW / 2, max: _padW / 2 },
           y: rotDeg === 90 || rotDeg === 270 ? { min: -_padW / 2, max: _padW / 2 } : 0,
-          scale: { start: 0.55, end: 0 },
-          alpha: { start: 1, end: 0 },
+          scale: { start: 0.5, end: 0 },
+          alpha: { start: 0.85, end: 0 },
           gravityX: gravX,
           gravityY: gravY,
-          frequency: 12,
+          frequency: 24,
           tint: _padTint,
           blendMode: Phaser.BlendModes.ADD,
           emitting: true
